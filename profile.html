@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html ng-app="mintebiApp">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mintebi</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/all.css">
+	<link rel="stylesheet" href="css/ngDialog.css">
+	<script type="text/javascript" src="http://fast.fonts.net/jsapi/48f89ee6-4f00-484c-ad3c-df5a74d4c60d.js"></script>
+	<!--[if IE 9]><link rel="stylesheet" href="css/ie.css"><![endif]-->
+</head>
+<body>
+	<div id="wrapper">
+		<div class="w1">
+			<header id="header">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="non-logedin" style="display:none;">
+								<div class="logo-holder">
+									<strong class="logo"><a href="#"><img src="images/logo.png" alt="Mintebi"></a></strong>
+								</div>
+								<nav class="navbar navbar-default">
+									<!-- Brand and toggle get grouped for better mobile display -->
+									<div class="navbar-header">
+										<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+											<span class="sr-only">Toggle navigation</span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+										</button>
+									</div>
+									<!-- Collect the nav links, forms, and other content for toggling -->
+									<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+										<ul class="nav navbar-nav">
+											<li><a href="#">Discover <span class="sr-only">(current)</span></a></li>
+											<li><a href="#">Create a Project</a></li>
+										</ul>
+										<ul class="nav navbar-nav navbar-right">
+											<li><a href="#">Sign up</a></li>
+											<li><a href="#">Login</a></li>
+										</ul>
+									</div>
+								</nav>
+							</div>
+							<div class="expert-logedin" style="display:block">
+								<div class="logo-holder">
+									<strong class="logo"><a href="#"><img src="images/logo.png" alt="Mintebi"></a></strong>
+									<div class="notifications-block">
+										<a class="btn btn-primary active" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+											<i class="fa fa-bell-o"></i><span class="count">10</span>
+										</a>
+										<div class="collapse notification-drop" id="collapseExample">
+											<div class="well">
+												<div class="title"><a href="#" class="activity active">recent activity</a> <a href="#" class="marked">marked all as read</a></div>
+												<div class="scroll-area jcf-scrollable" jcf>
+													<ul class="list-unstyled">
+														<li>
+															<a href="#">
+																<span class="icon icon-add-user"></span>YOU HAVE 5 NEW EXPERTS PITCHED
+																<time datetime="2015-01-01">34 minutes ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-flag"></span>YOUR PROJECT IS NOW IN PITCH
+																<time datetime="2015-01-01">2 days ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-trophy"></span>WELCOME TO MINTEbI
+																<time datetime="2015-01-01">1 week ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-crosshair"></span>lorem upsum sit amet
+																<time datetime="2015-01-01">2 weeks ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-add-user"></span>YOU HAVE 5 NEW EXPERTS PITCHED
+																<time datetime="2015-01-01">34 minutes ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-flag"></span>YOUR PROJECT IS NOW IN PITCH
+																<time datetime="2015-01-01">2 days ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-trophy"></span>WELCOME TO MINTEbI
+																<time datetime="2015-01-01">1 week ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-crosshair"></span>lorem upsum sit amet
+																<time datetime="2015-01-01">2 weeks ago</time>
+															</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<nav class="navbar navbar-default">
+									<!-- Brand and toggle get grouped for better mobile display -->
+									<div class="navbar-header">
+										<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+											<span class="sr-only">Toggle navigation</span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+										</button>
+									</div>
+									<!-- Collect the nav links, forms, and other content for toggling -->
+									<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+										<ul class="nav navbar-nav">
+											<li><a href="#">Market place <span class="sr-only">(current)</span></a></li>
+											<li><a href="#">Library</a></li>
+											<li><a href="#">My Mintebi</a></li>
+											<li class="dropdown">
+												<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Help</a>
+												<div class="dropdown-menu" role="menu">
+													<strong class="title">Help &amp; Resources</strong>
+													<ul class="list-unstyled">
+														<li><a href="#">FAQ</a></li>
+														<li><a href="#">Our Rules</a></li>
+														<li><a href="#">Expert handbook</a></li>
+														<li><a href="#">trust &amp; Safty</a></li>
+														<li><a href="#">Trems of use  &amp; Privacy</a></li>
+													</ul>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</nav>
+								<div class="client-login">
+									<a class="btn btn-primary">
+										<span data-picture data-alt="image description">
+											<span data-src="images/img10-large.png" data-width="33" data-height="33"></span>
+											<span data-src="images/img10-large2x.png" data-width="33" data-height="33" data-media="(-webkit-min-device-pixel-ratio:1.5), (min-resolution:1.5dppx)" ></span> <!-- retina 2x desktop -->
+											<span data-src="images/img10-medium2x.png" data-width="33" data-height="33" data-media="(max-width:1023px) and (-webkit-min-device-pixel-ratio:1.5), (max-width:1023px) and (min-resolution:144dpi)" ></span> <!-- retina 2x tablet -->
+											<span data-src="images/img10-small.png" data-width="33" data-height="33" data-media="(max-width:767px)" ></span> <!-- retina 1x mobile -->
+											<span data-src="images/img10-small2x.png" data-width="33" data-height="33" data-media="(max-width:767px) and (-webkit-min-device-pixel-ratio:1.5), (max-width:767px) and (min-resolution:144dpi)" ></span> <!-- retina 2x mobile -->
+											<!--[if (lt IE 9) & (!IEMobile)]>
+												<span data-src="images/img10-large.png"></span>
+											<![endif]-->
+											<!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+											<noscript><img src="images/img10-large.png" width="33" height="33" alt="image description" ></noscript>
+										</span>
+									</a>
+									<div class="client-drop">
+										<div class="drop-box">
+											<strong class="title">Andreas buchwalD</strong>
+											<ul class="list-unstyled">
+												<li><a href="#"><span class="icon icon-user"></span>my profile</a></li>
+												<li><a href="#"><span class="icon icon-gear"></span>account settings</a></li>
+												<li><a href="#"><span class="icon icon-power"></span>logout</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="client-logedin" style="display:none">
+								<div class="logo-holder">
+									<strong class="logo"><a href="#"><img src="images/logo.png" alt="Mintebi"></a></strong>
+									<div class="notifications-block">
+										<a class="btn btn-primary active" data-toggle="collapse" href="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
+											<i class="fa fa-bell-o"></i><span class="count">10</span>
+										</a>
+										<div class="collapse notification-drop" id="collapseExample3">
+											<div class="well">
+												<div class="title"><a href="#" class="activity active">recent activity</a> <a href="#" class="marked">marked all as read</a></div>
+												<div class="scroll-area jcf-scrollable">
+													<ul class="list-unstyled">
+														<li>
+															<a href="#">
+																<span class="icon icon-add-user"></span>YOU HAVE 5 NEW EXPERTS PITCHED
+																<time datetime="2015-01-01">34 minutes ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-flag"></span>YOUR PROJECT IS NOW IN PITCH
+																<time datetime="2015-01-01">2 days ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-trophy"></span>WELCOME TO MINTEbI
+																<time datetime="2015-01-01">1 week ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-crosshair"></span>lorem upsum sit amet
+																<time datetime="2015-01-01">2 weeks ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-add-user"></span>YOU HAVE 5 NEW EXPERTS PITCHED
+																<time datetime="2015-01-01">34 minutes ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-flag"></span>YOUR PROJECT IS NOW IN PITCH
+																<time datetime="2015-01-01">2 days ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-trophy"></span>WELCOME TO MINTEbI
+																<time datetime="2015-01-01">1 week ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-crosshair"></span>lorem upsum sit amet
+																<time datetime="2015-01-01">2 weeks ago</time>
+															</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<nav class="navbar navbar-default">
+									<!-- Brand and toggle get grouped for better mobile display -->
+									<div class="navbar-header">
+										<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-3">
+											<span class="sr-only">Toggle navigation</span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+										</button>
+									</div>
+									<!-- Collect the nav links, forms, and other content for toggling -->
+									<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-3">
+										<ul class="nav navbar-nav">
+											<li><a href="#">Create a project <span class="sr-only">(current)</span></a></li>
+											<li><a href="#">Market place</a></li>
+											<li><a href="#">Library</a></li>
+											<li><a href="#">My Mintebi</a></li>
+											<li class="dropdown">
+												<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Help</a>
+												<div class="dropdown-menu" role="menu">
+													<strong class="title">Help &amp; Resources</strong>
+													<ul class="list-unstyled">
+														<li><a href="#">FAQ</a></li>
+														<li><a href="#">Our Rules</a></li>
+														<li><a href="#">Expert handbook</a></li>
+														<li><a href="#">trust &amp; Safty</a></li>
+														<li><a href="#">Trems of use  &amp; Privacy</a></li>
+													</ul>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</nav>
+								<div class="client-login">
+									<a class="btn btn-primary">
+										<span data-picture data-alt="image description">
+											<span data-src="images/img10-large.png" data-width="33" data-height="33"></span>
+											<span data-src="images/img10-large2x.png" data-width="33" data-height="33" data-media="(-webkit-min-device-pixel-ratio:1.5), (min-resolution:1.5dppx)" ></span> <!-- retina 2x desktop -->
+											<span data-src="images/img10-medium2x.png" data-width="33" data-height="33" data-media="(max-width:1023px) and (-webkit-min-device-pixel-ratio:1.5), (max-width:1023px) and (min-resolution:144dpi)" ></span> <!-- retina 2x tablet -->
+											<span data-src="images/img10-small.png" data-width="33" data-height="33" data-media="(max-width:767px)" ></span> <!-- retina 1x mobile -->
+											<span data-src="images/img10-small2x.png" data-width="33" data-height="33" data-media="(max-width:767px) and (-webkit-min-device-pixel-ratio:1.5), (max-width:767px) and (min-resolution:144dpi)" ></span> <!-- retina 2x mobile -->
+											<!--[if (lt IE 9) & (!IEMobile)]>
+												<span data-src="images/img10-large.png"></span>
+											<![endif]-->
+											<!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+											<noscript><img src="images/img10-large.png" width="33" height="33" alt="image description" ></noscript>
+										</span>
+									</a>
+									<div class="client-drop">
+										<div class="drop-box">
+											<strong class="title">Andreas buchwalD</strong>
+											<ul class="list-unstyled">
+												<li><a href="#"><span class="icon icon-user"></span>my profile</a></li>
+												<li><a href="#"><span class="icon icon-gear"></span>account settings</a></li>
+												<li><a href="#"><span class="icon icon-power"></span>logout</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<main id="main" role="main">
+				<div class="main-banner" style="background-image:url(images/img01.jpg)">
+					<div class="container banner">
+						<div class="row">
+							<div class="col-xs-12">
+								<div class="holder">
+									<div class="banner-frame">
+										<div class="alignleft">
+											<a href="#" class="img-box">
+												<span data-picture data-alt="image description">
+													<span data-src="images/img02-large.jpg" data-width="81" data-height="81"></span>
+													<span data-src="images/img02-large2x.jpg"  data-width="81" data-height="81" data-media="(-webkit-min-device-pixel-ratio:1.5), (min-resolution:1.5dppx)" ></span> <!-- retina 2x desktop -->
+													<span data-src="images/img02-medium2x.jpg"  data-width="81" data-height="81" data-media="(max-width:1023px) and (-webkit-min-device-pixel-ratio:1.5), (max-width:1023px) and (min-resolution:144dpi)" ></span> <!-- retina 2x tablet -->
+													<span data-src="images/img02-small.jpg" data-width="81" data-height="81" data-media="(max-width:767px)" ></span> <!-- retina 1x mobile -->
+													<span data-src="images/img02-small2x.jpg" data-width="81" data-height="81" data-media="(max-width:767px) and (-webkit-min-device-pixel-ratio:1.5), (max-width:767px) and (min-resolution:144dpi)" ></span> <!-- retina 2x mobile -->
+													<!--[if (lt IE 9) & (!IEMobile)]>
+														<span data-src="images/img02-large.jpg"></span>
+													<![endif]-->
+													<!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+													<noscript><img src="images/img02-large.jpg" width="81" height="81" alt="image description" ></noscript>
+												</span>
+												<div class="over"><span class="txt">Change image</span></div>
+												<div class="over2"><span class="txt">Change image</span></div>
+											</a>
+											<div class="tooltip2"><span class="tool-txt">This client is verified by mintebi</span></div>
+										</div>
+										<div class="txt-box">
+											<h1>Caroline Osterwald-Lenum</h1>
+											<dl class="info-nav list-inline">
+												<dt>Title</dt>
+												<dd>Communication Manager at mintebi</dd>
+												<dt>Industry</dt>
+												<dd>Entertainment</dd>
+												<dt>Country</dt>
+												<dd>Copenhagen Area, Capital Region, Denmark</dd>
+												<dt>Education</dt>
+												<dd>Copenhagen Business School</dd>
+											</dl>
+										</div>
+									</div>
+									<div class="banner-rattings">
+										<span class="rattings">4,2/5</span>
+										<div class="box">
+											<h2>Avarage Rating</h2>
+											<p>Rating based on 162 client reviews</p>
+										</div>
+									</div>
+								</div>
+								<ul class="linked-nav list-inline">
+									<li><a href="active-projects.html">Active Projects</a></li>
+									<li><a href="inactive-projects.html">Inactive Projects</a></li>
+									<li class="active"><a href="profile.html">My profile</a></li>
+									<li><a href="balance.html">Balance</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container profile-block">
+					<div class="row profile-box">
+						<div class="col-xs-12">
+							<section class="profile-info about">
+								<header class="profile-heading">
+									<h2>About me</h2>
+									<a href="#" class="btn-edit"><i class="fa fa-pencil"></i>Edit</a>
+								</header>
+								<p>Experienced leader with the focal point of organizational development, strategy implementation and change  blandit tempus porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+							</section>
+						</div>
+					</div>
+					<div class="row profile-box">
+						<div class="col-xs-12">
+							<section class="profile-info">
+								<header class="profile-heading">
+									<h2>Experience</h2>
+								</header>
+								<div class="block">
+									<div class="box">
+										<h3>Communication Manager</h3>
+										<a href="#" class="info-title">Mintebi APS</a>
+										<time datetime="2015-01-01">March 2015 - Present 2 months</time>
+										<p>In May 2013 Vertic launched a global campaign for Microsoft promoting Office365. The campaign used targeted LinkedIn banner advertising that was relevant to the user's job function and industry. Upon click through, the user would land on an interactive campaign site that was dynamically customized with data from their LinkedIn profile.</p>
+									</div>
+									<a href="#" class="alignright">
+										<span data-picture data-alt="image description">
+											<span data-src="images/img07-large.jpg" data-width="49" data-height="60"></span>
+											<span data-src="images/img07-large2x.jpg"  data-width="98" data-height="120" data-media="(-webkit-min-device-pixel-ratio:1.5), (min-resolution:1.5dppx)" ></span> <!-- retina 2x desktop -->
+											<span data-src="images/img07-medium2x.jpg"  data-width="98" data-height="160" data-media="(max-width:1023px) and (-webkit-min-device-pixel-ratio:1.5), (max-width:1023px) and (min-resolution:144dpi)" ></span> <!-- retina 2x tablet -->
+											<!--[if (lt IE 9) & (!IEMobile)]>
+												<span data-src="images/img07-large.jpg"></span>
+											<![endif]-->
+											<!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+											<noscript><img src="images/img07-large.jpg" width="49" height="60" alt="image description" ></noscript>
+										</span>
+									</a>
+								</div>
+								<div class="block">
+									<div class="box">
+										<h3>Marketing Assistant</h3>
+										<a href="#" class="info-title">Bonnier Publications A/S</a>
+										<time datetime="2015-01-01">Febryary 2014 - March 2015 (1 year 2 months)</time>
+										<p>In May 2013 Vertic launched a global campaign for Microsoft promoting Office365. The campaign used targeted LinkedIn banner advertising that was relevant to the user's job function and industry. Upon click through, the user would land on an interactive campaign site that was dynamically customized with data from their LinkedIn profile.</p>
+									</div>
+									<a href="#" class="alignright">
+										<span data-picture data-alt="image description">
+											<span data-src="images/img08-large.jpg" data-width="100" data-height="41"></span>
+											<span data-src="images/img08-large2x.jpg"  data-width="200" data-height="82" data-media="(-webkit-min-device-pixel-ratio:1.5), (min-resolution:1.5dppx)" ></span> <!-- retina 2x desktop -->
+											<span data-src="images/img08-medium2x.jpg"  data-width="200" data-height="82" data-media="(max-width:1023px) and (-webkit-min-device-pixel-ratio:1.5), (max-width:1023px) and (min-resolution:144dpi)" ></span> <!-- retina 2x tablet -->
+											<!--[if (lt IE 9) & (!IEMobile)]>
+												<span data-src="images/img08-large.jpg"></span>
+											<![endif]-->
+											<!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+											<noscript><img src="images/img08-large.jpg" width="100" height="41" alt="image description" ></noscript>
+										</span>
+									</a>
+								</div>
+							</section>
+						</div>
+					</div>
+					<div class="row profile-box">
+						<div class="col-xs-12">
+							<section class="profile-info">
+								<header class="profile-heading">
+									<h2>Education</h2>
+								</header>
+								<div class="block">
+									<div class="box">
+										<h3>Copenhagen Business School</h3>
+										<a href="#" class="info-title">MScSocSc in Management of Creative Business Processes</a>
+										<time datetime="2015-01-01">2014 - 2016</time>
+										<p>Activities and Societies: <a href="#">CBS International Choir</a></p>
+										<ul class="profile-nav list-unstyled">
+											<li><a href="#">1 test score</a></li>
+											<li><a href="#">7 courses</a></li>
+										</ul>
+									</div>
+									<a href="#" class="alignright">
+										<span data-picture data-alt="image description">
+											<span data-src="images/img09-large.jpg" data-width="24" data-height="42"></span>
+											<span data-src="images/img09-large2x.jpg"  data-width="48" data-height="84" data-media="(-webkit-min-device-pixel-ratio:1.5), (min-resolution:1.5dppx)" ></span> <!-- retina 2x desktop -->
+											<span data-src="images/img09-medium2x.jpg"  data-width="24" data-height="42" data-media="(max-width:1023px) and (-webkit-min-device-pixel-ratio:1.5), (max-width:1023px) and (min-resolution:144dpi)" ></span> <!-- retina 2x tablet -->
+											<!--[if (lt IE 9) & (!IEMobile)]>
+												<span data-src="images/img09-large.jpg"></span>
+											<![endif]-->
+											<!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+											<noscript><img src="images/img09-large.jpg" width="24" height="42" alt="image description" ></noscript>
+										</span>
+									</a>
+								</div>
+							</section>
+						</div>
+					</div>
+					<div class="row profile-box">
+						<div class="col-xs-12">
+							<section class="profile-info">
+								<header class="profile-heading">
+									<h2>Skills</h2>
+								</header>
+								<div class="profile-skills">
+									<h3>Top Skills</h3>
+									<ul class="skills-nav list-inline">
+										<li><a href="#"><span class="num">3</span> <span class="txt">Strategic Communications</span></a></li>
+										<li><a href="#"><span class="num">8</span> <span class="txt">Public Relations</span></a></li>
+										<li><a href="#"><span class="num">2</span> <span class="txt">Marketing Communications</span></a></li>
+										<li><a href="#"><span class="num">2</span> <span class="txt">Corporate Communications</span></a></li>
+										<li><a href="#"><span class="num">4</span> <span class="txt">Strategy</span></a></li>
+										<li><a href="#"><span class="num">6</span> <span class="txt">Research</span></a></li>
+										<li><a href="#"><span class="num">6</span> <span class="txt">Social Media Marketing</span></a></li>
+										<li><a href="#"><span class="num">2</span> <span class="txt">Editing</span></a></li>
+										<li><a href="#"><span class="num">1</span> <span class="txt">Writing</span></a></li>
+										<li><a href="#"><span class="num">1</span> <span class="txt">Copywriting</span></a></li>
+									</ul>
+									<h3>Andreas  also knows about...</h3>
+									<ul class="skills-nav list-inline">
+										<li><a href="#"><span class="num">3</span> <span class="txt">Social Media</span></a></li>
+										<li><a href="#"><span class="num">8</span> <span class="txt">Project Management</span></a></li>
+										<li><a href="#"><span class="num">2</span> <span class="txt">Internal Communications</span></a></li>
+										<li><a href="#"><span class="num">2</span> <span class="txt">Web Design</span></a></li>
+									</ul>
+								</div>
+							</section>
+						</div>
+					</div>
+					<div class="row profile-box">
+						<div class="col-xs-12">
+							<section class="profile-info">
+								<header class="profile-heading">
+									<h2>Languages</h2>
+								</header>
+								<ul class="lang-nav list-inline">
+									<li>
+										<h3><a href="#">Danish</a></h3>
+										<p>Native or bilingual proficiency</p>
+									</li>
+									<li>
+										<h3><a href="#">English</a></h3>
+										<p>Professional working proficiency</p>
+									</li>
+									<li>
+										<h3><a href="#">French</a></h3>
+										<p>Limited working proficiency</p>
+									</li>
+									<li>
+										<h3><a href="#">Norwegian</a></h3>
+										<p>Professional working proficiency</p>
+									</li>
+									<li>
+										<h3><a href="#">Swedish</a></h3>
+										<p>Professional working proficiency</p>
+									</li>
+								</ul>
+							</section>
+						</div>
+					</div>
+				</div>
+			</main>
+		</div>
+		<div class="footer-block">
+			<div class="footer-holder">
+				<div class="container-fluid">
+					<aside class="row footer-aside">
+						<div class="col-xs-12">
+							<div class="box">
+								<div class="block">
+									<nav class="column">
+										<h2>About us</h2>
+										<ul class="list-unstyled">
+											<li><a href="#">What is mintebi?</a></li>
+											<li><a href="#">Our Team</a></li>
+											<li><a href="#">Careers</a></li>
+											<li><a href="#">Contact</a></li>
+										</ul>
+									</nav>
+									<nav class="column">
+										<h2>Help</h2>
+										<ul class="list-unstyled">
+											<li><a href="#">FAQ</a></li>
+											<li><a href="#">Our Rules</a></li>
+											<li><a href="#">Expert Handbook</a></li>
+											<li><a href="#">Trust &amp; Safety</a></li>
+										</ul>
+									</nav>
+								</div>
+								<div class="footer-logo">
+									<strong class="logo"><a href="#"><img src="images/logo2.svg" width="179" height="131" alt="Mintebi"></a></strong>
+								</div>
+							</div>
+						</div>
+					</aside>
+					<footer id="footer" class="row">
+						<div class="col-xs-12">
+							<div class="box2">
+								<div class="block1">
+									<span class="copyrights">Copyright © 2015 Mintebi APS. All rights reserved.</span>
+									<ul class="privacy-nav list-inline">
+										<li><a href="#">Terms of Use</a></li>
+										<li><a href="#">Privacy Policy</a></li>
+									</ul>
+									<address class="footer-address">Mintebi APS, Sankt Annae Plads 11, 1250 Copenhagen, Denmark</address>
+								</div>
+								<ul class="social-networks list-inline">
+									<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</footer>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/angular.min.js"></script>
+	<script type="text/javascript" src="js/ngDialog.min.js"></script>
+	<script type="text/javascript" src="js/angular.validate.js"></script>
+	<script type="text/javascript" src="js/angular.openClose.js"></script>
+	<script type="text/javascript" src="js/application.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/jcf.angular.js"></script>
+	<script>
+		jQuery('[data-toggle="dropdown"]').each(function() {
+			var item = jQuery(this),
+				parent = item.parent();
+			 
+			parent.one('mousemove', function() {
+				parent.hover(function() {
+					parent.addClass('open');
+				}, function() {
+					parent.removeClass('open');
+				}).trigger('mouseover');
+			});
+		});
+		if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+		   var msViewportStyle = document.createElement("style")
+		   msViewportStyle.appendChild(
+		  document.createTextNode(
+			"@-ms-viewport{width:auto!important}"
+		  )
+		   )
+		   document.getElementsByTagName("head")[0].appendChild(msViewportStyle)
+		 }
+	</script>
+</body>
+</html>

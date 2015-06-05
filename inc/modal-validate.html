@@ -1,0 +1,93 @@
+<div class="modal-dialog withdraw-balance">
+	<div class="modal-content">
+		<div class="modal-header">
+			<button ng-click="closeThisDialog(0)" type="button" class="close"><span aria-hidden="true"><span class="icon icon-close-2"></span></span></button>
+			<h2 class="modal-title">Withdraw Balance</h2>
+			<p>Total transfer amount: EUR 1,200.00 </p>
+		</div>
+		<div class="modal-body">
+			<form ng-controller="ValidateController" class="withdraw-form" novalidate name="tForm" ng-submit="$event.preventDefault(); sendForm();">
+				<div class="form-group">
+					<label for="name1">NAME <sup>*</sup></label>
+					<div class="form-col">
+						<input name="user" ng-model="user" required type="text" class="form-control" id="name1" placeholder="">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="address1">Adress <sup>*</sup></label>
+					<div class="form-col">
+						<input name="address" ng-model="address" required type="text" class="form-control" id="address1" placeholder="">
+					</div>
+				</div>
+				<div class="form-group others">
+					<div class="columns">
+						<label for="zip1">Zip code <sup>*</sup></label>
+						<div class="form-col">
+							<input name="number" ng-model="number" required type="number" class="form-control" id="zip1" jcf placeholder="">
+						</div>
+					</div>
+					<div class="columns">
+						<label for="city1">City <sup>*</sup></label>
+						<div class="form-col">
+							<input name="city" ng-model="city" required type="text" class="form-control" id="city1" placeholder="">
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="country1">Country <sup>*</sup></label>
+					<div class="form-col">
+						<select name="country" id="country1" ng-change="updateSelect()" ng-model="industry" validate-select required jcf='{"maxVisibleItems": 4}'>
+							<option value="" selected>CHOOSE A INDUSTRY</option>
+							<option>Accounting</option>
+							<option>Airlines/Aviation</option>
+							<option>Alternative Dispute Resolution</option>
+							<option>Alternative Medicine</option>
+							<option>Animation</option>
+							<option>Apparel &amp; Fashion</option>
+							<option>Architecture &amp; Planning</option>
+							<option>Arts and Crafts</option>
+						</select>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="iban">IBAN-number <sup>*</sup></label>
+					<div class="form-col">
+						<input name="inumber" ng-model="inumber" required type="text" class="form-control" id="iban" placeholder="">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="bic">BIC-code (SWIFT-adress) <sup>*</sup></label>
+					<div class="form-col">
+						<input name="bicnumber" ng-model="bicnumber" required type="text" class="form-control" id="bic" placeholder="">
+					</div>
+				</div>
+				<div class="form-group safty">
+					<div class="col2">
+						<label for="safty">safety code<sup>*</sup></label>
+						<div class="form-col">
+							<input name="code" ng-model="code" required type="number" class="form-control" id="safty" placeholder="" jcf>
+						</div>
+					</div>
+					<div class="txt-col">
+						<p>A Safety code has been sended to your email.</p>
+						<a class="password" href="#">Send a new password</a>
+					</div>
+				</div>
+				<div class="form-group check">
+					<label class="checkbox">
+						<input jcf type="checkbox" checked> Save details
+					</label>
+				</div>
+				<div class="form-group form-txt">
+					<p>A bank transfer will be initiated within five business days, and you should expect to receive payment at the account provided within 10-12 business days. The amount less transaction costs will be transferred to your account in euros. Transaction costs are shared between sender and receiver account. Receiver transaction costs normally amount to €2.7 for transfers to EU bank accounts, and €10-20 for non-EU bank accounts, but this depends on the pricing at your bank. For more information please see our <a href="#">Terms &amp; Conditions</a>.</p>
+				</div>
+				<div class="form-group buttons">
+					<button ng-disabled="tForm.$invalid" ng-click="openSuccessValidateModal(); closeThisDialog(0)" type="submit" class="btn btn-default">
+						<span class="txt">Confirm transfer</span> 
+						<span class="txt2">Continue</span></button>
+					<button ng-click="closeThisDialog(0)" type="submit" class="btn btn-default cancel">Cancel</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>

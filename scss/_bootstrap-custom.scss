@@ -1,0 +1,108 @@
+// custom variables and override bootstrap variables
+
+$body-bg: #eee;
+$white:#fff;
+$white2:#cfd9e0;
+$red:#df1338;
+$black:#000;
+$blue:#041a35;
+$blue2:#102e43;
+$blue3:#1e3752;
+$blue4:#006fa6;
+$blue5:#1b2e46;
+$blue6:#021e39;
+$blue7:#08203c;
+$light-blue:#597a96;
+$light-blue2:#626b78;
+$light-blue3:#525f70;
+$light-seagreen:#00e1bf;
+$light-seagreen2:#18e2c3;
+$light-seagreen3:#18e3c4;
+$light-gray:#f5f6f8;
+$light-gray2:#d9dbe0;
+$light-gray3:#c4c5c6;
+$light-gray4:#ededed;
+$light-gray5:#d4d9df;
+$light-gray6:#858f97;
+$light-gray7:#a9acb2;
+$light-gray8:#e4e4e4;
+$dark-gray:#787d89;
+$light-green:#183e4c;
+$dark-green:#417d7b;
+$dark-green2:#183e4c;
+$dark-green3:#184e58;
+$suva-gray:#888685;
+$suva-gray2:#6f7c84;
+$suva-gray3:#c7d3dc;
+$dark-brown:#a81433;
+$dark-brown2:#7d1027;
+$pink:#e22a4c;
+
+
+$text-color: #a0a3aa;
+$link-color: #001936;
+$link-hover-color: #495769;
+$body-bg: #f0ebe7;
+
+
+$font-size-base: 14px;
+$font-family-base: 'HelveticaNeueW82-Regula', Arial, Helvetica, sans-serif;
+$font-ultra-light: 'HelveticaNeueW01-UltLt', Arial, Helvetica, sans-serif;
+$font-neue-thin: 'HelveticaNeueW01-Thin', Arial, Helvetica, sans-serif;
+$font-neue-medium: 'HelveticaNeueW01-65Medi', Arial, Helvetica, sans-serif;
+$font-arial: Arial, Helvetica, sans-serif;
+$font-size-h1:45px;
+$font-size-h2:35px;
+$font-size-h3:26px;
+$font-size-h4:20px;
+$font-size-h5:18px;
+$font-size-h6:16px;
+$headings-font-family:$font-ultra-light;
+$headings-font-weight: 200;
+$headings-color:#434649;
+
+
+$icon-font-path: "../fonts/";
+
+
+$navbar-height:25px;
+$navbar-margin-bottom: 0;
+$navbar-padding-horizontal: 0;
+$navbar-padding-vertical: 0;
+$navbar-default-color:$light-blue;
+$navbar-default-bg: transparent;
+$navbar-default-border: 0;
+$navbar-default-link-color:$light-blue;
+$navbar-default-link-hover-color: $link-hover-color;
+$navbar-default-link-active-color:$light-seagreen;
+$navbar-default-link-active-bg: transparent;
+$navbar-default-toggle-hover-bg:$black;
+$navbar-default-toggle-icon-bar-bg: $white;
+$navbar-border-radius:0;
+$navbar-height:auto;
+$navbar-default-link-hover-bg:transparent;
+$navbar-default-link-active-bg:transparent;
+
+
+$input-bg: #f5f6f8;
+$input-color:#979ba3;
+$input-color-placeholder: #979ba3;
+$input-border:transparent;
+$input-border-radius: 3px;
+$input-border-focus: transparent;
+$input-height-base: 29px;
+
+
+$modal-backdrop-bg:#001936;
+$modal-backdrop-opacity:0.8;
+
+
+$grid-gutter-width:      30px;
+$screen-lg:        1212px;
+$container-lg:       1240px;
+
+
+$large-desktop: 1366px;
+$desktop: 1210px;
+$tablet: 991px;
+$mobile: 767px;

@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html ng-app="mintebiApp">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mintebi</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/all.css">
+	<link rel="stylesheet" href="css/ngDialog.css">
+	<script type="text/javascript" src="http://fast.fonts.net/jsapi/48f89ee6-4f00-484c-ad3c-df5a74d4c60d.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<div class="w1">
+			<header id="header">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="non-logedin" style="display:none;">
+								<div class="logo-holder">
+									<strong class="logo"><a href="#"><img src="images/logo.png" alt="Mintebi"></a></strong>
+								</div>
+								<nav class="navbar navbar-default">
+									<!-- Brand and toggle get grouped for better mobile display -->
+									<div class="navbar-header">
+										<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+											<span class="sr-only">Toggle navigation</span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+										</button>
+									</div>
+									<!-- Collect the nav links, forms, and other content for toggling -->
+									<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+										<ul class="nav navbar-nav">
+											<li><a href="#">Discover <span class="sr-only">(current)</span></a></li>
+											<li><a href="#">Create a Project</a></li>
+										</ul>
+										<ul class="nav navbar-nav navbar-right">
+											<li><a href="#">Sign up</a></li>
+											<li><a href="#">Login</a></li>
+										</ul>
+									</div>
+								</nav>
+							</div>
+							<div class="expert-logedin" style="display:none">
+								<div class="logo-holder">
+									<strong class="logo"><a href="#"><img src="images/logo.png" alt="Mintebi"></a></strong>
+									<div class="notifications-block">
+										<a class="btn btn-primary active" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+											<i class="fa fa-bell-o"></i><span class="count">10</span>
+										</a>
+										<div class="collapse notification-drop" id="collapseExample">
+											<div class="well">
+												<div class="title"><a href="#" class="activity active">recent activity</a> <a href="#" class="marked">marked all as read</a></div>
+												<div class="scroll-area jcf-scrollable" jcf>
+													<ul class="list-unstyled">
+														<li>
+															<a href="#">
+																<span class="icon icon-add-user"></span>YOU HAVE 5 NEW EXPERTS PITCHED
+																<time datetime="2015-01-01">34 minutes ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-flag"></span>YOUR PROJECT IS NOW IN PITCH
+																<time datetime="2015-01-01">2 days ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-trophy"></span>WELCOME TO MINTEbI
+																<time datetime="2015-01-01">1 week ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-crosshair"></span>lorem upsum sit amet
+																<time datetime="2015-01-01">2 weeks ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-add-user"></span>YOU HAVE 5 NEW EXPERTS PITCHED
+																<time datetime="2015-01-01">34 minutes ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-flag"></span>YOUR PROJECT IS NOW IN PITCH
+																<time datetime="2015-01-01">2 days ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-trophy"></span>WELCOME TO MINTEbI
+																<time datetime="2015-01-01">1 week ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-crosshair"></span>lorem upsum sit amet
+																<time datetime="2015-01-01">2 weeks ago</time>
+															</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<nav class="navbar navbar-default">
+									<!-- Brand and toggle get grouped for better mobile display -->
+									<div class="navbar-header">
+										<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+											<span class="sr-only">Toggle navigation</span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+										</button>
+									</div>
+									<!-- Collect the nav links, forms, and other content for toggling -->
+									<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+										<ul class="nav navbar-nav">
+											<li><a href="#">Market place <span class="sr-only">(current)</span></a></li>
+											<li><a href="#">Library</a></li>
+											<li><a href="#">My Mintebi</a></li>
+											<li class="dropdown">
+												<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Help</a>
+												<div class="dropdown-menu" role="menu">
+													<strong class="title">Help &amp; Resources</strong>
+													<ul class="list-unstyled">
+														<li><a href="#">FAQ</a></li>
+														<li><a href="#">Our Rules</a></li>
+														<li><a href="#">Expert handbook</a></li>
+														<li><a href="#">trust &amp; Safty</a></li>
+														<li><a href="#">Trems of use  &amp; Privacy</a></li>
+													</ul>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</nav>
+								<div class="client-login">
+									<a class="btn btn-primary">
+										<span data-picture data-alt="image description">
+											<span data-src="images/img10-large.png" data-width="33" data-height="33"></span>
+											<span data-src="images/img10-large2x.png" data-width="33" data-height="33" data-media="(-webkit-min-device-pixel-ratio:1.5), (min-resolution:1.5dppx)" ></span> <!-- retina 2x desktop -->
+											<span data-src="images/img10-medium2x.png" data-width="33" data-height="33" data-media="(max-width:1023px) and (-webkit-min-device-pixel-ratio:1.5), (max-width:1023px) and (min-resolution:144dpi)" ></span> <!-- retina 2x tablet -->
+											<span data-src="images/img10-small.png" data-width="33" data-height="33" data-media="(max-width:767px)" ></span> <!-- retina 1x mobile -->
+											<span data-src="images/img10-small2x.png" data-width="33" data-height="33" data-media="(max-width:767px) and (-webkit-min-device-pixel-ratio:1.5), (max-width:767px) and (min-resolution:144dpi)" ></span> <!-- retina 2x mobile -->
+											<!--[if (lt IE 9) & (!IEMobile)]>
+												<span data-src="images/img10-large.png"></span>
+											<![endif]-->
+											<!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+											<noscript><img src="images/img10-large.png" width="33" height="33" alt="image description" ></noscript>
+										</span>
+									</a>
+									<div class="client-drop">
+										<div class="drop-box">
+											<strong class="title">Andreas buchwalD</strong>
+											<ul class="list-unstyled">
+												<li><a href="#"><span class="icon icon-user"></span>my profile</a></li>
+												<li><a href="#"><span class="icon icon-gear"></span>account settings</a></li>
+												<li><a href="#"><span class="icon icon-power"></span>logout</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="client-logedin" style="display:block">
+								<div class="logo-holder">
+									<strong class="logo"><a href="#"><img src="images/logo.png" alt="Mintebi"></a></strong>
+									<div class="notifications-block">
+										<a class="btn btn-primary active" data-toggle="collapse" href="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
+											<i class="fa fa-bell-o"></i><span class="count">10</span>
+										</a>
+										<div class="collapse notification-drop" id="collapseExample3">
+											<div class="well">
+												<div class="title"><a href="#" class="activity active">recent activity</a> <a href="#" class="marked">marked all as read</a></div>
+												<div class="scroll-area jcf-scrollable" jcf>
+													<ul class="list-unstyled">
+														<li>
+															<a href="#">
+																<span class="icon icon-add-user"></span>YOU HAVE 5 NEW EXPERTS PITCHED
+																<time datetime="2015-01-01">34 minutes ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-flag"></span>YOUR PROJECT IS NOW IN PITCH
+																<time datetime="2015-01-01">2 days ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-trophy"></span>WELCOME TO MINTEbI
+																<time datetime="2015-01-01">1 week ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-crosshair"></span>lorem upsum sit amet
+																<time datetime="2015-01-01">2 weeks ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-add-user"></span>YOU HAVE 5 NEW EXPERTS PITCHED
+																<time datetime="2015-01-01">34 minutes ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-flag"></span>YOUR PROJECT IS NOW IN PITCH
+																<time datetime="2015-01-01">2 days ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-trophy"></span>WELCOME TO MINTEbI
+																<time datetime="2015-01-01">1 week ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-crosshair"></span>lorem upsum sit amet
+																<time datetime="2015-01-01">2 weeks ago</time>
+															</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<nav class="navbar navbar-default">
+									<!-- Brand and toggle get grouped for better mobile display -->
+									<div class="navbar-header">
+										<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-3">
+											<span class="sr-only">Toggle navigation</span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+										</button>
+									</div>
+									<!-- Collect the nav links, forms, and other content for toggling -->
+									<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-3">
+										<ul class="nav navbar-nav">
+											<li><a href="#">Create a project <span class="sr-only">(current)</span></a></li>
+											<li><a href="#">Market place</a></li>
+											<li><a href="#">Library</a></li>
+											<li><a href="#">My Mintebi</a></li>
+											<li class="dropdown">
+												<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Help</a>
+												<div class="dropdown-menu" role="menu">
+													<strong class="title">Help &amp; Resources</strong>
+													<ul class="list-unstyled">
+														<li><a href="#">FAQ</a></li>
+														<li><a href="#">Our Rules</a></li>
+														<li><a href="#">Expert handbook</a></li>
+														<li><a href="#">trust &amp; Safty</a></li>
+														<li><a href="#">Trems of use  &amp; Privacy</a></li>
+													</ul>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</nav>
+								<div class="client-login">
+									<a class="btn btn-primary">
+										<span data-picture data-alt="image description">
+											<span data-src="images/img10-large.png" data-width="33" data-height="33"></span>
+											<span data-src="images/img10-large2x.png" data-width="33" data-height="33" data-media="(-webkit-min-device-pixel-ratio:1.5), (min-resolution:1.5dppx)" ></span> <!-- retina 2x desktop -->
+											<span data-src="images/img10-medium2x.png" data-width="33" data-height="33" data-media="(max-width:1023px) and (-webkit-min-device-pixel-ratio:1.5), (max-width:1023px) and (min-resolution:144dpi)" ></span> <!-- retina 2x tablet -->
+											<span data-src="images/img10-small.png" data-width="33" data-height="33" data-media="(max-width:767px)" ></span> <!-- retina 1x mobile -->
+											<span data-src="images/img10-small2x.png" data-width="33" data-height="33" data-media="(max-width:767px) and (-webkit-min-device-pixel-ratio:1.5), (max-width:767px) and (min-resolution:144dpi)" ></span> <!-- retina 2x mobile -->
+											<!--[if (lt IE 9) & (!IEMobile)]>
+												<span data-src="images/img10-large.png"></span>
+											<![endif]-->
+											<!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+											<noscript><img src="images/img10-large.png" width="33" height="33" alt="image description" ></noscript>
+										</span>
+									</a>
+									<div class="client-drop">
+										<div class="drop-box">
+											<strong class="title">Andreas buchwalD</strong>
+											<ul class="list-unstyled">
+												<li><a href="#"><span class="icon icon-user"></span>my profile</a></li>
+												<li><a href="#"><span class="icon icon-gear"></span>account settings</a></li>
+												<li><a href="#"><span class="icon icon-power"></span>logout</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<main id="main" role="main">
+				<section class="container creat-project">
+					<header class="row project-heading">
+						<div class="col-xs-12">
+							<div class="block">
+								<h1>Start building your project!</h1>
+								<p>Tell us what you need, and experts will be ready</p>
+							</div>
+						</div>
+					</header>
+					<div class="row twocolumns">
+						<div class="col-xs-12">
+							<div class="project-towcols">
+								<form action="#" class="project-form">
+									<div class="form-group select">
+										<label for="industry">Industry focus</label>
+										<div class="form-col">
+											<select id="industry" jcf='{"maxVisibleItems": 4}'>
+												<option>CHOOSE A INDUSTRY</option>
+												<option>Accounting</option>
+												<option>Airlines/Aviation</option>
+												<option>Alternative Dispute Resolution</option>
+												<option>Alternative Medicine</option>
+												<option>Animation</option>
+												<option>Apparel &amp; Fashion</option>
+												<option>Architecture &amp; Planning</option>
+												<option>Arts and Crafts</option>
+											</select>
+										</div>
+									</div>
+									<div class="form-group select add">
+										<label for="country">Geographical<br> Focus</label>
+										<div class="form-col">
+											<select id="country" jcf='{"maxVisibleItems": 4}'>
+												<option>CHOOSE A COUNTRY</option>
+												<option>Albania</option>
+												<option>Algeria</option>
+												<option>Andorra</option>
+												<option>Angola</option>
+												<option>Antigua and Barbuda</option>
+												<option>Argentina</option>
+												<option>Armenia</option>
+												<option>Aruba</option>
+												<option>Australia</option>
+												<option>Austria</option>
+											</select>
+										</div>
+									</div>
+									<div class="form-group">
+										<span class="form-label">Choose a <br>research <br>product</span>
+										<div class="form-col">
+											<div class="checkbox-holder">
+												<label class="checkbox">
+													<input type="checkbox" jcf> <span class="txt">SWOT <span class="txt2">(min. EUR 300-,)</span></span>
+												</label>
+												<label class="checkbox">
+													<input type="checkbox" jcf> <span class="txt">Market Sizing &amp; Growth <span class="txt2">(min EUR 400-,)</span></span>
+												</label>
+												<label class="checkbox">
+													<input type="checkbox" jcf> <span class="txt">Performance Assessment <span class="txt2">(min. EUR 200-,)</span></span>
+												</label>
+												<label class="checkbox">
+													<input type="checkbox" jcf> <span class="txt">Competitive Landscape <span class="txt2">(min EUR 300-,)</span></span>
+												</label>
+											</div>
+										</div>
+									</div>
+									<div class="form-group">
+										<span class="form-label">Choose a<br> Report</span>
+										<div class="form-col">
+											<div class="form-row assesment">
+												<input type="text" class="form-control" placeholder="PERFORMANCE ASSESMENT">
+												<a href="#" class="btn-close">close</a>
+											</div>
+											<div class="form-row polygon">
+												<span class="polygon-txt">Best in <br>class</span>
+												<span class="polygon-txt add">Worst in <br>class</span>
+												<div class="img-box">
+													<span data-picture data-alt="image description">
+														<span data-src="images/img12-large.png" data-width="195" data-height="183"></span>
+														<span data-src="images/img12-large2x.png"  data-width="195" data-height="183" data-media="(-webkit-min-device-pixel-ratio:1.5), (min-resolution:1.5dppx)" ></span> <!-- retina 2x desktop -->
+														<span data-src="images/img12-medium2x.png"  data-width="195" data-height="183" data-media="(max-width:1023px) and (-webkit-min-device-pixel-ratio:1.5), (max-width:1023px) and (min-resolution:144dpi)" ></span> <!-- retina 2x tablet -->
+														<span data-src="images/img12-small.png" data-width="100" data-height="200" data-media="(max-width:767px)" ></span> <!-- retina 1x mobile -->
+														<span data-src="images/img12-small2x.png" data-width="100" data-height="200" data-media="(max-width:767px) and (-webkit-min-device-pixel-ratio:1.5), (max-width:767px) and (min-resolution:144dpi)" ></span> <!-- retina 2x mobile -->
+														<!--[if (lt IE 9) & (!IEMobile)]>
+															<span data-src="images/img12-large.png"></span>
+														<![endif]-->
+														<!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+														<noscript><img src="images/img12-large.png" width="195" height="183" alt="image description" ></noscript>
+													</span>
+												</div>
+											</div>
+											<div class="form-row">
+												<input type="text" class="form-control" placeholder="Define the 1st Parameter">
+											</div>
+											<div class="form-row">
+												<input type="text" class="form-control" placeholder="Define the 2nd Parameter">
+											</div>
+											<div class="form-row">
+												<input type="text" class="form-control" placeholder="Define the 3rd Parameter">
+											</div>
+											<div class="form-row">
+												<input type="text" class="form-control" placeholder="Define the 4th Parameter">
+											</div>
+											<div class="form-row">
+												<input type="text" class="form-control" placeholder="Define the 5th Parameter">
+											</div>
+											<div class="form-row report">
+												<h2>The Report will include:</h2>
+												<ul class="report-nav list-unstyled">
+													<li><span class="icon icon-check-mark"></span>Peer group constituents</li>
+													<li><span class="icon icon-check-mark"></span>Performance benchmarking</li>
+													<li><span class="icon icon-check-mark"></span>Score elaboration</li>
+												</ul>
+												<a href="#" class="report-example">Report Example</a>
+											</div>
+										</div>
+									</div>
+									<div class="form-group">
+										<span class="form-label">Project<br> duration</span>
+										<div class="form-col">
+											<div class="form-row">
+												<div class="radio-buttons">
+													<label class="project-radio">
+														<input type="radio" jcf name="radio" id="radio1" value="option1" checked>
+														24 HOURS + EUR 50,-
+													</label>
+												</div>
+											</div>
+											<div class="form-row">
+												<div class="radio-buttons">
+													<label class="project-radio">
+														<input type="radio" jcf name="radio" id="radio2" value="option2">
+														3 DAYS + EUR 00,-
+													</label>
+												</div>
+											</div>
+											<div class="form-row">
+												<div class="radio-buttons">
+													<label class="project-radio">
+														<input type="radio" jcf name="radio" id="radio3" value="option3">
+														5 DAYS + EUR 00,-
+													</label>
+												</div>
+											</div>
+											<div class="form-row">
+												<div class="radio-buttons">
+													<label class="project-radio">
+														<input type="radio" jcf name="radio" id="radio4" value="option3" checked>
+														7 DAYS + EUR 00,-
+													</label>
+												</div>
+											</div>
+											<div class="form-row txt-box">
+												<p>We recommend setting the project duration as long as possible, as to maximize the number of qualified pitches. Once the project has been posted, it is not possible to extend its duration. Learn more about creating a project at <a href="#">Help &amp; Ressources.</a></p>
+												<span class="error-txt">Pitch deadline is allways 48 hours before deadline for delivery</span>
+											</div>
+										</div>
+									</div>
+									<div class="form-group">
+										<span class="form-label">Exclusivity</span>
+										<div class="form-col">
+											<div class="form-row">
+												<div class="radio-buttons">
+													<label class="project-radio">
+														<input type="radio" jcf name="radio1" id="radio5" value="option5" checked>
+														Exclusive - € 45.00
+													</label>
+												</div>
+											</div>
+											<div class="form-row">
+												<div class="radio-buttons">
+													<label class="project-radio">
+														<input type="radio" jcf name="radio1" id="radio6" value="option5" checked>
+														Non Exclusive - € 0.00
+													</label>
+												</div>
+											</div>
+											<div class="form-row txt-box">
+												<p>Reports from exclusive projects will not be added to the report library, and the delivered report will be for your eyes only. Non exclusive reports are added to the report library 3 weeks after your project deadline, and will be available for reselling at a discount.</p>
+											</div>
+										</div>
+									</div>
+									<div class="form-group">
+										<span class="form-label">Budget</span>
+										<div class="form-col">
+											<div class="form-row budget">
+												<div class="progress-frame"><span class="progress-bar" style="width:41%"><span class="num">€ 250.00</span></span></div>
+											</div>
+											<div class="form-row txt-box">
+												<p>Mintebi will add a transaction fee of +2% to the budget amount and reserve the full amount on your credit card when an expert pitch is accepted. If a report is not delivered before the deadline, no money will be charged from your account. <a class="read" href="#">Read about our fee structure</a></p>
+												
+											</div>
+										</div>
+									</div>
+									<div class="form-group">
+										<span class="form-label">Project <br>title</span>
+										<div class="form-col">
+											<div class="form-row">
+												<input type="text" class="form-control" placeholder="(MAX 95 CHARACTERS)">
+											</div>
+											<div class="form-row txt-box">
+												<p>Your project title should be specific and memorable, describing the project subject in one sentence.</p>
+												<p>E.g. “Top-5 Microsoft ERP-partners in the UK”.</p>
+											</div>
+										</div>
+									</div>
+									<div class="form-group">
+										<span class="form-label">Short <br>Description</span>
+										<div class="form-col">
+											<div class="form-row">
+												<textarea class="form-control textarea1" cols="30" rows="10" placeholder="(MAX 500 CHARACTERS)"></textarea>
+											</div>
+											<div class="form-row txt-box">
+												<p>If you had to describe in one tweet what you want from this project, what should it be? Be as specific as possible.</p>
+											</div>
+										</div>
+									</div>
+									<div class="form-group">
+										<span class="form-label">Long <br>Description</span>
+										<div class="form-col">
+											<div class="form-row">
+												<textarea class="form-control textarea2" cols="30" rows="10" placeholder="(MAX 1000 CHARACTERS)"></textarea>
+											</div>
+											<div class="form-row txt-box">
+												<p>This part is only disclosed to the experts you choose to work with, so feel free to be a bit more specific. If you are looking for something special, let them know. As alway, the better the brief, the better the report.t </p>
+											</div>
+										</div>
+									</div>
+									<div ng-controller="ModalCtrl">
+										<a href="" ng-click="openModalDelete()" class="delete-project"><span class="icon icon-close-2"></span>Delete Project</a>
+									</div>
+								</form>
+								<aside id="sidebar">
+									<div class="widget project-widget">
+										<h2><span class="icon icon-idea"></span><span class="txt">How to</span> Make a good project</h2>
+									</div>
+									<section class="widget info-widget">
+										<div class="info-col">
+											<h2>Competetive Landscape</h2>
+											<strong class="title">What are some interesting talks about oil and gas industry online?</strong>
+											<p>Sed posuere consectetur est at lobortis. Donee sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nee elit...</p>
+											<div class="client-info inactive">
+												<a class="alignleft" href="#">
+													<span class="icon icon-add-user"></span>
+												</a>
+												<span class="txt">No Expert Accepted</span>
+											</div>
+											<ul class="add-nav list-inline">
+												<li><a href="#"><span class="icon icon-tag"></span> Marketing &amp; Advertizing</a></li>
+												<li><a href="#"><span class="icon icon-map-marker"></span> The United Kingdom</a></li>
+											</ul>
+											<ul class="buttons-nav add list-inline">
+												<li><a href="#" class="ico"><span class="icon icon-clock"></span></a> <a class="btn btn-default" href="#">7d left</a></li>
+												<li><a href="#" class="ico trophy"><span class="icon icon-trophy"></span></a> <a class="btn btn-default" href="#">€ 900</a></li>
+											</ul>
+											<span class="over"><i class="icon-error"></i></span>
+										</div>
+									</section>
+									<div class="widget buttons-widget">
+										<a href="poke-expert.html" class="btn btn-default">Continue</a>
+										<a href="#" class="btn btn-default preview">Preview</a>
+										<span class="error-txt">These field is required.</span>
+									</div>
+								</aside>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+		</div>
+		<div class="footer-block">
+			<div class="footer-holder">
+				<div class="container-fluid">
+					<aside class="row footer-aside">
+						<div class="col-xs-12">
+							<div class="box">
+								<div class="block">
+									<nav class="column">
+										<h2>About us</h2>
+										<ul class="list-unstyled">
+											<li><a href="#">What is mintebi?</a></li>
+											<li><a href="#">Our Team</a></li>
+											<li><a href="#">Careers</a></li>
+											<li><a href="#">Contact</a></li>
+										</ul>
+									</nav>
+									<nav class="column">
+										<h2>Help</h2>
+										<ul class="list-unstyled">
+											<li><a href="#">FAQ</a></li>
+											<li><a href="#">Our Rules</a></li>
+											<li><a href="#">Expert Handbook</a></li>
+											<li><a href="#">Trust &amp; Safety</a></li>
+										</ul>
+									</nav>
+								</div>
+								<div class="footer-logo">
+									<strong class="logo"><a href="#"><img src="images/logo2.svg" width="179" height="131" alt="Mintebi"></a></strong>
+								</div>
+							</div>
+						</div>
+					</aside>
+					<footer id="footer" class="row">
+						<div class="col-xs-12">
+							<div class="box2">
+								<div class="block1">
+									<span class="copyrights">Copyright © 2015 Mintebi APS. All rights reserved.</span>
+									<ul class="privacy-nav list-inline">
+										<li><a href="#">Terms of Use</a></li>
+										<li><a href="#">Privacy Policy</a></li>
+									</ul>
+									<address class="footer-address">Mintebi APS, Sankt Annae Plads 11, 1250 Copenhagen, Denmark</address>
+								</div>
+								<ul class="social-networks list-inline">
+									<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</footer>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade delete">
+			<div class="modal-dialog delete-projects">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><span class="icon icon-close-2"></span></span></button>
+						<h2 class="modal-title">Are you sure you want to clear your projcet</h2>
+					</div>
+					<div class="modal-body">
+						<p>This action cannot be undone and will<br> immediately cleared from the system.</p>
+					</div>
+					<div class="modal-footer">
+						<a href="#" class="btn btn-default" data-dismiss="modal">Clear</a>
+						<a href="#" class="btn btn-default cancel">Cancel</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/angular.min.js"></script>
+	<script type="text/javascript" src="js/ngDialog.min.js"></script>
+	<script type="text/javascript" src="js/angular.validate.js"></script>
+	<script type="text/javascript" src="js/angular.openClose.js"></script>
+	<script type="text/javascript" src="js/application.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/jcf.angular.js"></script>
+	<script>
+		jQuery('[data-toggle="dropdown"]').each(function() {
+			var item = jQuery(this),
+				parent = item.parent();
+			 
+			parent.one('mousemove', function() {
+				parent.hover(function() {
+					parent.addClass('open');
+				}, function() {
+					parent.removeClass('open');
+				}).trigger('mouseover');
+			});
+		});
+		if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+		   var msViewportStyle = document.createElement("style")
+		   msViewportStyle.appendChild(
+		  document.createTextNode(
+			"@-ms-viewport{width:auto!important}"
+		  )
+		   )
+		   document.getElementsByTagName("head")[0].appendChild(msViewportStyle)
+		 }
+	</script>
+</body>
+</html>
