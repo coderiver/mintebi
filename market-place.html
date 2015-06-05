@@ -305,12 +305,12 @@
 							<div class="col-xs-12" accordion-popup>
 								<div class="market-block">
 									<div class="advance-natural" style="display:block">
-										<div class="advance-holder">
+										<div class="advance-holder" ng-controller="ModalCtrl">
 											<div id="default" class="market-search advance" style="display:block">
 												<div class="advance-search advance">
-													<ul class="advance-nav list-inline" ng-controller="ModalCtrl">
-														<li><a href="" ng-click="openIndustriesModal()">All industries <i class="fa fa-angle-down"></i></a></li>
-														<li><a href="" ng-click="openSortModal()">Newest <i class="fa fa-angle-down"></i></a></li>
+													<ul class="advance-nav list-inline">
+														<li><a href="" ng-click="openIndustriesModal()">All industries <span class="icon icon-arrowdown"></span></a></li>
+														<li><a href="" ng-click="openSortModal()">Newest <span class="icon icon-arrowdown"></span></a></li>
 													</ul>
 												</div>
 											</div>
@@ -343,11 +343,11 @@
 											<div id="advanced" class="market-search advance">
 												<div class="advance-search advance">
 													<ul class="advance-nav advance list-inline">
-														<li><a href="#">Information Technology... <i class="fa fa-angle-down"></i></a></li>
-														<li><a href="#">Highest price <i class="fa fa-angle-down"></i></a></li>
-														<li><a href="#">United states of America <i class="fa fa-angle-down"></i></a></li>
-														<li><a href="#">Competetive Landscape <i class="fa fa-angle-down"></i></a></li>
-														<li><a href="#"><span class="icon icon-lock"></span>Exclusive <i class="fa fa-angle-down"></i></a></li>
+														<li><a href="#">Information Technology... <span class="icon icon-arrowdown"></span></a></li>
+														<li><a href="#">Highest price <span class="icon icon-arrowdown"></span></a></li>
+														<li><a href="" ng-click="openCountryModal()">United states of America <span class="icon icon-arrowdown"></span></a></li>
+														<li><a href="" ng-click="openSearchModal()">Competetive Landscape <span class="icon icon-arrowdown"></span></a></li>
+														<li><a href="" ng-click="openCategoriesModal()"><span class="icon icon-lock"></span>Exclusive <span class="icon icon-arrowdown"></span></a></li>
 													</ul>
 												</div>
 											</div>
@@ -382,181 +382,199 @@
 									<h2>Competetive Landscape</h2>
 									<strong class="title">What are some interesting talks about oil and gas industry online?</strong>
 									<p>Sed posuere consectetur est at lobortis. Donee sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nee elit...</p>
-									<div class="client-info inactive">
-										<a href="#" class="alignleft">
-											<span class="icon icon-add-user"></span>
-										</a>
-										<span class="tooltip2"><span class="tool-txt">This expert has not delivered any report yet.</span></span>
-										<span class="txt">24 Expert Accepted</span>
-									</div>
-									<ul class="add-nav list-inline">
-										<li><a href="#"><span class="icon icon-tag"></span> Marketing &amp; Advertizing</a></li>
-										<li><a href="#"><span class="icon icon-map-marker"></span> The United Kingdom</a></li>
-									</ul>
-									<ul class="buttons-nav add list-inline">
-										<li><a class="ico" href="#"><span class="icon icon-clock"></span></a> <a href="#" class="btn btn-default">Pitched</a></li>
-										<li><a class="ico trophy" href="#"><span class="icon icon-trophy"></span></a> <a href="#" class="btn btn-default">&euro; 900</a></li>
-									</ul>
+									<footer class="info-footer">
+										<div class="client-info inactive">
+											<a href="#" class="alignleft">
+												<span class="icon icon-add-user"></span>
+											</a>
+											<span class="tooltip2"><span class="tool-txt">This expert has not delivered any report yet.</span></span>
+											<span class="txt">24 Expert Accepted</span>
+										</div>
+										<ul class="add-nav list-inline">
+											<li><a href="#"><span class="icon icon-tag"></span> Marketing &amp; Advertizing</a></li>
+											<li><a href="#"><span class="icon icon-map-marker"></span> The United Kingdom</a></li>
+										</ul>
+										<ul class="buttons-nav add list-inline">
+											<li><a class="ico" href="#"><span class="icon icon-clock"></span></a> <a href="#" class="btn btn-default">Pitched</a></li>
+											<li><a class="ico trophy" href="#"><span class="icon icon-trophy"></span></a> <a href="#" class="btn btn-default">&euro; 900</a></li>
+										</ul>
+									</footer>
 									<span class="over"><span class="icon icon-error"></span></span>
 								</article>
 								<article class="info-col">
 									<h2>Competetive Landscape</h2>
 									<strong class="title">How can Big Data bring change in the Health Care Industry?</strong>
 									<p>Sed posuere consectetur est at lobortis. Donee sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nee elit...</p>
-									<div class="client-info inactive">
-										<a href="#" class="alignleft">
-											<span class="icon icon-add-user"></span>
-										</a>
-										<span class="txt">24 Expert Accepted</span>
-									</div>
-									<ul class="add-nav list-inline">
-										<li><a href="#"><span class="icon icon-tag"></span> Marketing &amp; Advertizing</a></li>
-										<li><a href="#"><span class="icon icon-map-marker"></span> The United Kingdom</a></li>
-									</ul>
-									<ul class="buttons-nav add list-inline">
-										<li><a class="ico" href="#"><span class="icon icon-clock"></span></a> <a href="#" class="btn btn-default active">24h left</a></li>
-										<li><span class="tooltip2"><span class="tool-txt">Report delivered</span></span><a class="ico trophy" href="#"><span class="icon icon-trophy"></span></a> <a href="#" class="btn btn-default">&euro; 900</a></li>
-									</ul>
+									<footer class="info-footer">
+										<div class="client-info inactive">
+											<a href="#" class="alignleft">
+												<span class="icon icon-add-user"></span>
+											</a>
+											<span class="txt">24 Expert Accepted</span>
+										</div>
+										<ul class="add-nav list-inline">
+											<li><a href="#"><span class="icon icon-tag"></span> Marketing &amp; Advertizing</a></li>
+											<li><a href="#"><span class="icon icon-map-marker"></span> The United Kingdom</a></li>
+										</ul>
+										<ul class="buttons-nav add list-inline">
+											<li><a class="ico" href="#"><span class="icon icon-clock"></span></a> <a href="#" class="btn btn-default active">24h left</a></li>
+											<li><span class="tooltip2"><span class="tool-txt">Report delivered</span></span><a class="ico trophy" href="#"><span class="icon icon-trophy"></span></a> <a href="#" class="btn btn-default">&euro; 900</a></li>
+										</ul>
+									</footer>
 									<span class="over"><span class="icon icon-error"></span></span>
 								</article>
 								<article class="info-col">
 									<h2>Competetive Landscape <span class="tooltip2"><span class="tool-txt">This project is exclusive and will not be part of the libary.</span></span></h2>
 									<strong class="title">How can Big Data bring change in the Health Care Industry?</strong>
 									<p>Sed posuere consectetur est at lobortis. Donee sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nee elit...</p>
-									<div class="client-info inactive">
-										<a href="#" class="alignleft">
-											<span class="icon icon-add-user"></span>
-										</a>
-										<span class="txt">24 Expert Accepted</span>
-									</div>
-									<ul class="add-nav list-inline">
-										<li><a href="#"><span class="icon icon-tag"></span> Marketing &amp; Advertizing</a></li>
-										<li><a href="#"><span class="icon icon-map-marker"></span> The United Kingdom</a></li>
-									</ul>
-									<ul class="buttons-nav add list-inline">
-										<li><a class="ico" href="#"><span class="icon icon-clock"></span></a> <a href="#" class="btn btn-default active">24h left</a></li>
-										<li><a class="ico trophy" href="#"><span class="icon icon-trophy"></span></a> <a href="#" class="btn btn-default">&euro; 900</a></li>
-									</ul>
+									<footer class="info-footer">
+										<div class="client-info inactive">
+											<a href="#" class="alignleft">
+												<span class="icon icon-add-user"></span>
+											</a>
+											<span class="txt">24 Expert Accepted</span>
+										</div>
+										<ul class="add-nav list-inline">
+											<li><a href="#"><span class="icon icon-tag"></span> Marketing &amp; Advertizing</a></li>
+											<li><a href="#"><span class="icon icon-map-marker"></span> The United Kingdom</a></li>
+										</ul>
+										<ul class="buttons-nav add list-inline">
+											<li><a class="ico" href="#"><span class="icon icon-clock"></span></a> <a href="#" class="btn btn-default active">24h left</a></li>
+											<li><a class="ico trophy" href="#"><span class="icon icon-trophy"></span></a> <a href="#" class="btn btn-default">&euro; 900</a></li>
+										</ul>
+									</footer>
 									<span class="over"><span class="icon icon-error"></span></span>
 								</article>
 								<article class="info-col">
 									<h2>Competetive Landscape</h2>
 									<strong class="title">How can Big Data bring change in the Health Care Industry?</strong>
 									<p>Sed posuere consectetur est at lobortis. Donee sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nee elit...</p>
-									<div class="client-info inactive">
-										<a href="#" class="alignleft">
-											<span class="icon icon-add-user"></span>
-										</a>
-										<span class="txt">10 Expert Accepted</span>
-									</div>
-									<ul class="add-nav list-inline">
-										<li><a href="#"><span class="icon icon-tag"></span> Marketing &amp; Advertizing</a></li>
-										<li><a href="#"><span class="icon icon-map-marker"></span> The United Kingdom</a></li>
-									</ul>
-									<ul class="buttons-nav add list-inline">
-										<li><a class="ico" href="#"><span class="icon icon-clock"></span></a> <a href="#" class="btn btn-default">24h left</a></li>
-										<li><a class="ico trophy" href="#"><span class="icon icon-trophy"></span></a> <a href="#" class="btn btn-default">&euro; 900</a></li>
-									</ul>
+									<footer class="info-footer">
+										<div class="client-info inactive">
+											<a href="#" class="alignleft">
+												<span class="icon icon-add-user"></span>
+											</a>
+											<span class="txt">10 Expert Accepted</span>
+										</div>
+										<ul class="add-nav list-inline">
+											<li><a href="#"><span class="icon icon-tag"></span> Marketing &amp; Advertizing</a></li>
+											<li><a href="#"><span class="icon icon-map-marker"></span> The United Kingdom</a></li>
+										</ul>
+										<ul class="buttons-nav add list-inline">
+											<li><a class="ico" href="#"><span class="icon icon-clock"></span></a> <a href="#" class="btn btn-default">24h left</a></li>
+											<li><a class="ico trophy" href="#"><span class="icon icon-trophy"></span></a> <a href="#" class="btn btn-default">&euro; 900</a></li>
+										</ul>
+									</footer>
 									<span class="over"><span class="icon icon-error"></span></span>
 								</article>
 								<article class="info-col">
 									<h2>Competetive Landscape</h2>
 									<strong class="title">How can Big Data bring change in the Health Care Industry?</strong>
 									<p>Sed posuere consectetur est at lobortis. Donee sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nee elit...</p>
-									<div class="client-info inactive">
-										<a href="#" class="alignleft">
-											<span class="icon icon-add-user"></span>
-										</a>
-										<span class="txt">10 Expert Accepted</span>
-									</div>
-									<ul class="add-nav list-inline">
-										<li><a href="#"><span class="icon icon-tag"></span> Marketing &amp; Advertizing</a></li>
-										<li><a href="#"><span class="icon icon-map-marker"></span> The United Kingdom</a></li>
-									</ul>
-									<ul class="buttons-nav add list-inline">
-										<li><a class="ico" href="#"><span class="icon icon-clock"></span></a> <a href="#" class="btn btn-default">24h left</a></li>
-										<li><a class="ico trophy" href="#"><span class="icon icon-trophy"></span></a> <a href="#" class="btn btn-default">&euro; 900</a></li>
-									</ul>
+									<footer class="info-footer">
+										<div class="client-info inactive">
+											<a href="#" class="alignleft">
+												<span class="icon icon-add-user"></span>
+											</a>
+											<span class="txt">10 Expert Accepted</span>
+										</div>
+										<ul class="add-nav list-inline">
+											<li><a href="#"><span class="icon icon-tag"></span> Marketing &amp; Advertizing</a></li>
+											<li><a href="#"><span class="icon icon-map-marker"></span> The United Kingdom</a></li>
+										</ul>
+										<ul class="buttons-nav add list-inline">
+											<li><a class="ico" href="#"><span class="icon icon-clock"></span></a> <a href="#" class="btn btn-default">24h left</a></li>
+											<li><a class="ico trophy" href="#"><span class="icon icon-trophy"></span></a> <a href="#" class="btn btn-default">&euro; 900</a></li>
+										</ul>
+									</footer>
 									<span class="over"><span class="icon icon-error"></span></span>
 								</article>
 								<article class="info-col">
 									<h2>Competetive Landscape</h2>
 									<strong class="title">How can Big Data bring change in the Health Care Industry?</strong>
 									<p>Sed posuere consectetur est at lobortis. Donee sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nee elit...</p>
-									<div class="client-info inactive">
-										<a href="#" class="alignleft">
-											<span class="icon icon-add-user"></span>
-										</a>
-										<span class="txt">No Expert Accepted</span>
-									</div>
-									<ul class="add-nav list-inline">
-										<li><a href="#"><span class="icon icon-tag"></span> Marketing &amp; Advertizing</a></li>
-										<li><a href="#"><span class="icon icon-map-marker"></span> The United Kingdom</a></li>
-									</ul>
-									<ul class="buttons-nav add list-inline">
-										<li><a class="ico" href="#"><span class="icon icon-clock"></span></a> <a href="#" class="btn btn-default">7d left</a></li>
-										<li><a class="ico trophy" href="#"><span class="icon icon-trophy"></span></a> <a href="#" class="btn btn-default">&euro; 900</a></li>
-									</ul>
+									<footer class="info-footer">
+										<div class="client-info inactive">
+											<a href="#" class="alignleft">
+												<span class="icon icon-add-user"></span>
+											</a>
+											<span class="txt">No Expert Accepted</span>
+										</div>
+										<ul class="add-nav list-inline">
+											<li><a href="#"><span class="icon icon-tag"></span> Marketing &amp; Advertizing</a></li>
+											<li><a href="#"><span class="icon icon-map-marker"></span> The United Kingdom</a></li>
+										</ul>
+										<ul class="buttons-nav add list-inline">
+											<li><a class="ico" href="#"><span class="icon icon-clock"></span></a> <a href="#" class="btn btn-default">7d left</a></li>
+											<li><a class="ico trophy" href="#"><span class="icon icon-trophy"></span></a> <a href="#" class="btn btn-default">&euro; 900</a></li>
+										</ul>
+									</footer>
 									<span class="over"><span class="icon icon-error"></span></span>
 								</article>
 								<article class="info-col">
 									<h2>Competetive Landscape</h2>
 									<strong class="title">How can Big Data bring change in the Health Care Industry?</strong>
 									<p>Sed posuere consectetur est at lobortis. Donee sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nee elit...</p>
-									<div class="client-info inactive">
-										<a href="#" class="alignleft">
-											<span class="icon icon-add-user"></span>
-										</a>
-										<span class="txt">No Expert Accepted</span>
-									</div>
-									<ul class="add-nav list-inline">
-										<li><a href="#"><span class="icon icon-tag"></span> Marketing &amp; Advertizing</a></li>
-										<li><a href="#"><span class="icon icon-map-marker"></span> The United Kingdom</a></li>
-									</ul>
-									<ul class="buttons-nav add list-inline">
-										<li><a class="ico" href="#"><span class="icon icon-clock"></span></a> <a href="#" class="btn btn-default">7d left</a></li>
-										<li><a class="ico trophy" href="#"><span class="icon icon-trophy"></span></a> <a href="#" class="btn btn-default">&euro; 900</a></li>
-									</ul>
+									<footer class="info-footer">
+										<div class="client-info inactive">
+											<a href="#" class="alignleft">
+												<span class="icon icon-add-user"></span>
+											</a>
+											<span class="txt">No Expert Accepted</span>
+										</div>
+										<ul class="add-nav list-inline">
+											<li><a href="#"><span class="icon icon-tag"></span> Marketing &amp; Advertizing</a></li>
+											<li><a href="#"><span class="icon icon-map-marker"></span> The United Kingdom</a></li>
+										</ul>
+										<ul class="buttons-nav add list-inline">
+											<li><a class="ico" href="#"><span class="icon icon-clock"></span></a> <a href="#" class="btn btn-default">7d left</a></li>
+											<li><a class="ico trophy" href="#"><span class="icon icon-trophy"></span></a> <a href="#" class="btn btn-default">&euro; 900</a></li>
+										</ul>
+									</footer>
 									<span class="over"><span class="icon icon-error"></span></span>
 								</article>
 								<article class="info-col">
 									<h2>Competetive Landscape</h2>
 									<strong class="title">How can Big Data bring change in the Health Care Industry?</strong>
 									<p>Sed posuere consectetur est at lobortis. Donee sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nee elit...</p>
-									<div class="client-info inactive">
-										<a href="#" class="alignleft">
-											<span class="icon icon-add-user"></span>
-										</a>
-										<span class="txt">No Expert Accepted</span>
-									</div>
-									<ul class="add-nav list-inline">
-										<li><a href="#"><span class="icon icon-tag"></span> Marketing &amp; Advertizing</a></li>
-										<li><a href="#"><span class="icon icon-map-marker"></span> The United Kingdom</a></li>
-									</ul>
-									<ul class="buttons-nav add list-inline">
-										<li><a class="ico" href="#"><span class="icon icon-clock"></span></a> <a href="#" class="btn btn-default">7d left</a></li>
-										<li><a class="ico trophy" href="#"><span class="icon icon-trophy"></span></a> <a href="#" class="btn btn-default">&euro; 900</a></li>
-									</ul>
+									<footer class="info-footer">
+										<div class="client-info inactive">
+											<a href="#" class="alignleft">
+												<span class="icon icon-add-user"></span>
+											</a>
+											<span class="txt">No Expert Accepted</span>
+										</div>
+										<ul class="add-nav list-inline">
+											<li><a href="#"><span class="icon icon-tag"></span> Marketing &amp; Advertizing</a></li>
+											<li><a href="#"><span class="icon icon-map-marker"></span> The United Kingdom</a></li>
+										</ul>
+										<ul class="buttons-nav add list-inline">
+											<li><a class="ico" href="#"><span class="icon icon-clock"></span></a> <a href="#" class="btn btn-default">7d left</a></li>
+											<li><a class="ico trophy" href="#"><span class="icon icon-trophy"></span></a> <a href="#" class="btn btn-default">&euro; 900</a></li>
+										</ul>
+									</footer>
 									<span class="over"><span class="icon icon-error"></span></span>
 								</article>
 								<article class="info-col">
 									<h2>Competetive Landscape</h2>
 									<strong class="title">How can Big Data bring change in the Health Care Industry?</strong>
 									<p>Sed posuere consectetur est at lobortis. Donee sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nee elit...</p>
-									<div class="client-info inactive">
-										<a href="#" class="alignleft">
-											<span class="icon icon-add-user"></span>
-										</a>
-										<span class="txt">No Expert Accepted</span>
-									</div>
-									<ul class="add-nav list-inline">
-										<li><a href="#"><span class="icon icon-tag"></span> Marketing &amp; Advertizing</a></li>
-										<li><a href="#"><span class="icon icon-map-marker"></span> The United Kingdom</a></li>
-									</ul>
-									<ul class="buttons-nav add list-inline">
-										<li><a class="ico" href="#"><span class="icon icon-clock"></span></a> <a href="#" class="btn btn-default">7d left</a></li>
-										<li><a class="ico trophy" href="#"><span class="icon icon-trophy"></span></a> <a href="#" class="btn btn-default">&euro; 900</a></li>
-									</ul>
+									<footer class="info-footer">
+										<div class="client-info inactive">
+											<a href="#" class="alignleft">
+												<span class="icon icon-add-user"></span>
+											</a>
+											<span class="txt">No Expert Accepted</span>
+										</div>
+										<ul class="add-nav list-inline">
+											<li><a href="#"><span class="icon icon-tag"></span> Marketing &amp; Advertizing</a></li>
+											<li><a href="#"><span class="icon icon-map-marker"></span> The United Kingdom</a></li>
+										</ul>
+										<ul class="buttons-nav add list-inline">
+											<li><a class="ico" href="#"><span class="icon icon-clock"></span></a> <a href="#" class="btn btn-default">7d left</a></li>
+											<li><a class="ico trophy" href="#"><span class="icon icon-trophy"></span></a> <a href="#" class="btn btn-default">&euro; 900</a></li>
+										</ul>
+									</footer>
 									<span class="over"><span class="icon icon-error"></span></span>
 								</article>
 							</div>

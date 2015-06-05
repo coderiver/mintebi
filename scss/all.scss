@@ -70,7 +70,7 @@ html{
 }
 body{
 	height: 100%;
-	min-width:300px;
+	min-width:320px;
 }
 input[type=number], input[type=text], input[type=password], input[type=file], input[type=submit], textarea{-webkit-appearance:none; border-radius:0;}
 input[type="search"]::-webkit-search-cancel-button {
@@ -101,385 +101,295 @@ input[type=search] {
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.icon-arrowdown:before {
+	content: "\e65f";
+}
 .icon-book-2:before {
 	content: "\e600";
 }
-
 .icon-computer:before {
 	content: "\e601";
 }
-
 .icon-laptop:before {
 	content: "\e602";
 }
-
 .icon-mail:before {
 	content: "\e603";
 }
-
 .icon-battery:before {
 	content: "\e604";
 }
-
 .icon-bookmark:before {
 	content: "\e605";
 }
-
 .icon-certificat:before {
 	content: "\e606";
 }
-
 .icon-close-2:before {
 	content: "\e607";
 }
-
 .icon-creditcard:before {
 	content: "\e608";
 }
-
 .icon-crosshair:before {
 	content: "\e609";
 }
-
 .icon-down:before {
 	content: "\e60a";
 }
-
 .icon-download:before {
 	content: "\e60b";
 }
-
 .icon-error:before {
 	content: "\e60c";
 }
-
 .icon-expand:before {
 	content: "\e60d";
 }
-
 .icon-eye:before {
 	content: "\e60e";
 }
-
 .icon-help:before {
 	content: "\e60f";
 }
-
 .icon-left:before {
 	content: "\e610";
 }
-
 .icon-menu:before {
 	content: "\e611";
 }
-
 .icon-minus:before {
 	content: "\e612";
 }
-
 .icon-point:before {
 	content: "\e613";
 }
-
 .icon-right:before {
 	content: "\e614";
 }
-
 .icon-save:before {
 	content: "\e615";
 }
-
 .icon-shop:before {
 	content: "\e616";
 }
-
 .icon-sun:before {
 	content: "\e617";
 }
-
 .icon-traffic:before {
 	content: "\e618";
 }
-
 .icon-up:before {
 	content: "\e619";
 }
-
 .icon-wallet:before {
 	content: "\e61a";
 }
-
 .icon-water:before {
 	content: "\e61b";
 }
-
 .icon-wifi:before {
 	content: "\e61c";
 }
-
 .icon-bar-chart:before {
 	content: "\e61d";
 }
-
 .icon-basket:before {
 	content: "\e61e";
 }
-
 .icon-calendar:before {
 	content: "\e61f";
 }
-
 .icon-cloud:before {
 	content: "\e620";
 }
-
 .icon-conversation:before {
 	content: "\e621";
 }
-
 .icon-flag:before {
 	content: "\e622";
 }
-
 .icon-heart:before {
 	content: "\e623";
 }
-
 .icon-lightning:before {
 	content: "\e624";
 }
-
 .icon-line-graph:before {
 	content: "\e625";
 }
-
 .icon-map:before {
 	content: "\e626";
 }
-
 .icon-map-marker:before {
 	content: "\e627";
 }
-
 .icon-microphone:before {
 	content: "\e628";
 }
-
 .icon-pie-chart:before {
 	content: "\e629";
 }
-
 .icon-plus:before {
 	content: "\e62a";
 }
-
 .icon-printer:before {
 	content: "\e62b";
 }
-
 .icon-shaking-hands:before {
 	content: "\e62c";
 }
-
 .icon-shopping-cart:before {
 	content: "\e62d";
 }
-
 .icon-star:before {
 	content: "\e62e";
 }
-
 .icon-tag:before {
 	content: "\e62f";
 }
-
 .icon-thumbtack:before {
 	content: "\e630";
 }
-
 .icon-trash:before {
 	content: "\e631";
 }
-
 .icon-trophy:before {
 	content: "\e632";
 }
-
 .icon-world:before {
 	content: "\e633";
 }
-
 .icon-add-user:before {
 	content: "\e634";
 }
-
 .icon-award:before {
 	content: "\e635";
 }
-
 .icon-bell:before {
 	content: "\e636";
 }
-
 .icon-fast-forward:before {
 	content: "\e637";
 }
-
 .icon-folder:before {
 	content: "\e638";
 }
-
 .icon-idea:before {
 	content: "\e639";
 }
-
 .icon-list-1:before {
 	content: "\e63a";
 }
-
 .icon-list-2:before {
 	content: "\e63b";
 }
-
 .icon-lock:before {
 	content: "\e63c";
 }
-
 .icon-log-out:before {
 	content: "\e63d";
 }
-
 .icon-money:before {
 	content: "\e63e";
 }
-
 .icon-pause:before {
 	content: "\e63f";
 }
-
 .icon-play:before {
 	content: "\e640";
 }
-
 .icon-power:before {
 	content: "\e641";
 }
-
 .icon-refresh:before {
 	content: "\e642";
 }
-
 .icon-rewind:before {
 	content: "\e643";
 }
-
 .icon-search:before {
 	content: "\e644";
 }
-
 .icon-stop:before {
 	content: "\e645";
 }
-
 .icon-thumbs-down:before {
 	content: "\e646";
 }
-
 .icon-thumps-up:before {
 	content: "\e647";
 }
-
 .icon-user:before {
 	content: "\e648";
 }
-
 .icon-video:before {
 	content: "\e649";
 }
-
 .icon-brief-case:before {
 	content: "\e64a";
 }
-
 .icon-camera:before {
 	content: "\e64b";
 }
-
 .icon-check-mark:before {
 	content: "\e64c";
 }
-
 .icon-clock:before {
 	content: "\e64d";
 }
-
 .icon-close-1:before {
 	content: "\e64e";
 }
-
 .icon-document-1:before {
 	content: "\e64f";
 }
-
 .icon-edit:before {
 	content: "\e650";
 }
-
 .icon-gear:before {
 	content: "\e651";
 }
-
 .icon-headphones:before {
 	content: "\e652";
 }
-
 .icon-home:before {
 	content: "\e653";
 }
-
 .icon-image:before {
 	content: "\e654";
 }
-
 .icon-ipad:before {
 	content: "\e655";
 }
-
 .icon-link:before {
 	content: "\e656";
 }
-
 .icon-megaphone:before {
 	content: "\e657";
 }
-
 .icon-mute:before {
 	content: "\e658";
 }
-
 .icon-quote:before {
 	content: "\e659";
 }
-
 .icon-speech-bubble:before {
 	content: "\e65a";
 }
-
 .icon-text:before {
 	content: "\e65b";
 }
-
 .icon-upload:before {
 	content: "\e65c";
 }
-
 .icon-video-camera:before {
 	content: "\e65d";
 }
-
 .icon-iphone:before {
 	content: "\e65e";
 }
+
 
 .btn-default{
 	background: $link-color;
@@ -1504,7 +1414,8 @@ input[type=search] {
 	}
 	@include breakpoint($mobile){
 		padding:0;
-		width: 100%;
+		width: 290px;
+		margin: 0 auto;
 	}
 	&.active{
 		padding:0 5% 0 7.3%;
@@ -1525,6 +1436,7 @@ input[type=search] {
 		@include breakpoint($tablet){
 			padding:0 0 0 5px;
 		}
+		@include breakpoint($mobile){ width: 100%; }
 		.info-col{
 			width: 225px;
 			font-size: 12px;
@@ -1551,7 +1463,7 @@ input[type=search] {
 				line-height:18px;
 				margin:0 0 5px 0;
 			}
-			p{margin:0 0 25px;}
+			p{margin:0 0 40px;}
 			.client-info{
 				&.inactive{
 					margin:-5px 0 7px;
@@ -1607,7 +1519,7 @@ input[type=search] {
 	border-radius:5px;
 	@include vertical(inline-block, top);
 	margin:0 1.9% 38px 0;
-	padding:0 22px 41px;
+	padding:0 22px 98px;
 	background: $white;
 	font:13px/15px $font-arial;
 	position:relative;
@@ -1620,11 +1532,18 @@ input[type=search] {
 		margin:0 2.6% 38px 0;
 	}
 	@include breakpoint($mobile){
-		width: 290px;
+		width: auto;
 		display: block;
 		margin:0 auto 30px;
 	}
 	p{margin: 0 0 33px;}
+	.info-footer {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		padding: 0 22px;
+	}
 	.title{
 		font:18px/22px $font-neue-thin;
 		display: block;
@@ -1644,8 +1563,8 @@ input[type=search] {
 			font-size: 26px;
 			line-height:20px;
 			color:$light-gray3;
-			content: "\e63c";
-			font-family: "icons-regular";
+			content: "\f023";
+			font-family: "fontawesome";
 		}
 		.tooltip2{
 			max-width:182px;
@@ -1693,15 +1612,13 @@ input[type=search] {
 		.client-info{
 			float: left;
 			max-width:230px;
+			@include breakpoint($mobile){ margin: 0 0 10px -5px; }
 		}
 		
 	}
 	.buttons-nav{
-		position: absolute;
-		left: 0;
-		bottom: 0;
-		right: 0;
-		margin:0;
+		position: relative;
+		margin: 0 -22px;
 	}
 	&.disable{
 		.over{display: block;}
@@ -1709,15 +1626,16 @@ input[type=search] {
 }
 .star-rattings{
 	float: right;
-	
 	@include breakpoint($desktop2){
-		float: left;
+		float: right;
+		margin: 0 -15px 0 0;
 	}
 	@include breakpoint($tablet){
 		float: right;
+		margin: 0;
 	}
 	@include breakpoint($mobile){
-		float: left;
+		margin: 0 -15px 0 0;
 	}
 	.icon-star{
 		@include vertical(inline-block, middle);
@@ -1817,8 +1735,7 @@ input[type=search] {
 			padding: 0 14px;
 		}
 		@include breakpoint($mobile){
-			padding: 0 14px 10px;
-			display: block;
+			padding: 0 2px 0 14px;
 		}
 		a{
 			position:relative;
@@ -2568,6 +2485,7 @@ input[type=search] {
 .market-search{
 	@extend %clearfix;
 	padding:0 9px;
+	display: none;
 	
 	@include breakpoint($mobile){
 		position:static;
@@ -2585,6 +2503,7 @@ input[type=search] {
 		@include v-align(market-form, $valign: middle);
 		&.advance{
 			height:196px;
+			@include breakpoint($mobile2){ height: auto; }
 			@include v-align(advance-nav, $valign: middle);
 		}
 	}
@@ -2657,7 +2576,6 @@ input[type=search] {
 	width: 100%;
 	text-align: center;
 	font:40px/40px $font-ultra-light;
-	
 	@include breakpoint($mobile){
 		font-size: 25px;
 		line-height:30px;
@@ -2672,7 +2590,18 @@ input[type=search] {
 		a{
 			color:$white;
 			position: relative;
-			
+			.icon-arrowdown{
+				position: absolute;
+				top: 0;
+				left: 100%;
+				margin: 7px 0 0 6px ;
+				color:$light-seagreen;
+				font-size: 39px;
+				@include breakpoint($mobile){
+					font-size: 23px;
+					margin: 3px 0 0 11px;
+				}
+			}
 			.fa{
 				position: absolute;
 				top: 16px;
@@ -2681,7 +2610,6 @@ input[type=search] {
 				color:$light-seagreen;
 				font-size: 70px;
 				line-height:20px;
-				
 				@include breakpoint($mobile){
 					font-size: 45px;
 					margin:0 0 0 7px;
@@ -2695,11 +2623,14 @@ input[type=search] {
 				font-size: 23px;
 				line-height:20px;
 			}
-			&:hover,
-			&:focus{
+			&:hover{
 				text-decoration: none;
 				opacity: 0.5;
 				outline:none;
+			}
+			&:focus{
+				outline:none;
+				text-decoration: none;
 			}
 			&.active{
 				a{
@@ -2752,7 +2683,6 @@ input[type=search] {
 		font-size: 40px;
 		line-height:40px;
 		padding:34px 0 0 4px;
-		
 		@include breakpoint($tablet){
 			font-size: 26px;
 			line-height:30px;
@@ -2774,6 +2704,20 @@ input[type=search] {
 				margin:0 25px 20px 6px;
 			}
 			a{
+				.icon-arrowdown{
+					margin: 17px 0 0 6px;
+					font-size: 25px;
+					top: 0;
+					@include breakpoint($tablet){ margin: 7px 0 0 8px; }
+					@include breakpoint($mobile){
+						position:static;
+						@include vertical(inline-block, bottom);
+						left: auto;
+						top:auto;
+						font-size: 21px;
+						margin: 0 0 3px 5px;
+					}
+				}
 				.fa{
 					margin:0 0 0 4px;
 					font-size: 46px;
@@ -2859,7 +2803,7 @@ input[type=search] {
 		}
 	}
 }
-.modal-dialog{
+.modal-dialog {
 	&.catagories{
 		width: 640px;
 		color:$white;
@@ -2911,7 +2855,7 @@ input[type=search] {
 			position: absolute;
 			right: -33px;
 			top: 1px;
-			margin:0;
+			margin: 0;
 			
 			@include breakpoint($mobile){
 				right: 10px;
@@ -2922,15 +2866,24 @@ input[type=search] {
 			}
 			span{
 				@include vertical(inline-block, middle);
-				margin:-5px 0 0;
+				margin:-6px 0 0;
 				text-indent: -9999px;
 				background: url(../images/sprite.png) no-repeat -9px -97px;
 				@include square(16px);
+				@include breakpoint($mobile){ margin:9px 0 0; }
 			}
 			&:focus,
 			&:hover{
 				opacity: 0.7;
 				outline:none;
+			}
+		}
+		button {
+			&.close {
+				padding: 0;
+				span{
+					@include breakpoint($mobile){ margin: -7px 0 0; }
+				}
 			}
 		}
 		.catagory-col{
@@ -3085,7 +3038,6 @@ input[type=search] {
 	float: left;
 	max-width:400px;
 	padding:0 0 14px;
-	
 	@include breakpoint($mobile){
 		margin:0 0 30px;
 		max-width:inherit;
@@ -3105,7 +3057,8 @@ input[type=search] {
 		}
 		&.select{
 			label{
-				margin:4px 0 0;
+				margin: 5px 0 0;
+				@include breakpoint($mobile){margin: 7px 0 0; }
 			}
 			&.add{
 				padding:25px 20px 23px 28px;
@@ -3293,7 +3246,6 @@ input[type=search] {
 	overflow: hidden;
 	width: 108%;
 	margin:0 0 -8px;
-	
 	.checkbox{
 		padding:5px;
 		margin:0 4.8% 8px 0;
@@ -3308,7 +3260,7 @@ input[type=search] {
 		max-width:inherit;
 		color:$input-color;
 		@include v-align2(txt, $valign: middle);
-		
+		.txt { font-family: $font-family-base; }
 		@include breakpoint($mobile){
 			font-size: 9px;
 			line-height:10px;
@@ -3759,12 +3711,10 @@ body > .jcf-select-drop.jcf-drop-flipped {
 			margin:0;
 			font-size: 12px;
 			padding:0 17px 42px 20px;
-			
 			h2{
 				font-size: 12px;
 				margin: 0 -20px 15px;
-				padding:11px 30px 8px 19px;
-				
+				padding:11px 30px 8px 19px;				
 				&:before{
 					font-size: 24px;
 					right: 10px;
@@ -3982,10 +3932,12 @@ body > .jcf-select-drop.jcf-drop-flipped {
 	}
 	&.active{color:$link-color;}
 	.icon-left{
+		line-height: 15px;
 		position: absolute;
 		left: -47px;
-		top: -14px;
+		top: -13px;
 		font-size: 39px;
+		line-height: 39px;
 	}
 }
 .project-towcols{
@@ -4389,10 +4341,10 @@ body > .jcf-select-drop.jcf-drop-flipped {
 	}
 }
 .modal-dialog{
+	margin: 32px auto;
 	&.withdraw-balance{
 		width: 512px;
-		margin:30px auto 0;
-		
+		margin: 30px auto 0;
 		@include breakpoint($mobile){
 			width: 300px;
 		}
@@ -4443,9 +4395,13 @@ body > .jcf-select-drop.jcf-drop-flipped {
 		line-height:20px;
 		top: 14px;
 		opacity:1;
+		outline: none;
+		padding: 0;
+		border: 0;
 		right: 12px;
 		color:$link-hover-color;
 		position: absolute;
+		margin: 0;
 		&:focus,
 		&:hover{
 			color:$text-color;
@@ -4644,6 +4600,147 @@ body > .jcf-select-drop.jcf-drop-flipped {
 		}
 	}
 }
+.exclusive { min-height: 400px; }
+.exclusive-box {
+	padding: 4px 0 4px 110px;
+	.icon-lock {
+		position: absolute;
+		top: 0;
+		left: 0;
+		font-size: 100px;
+	}
+	font:15px/18px $font-ultra-light;
+	h3 {
+		font:20px/25px $font-ultra-light;
+		margin: 0 0 6px;
+		color: $white;
+	}
+	position: relative;
+}
+.research-frame {
+	margin: 0 -100px 0 0;
+	@include breakpoint($mobile){
+		margin: 0;
+		width: 100%;
+	}
+	.research-post {
+		h3 {
+			color: #a0a3aa;
+			font-size: 21px;
+			line-height: 25px;
+			background: #f5f6f8;
+			text-align: center;
+			margin: 0 0 28px;
+			padding: 13px 10px 15px;
+		}
+		display: inline-block;
+		vertical-align: top;
+		width: 288px;
+		min-height: 297px;
+		background: $white;
+		overflow: hidden;
+		border-radius: 10px;
+		margin: 0 58px 68px 0;
+		@include breakpoint($mobile){
+			margin: 0 auto 30px;
+			display: block;
+		}
+		&:hover {
+			box-shadow: 0 0 0 6px #417d7b;
+		}
+		&.active {
+			box-shadow: 0 0 0 6px #00e1bf;
+			.img-frame {
+				.img-hover { z-index: 5; }
+			}
+			.swot {
+				.swot-list {
+					li { background: #107574; }
+				}
+			}
+		}
+		.img-frame {
+			position: relative;
+			margin: 0 36px 0 31px;
+			img { @extend %img-responsive; }
+			.img-hover {
+				position: absolute;
+				top: 0;
+				left: 0;
+				z-index: -1;
+			}
+		}
+		.polygone {
+			margin: 0 45px;
+			span {
+				z-index: 99;
+				color: #000;
+				position: absolute;
+			}
+			.polygon-txt{
+				display: block;
+				font:10px/12px $font-family-base;
+				color:$text-color;
+				left: 0;
+				top: 0;
+				margin: 1px 0 0 -14px;
+				@include element(before, 100%, auto, auto, 0, $light-seagreen);
+				position: absolute;
+				&:before{
+					@include size(24px, 1px);
+					margin:2px 0 0;
+				}
+				&.add{
+					text-align:right;
+					left: auto;
+					right: 0;
+					margin: 1px -12px 0 0;
+					&:before{
+						left: auto;
+						right: 0;
+						background: $red;
+					}
+				}
+			}
+		}
+		.competetive {
+			margin: 0 36px 0 31px;
+			span {
+				font:10px/12px $font-family-base;
+				z-index: 99;
+				color: #000;
+				position: absolute;
+				color:$text-color;
+				&.text-2 {
+					top: auto;
+					bottom: -4px;
+				}
+				&.text-3 {
+					top: auto;
+					left: auto;
+					right: -2px;
+					bottom: -4px;
+				}
+			}
+		}
+		.swot {
+			margin: 0;
+			text-align: center;
+			.swot-list {
+				@extend %listreset;
+				li {
+					@include vertical(inline-block, top);
+					width: 106px;
+					height: 87px;
+					border-radius: 5px;
+					background: #00e1bf;
+					margin: 0 2px 10px;
+					@include v-align2(text, middle);
+				}
+			}
+		}
+	}
+}
 /*.ng-touched.ng-invalid,
 .ng-touched.ng-invalid-required,
 .jcf-select.jcf-select-ng-untouched{*/
@@ -4654,6 +4751,7 @@ body > .jcf-select-drop.jcf-drop-flipped {
 .catagory-scroll{
 	height: 435px;
 	width: 100% !important;
+	#modal &{ overflow: auto; }
 }
 .jcf-number {
   display: inline-block;
@@ -4711,6 +4809,7 @@ body > .jcf-select-drop.jcf-drop-flipped {
   margin: -2px 0 0 -4px;
   border-color: #979ba3 transparent transparent transparent;
 }
+.modal-dialog.catagories .catagory-col.product { width: 288px; }
 .jcf-number.jcf-disabled .jcf-btn-dec:before,
 .jcf-number.jcf-disabled .jcf-btn-inc:before,
 .jcf-number .jcf-btn-dec.jcf-disabled:before,
@@ -4720,3 +4819,4 @@ body > .jcf-select-drop.jcf-drop-flipped {
 .jcf-number.jcf-disabled input {
   background: #ddd;
 }
+.ngdialog .ngdialog-overlay { background: rgba($modal-backdrop-bg, .8); }

@@ -71,6 +71,39 @@ app.controller('ModalCtrl', function ($scope, ngDialog, $rootScope) {
 		});
 	};
 
+	$scope.openCountryModal = function () {
+		$scope.value = true;
+
+		ngDialog.open({
+			template: 'inc/modal-country.html',
+			className: 'ngdialog-theme-plain',
+			scope: $scope,
+			cache: false
+		});
+	};
+
+	$scope.openSearchModal = function () {
+		$scope.value = true;
+
+		ngDialog.open({
+			template: 'inc/modal-search.html',
+			className: 'ngdialog-theme-plain',
+			scope: $scope,
+			cache: false
+		});
+	};
+
+	$scope.openCategoriesModal = function () {
+		$scope.value = true;
+
+		ngDialog.open({
+			template: 'inc/modal-categories.html',
+			className: 'ngdialog-theme-plain',
+			scope: $scope,
+			cache: false
+		});
+	};
+
 	$rootScope.$on('ngDialog.opened', function (e, $dialog) {
 		jcf.refreshAll();
 	});

@@ -1387,7 +1387,7 @@ pre {
   @media (min-width: 992px) {
     .container {
       width: 970px; } }
-  @media (min-width: 1212px) {
+  @media (min-width: 1241px) {
     .container {
       width: 1240px; } }
 
@@ -1785,7 +1785,7 @@ pre {
   .col-md-offset-12 {
     margin-left: 100%; } }
 
-@media (min-width: 1212px) {
+@media (min-width: 1241px) {
   .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
     float: left; }
   .col-lg-1 {
@@ -4808,7 +4808,7 @@ button.close {
   .visible-sm-inline-block {
     display: inline-block !important; } }
 
-@media (min-width: 992px) and (max-width: 1211px) {
+@media (min-width: 992px) and (max-width: 1240px) {
   .visible-md {
     display: block !important; }
   table.visible-md {
@@ -4818,19 +4818,19 @@ button.close {
   th.visible-md, td.visible-md {
     display: table-cell !important; } }
 
-@media (min-width: 992px) and (max-width: 1211px) {
+@media (min-width: 992px) and (max-width: 1240px) {
   .visible-md-block {
     display: block !important; } }
 
-@media (min-width: 992px) and (max-width: 1211px) {
+@media (min-width: 992px) and (max-width: 1240px) {
   .visible-md-inline {
     display: inline !important; } }
 
-@media (min-width: 992px) and (max-width: 1211px) {
+@media (min-width: 992px) and (max-width: 1240px) {
   .visible-md-inline-block {
     display: inline-block !important; } }
 
-@media (min-width: 1212px) {
+@media (min-width: 1241px) {
   .visible-lg {
     display: block !important; }
   table.visible-lg {
@@ -4840,15 +4840,15 @@ button.close {
   th.visible-lg, td.visible-lg {
     display: table-cell !important; } }
 
-@media (min-width: 1212px) {
+@media (min-width: 1241px) {
   .visible-lg-block {
     display: block !important; } }
 
-@media (min-width: 1212px) {
+@media (min-width: 1241px) {
   .visible-lg-inline {
     display: inline !important; } }
 
-@media (min-width: 1212px) {
+@media (min-width: 1241px) {
   .visible-lg-inline-block {
     display: inline-block !important; } }
 
@@ -4860,11 +4860,11 @@ button.close {
   .hidden-sm {
     display: none !important; } }
 
-@media (min-width: 992px) and (max-width: 1211px) {
+@media (min-width: 992px) and (max-width: 1240px) {
   .hidden-md {
     display: none !important; } }
 
-@media (min-width: 1212px) {
+@media (min-width: 1241px) {
   .hidden-lg {
     display: none !important; } }
 
