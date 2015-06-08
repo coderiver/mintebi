@@ -4820,3 +4820,162 @@ body > .jcf-select-drop.jcf-drop-flipped {
   background: #ddd;
 }
 .ngdialog .ngdialog-overlay { background: rgba($modal-backdrop-bg, .8); }
+
+
+// Start CSS by riverco.de
+// @import "styleguide";
+.l{
+	width: 640px;
+	margin: 0 auto;
+	overflow: hidden;
+	.l-col1{
+		width: 400px;
+		float: left;
+	}
+	.l-col2{
+		width: 225px;
+		float: right;
+	}
+}
+hr{
+	border-top: 20px solid green !important;
+}
+.fieldset{
+	border-radius: 7px;
+	background: #fff;
+	padding: 26px 19px 25px 28px;
+	overflow: hidden;
+	margin: 0 0 16px;
+}
+.delete-project{
+	min-height: 37px;	
+}
+.info-col_small{
+	width: 225px;
+	font-size: 12px;
+	line-height: 16px;
+	margin: 0 14px 46px 0;
+	min-height:335px;
+	@include breakpoint($mobile){
+		width: 245px;
+		margin:0 auto 30px;
+	}
+	h2{
+		font-size: 12px;
+		line-height:16px;
+		padding:11px 35px 9px 21px;
+		margin:0 -22px 15px;
+		
+		&:before{
+			right: 9px;
+			font-size: 24px;
+		}
+	}
+	.title{
+		font-size: 14px;
+		line-height:18px;
+		margin:0 0 5px 0;
+	}
+	p{margin:0 0 40px;}
+	.client-info{
+		&.inactive{
+			margin:-5px 0 7px;
+		}
+	}
+	.add-nav{
+		margin:0 0 2px;
+		li{
+			margin:0 0 9px;
+			a{
+				.icon-map-marker{
+					font-size: 17px;
+					left: -20px;
+					top: -2px;
+				}
+			}
+		}
+	}
+	.buttons-nav{
+		&.add{
+			li{
+				padding:8px 2px;
+				.ico{
+					font-size: 19px;
+					margin:3px -1px 2px 4px;
+					@include breakpoint($mobile){
+						margin:0 -1px 0 4px;
+						line-height:9px;
+					}
+					.icon-trophy{
+						font-size:19px;
+						margin:0;
+					}
+					&.trophy{
+						margin: 2px -1px 2px -14px;
+						@include breakpoint($mobile){margin: 0 -1px 0 -14px;}
+					}
+				}
+			}
+			.btn-default{
+				min-width:60px;
+			}
+		}
+	}
+}
+.steps{
+	list-style: none;
+	overflow: hidden;
+	margin: 0 0 25px 0;
+	padding: 0;
+	li{
+		width: 118px;
+		height: 36px;
+		border: 1px solid #011A35;
+		margin-right: 12px;
+		float: left;
+		text-align: center;
+		font-size: 13px;
+		color: #011A35;
+		line-height: 36px;
+		border-radius: 10px;
+		position: relative;
+		a{
+			display: block;
+			height: 36px;
+			text-align: center;
+			text-decoration: none;
+		}
+		&:last-child{
+			margin-right: 0;
+		}
+		&.steps__done{
+			&:before{
+				content: ' ';
+				position: absolute;
+				width: 14px;
+				height: 0;
+				border-top: 1px solid #011A35;
+				position: absolute;
+				left: 100%;
+				top: 50%;
+			}
+		}
+		&.steps__active{
+			border-color: #A0A3AA;
+			background: #A0A3AA;
+		}
+		&.steps__go{
+			border-color: #2EE1C3;
+			background: #2EE1C3;
+			a{
+				color: #fff;
+			}
+		}
+	}
+}
+h1.h1{
+	font-size: 36px;
+	color: #011A35;
+	font-weight: normal;
+	font-family: $font-family-base;
+}
