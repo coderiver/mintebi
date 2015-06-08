@@ -4840,13 +4840,7 @@ body > .jcf-select-drop.jcf-drop-flipped {
 hr{
 	border-top: 20px solid green !important;
 }
-.fieldset{
-	border-radius: 7px;
-	background: #fff;
-	padding: 26px 19px 25px 28px;
-	overflow: hidden;
-	margin: 0 0 16px;
-}
+
 .delete-project{
 	min-height: 37px;	
 }
@@ -4978,4 +4972,112 @@ h1.h1{
 	color: #011A35;
 	font-weight: normal;
 	font-family: $font-family-base;
+	margin-bottom: 35px;
+}
+.fieldset{
+	border-radius: 7px;
+	background: #fff;
+	padding: 18px 19px 30px 35px;
+	overflow: hidden;
+	margin: 0 0 16px;
+	h3{
+		font-size: 14px;
+		font-weight: normal;
+		color: #858F97;
+		font-family: $font-family-base;
+		margin-bottom: 15px;
+	}
+	.col1{
+		float: left;
+		width: 48%;
+	}
+	.col2{
+		float: right;
+		width: 48%;
+	}
+	.fieldset__title{
+		
+		margin-bottom: 18px;
+		h2{
+			font-family: $font-family-base;
+			font-size: 20px;
+			font-weight: normal;
+			margin-bottom: 5px;
+		}
+		p{
+			font-size: 10px;
+			color: #011A35;
+		}
+	}
+}
+.fieldcheck{
+	margin-left: 20px;
+	overflow: hidden;
+	position: relative;
+	label{
+		display: block;
+		cursor: pointer;
+	}
+	input{
+		display: none;
+	}
+	span{
+		display: block;
+		padding-left: 30px;
+		font-size: 12px;
+		font-weight: 300;
+		color: #051B34;
+		padding-top: 2px;
+	}
+	.checkbox-visual{
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 18px;
+		height: 18px;
+		background: #A0A3AA;
+		-webkit-border-radius: 4px;
+		        border-radius: 4px;
+		display: inline-block;
+		vertical-align: middle;
+		margin-right: 10px;
+	}
+	input:checked +.checkbox-visual{
+		background: #A0A3AA url(../images/checkbox.png) no-repeat 50% 50%;
+	}
+}
+.button{
+	display: inline-block;
+	cursor: pointer;
+	border-radius: 5px;
+	width: 195px;
+	margin-right: 20px;
+	height: 36px;
+	line-height: 36px;
+	text-decoration: none;
+	font-size: 13px;
+	color: #fff;
+	text-align: center;
+	background: #2EE1C3;
+	&.button_gray{
+		background: #A8AAB0;
+	}
+	&:hover{
+		opacity: .9;
+		color: #fff;
+	}
+	&.button_small,&.button_small:hover{
+		height: 30px;
+		width: 100px;
+		margin-right: 5px;
+		font-size: 11px;
+		color: #fff;
+		line-height: 30px;
+	}
+}
+.timezone-select{
+	display: inline-block;
+	width: 50%;
+	margin-right: 17px;
+	vertical-align: top;
 }
