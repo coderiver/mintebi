@@ -5081,3 +5081,233 @@ h1.h1{
 	margin-right: 17px;
 	vertical-align: top;
 }
+/* valik */
+.fieldset__fields {
+  font-size: 0;
+}
+.fieldset__field {
+  width: 222px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 18px 0 0;
+}
+
+.btn-gray {
+  font-size: 11px;
+  color: #fff;
+  padding: 0 39px;
+  line-height: 29px;
+  background-color: #A0A3AA;
+  border: none;
+  outline: 0;
+  display: inline-block;
+  vertical-align: top;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+}
+.btn-gray:hover {
+  background-color: #183E4C;
+}
+.btn-gray:active {
+  background-color: #001936;
+}
+input[type=number].form-input, input[type=text].form-input, input[type=password].form-input, input[type=file].form-input, input[type=submit].form-input, textarea.form-input {  
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+.form-input {
+  color: #979BA3;
+  font-size: 11px;
+  outline: 0;
+  padding: 6px 20px;
+  background-color: #F5F6F8;
+  border: 1px solid #F5F6F8;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.form-input.is-error {
+  border-color: #DF1338;
+}
+.fieldset__card {  
+  width: 50%;  
+  max-width: 258px;
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px 0 0;
+}
+@media only screen and (max-width: 767px) {
+  .fieldset__card {
+    width: 100%;
+  }
+}
+.fieldset__card .form-input {
+  padding: 6px 20px 6px 40px;
+}
+.fieldset__card-number .form-input {
+  text-transform: uppercase;
+  padding: 6px 60px 6px 40px;
+}
+.fieldset__label {
+  display: block;
+  padding: 0 8px 0 0;
+  position: relative;
+  margin: 0;
+}
+.fieldset__label .icon {
+  position: absolute;
+  top: 50%;
+}
+.fieldset__label .icon-creditcard {
+  font-size: 22px;
+  margin-top: -12px;
+  left: 8px;
+}
+.fieldset__label .icon-user {
+  font-size: 18px;
+  margin-top: -10px;
+  left: 11px;
+}
+.fieldset__label .icon-dk-visa {
+  background: url(../images/dk-visa.png) no-repeat center center;
+  width: 33px;
+  height: 20px;
+  margin-top: -10px;
+  right: 19px;
+}
+.fieldset__update {
+  padding: 10px 0 0;
+}
+.fieldset__update .btn-gray {
+  margin: 0 18px 0 0;
+}
+.fieldset__update p {
+  font-size: 10px;
+  color: #979BA3;
+  display: inline-block;
+  vertical-align: top;
+  padding: 8px 0 7px;
+  margin: 0;
+}
+.fieldset__error {
+  color: #DF1338;
+  font-size: 11px;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 65px;
+  margin-left: 19px;
+}
+@media only screen and (max-width: 767px) {
+  .fieldset__error {
+    position: static;
+    margin: 10px 0 0;
+    display: block;
+  }
+}
+.fieldset__field .fieldset__label {
+  padding: 0;
+}
+.fieldset__btns {
+  text-align: justify;
+  font-size: 0;
+  padding: 20px 0 0;
+}
+.fieldset__btns:after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+}
+.fieldset__small {
+  width: 75px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 15px 0 0;
+}
+@media only screen and (max-width: 767px) {
+  .fieldset__small {
+    width: 40%;
+    max-width: 157px;
+  }
+}
+.fieldset__country {
+  width: 222px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 15px 0 0;
+}
+@media only screen and (max-width: 767px) {
+  .fieldset__country {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+.fieldset__medium {
+  width: 92px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.l {
+  width: 100%;
+  max-width: 640px;
+}
+
+@media only screen and (max-width: 767px) {
+  .fieldset {
+    padding-right: 35px;
+  }
+  .timezone-select {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 300px;
+  }
+  .fieldset .col1, .fieldset .col2 {
+    float: none;
+    width: 100%;
+  }
+  .fieldcheck {
+    margin-left: 10px;
+  }
+}
+@media only screen and (max-width: 767px) {  
+
+  .l .l-col2, .l .l-col1, .l {
+    width: 100%;
+    max-width: 400px;
+    clear: both;
+    float: none;
+    margin: 0 auto;
+  }
+  .info-col_small {
+    width: 100%;
+  }
+  .steps li {
+    float: none;
+    text-align: center;
+    margin: 0 auto 13px;
+  }
+  .steps li.steps__done:before {
+    left: 50%;
+    top: 100%;
+    border: none;
+    border-left: 1px solid #011A35;
+    width: 0;
+    height: 14px;
+  }
+  .steps li:last-child {
+    margin: 0 auto;
+  }
+  .form-buttons {
+    text-align: center;
+  }
+  .form-buttons .button {
+    margin: 0 10px 10px;
+  }
+}
