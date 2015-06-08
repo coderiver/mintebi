@@ -46,7 +46,7 @@ var PathConfig = require('./grunt-settings.js');
 
     //sass
     sass: {
-      options: PathConfig.hasBower,
+      // options: PathConfig.hasBower,
       dev: {
         options: {
           sourceMap: true,

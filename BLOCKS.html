@@ -317,6 +317,114 @@
 								<div class="fieldset">
 									<div class="fieldset__title">
 										<h2>Account information</h2>
+										<div class="fieldset__fields">
+											<div class="fieldset__field">
+												<h3>Email</h3>
+												<input type="text" class="form-input" placeholder="cst@mintebi.com">
+											</div>
+											<div class="fieldset__field">
+												<h3>Password</h3>
+												<button class="btn-gray">Edit password</button>
+											</div>
+										</div>										
+									</div>
+								</div>
+								<!-- end fieldset -->
+								<!-- begin fieldset  -->
+								<div class="fieldset">
+									<div class="fieldset__title">
+										<h2>Credit details </h2>
+										<div class="fieldset__fields">
+											<div class="fieldset__card">
+												<label class="fieldset__label">
+													<i class="icon icon-user"></i>
+													<input type="text" class="form-input" placeholder="Andreas Von Buchwald">
+												</label>												
+											</div>
+											<div class="fieldset__card fieldset__card-number">
+												<label class="fieldset__label">
+													<i class="icon icon-creditcard"></i>
+													<i class="icon icon-dk-visa"></i>
+													<input type="text" class="form-input" placeholder="xxxx xxxx xxxx 6521">
+												</label>												
+											</div>
+											<div class="fieldset__update">
+												<button class="btn-gray">Update payment method</button>	
+												<p>Note: This is your default card used for paying the monthly</p>										
+											</div>
+										</div>										
+									</div>
+								</div>
+								<!-- end fieldset -->
+								<!-- begin fieldset  -->
+								<div class="fieldset">
+									<div class="fieldset__title">
+										<h2>Account information</h2>
+										<div class="fieldset__fields">
+											<div class="fieldset__field">
+												<h3>Email</h3>
+												<input type="text" class="form-input" placeholder="cst@mintebi.com">
+											</div>
+											<div class="fieldset__field">
+												<h3>Old password</h3>
+												<label class="fieldset__label">
+													<input type="password" class="form-input is-error" placeholder="xxxxxxxx">
+													<span class="fieldset__error">Password  incorrect</span>
+												</label>
+												<h3>New password</h3>
+												<label class="fieldset__label">
+													<input type="password" class="form-input" placeholder="xxxxxxxx">
+												</label>
+												<h3>Confirm password</h3>
+												<label class="fieldset__label">
+													<input type="password" class="form-input is-error" placeholder="xxxxxxxx">
+													<span class="fieldset__error">Requires to  be identical</span>
+												</label>
+												<div class="fieldset__btns">
+													<button class="btn-gray">Save</button>
+													<button class="btn-gray">Cancel</button>
+												</div>
+											</div>
+										</div>										
+									</div>
+								</div>
+								<!-- end fieldset -->
+								<!-- begin fieldset  -->
+								<div class="fieldset">
+									<div class="fieldset__title">
+										<h2>Company information</h2>
+										<p>NB: Non-Danish EU clients can avoid VAT for subscription by providing a VAT no.</p>
+										<div class="fieldset__small">
+											<h3>Postal code</h3>
+											<input type="text" class="form-input" placeholder="2100">
+										</div>
+										<div class="fieldset__small">
+											<h3>Zip code</h3>
+											<input type="text" class="form-input" placeholder="2100">
+										</div>
+										<div class="fieldset__country">
+											<h3>Country</h3>
+											<div class="fieldset__select">
+											<select id="country" jcf='{"maxVisibleItems": 4}'>
+												<option>Choose a Country</option>
+												<option>Albania</option>
+												<option>Algeria</option>
+												<option>Andorra</option>
+												<option>Angola</option>
+												<option>Antigua and Barbuda</option>
+												<option>Argentina</option>
+												<option>Armenia</option>
+												<option>Aruba</option>
+												<option>Australia</option>
+												<option>Austria</option>
+											</select>
+											</div>
+										</div>										
+										<!-- end country -->
+										<div class="fieldset__medium">
+											<h3>VAT no:</h3>
+											<input type="text" class="form-input" placeholder="13345678">
+										</div>
 									</div>
 								</div>
 								<!-- end fieldset -->
@@ -431,8 +539,10 @@
 									</div>
 								</div>
 								<!-- end fieldset -->
-								<a href="#" class="button">Save</a>
-								<a href="#" class="button button_gray">Cancel</a>
+								<div class="form-buttons">
+									<a href="#" class="button">Save</a>
+									<a href="#" class="button button_gray">Cancel</a>
+								</div>								
 							</div>
 							<!-- end l -->
 						
