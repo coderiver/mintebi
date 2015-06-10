@@ -6148,11 +6148,22 @@ hr {
     line-height: 36px;
     border-radius: 10px;
     position: relative; }
-    .steps li a {
+    .steps li:hover {
+      background-color: #DBDBDB;
+      border-color: #DBDBDB;
+    }
+    .steps li:active {
+      border-color: #A0A3AA;
+      background: #A0A3AA;
+    }
+    .steps a {
       display: block;
       height: 36px;
       text-align: center;
-      text-decoration: none; }
+      text-decoration: none;}
+    .steps__done a, .steps__active a {      
+      color: #011A35 !important; 
+    }
     .steps li:last-child {
       margin-right: 0; }
     .steps li.steps__done:before {
@@ -6170,6 +6181,14 @@ hr {
     .steps li.steps__go {
       border-color: #2EE1C3;
       background: #2EE1C3; }
+       .steps li.steps__go:hover {
+        background-color: #183E4C;
+        border-color: #183E4C;
+      }
+      .steps li.steps__go:active {
+        background-color: #001936;
+        border-color: #001936;
+      }
       .steps li.steps__go a {
         color: #fff; }
 
@@ -6240,31 +6259,6 @@ h1.h1 {
   .fieldcheck input:checked + .checkbox-visual {
     background: #A0A3AA url(../images/checkbox.png) no-repeat 50% 50%; }
 
-.button {
-  display: inline-block;
-  cursor: pointer;
-  border-radius: 5px;
-  width: 195px;
-  margin-right: 20px;
-  height: 36px;
-  line-height: 36px;
-  text-decoration: none;
-  font-size: 13px;
-  color: #fff;
-  text-align: center;
-  background: #2EE1C3; }
-  .button.button_gray {
-    background: #A8AAB0; }
-  .button:hover {
-    opacity: .9;
-    color: #fff; }
-  .button.button_small, .button.button_small:hover {
-    height: 30px;
-    width: 100px;
-    margin-right: 5px;
-    font-size: 11px;
-    color: #fff;
-    line-height: 30px; }
 
 .timezone-select {
   display: inline-block;
@@ -6304,6 +6298,43 @@ h1.h1 {
 .btn-gray:active {
   background-color: #001936;
 }
+
+.button {
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 195px;
+  margin-right: 20px;
+  height: 36px;
+  line-height: 36px;
+  text-decoration: none;
+  font-size: 13px;
+  color: #fff !important;
+  text-align: center;
+  background: #2EE1C3;
+  text-decoration: none !important; }
+  .button.button_gray {
+    background: #A8AAB0; }
+  .button:hover {
+    color: #fff; 
+    text-decoration: none;
+    background-color: #183E4C;}
+  .button:active {
+    background-color: #001936;
+  }
+  .button_gray:hover {
+    background-color: #495769;
+  }
+  .button_gray:active {
+    background-color: #001936;
+  }
+  .button.button_small, .button.button_small:hover {
+    height: 30px;
+    width: 100px;
+    margin-right: 5px;
+    font-size: 11px;
+    color: #fff;
+    line-height: 30px; }
 input[type=number].form-input, input[type=text].form-input, input[type=password].form-input, input[type=file].form-input, input[type=submit].form-input, textarea.form-input {  
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
