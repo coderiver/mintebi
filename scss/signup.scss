@@ -299,6 +299,7 @@
 		top: 350px;
 		@include breakpoint($mobile){
 			position: static;
+			display: inline-block;
 		}
 		&.is-left {
 			left: 60px;
@@ -333,7 +334,7 @@
 	}
 	&__form {
 		max-width: 280px;
-		margin: 0 auto;
+		margin: 0 auto 10px;
 	}
 	
 	&__field {

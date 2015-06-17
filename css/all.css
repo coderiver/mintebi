@@ -6774,7 +6774,8 @@ input[type=number].form-input, input[type=text].form-input, input[type=password]
     top: 350px; }
     @media only screen and (max-width: 767px) {
       .signup__to {
-        position: static; } }
+        position: static;
+        display: inline-block; } }
     .signup__to.is-left {
       left: 60px; }
     .signup__to.is-right {
@@ -6799,7 +6800,7 @@ input[type=number].form-input, input[type=text].form-input, input[type=password]
         background: url(../images/svg/eagle1.svg) no-repeat center center; }
   .signup__form {
     max-width: 280px;
-    margin: 0 auto; }
+    margin: 0 auto 10px; }
   .signup__field {
     margin-bottom: 10px; }
   .signup .s-btn {
