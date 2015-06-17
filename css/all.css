@@ -6700,28 +6700,16 @@ input[type=number].form-input, input[type=text].form-input, input[type=password]
 .sign__icon {
   display: block;
   margin: 0 auto 25px;
-  border: 1px solid #FFF;
   width: 85px;
   height: 85px;
   position: relative;
   overflow: hidden;
   -webkit-border-radius: 50%;
   border-radius: 50%; }
-  .sign__icon:before {
-    position: absolute;
-    content: ""; }
-  .sign__icon.is-expert:before {
-    background: url(../images/svg/eagle.svg) no-repeat center center;
-    top: 11px;
-    height: 125px;
-    width: 80px;
-    left: -3px; }
-  .sign__icon.is-client:before {
-    background: url(../images/svg/deer.svg) no-repeat center center;
-    top: 2px;
-    height: 130px;
-    width: 90px;
-    left: -10px; }
+  .sign__icon.is-expert {
+    background: url(../images/svg/eagle1.svg) no-repeat center center; }
+  .sign__icon.is-client {
+    background: url(../images/svg/deer1.svg) no-repeat center center; }
 .sign__title {
   font-family: 'HelveticaNeueW01-UltLt', Arial, Helvetica, sans-serif;
   font-size: 40px;
@@ -6772,6 +6760,43 @@ input[type=number].form-input, input[type=text].form-input, input[type=password]
     font-size: 14px;
     color: #BFCCD5;
     padding: 0 5px; }
+  .signup__icon {
+    width: 174px;
+    height: 174px;
+    display: block;
+    margin: 0 auto 15px; }
+    .signup__icon.is-expert {
+      background: url(../images/svg/eagle1.svg) no-repeat center center; }
+    .signup__icon.is-client {
+      background: url(../images/svg/deer1.svg) no-repeat center center; }
+  .signup__to {
+    position: absolute;
+    top: 350px; }
+    @media only screen and (max-width: 767px) {
+      .signup__to {
+        position: static; } }
+    .signup__to.is-left {
+      left: 60px; }
+    .signup__to.is-right {
+      right: 60px; }
+    .signup__to a {
+      font-size: 56px;
+      color: #fff;
+      text-decoration: none !important; }
+      .signup__to a.icon-left {
+        float: left; }
+      .signup__to a.icon-right {
+        float: right; }
+      .signup__to a.icon__deer, .signup__to a.icon__eagle {
+        width: 43px;
+        height: 43px;
+        display: inline-block;
+        vertical-align: top;
+        margin: 6px 0 0; }
+      .signup__to a.icon__deer {
+        background: url(../images/svg/deer1.svg) no-repeat center center; }
+      .signup__to a.icon__eagle {
+        background: url(../images/svg/eagle1.svg) no-repeat center center; }
   .signup__form {
     max-width: 280px;
     margin: 0 auto; }

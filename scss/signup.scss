@@ -198,37 +198,19 @@
 	&__icon {
 		display: block;
 		margin: 0 auto 25px;
-		border: 1px solid #FFF;
 		width: 85px;
 		height: 85px;
 		position: relative;
 		overflow: hidden;
 		-webkit-border-radius: 50%;
-						border-radius: 50%;
-		
-		&:before {
-			position: absolute;
-			content: "";
-		}
+			border-radius: 50%;
 
 		&.is-expert {
-			&:before {
-				background: url(../images/svg/eagle.svg) no-repeat center center;
-				top: 11px;
-				height: 125px;
-				width: 80px;
-				left: -3px;
-			}
+			background: url(../images/svg/eagle1.svg) no-repeat center center;
 		}
 
 		&.is-client {
-			&:before {
-				background: url(../images/svg/deer.svg) no-repeat center center;
-				top: 2px;
-				height: 130px;
-				width: 90px;
-				left: -10px;
-			}
+			background: url(../images/svg/deer1.svg) no-repeat center center;			
 		}
 	}
 
@@ -299,7 +281,56 @@
 		color: #BFCCD5;
 		padding: 0 5px;
 	}
+	&__icon {
+		width: 174px;
+		height: 174px;
+		display: block;
+		margin: 0 auto 15px;
+		&.is-expert {
+			background: url(../images/svg/eagle1.svg) no-repeat center center;
+		}
 
+		&.is-client {
+			background: url(../images/svg/deer1.svg) no-repeat center center;			
+		}
+	}
+	&__to {
+		position: absolute;
+		top: 350px;
+		@include breakpoint($mobile){
+			position: static;
+		}
+		&.is-left {
+			left: 60px;
+		}
+		&.is-right {
+			right: 60px;
+		}
+		a {
+			font-size: 56px;
+			color: #fff;
+			text-decoration: none !important;
+			&.icon-left {
+				float: left;
+			}
+			&.icon-right {
+				float: right;
+			}
+			&.icon__deer, &.icon__eagle {
+				width: 43px;
+				height: 43px;
+				display: inline-block;
+				vertical-align: top;
+				margin: 6px 0 0;
+			}
+			&.icon__deer {
+				background: url(../images/svg/deer1.svg) no-repeat center center;
+			}
+			&.icon__eagle {
+				background: url(../images/svg/eagle1.svg) no-repeat center center;
+			}
+		}
+	}
 	&__form {
 		max-width: 280px;
 		margin: 0 auto;
