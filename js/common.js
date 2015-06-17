@@ -38,4 +38,26 @@ $(document).ready(function() {
 		
 	});
   
+
+	//scroll
+	$(window).load(function() {
+		if ($('.js-scroll').length) {
+			var element = $('.js-scroll').jScrollPane({
+				verticalDragMinHeight: 20,
+				verticalDragMaxHeight: 87,
+			});
+			var api = element.data('jsp');
+			api.reinitialise(s);
+		};		
+	});
+	$(window).resize(function() {
+		if ($('.js-scroll').length) {
+			var element = $('.js-scroll').jScrollPane({
+				verticalDragMinHeight: 20,
+				verticalDragMaxHeight: 87,
+			});
+			var api = element.data('jsp');
+			api.reinitialise(s);
+		};
+	});
 });

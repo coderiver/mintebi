@@ -1,3 +1,44 @@
+@font-face { 
+	font-family: 'HelveticaNeueW82-Regula'; 
+	src: url("../fonts/helvetica/HelveticaNeueCyr-Roman.eot"); 
+	src: url("../fonts/helvetica/HelveticaNeueCyr-Roman.eot?#iefix") format("embedded-opentype"), 
+	url("../fonts/helvetica/HelveticaNeueCyr-Roman.woff2") format("woff2"), 
+	url("../fonts/helvetica/HelveticaNeueCyr-Roman.woff") format("woff"), 
+	url("../fonts/helvetica/HelveticaNeueCyr-Roman.ttf") format("truetype"); 
+	font-weight: normal; 
+	font-style: normal; 
+}
+@font-face { 
+	font-family: 'HelveticaNeueW01-UltLt'; 
+	src: url("../fonts/helvetica/helveticaneuecyr-ultralight.eot"); 
+	src: url("../fonts/helvetica/HelveticaNeueCyr-Light.eot?#iefix") format("embedded-opentype"), 
+	url("../fonts/helvetica/helveticaneuecyr-ultralight.woff2") format("woff2"), 
+	url("../fonts/helvetica/helveticaneuecyr-ultralight.woff") format("woff"), 
+	url("../fonts/helvetica/helveticaneuecyr-ultralight.ttf") format("truetype"); 
+	font-weight: normal; 
+	font-style: normal; 
+}
+@font-face { 
+	font-family: 'HelveticaNeueW01-Thin'; 
+	src: url("../fonts/helvetica/HelveticaNeueCyr-Thin.eot"); 
+	src: url("../fonts/helvetica/HelveticaNeueCyr-Thin.eot?#iefix") format("embedded-opentype"), 
+	url("../fonts/helvetica/HelveticaNeueCyr-Thin.woff2") format("woff2"), 
+	url("../fonts/helvetica/HelveticaNeueCyr-Thin.woff") format("woff"), 
+	url("../fonts/helvetica/HelveticaNeueCyr-Thin.ttf") format("truetype"); 
+	font-weight: normal; 
+	font-style: normal; 
+}
+@font-face { 
+	font-family: 'HelveticaNeueW01-65Medi'; 
+	src: url("../fonts/helvetica/HelveticaNeueCyr-Medium.eot"); 
+	src: url("../fonts/helvetica/HelveticaNeueCyr-Medium.eot?#iefix") format("embedded-opentype"), 
+	url("../fonts/helvetica/HelveticaNeueCyr-Medium.woff2") format("woff2"), 
+	url("../fonts/helvetica/HelveticaNeueCyr-Medium.woff") format("woff"), 
+	url("../fonts/helvetica/HelveticaNeueCyr-Medium.ttf") format("truetype"); 
+	font-weight: normal; 
+	font-style: normal; 
+}
+
 $mq-breakpoints: (
     // Base device classes
     mobile:      320px,
@@ -446,8 +487,8 @@ input[type=search] {
 	@include square(100%);
 	
 	@include breakpoint($mobile){
-		display: block;
-		height: auto;
+		// display: block;
+		// height: auto;
 	}
 }
 .w1{overflow: hidden;}
@@ -1848,12 +1889,13 @@ input[type=search] {
 .footer-block{
 	overflow: hidden;
 	background: $blue;
+	background: #001232;
 	display:table-footer-group;
 	@include size(100%, 1%);
 	
 	@include breakpoint($mobile){
-		display: block;
-		height: auto;
+		// display: block;
+		// height: auto;
 	}
 }
 .footer-holder{
@@ -4933,6 +4975,22 @@ hr{
 		line-height: 36px;
 		border-radius: 10px;
 		position: relative;
+		&:hover {			
+			background-color: #E4E4E4;
+			border-color: #E4E4E4;
+			color: #011A35;
+			a {
+				color: #011A35;
+			}
+		}
+		&:active {
+			background-color: #A0A3AA;
+			border-color: #A0A3AA;
+			color: #fff;
+			a {
+				color: #fff;
+			}
+		}
 		a{
 			display: block;
 			height: 36px;
@@ -4953,6 +5011,28 @@ hr{
 				left: 100%;
 				top: 50%;
 			}
+			&:hover {			
+				background-color: #E4E4E4;
+				border-color: #E4E4E4;
+				color: #011A35;
+				a {
+					color: #011A35;
+				}
+			}
+			&:active {
+				background-color: #A0A3AA;
+				border-color: #A0A3AA;
+				color: #fff;
+				a {
+					color: #fff;
+				}
+			}
+			&.is-completed {
+				border-color: #00E1BF;
+			}
+			&.is-required {
+				border-color: #DF1338;
+			}
 		}
 		&.steps__active{
 			border-color: #A0A3AA;
@@ -4961,6 +5041,14 @@ hr{
 		&.steps__go{
 			border-color: #2EE1C3;
 			background: #2EE1C3;
+			&:hover {			
+				background-color: #183E4C;
+				border-color: #183E4C;
+			}
+			&:active {
+				background-color: #001936;
+				border-color: #001936;
+			}
 			a{
 				color: #fff;
 			}
@@ -5054,17 +5142,26 @@ h1.h1{
 	margin-right: 20px;
 	height: 36px;
 	line-height: 36px;
-	text-decoration: none;
+	text-decoration: none !important;
 	font-size: 13px;
 	color: #fff;
 	text-align: center;
 	background: #2EE1C3;
 	&.button_gray{
 		background: #A8AAB0;
+		&:hover {
+			background-color: #495769;
+		}
+		&:active{
+			background-color: #001936;
+		}
 	}
 	&:hover{
-		opacity: .9;
+		background-color: #183E4C;
 		color: #fff;
+	}
+	&:active{
+		background-color: #001936;
 	}
 	&.button_small,&.button_small:hover{
 		height: 30px;
