@@ -9,14 +9,14 @@
 	<link rel="stylesheet" href="css/ngDialog.css">
 	<script type="text/javascript" src="http://fast.fonts.net/jsapi/48f89ee6-4f00-484c-ad3c-df5a74d4c60d.js"></script>
 </head>
-<body>
-	<div id="wrapper" class="is-bg_mod">
+<body class="is-report">
+	<div id="wrapper" class="is-report">
 		<div class="w2">
 			<header id="header">
 				<div class="container-fluid">
 					<div class="row">
 						<div class="col-xs-12">
-							<div class="non-logedin" style="display:none;">
+							<div class="non-logedin" style="display:block;">
 								<div class="logo-holder">
 									<strong class="logo"><a href="#"><img src="images/logo.png" alt="Mintebi"></a></strong>
 								</div>
@@ -168,7 +168,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="client-logedin" style="display:block">
+							<div class="client-logedin" style="display:none">
 								<div class="logo-holder">
 									<strong class="logo"><a href="#"><img src="images/logo.png" alt="Mintebi"></a></strong>
 									<div class="notifications-block">
@@ -299,36 +299,56 @@
 				</div>
 			</header>
 			<main id="main" role="main">
-				<section class="sign-up">
-					<div class="signup">
-						<i class="signup__icon i i-eagle"></i>
-						<h1>Become a Mintebi Expert</h1>
-						<div class="signup__form">
-							<p>Get acess to well paid consulting projects It is free and non-binding</p>
-							<form action="">
-								<div class="signup__field">
-									<button class="s-btn">Apply with Linkedin</button>
+				<section class="report">
+					<div class="report__header">
+						<a href="#" class="report__back"><i class="icon icon-left"></i><span>Back to my mintebi</span></a>
+						<ul class="report__list">
+							<li><a href="#">Project description</a></li>
+							<li><a href="#" class="is-active">My Report</a></li>
+						</ul>
+					</div>
+					<div class="report__body">
+						<h2>Before submitting!</h2>
+						<h4>Make sure that your report address all aspects of the project description, and meets our report guidelines. If you are in doubt go back and make the necessary changes. The client will be reviewing your work.</h4>
+						<div class="tile">
+							<div class="tile__img">
+								<div class="tile__sticker">
+									<span class="tile__rating">4,2/5</span>
+									<div>
+										<p>Avarage Rating</p>
+										<small>162 client reviews</small>
+									</div>
 								</div>
-								<p>or</p>
-								<div class="signup__field">
-									<input type="text" class="form-input" placeholder="Enter@email.com">
+								<div class="tile__text">
+									<h4>Caroline Osterwald-Lenum</h4>
+									<small>Communication Manager at mintebi</small>
+									<small>Copenhagen Area, Capital Region, Denmark</small>
+									<small>Entertainment</small>
+									<small>10 Years experience</small>
 								</div>
-								<div class="signup__field">
-									<button class="s-btn">Apply with email</button>
+							</div>							
+							<div class="tile__info">
+								<div>
+									<i class="i i-id"></i>
+									<span>ID #871589</span>
 								</div>
-								<div class="fieldcheck">
-									<label>
-										<input type="checkbox">
-										<i class="checkbox-visual"></i>
-										<span>Accept</span>
-									</label>
-									<a href="#">Terms & Conditions</a>
+								<div>
+									<i class="icon icon-star"></i>
+									<span>- / - Rating</span>
 								</div>
-							</form>
-						</div>
-						<div class="signup__to is-right">
-							<a href="#" class="icon icon-right"></a>
-							<a href="#" class="icon__deer i i-deer"></a>
+								<div>
+									<i class="i i-tag"></i>
+									<span>300,00 €</span>
+								</div>
+								<div>
+									<i class="i i-landscape"></i>
+									<span>Competitive Landscape Report</span>
+								</div>
+							</div>
+							<div class="tile__btns">
+								<button class="tile__cancel">Cancel</button>
+								<button class="tile__submit">Submit</button>
+							</div>
 						</div>
 					</div>
 				</section>

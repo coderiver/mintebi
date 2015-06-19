@@ -9,14 +9,14 @@
 	<link rel="stylesheet" href="css/ngDialog.css">
 	<script type="text/javascript" src="http://fast.fonts.net/jsapi/48f89ee6-4f00-484c-ad3c-df5a74d4c60d.js"></script>
 </head>
-<body>
-	<div id="wrapper" class="is-bg_mod">
+<body class="is-report">
+	<div id="wrapper" class="is-report">
 		<div class="w2">
 			<header id="header">
 				<div class="container-fluid">
 					<div class="row">
 						<div class="col-xs-12">
-							<div class="non-logedin" style="display:none;">
+							<div class="non-logedin" style="display:block;">
 								<div class="logo-holder">
 									<strong class="logo"><a href="#"><img src="images/logo.png" alt="Mintebi"></a></strong>
 								</div>
@@ -168,7 +168,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="client-logedin" style="display:block">
+							<div class="client-logedin" style="display:none">
 								<div class="logo-holder">
 									<strong class="logo"><a href="#"><img src="images/logo.png" alt="Mintebi"></a></strong>
 									<div class="notifications-block">
@@ -299,37 +299,24 @@
 				</div>
 			</header>
 			<main id="main" role="main">
-				<section class="sign-up">
-					<div class="signup">
-						<i class="signup__icon i i-eagle"></i>
-						<h1>Become a Mintebi Expert</h1>
-						<div class="signup__form">
-							<p>Get acess to well paid consulting projects It is free and non-binding</p>
-							<form action="">
-								<div class="signup__field">
-									<button class="s-btn">Apply with Linkedin</button>
-								</div>
-								<p>or</p>
-								<div class="signup__field">
-									<input type="text" class="form-input" placeholder="Enter@email.com">
-								</div>
-								<div class="signup__field">
-									<button class="s-btn">Apply with email</button>
-								</div>
-								<div class="fieldcheck">
-									<label>
-										<input type="checkbox">
-										<i class="checkbox-visual"></i>
-										<span>Accept</span>
-									</label>
-									<a href="#">Terms & Conditions</a>
-								</div>
-							</form>
+				<section class="report">
+					<div class="report__header">
+						<a href="#" class="report__back"><i class="icon icon-left"></i><span>Back to my mintebi</span></a>
+						<ul class="report__list">
+							<li><a href="#">Project description</a></li>
+							<li><a href="#" class="is-active">My Report</a></li>
+						</ul>
+					</div>
+					<div class="report__submit">
+						<i class="report__icon"></i>
+						<h2>Congratulations!</h2>
+						<p>Your report has been delivered successfully. Your balance will be credited with € 900 within 7 days.</p>
+						<p>Share your great achievement with your network:</p>
+						<div class="report__share">
+							<a href="#" class="btn-fb"><img src="images/btn-fb.png" alt=""></a>
+							<a href="#" class="btn-in"><img src="images/btn-in.png" alt=""></a>
 						</div>
-						<div class="signup__to is-right">
-							<a href="#" class="icon icon-right"></a>
-							<a href="#" class="icon__deer i i-deer"></a>
-						</div>
+						<button class="r-btn">Continue</button>
 					</div>
 				</section>
 			</main>
