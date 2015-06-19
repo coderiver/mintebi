@@ -1359,3 +1359,391 @@ body {
 		background-color: #001936;
 	}
 }
+
+
+.toolbox {
+	max-width: 1250px;
+	margin: 0 auto;
+	padding: 55px 15px;
+	
+	@include breakpoint($tablet){
+		max-width: 690px;
+	}
+
+	@include breakpoint($mobile){
+		max-width: 320px;
+	}
+
+	&:after {
+		display: block;
+		clear: both;
+		content: "";
+	}
+
+	&__sidebar {
+		float: left;
+		width: 220px;
+		background: #FFF;
+		overflow: hidden;
+		margin: 0 14px 14px 0;
+		@include breakpoint($mobile){
+			width: 100%;
+			float: none;
+		}
+
+		h6 {
+			font-size: 15px;
+			color: #001936;
+			font-family: $font-neue-thin;
+		}
+
+		p {
+			font-size: 12px;
+			color: #A0A3AA;
+		}
+	}
+	
+	&__top {
+		color: #001936;
+		font-family: $font-neue-medium;
+		font-size: 12px;
+		background-color: #F5F6F8;
+		display: block;
+		padding: 10px 20px 9px;
+	}
+
+	&__box {
+		padding: 5px 20px;
+		border-bottom: 1px solid #d9dfe6;
+	}
+	
+	&__info {
+		font-size: 10px;
+		color: #001936;
+		
+		span {
+			display: block;
+			position: relative;
+			padding: 1px 0 1px 15px;
+			margin-bottom: 8px;
+
+			i {
+				position: absolute;
+				top: 50%;
+				left: 0;
+
+				&.i-tag {
+					font-size: 12px;
+					margin-top: -6px;
+				}
+				&.i-bag {
+					font-size: 12px;
+					margin-top: -6px;
+				}
+				&.icon-map-marker {
+					font-size: 16px;
+					margin-top: -9px;
+					margin-left: -2px;
+				}
+			}
+		}
+	}
+
+	&__steps {
+		list-style-type: none;
+		padding: 14px 0 0;
+		
+		li {
+			display: block;
+			position: relative;
+			padding-bottom: 13px;
+			&:last-child {
+				&:before {
+					display: none;
+				}
+			}
+
+			&:before {
+				position: absolute;
+				bottom: 0;
+				height: 13px;
+				border-right: 1px solid #d9dbe0;
+				content: "";
+				left: 16px;
+			}
+
+		}
+
+		a {
+			color: #D9DBE0;
+			font-size: 12px;
+			padding: 8px 0 7px 40px;
+			position: relative;
+			display: block;
+
+			&.is-active {
+				color: #001936;
+				
+				span {
+					background: #001936;
+					border-color: #001936;
+				}
+
+			}
+
+			&.is-green {
+				color: #00E1BF;
+				span {
+					color: #FFF;
+					background: #00E1BF;
+					border-color: #00E1BF;
+				}
+			}
+			&.is-red {
+				color: #DF1338;
+				span {
+					color: #FFF;
+					background-color: #DF1338;
+					border-color: #DF1338;
+				}
+			}
+
+			span {
+				font-size: 13px;
+				color: #D9DBE0;
+				font-family: $font-neue-thin;
+				line-height: 30px;
+				width: 32px;
+				text-align: center;
+				position: absolute;
+				top: 0;
+				left: 0;
+				border: 1px solid #D9DBE0;
+				-webkit-border-radius: 50%;
+				    border-radius: 50%;
+			}
+
+		}
+	}
+
+	&__btns {
+		padding: 20px 20px 10px;
+		
+		.button {
+			width: 100%;
+			line-height: 31px;
+			height: 31px;
+			font-size: 17px;
+			font-family: $font-light;
+			margin-bottom: 10px;
+		}
+
+	}
+
+	&__block {
+		padding: 0 0 0 234px;
+		@include breakpoint($mobile){
+			padding: 0;
+		}
+		
+		h3 {
+			margin: 0 0 10px;
+		}
+	}
+
+	&__form {
+		background-color: #FFF;
+		-moz-border-radius: 7px;
+		-webkit-border-radius: 7px;
+		border-radius: 7px;
+		padding: 26px;
+		margin-bottom: 20px;
+
+		p {
+			color: #979BA3;
+			font-size: 12px;
+		}
+	}
+
+	&__row {
+		padding-bottom: 35px;
+		font-size: 0;
+
+		.form-input {
+			max-width: 135px;
+			display: inline-block;
+			vertical-align: middle;
+			margin-bottom: 10px;
+		}
+		.toolbox__select {
+			max-width: 350px;
+			display: inline-block;
+			vertical-align: middle;
+			width: 100%;
+			margin-bottom: 10px;
+			@include breakpoint($tablet){
+				max-width: 100%;
+			}
+			&.is-mod {
+				vertical-align: top;
+				padding: 31px 0 0;
+			}
+		}
+		.toolbox__span {
+			width: 90px;
+			padding: 0 10px;
+			display: inline-block;
+			vertical-align: middle;
+			margin-bottom: 10px;
+		}
+	}
+	
+	.form-textarea {
+		height: 247px;
+	}
+
+	&__span {
+		font-size: 11px;
+		color: #979BA3;
+		text-transform: uppercase;
+		font-family: $font-neue-medium;
+	}
+
+	&__textarea {
+		position: relative;
+	}
+
+	&__counter {
+		font-size: 11px;
+		color: #979BA3;
+		text-transform: uppercase;
+		font-family: $font-neue-medium;
+		position: absolute;
+		top: 100%;
+		right: 0;
+	}
+
+	&__range {
+		padding: 44px 28px 10px;
+		position: relative;
+		max-width: 350px;
+		display: inline-block;
+		vertical-align: top;
+		width: 100%;
+		margin: 0 40px 0 0;
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+		        box-sizing: border-box;
+		@include breakpoint($tablet){
+			max-width: 100%;
+		}
+		
+		.icon {
+			position: absolute;
+			bottom: 0;
+			font-size: 24px;
+			cursor: pointer;
+		}
+		.icon-minus {
+			left: -2px;
+		}
+		.icon-plus {
+			right: -2px;
+		}
+	}
+	
+	&__btn {
+		padding: 0 23px;
+		@include breakpoint($mobile){
+			text-align: center;
+		}
+		.button {
+			line-height: 31px;
+			height: 31px;
+			font-size: 17px;
+			font-family: $font-light;
+			margin: 0 3px 10px;
+			width: 171px;
+		}
+	}
+
+	&__cols {
+		margin: 0 -5px 8px;
+		padding: 0 45px 0 0;
+		font-size: 0;
+		position: relative;
+		
+		h3 {
+			margin: 0;
+		}
+
+		.icon {
+			position: absolute;
+			top: -3px;
+			right: 0;
+			font-size: 34px;
+			color: #D9DBE0;
+			cursor: pointer;
+			
+			&:hover {
+				color: #A0A3AA;
+			}
+
+			&:active {
+				color: #495769;
+			}
+		}
+	}
+	
+	&__col {
+		display: inline-block;
+		vertical-align: top;
+		width: 50%;
+		padding: 0 5px 10px;
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+		        box-sizing: border-box;
+		@include breakpoint($mobile){
+			width: 100%;
+		}
+	}
+
+}
+
+.introduction {
+	padding: 26px;
+	background-color: #001936;
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	border-radius: 7px;
+	margin-bottom: 12px;
+	
+	&__top {
+		padding: 0 40px 0 0;
+		position: relative;
+		
+		.icon {
+			position: absolute;
+			right: 0;
+			top: 0;
+			color: #00E1BF;
+			font-size: 34px;
+			cursor: pointer;
+		}
+	}
+
+	h2 {
+		margin: 0 0 10px;
+		color: #00E1BF;
+		font-size: 37px;
+		@include breakpoint($mobile){
+			font-size: 25px;
+		}
+	}
+
+	p {
+		font-size: 12px;
+		color: #F5F6F8;
+		margin: 0;
+	}
+}

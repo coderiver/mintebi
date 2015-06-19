@@ -193,6 +193,10 @@ input[type=search] {
 .i-tag:before {
   content: "e";
 }
+.i-bag:before {
+  content: "f";
+}
+
 .i {
 	font-family: "untitled-font-5";
 	speak: none;
@@ -5226,10 +5230,21 @@ h1.h1{
 	color: #fff;
 	text-align: center;
 	background: #2EE1C3;
+	border: none;
+	outline: none;
 	&.button_gray{
 		background: #A8AAB0;
 		&:hover {
 			background-color: #495769;
+		}
+		&:active{
+			background-color: #001936;
+		}
+	}
+	&.button_blue {
+		background-color: #001936;
+		&:hover {
+			background-color: #183E4C;
 		}
 		&:active{
 			background-color: #001936;
@@ -5303,6 +5318,23 @@ input[type=number].form-input, input[type=text].form-input, input[type=password]
 	-webkit-border-radius: 3px;
 	border-radius: 3px;
 	width: 100%;
+	-webkit-box-sizing: border-box;
+	 -moz-box-sizing: border-box;
+			box-sizing: border-box;
+}
+.form-textarea {
+	color: #979BA3;
+	font-size: 11px;
+	outline: 0;
+	padding: 6px 20px;
+	background-color: #F5F6F8;
+	border: 1px solid #F5F6F8;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	width: 100%;
+	text-transform: uppercase;
+	resize: none;
 	-webkit-box-sizing: border-box;
 	 -moz-box-sizing: border-box;
 			box-sizing: border-box;
