@@ -1,8 +1,8 @@
 {
 	"version": 3,
-	"file": "bootstrap.css",
+	"file": "bootstrap - копия.css",
 	"sources": [
-		"../bootstrap.scss",
+		"../bootstrap - копия.scss",
 		"../_bootstrap-custom.scss",
 		"../bootstrap/_variables.scss",
 		"../bootstrap/_mixins.scss",
