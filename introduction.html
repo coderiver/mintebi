@@ -9,14 +9,14 @@
 	<link rel="stylesheet" href="css/ngDialog.css">
 	<script type="text/javascript" src="http://fast.fonts.net/jsapi/48f89ee6-4f00-484c-ad3c-df5a74d4c60d.js"></script>
 </head>
-<body class="is-report">
-	<div id="wrapper" class="is-report">
+<body>
+	<div id="wrapper">
 		<div class="w2">
 			<header id="header">
 				<div class="container-fluid">
 					<div class="row">
 						<div class="col-xs-12">
-							<div class="non-logedin" style="display:block;">
+							<div class="non-logedin" style="display:none;">
 								<div class="logo-holder">
 									<strong class="logo"><a href="#"><img src="images/logo.png" alt="Mintebi"></a></strong>
 								</div>
@@ -168,7 +168,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="client-logedin" style="display:none">
+							<div class="client-logedin" style="display:block">
 								<div class="logo-holder">
 									<strong class="logo"><a href="#"><img src="images/logo.png" alt="Mintebi"></a></strong>
 									<div class="notifications-block">
@@ -299,26 +299,70 @@
 				</div>
 			</header>
 			<main id="main" role="main">
-				<section class="report">
-					<div class="report__header">
-						<div class="report__header-in">
-							<a href="#" class="report__back"><i class="icon icon-left"></i><span>Back to my mintebi</span></a>
-							<ul class="report__list">
-								<li><a href="#">Project description</a></li>
-								<li><a href="#" class="is-active">My Report</a></li>
-							</ul>
-						</div>					
-					</div>
-					<div class="report__submit">
-						<i class="report__icon"></i>
-						<h2>Congratulations!</h2>
-						<p>Your report has been delivered successfully. Your balance will be credited with € 900 within 7 days.</p>
-						<p>Share your great achievement with your network:</p>
-						<div class="report__share">
-							<a href="#" class="btn-fb"><img src="images/btn-fb.png" alt=""></a>
-							<a href="#" class="btn-in"><img src="images/btn-in.png" alt=""></a>
+				<div class="report__header">
+					<div class="report__header-in">
+						<a href="#" class="report__back"><i class="icon icon-left"></i><span>Back to my mintebi</span></a>
+						<ul class="report__list">
+							<li><a href="#">Project description</a></li>
+							<li><a href="#" class="is-active">My Report</a></li>
+						</ul>
+					</div>					
+				</div>
+				<section class="toolbox">
+					<div class="toolbox__sidebar">
+						<span class="toolbox__top">Market Size & Growth</span>
+						<div class="toolbox__box">
+							<h6>What are some interesting talks about oil and gas industry online?</h6>
+							<p>Sed posuere consectetur est at lobortis. Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit...</p>
+							<div class="toolbox__info">
+								<span><i class="i i-tag"></i>Marketing & Advertizing</span>
+								<span><i class="icon icon icon-map-marker"></i>The United Kingdom</span>
+							</div>							
 						</div>
-						<button class="r-btn">Continue</button>
+						<div class="toolbox__box">
+							<ul class="toolbox__steps">
+								<li><a href="#" class="is-active"><span>1</span>Introduction</a></li>
+								<li><a href="#"><span>2</span>Costumer</a></li>
+								<li><a href="#"><span>3</span>Product & Services</a></li>
+								<li><a href="#"><span>4</span>Value proposition</a></li>
+								<li><a href="#"><span>5</span>Size & Growth</a></li>
+								<li><a href="#"><span>6</span>Wrap up</a></li>
+							</ul>
+						</div>
+						<div class="toolbox__btns">
+							<button class="button button_gray">Preview</button>
+							<button class="button button_blue">Save</button>
+							<button class="button">Submit</button>
+						</div>
+					</div>
+					<div class="toolbox__block">
+						<form action="">
+							<div class="toolbox__form">
+								<div class="toolbox__graph">
+									<div class="toolbox__heading">
+										<h3>Introduction</h3>
+										<h5>A finite market has been defined in the project description. Your objective is to define the most important companies within this market, and evaluate how they are positioned in the competitive landscape.</h5>
+									</div>
+									<div class="toolbox__img">
+										<img src="images/toolbox-graph.png" alt="">
+										<span>Illustration of concept</span>
+									</div>
+									<div class="toolbox__text">
+										<h5>What companies to include</h5>
+										<p>You add companies to the report one at a time. Start by figuring out which you want to include. You can add up to ten companies in total. If you believe that only four players are important to understand this market, then you should focus on those four only. If the market is very fragmented, then you should include the ten companies that you think would be the most interesting from a client perspective.</p>
+									</div>
+									<div class="toolbox__text">
+										<h5>A company’s competitive situation</h5>
+										<p>For each company added to the report you are asked to evaluate its relative competitive positioning in relation to both  parameters. Scores range from 1-5, where 5 corresponds to a company being positioned in the far right for the horizontal parameters or at the top for vertical parameter. Keep in mind that the score should reflect  a strategic positioning, and is not necessarily related to “good” or “bad” performance. Below is an illustration of the concept.</p>
+									</div>
+									<div class="toolbox__text">
+										<h5>A company’s market share</h5>
+										<p>You are also asked to evaluate the market share for each company added. This can be tough to know exactly, which is why you will be assigning relative scores of 1-4. A score of 1 should be assigned to companies with a minor market share (in relative terms), while a score of 4 is reserved for a company with a relatively high market share. The higher the value, the larger the company’s “bubble” in the competitive landscape will be. This makes it easy for the client to quickly understand which players dominate the market (landscape). </p>
+									</div>
+								</div>							
+								<button class="button">Continue</button>									
+							</div>
+						</form>			
 					</div>
 				</section>
 			</main>

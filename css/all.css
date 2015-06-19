@@ -7479,11 +7479,14 @@ body #wrapper.is-report {
 
 .report__header {
   background-color: #001936;
-  padding: 20px 30px; }
+  padding: 20px 15px; }
   .report__header:after {
     display: block;
     clear: both;
     content: ""; }
+  .report__header-in {
+    max-width: 1300px;
+    margin: 0 auto; }
 .report__back {
   color: #597A96;
   font-size: 18px;
@@ -7817,12 +7820,19 @@ body #wrapper.is-report {
         padding: 0; } }
     .toolbox__block h3 {
       margin: 0 0 10px; }
+    .toolbox__block .button {
+      line-height: 31px;
+      height: 31px;
+      font-size: 17px;
+      font-family: 'HelveticaNeueW01-Lt', Arial, sans-serif;
+      margin: 0 3px 10px;
+      width: 171px; }
   .toolbox__form {
     background-color: #FFF;
     -moz-border-radius: 7px;
     -webkit-border-radius: 7px;
     border-radius: 7px;
-    padding: 26px;
+    padding: 26px 26px 6px;
     margin-bottom: 20px; }
     .toolbox__form p {
       color: #979BA3;
@@ -7861,14 +7871,15 @@ body #wrapper.is-report {
     text-transform: uppercase;
     font-family: 'HelveticaNeueW01-65Medi', Arial, Helvetica, sans-serif; }
   .toolbox__textarea {
-    position: relative; }
+    position: relative;
+    padding-bottom: 20px; }
   .toolbox__counter {
     font-size: 11px;
     color: #979BA3;
     text-transform: uppercase;
     font-family: 'HelveticaNeueW01-65Medi', Arial, Helvetica, sans-serif;
     position: absolute;
-    top: 100%;
+    bottom: 5px;
     right: 0; }
   .toolbox__range {
     padding: 44px 28px 10px;
@@ -7898,13 +7909,6 @@ body #wrapper.is-report {
     @media only screen and (max-width: 767px) {
       .toolbox__btn {
         text-align: center; } }
-    .toolbox__btn .button {
-      line-height: 31px;
-      height: 31px;
-      font-size: 17px;
-      font-family: 'HelveticaNeueW01-Lt', Arial, sans-serif;
-      margin: 0 3px 10px;
-      width: 171px; }
   .toolbox__cols {
     margin: 0 -5px 8px;
     padding: 0 45px 0 0;
@@ -7934,6 +7938,17 @@ body #wrapper.is-report {
     @media only screen and (max-width: 767px) {
       .toolbox__col {
         width: 100%; } }
+  .toolbox__heading h3 {
+    font-size: 37px;
+    color: #001936; }
+  .toolbox__heading h5 {
+    color: #858F97;
+    font-family: 'HelveticaNeueW01-Thin', Arial, Helvetica, sans-serif; }
+  .toolbox__text h5 {
+    color: #001936; }
+  .toolbox__text p {
+    font-size: 12px;
+    color: #858F97; }
 
 .introduction {
   padding: 26px;
