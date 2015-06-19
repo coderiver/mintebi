@@ -1,0 +1,57 @@
+.report__project {
+	margin: 30px 0 40px; 
+}
+.project {
+	display: table;
+	width: 100%;
+	max-width: 1330px;
+	margin: 0 auto;
+	border-radius: 7px;  
+}
+.project__aside {
+	display: table-cell;
+	width: 320px;
+	padding: 55px 30px; 
+	background: #e9ecf2;
+	border-radius: 0 7px 7px 0; 
+}
+.project__main {
+	display: table-cell;
+	border-radius: 7px 0 0 7px;
+}
+.project__content {
+	padding: 55px 45px; 
+	border-radius: 7px 0 0 0;
+	background: #f5f6f8;
+	article {
+		margin-bottom: 70px;  
+		font-size: 12px;
+		color: #A0A3AA; 
+		line-height: 1.2;
+		h3 {
+			font-size: 23px;
+			margin: 0 0 35px; 
+		}
+	}
+}
+.project__footer {
+	border-radius: 0 0 0 7px;
+	padding: 35px 45px; 
+	background: #4b596b;
+	color: #fff; 
+}
+.user {
+	overflow: hidden;
+	.user__img {
+		float: left;
+		width: 89px;
+		height: 89px;
+		margin-right: 14px; 
+		border-radius: 50%;
+		font-size: 0;
+		img {
+			border-radius: 50%;
+			width: 100%; 	
+		} 
+	}
+}
