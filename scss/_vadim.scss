@@ -1,5 +1,12 @@
 .report__project {
-	margin: 30px 0 40px; 
+	margin: 30px 0 40px;
+	padding: 0 32px; 
+	@include breakpoint(640px){
+		padding: 0 27px; 
+	}
+	@include breakpoint(320px){
+		padding: 0 15px; 
+	}
 }
 .project {
 	display: table;
@@ -7,6 +14,9 @@
 	max-width: 1330px;
 	margin: 0 auto;
 	border-radius: 7px;  
+	@include breakpoint(640px){
+		display: block;
+	}
 }
 .project__aside {
 	position: relative;
@@ -15,17 +25,36 @@
 	width: 320px;
 	padding: 55px 30px; 
 	background: #e9ecf2;
-	border-radius: 0 7px 7px 0; 
+	border-radius: 0 7px 7px 0;
+	@include breakpoint(640px){
+		display: block;
+		width: 100%; 
+		border-radius: 0 0 7px 7px;
+	}
 }
 .project__main {
+	position: relative;
 	display: table-cell;
 	vertical-align: top;
 	border-radius: 7px 0 0 7px;
+	background: #f5f6f8; 
+	@include breakpoint(640px){
+		display: block;
+		width: 100%; 
+		border-radius: 7px 7px 0 0;
+	}
 }
 .project__content {
 	padding: 55px 45px; 
-	border-radius: 7px 0 0 0;
+	border-radius: 7px 0 0 7px;
 	background: #f5f6f8;
+	@include breakpoint(640px){
+		border-radius: 7px 7px 0 0;
+		padding: 45px 35px; 
+	}
+	@include breakpoint(320px){
+		padding: 35px 25px;  
+	}
 	article {
 		margin-bottom: 70px;  
 		font-size: 12px;
@@ -38,11 +67,18 @@
 	}
 }
 .project__footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;  
 	border-radius: 0 0 0 7px;
 	padding: 35px 45px; 
 	background: #4b596b;
 	color: #fff; 
 	*zoom: 1;
+	@include breakpoint(1024px){
+		display: none;
+	}
 	&:after {
 		content: "";
 		display: table;
@@ -149,15 +185,61 @@
 	list-style-type: none;
 	padding-left: 0;
 	.chars__item {
-		margin-bottom: 20px; 
 		padding-left: 25px; 
+	}
+	.chars__topper {
+		margin-bottom: 20px;
 	}
 	.chars__title {
 		position: relative;
+		h5 {
+			margin: 0 0 5px; 
+			font: 16px $font-ultra-light;
+		}
 		span {
 			position: absolute;
 			top: 0px;
 			left: -25px;
+			color: #2b4059;
+			font-size: 18px;
+			&.icon-tag {
+				transform: scaleX(-1);
+			}
 		}
+	}
+	.chars__subtitle {
+		color: #001936;
+		font-size: 10px;
+		font-weight: bold;
+	}
+	.chars__name {
+		margin-bottom: 7px;
+		color: #8993a0;
+		font: 16px $font-ultra-light;
+	}
+	.chars__btns {
+		margin-bottom: 25px;
+	}
+	.chars__graph {
+		margin-bottom: 35px;
+		img {
+			width: 100%; 
+		}
+	}
+}
+.btn-chars {
+	height: 14px;
+	border: 1px solid #95acbc;
+	font: 10px/11px $font-neue-medium; 
+	color: #95acbc;
+	border-radius: 15px;
+	padding: 0 15px; 
+}
+.project__btn {
+	text-align: center;
+	.button {
+		height: 42px;
+		font-size: 20px;
+		font-family: $font-neue-thin;
 	}
 }
