@@ -50,10 +50,7 @@
 	background: #f5f6f8;
 	@include breakpoint(640px){
 		border-radius: 7px 7px 0 0;
-		padding: 45px 35px; 
-	}
-	@include breakpoint(320px){
-		padding: 35px 25px;  
+		padding: 35px 25px; 
 	}
 	article {
 		margin-bottom: 70px;  
