@@ -11518,7 +11518,9 @@ body #wrapper.is-report {
 }
 
 .project__aside {
+  position: relative;
   display: table-cell;
+  vertical-align: top;
   width: 320px;
   padding: 55px 30px;
   background: #e9ecf2;
@@ -11527,6 +11529,7 @@ body #wrapper.is-report {
 
 .project__main {
   display: table-cell;
+  vertical-align: top;
   border-radius: 7px 0 0 7px;
 }
 
@@ -11553,10 +11556,29 @@ body #wrapper.is-report {
   padding: 35px 45px;
   background: #4b596b;
   color: #fff;
+  *zoom: 1;
+}
+
+.project__footer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.project__footer .user {
+  float: left;
+  margin-right: 45px;
 }
 
 .user {
-  overflow: hidden;
+  *zoom: 1;
+  max-width: 320px;
+}
+
+.user:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .user .user__img {
@@ -11571,4 +11593,102 @@ body #wrapper.is-report {
 .user .user__img img {
   border-radius: 50%;
   width: 100%;
+}
+
+.user .user__info {
+  overflow: hidden;
+}
+
+.user .user__info h4 {
+  font-size: 23px;
+  margin-top: 0;
+}
+
+.user .user__list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.user .user__list li {
+  color: #183752;
+  font-size: 10px;
+  margin-bottom: 5px;
+}
+
+.user .user__list li span {
+  display: inline-block;
+  vertical-align: middle;
+  color: #5b5c5c;
+  font-size: 16px;
+}
+
+.user_light .user__info h4 {
+  color: #fff;
+}
+
+.user_light .user__list li {
+  color: #fff;
+}
+
+.user_light .user__list li span {
+  color: #1dad9f;
+}
+
+.project__footer-left {
+  font-size: 12px;
+}
+
+.project__footer-left h4 {
+  color: #fff;
+  margin-top: 0;
+}
+
+.project__help {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid #c4c7cd;
+  text-align: center;
+  line-height: 25px;
+  color: #c4c7cd;
+  text-decoration: none;
+  -moz-transition: color 300ms, border-color 300ms;
+  -o-transition: color 300ms, border-color 300ms;
+  -webkit-transition: color 300ms, border-color 300ms;
+  -ms-transition: color 300ms, border-color 300ms;
+  transition: color 300ms, border-color 300ms;
+}
+
+.project__help:hover {
+  color: #8ea0b2;
+  border-color: #8ea0b2;
+  text-decoration: none;
+}
+
+.project__help:active {
+  color: #606e80;
+  border-color: #606e80;
+}
+
+.chars {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.chars .chars__item {
+  margin-bottom: 20px;
+  padding-left: 25px;
+}
+
+.chars .chars__title {
+  position: relative;
+}
+
+.chars .chars__title span {
+  position: absolute;
+  top: 0px;
+  left: -25px;
 }
