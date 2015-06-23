@@ -1060,6 +1060,7 @@ input.s-input {
 body {
 
 	&.is-report {
+		height: auto;
 		background: url(../images/bg-report.jpg) no-repeat center center;
 		-webkit-background-size: cover;
 		     -o-background-size: cover;
@@ -1391,6 +1392,10 @@ body {
 		background: #FFF;
 		overflow: hidden;
 		margin: 0 14px 14px 0;
+		-moz-border-radius: 7px;
+		-webkit-border-radius: 7px;
+		border-radius: 7px;
+		
 		@include breakpoint($mobile){
 			width: 100%;
 			float: none;
@@ -1676,9 +1681,15 @@ body {
 		padding-bottom: 20px;
 		
 		&.is-big {
+
 			.form-textarea {
 				height: 350px;
+				
+				@include breakpoint($tablet){
+					height: 470px;
+				}
 			}
+
 		}
 		
 		.form-input {
@@ -1834,6 +1845,38 @@ body {
 			font-family: $font-thin-italic;
 			
 		}
+	}
+
+	&__adds {
+		padding: 0 20px 30px;
+		
+		@include breakpoint($mobile){
+			text-align: center;
+		}
+	}
+	
+	&__add {
+		display: inline-block;
+		vertical-align: top;
+		color: #495769;
+		font-size: 18px;
+		font-family: $font-ultra-light;
+		text-decoration: none !important;
+		padding: 8px 0 8px 45px;
+		position: relative;
+		margin-right: 20px;
+		
+		&:active {
+			color: #001936;
+		}
+		
+		i {
+			font-size: 40px;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+
 	}
 
 }
@@ -2004,8 +2047,143 @@ body {
 
 .c-graph {
 	max-width: 725px;
+	padding-bottom: 20px;
 
 	img {
 		width: 100%;
 	}
+}
+
+.competetion {
+	max-width: 760px;
+	padding-right: 400px;
+	position: relative;
+	min-height: 400px;
+	padding-bottom: 20px;
+	
+	@include breakpoint($tablet){
+		padding: 0;
+	}
+
+
+	.c-graph {
+		position: absolute;
+		top: 0;
+		right: 0;
+		max-width: 350px;
+		@include breakpoint($tablet){
+			position: static;
+			max-width: 100%;
+		}
+	}
+
+	.radio-buttons {
+		margin-bottom: 4px;
+		&:after {
+			display: none;
+		}
+
+		.jcf-label-active {
+			span {
+				background-color: #495769;
+			}
+		}
+	}
+
+	&__check {
+		padding: 10px 0 20px;
+	}
+}
+
+.wrap-up {
+	padding-right: 470px;
+	position: relative;
+	max-width: 890px;
+	min-height: 360px;
+	@include breakpoint($tablet){
+		padding: 0;
+	}
+	
+	&__text {		
+		padding: 0 0 40px;
+	}
+
+	&__img {
+		position: absolute;
+		top: 0;
+		right: 0;
+		max-width: 422px;
+		padding: 0 0 20px;
+		text-align: center;
+		@include breakpoint($tablet) {
+			position: relative;
+			max-width: 100%;
+		}
+		div {
+			display: inline-block;
+			width: 420px;
+
+			@include breakpoint($tablet) {
+				width: 310px;
+			}
+
+			@include breakpoint($mobile) {
+				width: 230px;
+			}
+		}
+		
+		img {
+			width: 100%;
+			max-width: 240px;
+			float: right;
+			margin-left: -180px;
+			background-color: #00E1BF;
+			-moz-border-radius: 7px;
+			-webkit-border-radius: 7px;
+			border-radius: 7px;
+			-moz-box-shadow: 0.7px 0.7px 8px rgba(35, 34, 30, 0.3);
+			-webkit-box-shadow: 0.7px 0.7px 8px rgba(35, 34, 30, 0.3);
+			box-shadow: 0.7px 0.7px 8px rgba(35, 34, 30, 0.3);
+			
+			@include breakpoint($tablet) {
+				max-width: 230px;
+				margin-left: -220px;
+			}
+
+			@include breakpoint($mobile) {
+				margin-left: -230px;
+				max-width: 100%;
+			}
+			
+			&.is-one {
+				z-index: 1;				
+				@include breakpoint($mobile) {
+					margin-top: 30px;
+				}
+			}
+			&.is-two {
+				z-index: 2;
+				@include breakpoint($mobile) {
+					margin-top: 20px;
+				}
+			}
+			&.is-three {
+				z-index: 3;
+				@include breakpoint($tablet) {
+					margin-left: -170px;
+				}
+
+				@include breakpoint($mobile) {
+					margin-left: -230px;
+					margin-top: 10px;
+				}
+			}
+			&.is-four {
+				z-index: 4;
+			}
+
+		}
+
+	}
+
 }
