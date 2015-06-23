@@ -1492,6 +1492,11 @@ body {
 				span {
 					background: #001936;
 					border-color: #001936;
+					
+					.is-plus {
+						border-color: #001936;
+					}
+
 				}
 
 			}
@@ -1502,6 +1507,11 @@ body {
 					color: #FFF;
 					background: #00E1BF;
 					border-color: #00E1BF;
+					
+					.is-plus {
+						border-color: #00E1BF;
+					}
+
 				}
 			}
 			&.is-red {
@@ -1510,6 +1520,11 @@ body {
 					color: #FFF;
 					background-color: #DF1338;
 					border-color: #DF1338;
+					
+					.is-plus {
+						border-color: #DF1338;
+					}
+
 				}
 			}
 
@@ -1526,6 +1541,33 @@ body {
 				border: 1px solid #D9DBE0;
 				-webkit-border-radius: 50%;
 				    border-radius: 50%;
+				
+				.is-plus {
+					display: inline-block;
+					position: relative;
+					width: 11px;
+					height: 9px;
+					
+					&:before, &:after {
+						position: absolute;
+						content: "";
+					}
+
+					&:before {
+						border-left: 1px solid #D9DBE0;
+						height: 9px;
+						top: 0;
+						left: 5px;
+					}
+
+					&:after {
+						border-bottom: 1px solid #D9DBE0;
+						width: 11px;
+						top: 4px;
+						left: 0;
+					}
+				}
+
 			}
 
 		}
@@ -1572,6 +1614,12 @@ body {
 		border-radius: 7px;
 		padding: 26px 26px 6px;
 		margin-bottom: 20px;
+		
+		&.is-introduction {
+			.button {
+				margin-bottom: 20px;
+			}
+		}
 
 		p {
 			color: #979BA3;
@@ -1626,6 +1674,17 @@ body {
 	&__textarea {
 		position: relative;
 		padding-bottom: 20px;
+		
+		&.is-big {
+			.form-textarea {
+				height: 350px;
+			}
+		}
+		
+		.form-input {
+			margin-bottom: 5px;
+		}
+
 	}
 
 	&__counter {
@@ -1716,11 +1775,7 @@ body {
 	}
 	
 	&__heading {
-		
-		h3 {
-			font-size: 37px;
-			color: #001936;
-		}
+		padding: 0 0 30px;
 
 		h5 {
 			color: #858F97;
@@ -1728,7 +1783,13 @@ body {
 		}
 	}
 
+	&__title {
+		font-size: 37px;
+		color: #001936;
+	}
+
 	&__text {
+		padding: 0 0 10px;
 		
 		h5 {
 			color: #001936;
@@ -1741,28 +1802,69 @@ body {
 
 	}
 
+	&__graph {
+		padding: 0 330px 0 0;
+		position: relative;
+		margin-bottom: 100px;		
+
+		@include breakpoint($tablet){
+			padding: 0;
+		}
+
+	}
+
+	&__img {
+		position: absolute;
+		top: 0;
+		right: 60px;
+		width: 222px;
+		text-align: center;
+		padding-bottom: 10px;
+		
+		@include breakpoint($tablet){
+			position: static;
+		}
+
+		img {
+			margin-bottom: 20px;
+		}
+		
+		span {
+
+			font-family: $font-thin-italic;
+			
+		}
+	}
+
 }
 
 .introduction {
-	padding: 26px;
+	padding: 26px 66px 26px 26px;
 	background-color: #001936;
 	-moz-border-radius: 7px;
 	-webkit-border-radius: 7px;
 	border-radius: 7px;
-	margin-bottom: 12px;
+	margin-bottom: 12px;	
+	position: relative;
+	@include breakpoint($mobile){
+		padding: 26px;
+	}
 	
+	.icon {
+		position: absolute;
+		right: 26px;
+		top: 26px;
+		color: #00E1BF;
+		font-size: 34px;
+		cursor: pointer;
+	}
+
 	&__top {
-		padding: 0 40px 0 0;
 		position: relative;
-		
-		.icon {
-			position: absolute;
-			right: 0;
-			top: 0;
-			color: #00E1BF;
-			font-size: 34px;
-			cursor: pointer;
-		}
+	}
+
+	&__text {
+		max-width: 730px;
 	}
 
 	h2 {
@@ -1778,5 +1880,132 @@ body {
 		font-size: 12px;
 		color: #F5F6F8;
 		margin: 0;
+		
+		a {
+			color: #00E1BF;
+		}
+
+	}
+}
+
+.parameters {
+	margin: 0 -10px;
+	max-width: 750px;
+	position: relative;
+	padding: 40px 0 0;
+	
+	&__graph {
+		overflow: hidden;		
+		padding: 0 10px;
+		max-width: 550px;
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+		        box-sizing: border-box;
+		
+		img {
+			width: 100%;
+		}
+
+	}
+
+	&__field {
+		width: 100%;
+		padding: 0 10px;
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+		        box-sizing: border-box;
+
+	}
+
+	&__left {
+		float: left;
+		width: 25%;
+		@include breakpoint($mobile){
+			width: 100%;
+			float: none;
+		}
+
+
+		.parameters__field {
+			margin-bottom: 187px;
+			
+			@include breakpoint($tablet){
+				margin-bottom: 75px;
+			}
+
+			@include breakpoint($mobile){
+				margin: 0 0 10px;
+			}
+
+			&:last-child {
+				margin: 0;
+				
+				@include breakpoint($mobile){
+					margin: 0 0 10px;
+				}
+			}
+		}
+	}
+
+	&__bottom {
+		padding: 10px 0 30px;
+		margin: 0 -10px;
+		@include breakpoint($mobile){
+			padding: 10px 0 20px;
+		}
+		
+		&:after {
+			clear: both;
+			display: block;
+			content: "";
+		}
+		
+		.parameters__field {
+			width: 33.3%;
+			float: left;
+			
+			@include breakpoint($mobile){
+				margin: 0 0 10px;
+				float: none;
+				width: 100%;
+			}
+		}
+	}
+
+}
+
+.t-company {
+	
+	&__parameters {
+
+		.form-input {
+			max-width: 40px;
+			margin-right: 10px;
+		}
+
+		p {
+			display: inline-block;
+			vertical-align: middle;
+			
+			span {
+				color: #DF1338;
+			}
+		}
+	}
+
+	.form-input {
+		padding-left: 10px;
+		padding-right: 10px;
+		display: inline-block;
+		vertical-align: middle;
+	}
+	
+}
+
+.c-graph {
+	max-width: 725px;
+
+	img {
+		width: 100%;
 	}
 }

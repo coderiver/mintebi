@@ -9,6 +9,16 @@
 	font-style: normal; 
 }
 @font-face { 
+	font-family: 'HelveticaNeueThin-Italic'; 
+	src: url("../fonts/helvetica/helveticaneuecyr-thinitalic.eot"); 
+	src: url("../fonts/helvetica/helveticaneuecyr-thinitalic.eot?#iefix") format("embedded-opentype"), 
+	url("../fonts/helvetica/helveticaneuecyr-thinitalic.woff2") format("woff2"), 
+	url("../fonts/helvetica/helveticaneuecyr-thinitalic.woff") format("woff"), 
+	url("../fonts/helvetica/helveticaneuecyr-thinitalic.ttf") format("truetype"); 
+	font-weight: normal; 
+	font-style: normal; 
+}
+@font-face { 
 	font-family: 'HelveticaNeueW01-UltLt'; 
 	src: url("../fonts/helvetica/helveticaneuecyr-ultralight.eot"); 
 	src: url("../fonts/helvetica/helveticaneuecyr-ultralight.eot?#iefix") format("embedded-opentype"), 
@@ -29,6 +39,7 @@
 	font-style: normal; 
 }
 $font-light: 'HelveticaNeueW01-Lt', Arial, sans-serif; 
+$font-thin-italic: 'HelveticaNeueThin-Italic', Arial, sans-serif; 
 @font-face { 
 	font-family: 'HelveticaNeueW01-Thin'; 
 	src: url("../fonts/helvetica/HelveticaNeueCyr-Thin.eot"); 
