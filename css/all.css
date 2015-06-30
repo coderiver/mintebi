@@ -8371,12 +8371,15 @@ body #wrapper.is-report {
         .shopping__inner h1 span {
           display: block;
           margin: 0 17px 15px;
-          font-size: 34px; } }
+          font-size: 27px; } }
     .shopping__inner h1 a {
       color: #F5F6F8;
       text-decoration: none !important;
       font-size: 18px;
       margin: 0 17px; }
+      @media only screen and (max-width: 767px) {
+        .shopping__inner h1 a {
+          font-size: 14px; } }
       .shopping__inner h1 a:hover {
         color: #495769; }
       .shopping__inner h1 a:active {
@@ -8516,7 +8519,8 @@ body.select-ttn .jcf-select, body.select-ttn .jcf-list {
     margin: 0 0 -11px; }
   .s-start__inner {
     position: relative;
-    padding: 2px 9px 0; }
+    padding: 2px 9px 0;
+    overflow: hidden; }
     .s-start__inner:before {
       position: absolute;
       top: 0;
