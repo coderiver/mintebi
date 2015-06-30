@@ -202,7 +202,19 @@
 			&.icon-tag {
 				transform: scaleX(-1);
 			}
+			img {
+				max-width: 13px;
+				border-radius: 50%;
+				margin: 3px 0 0 2px;
+				display: block;
+			}			
 		}
+	}
+	.chars__small {
+		font-size: 10px;
+		color: #A0A3AA;
+		line-height: 1.2;
+		margin-top: 5px;
 	}
 	.chars__subtitle {
 		color: #001936;
