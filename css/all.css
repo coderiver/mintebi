@@ -8767,6 +8767,11 @@ body.select-ttn .jcf-select, body.select-ttn .jcf-list {
   padding-left: 0; }
   .chars .chars__item {
     padding-left: 25px; }
+    .chars .chars__item.is-prof {
+      display: none; }
+      @media only screen and (max-width: 1024px) {
+        .chars .chars__item.is-prof {
+          display: block; } }
   .chars .chars__topper {
     margin-bottom: 20px; }
   .chars .chars__title {

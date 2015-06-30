@@ -183,6 +183,12 @@
 	padding-left: 0;
 	.chars__item {
 		padding-left: 25px; 
+		&.is-prof {
+			display: none;
+			@include breakpoint(1024px) {
+				display: block;
+			}
+		}
 	}
 	.chars__topper {
 		margin-bottom: 20px;
