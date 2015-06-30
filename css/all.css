@@ -8812,9 +8812,44 @@ body.select-ttn .jcf-select, body.select-ttn .jcf-list {
   .chars .chars__btns {
     margin-bottom: 25px; }
   .chars .chars__graph {
-    margin-bottom: 35px; }
+    margin-bottom: 35px;
+    text-align: right;
+    width: 100%;
+    padding-bottom: 20px;
+    position: relative; }
+    .chars .chars__graph:before, .chars .chars__graph:after {
+      content: "";
+      position: absolute;
+      background: #dfe1e6; }
+    .chars .chars__graph:before {
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      width: 1px; }
+    .chars .chars__graph:after {
+      top: 50%;
+      left: 0;
+      right: 0;
+      height: 1px; }
+    .chars .chars__graph span {
+      position: absolute;
+      font-size: 10px;
+      color: #A0A3AA;
+      line-height: 1;
+      z-index: 2; }
+      .chars .chars__graph span.is-tl {
+        top: 0;
+        left: 0; }
+      .chars .chars__graph span.is-bl {
+        bottom: 0;
+        left: 0; }
+      .chars .chars__graph span.is-br {
+        bottom: 0;
+        right: 0; }
     .chars .chars__graph img {
-      width: 100%; }
+      position: relative;
+      z-index: 1;
+      width: 90%; }
 
 .btn-chars {
   height: 14px;
