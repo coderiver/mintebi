@@ -1,76 +1,80 @@
-@font-face { 
-	font-family: 'HelveticaNeueW82-Regula'; 
-	src: url("../fonts/helvetica/HelveticaNeueCyr-Roman.eot"); 
-	src: url("../fonts/helvetica/HelveticaNeueCyr-Roman.eot?#iefix") format("embedded-opentype"), 
-	url("../fonts/helvetica/HelveticaNeueCyr-Roman.woff2") format("woff2"), 
-	url("../fonts/helvetica/HelveticaNeueCyr-Roman.woff") format("woff"), 
-	url("../fonts/helvetica/HelveticaNeueCyr-Roman.ttf") format("truetype"); 
-	font-weight: normal; 
-	font-style: normal; 
+@font-face {
+	font-family: 'HelveticaNeueW82-Regula';
+	src: url("../fonts/helvetica/HelveticaNeueCyr-Roman.eot");
+	src: url("../fonts/helvetica/HelveticaNeueCyr-Roman.eot?#iefix") format("embedded-opentype"),
+	url("../fonts/helvetica/HelveticaNeueCyr-Roman.woff2") format("woff2"),
+	url("../fonts/helvetica/HelveticaNeueCyr-Roman.woff") format("woff"),
+	url("../fonts/helvetica/HelveticaNeueCyr-Roman.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
 }
-@font-face { 
-	font-family: 'HelveticaNeueThin-Italic'; 
-	src: url("../fonts/helvetica/helveticaneuecyr-thinitalic.eot"); 
-	src: url("../fonts/helvetica/helveticaneuecyr-thinitalic.eot?#iefix") format("embedded-opentype"), 
-	url("../fonts/helvetica/helveticaneuecyr-thinitalic.woff2") format("woff2"), 
-	url("../fonts/helvetica/helveticaneuecyr-thinitalic.woff") format("woff"), 
-	url("../fonts/helvetica/helveticaneuecyr-thinitalic.ttf") format("truetype"); 
-	font-weight: normal; 
-	font-style: normal; 
+
+@font-face {
+	font-family: 'HelveticaNeueThin-Italic';
+	src: url("../fonts/helvetica/helveticaneuecyr-thinitalic.eot");
+	src: url("../fonts/helvetica/helveticaneuecyr-thinitalic.eot?#iefix") format("embedded-opentype"),
+	url("../fonts/helvetica/helveticaneuecyr-thinitalic.woff2") format("woff2"),
+	url("../fonts/helvetica/helveticaneuecyr-thinitalic.woff") format("woff"),
+	url("../fonts/helvetica/helveticaneuecyr-thinitalic.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
 }
-@font-face { 
-	font-family: 'HelveticaNeueW01-UltLt'; 
-	src: url("../fonts/helvetica/helveticaneuecyr-ultralight.eot"); 
-	src: url("../fonts/helvetica/helveticaneuecyr-ultralight.eot?#iefix") format("embedded-opentype"), 
-	url("../fonts/helvetica/helveticaneuecyr-ultralight.woff2") format("woff2"), 
-	url("../fonts/helvetica/helveticaneuecyr-ultralight.woff") format("woff"), 
-	url("../fonts/helvetica/helveticaneuecyr-ultralight.ttf") format("truetype"); 
-	font-weight: normal; 
-	font-style: normal; 
+
+@font-face {
+	font-family: 'HelveticaNeueW01-UltLt';
+	src: url("../fonts/helvetica/helveticaneuecyr-ultralight.eot");
+	src: url("../fonts/helvetica/helveticaneuecyr-ultralight.eot?#iefix") format("embedded-opentype"),
+	url("../fonts/helvetica/helveticaneuecyr-ultralight.woff2") format("woff2"),
+	url("../fonts/helvetica/helveticaneuecyr-ultralight.woff") format("woff"),
+	url("../fonts/helvetica/helveticaneuecyr-ultralight.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
 }
-@font-face { 
-	font-family: 'HelveticaNeueW01-Lt'; 
-	src: url("../fonts/helvetica/HelveticaNeueCyr-Light.eot"); 
-	src: url("../fonts/helvetica/HelveticaNeueCyr-Light.eot?#iefix") format("embedded-opentype"), 
-	url("../fonts/helvetica/HelveticaNeueCyr-Light.woff2") format("woff2"), 
-	url("../fonts/helvetica/HelveticaNeueCyr-Light.woff") format("woff"), 
-	url("../fonts/helvetica/HelveticaNeueCyr-Light.ttf") format("truetype"); 
-	font-weight: normal; 
-	font-style: normal; 
+
+@font-face {
+	font-family: 'HelveticaNeueW01-Lt';
+	src: url("../fonts/helvetica/HelveticaNeueCyr-Light.eot");
+	src: url("../fonts/helvetica/HelveticaNeueCyr-Light.eot?#iefix") format("embedded-opentype"),
+	url("../fonts/helvetica/HelveticaNeueCyr-Light.woff2") format("woff2"),
+	url("../fonts/helvetica/HelveticaNeueCyr-Light.woff") format("woff"),
+	url("../fonts/helvetica/HelveticaNeueCyr-Light.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
 }
-$font-light: 'HelveticaNeueW01-Lt', Arial, sans-serif; 
-$font-thin-italic: 'HelveticaNeueThin-Italic', Arial, sans-serif; 
-@font-face { 
-	font-family: 'HelveticaNeueW01-Thin'; 
-	src: url("../fonts/helvetica/HelveticaNeueCyr-Thin.eot"); 
-	src: url("../fonts/helvetica/HelveticaNeueCyr-Thin.eot?#iefix") format("embedded-opentype"), 
-	url("../fonts/helvetica/HelveticaNeueCyr-Thin.woff2") format("woff2"), 
-	url("../fonts/helvetica/HelveticaNeueCyr-Thin.woff") format("woff"), 
-	url("../fonts/helvetica/HelveticaNeueCyr-Thin.ttf") format("truetype"); 
-	font-weight: normal; 
-	font-style: normal; 
+
+$font-light: 'HelveticaNeueW01-Lt', Arial, sans-serif;
+$font-thin-italic: 'HelveticaNeueThin-Italic', Arial, sans-serif;
+@font-face {
+	font-family: 'HelveticaNeueW01-Thin';
+	src: url("../fonts/helvetica/HelveticaNeueCyr-Thin.eot");
+	src: url("../fonts/helvetica/HelveticaNeueCyr-Thin.eot?#iefix") format("embedded-opentype"),
+	url("../fonts/helvetica/HelveticaNeueCyr-Thin.woff2") format("woff2"),
+	url("../fonts/helvetica/HelveticaNeueCyr-Thin.woff") format("woff"),
+	url("../fonts/helvetica/HelveticaNeueCyr-Thin.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
 }
-@font-face { 
-	font-family: 'HelveticaNeueW01-65Medi'; 
-	src: url("../fonts/helvetica/HelveticaNeueCyr-Medium.eot"); 
-	src: url("../fonts/helvetica/HelveticaNeueCyr-Medium.eot?#iefix") format("embedded-opentype"), 
-	url("../fonts/helvetica/HelveticaNeueCyr-Medium.woff2") format("woff2"), 
-	url("../fonts/helvetica/HelveticaNeueCyr-Medium.woff") format("woff"), 
-	url("../fonts/helvetica/HelveticaNeueCyr-Medium.ttf") format("truetype"); 
-	font-weight: normal; 
-	font-style: normal; 
+
+@font-face {
+	font-family: 'HelveticaNeueW01-65Medi';
+	src: url("../fonts/helvetica/HelveticaNeueCyr-Medium.eot");
+	src: url("../fonts/helvetica/HelveticaNeueCyr-Medium.eot?#iefix") format("embedded-opentype"),
+	url("../fonts/helvetica/HelveticaNeueCyr-Medium.woff2") format("woff2"),
+	url("../fonts/helvetica/HelveticaNeueCyr-Medium.woff") format("woff"),
+	url("../fonts/helvetica/HelveticaNeueCyr-Medium.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
 }
 
 $mq-breakpoints: (
 	// Base device classes
-	mobile:      320px,
-	tablet:      640px,
-	desktop:    1024px,
-	widescreen: 1200px,
-	tvscreen:   1920px,
-
+				mobile: 320px,
+				tablet: 640px,
+				desktop: 1024px,
+				widescreen: 1200px,
+				tvscreen: 1920px,
 	// Tweakpoints
-	mobileLandscape: 480px
+				mobileLandscape: 480px
 );
 
 // Show active breakpoint in top right corner of viewport
@@ -83,9 +87,18 @@ $mq-breakpoints: (
 @import "base/markup-mixins";
 @import "mq";
 
-@font-face { @include fontface(fontcustom, fontcustom_8dda0a77d90b26519442e1b943e686cd) }
-@font-face { @include fontface(icons-regular, icons-regular) }
-@font-face { @include fontface(icomoon, icomoon) }
+@font-face {
+	@include fontface(fontcustom, fontcustom_8dda0a77d90b26519442e1b943e686cd)
+}
+
+@font-face {
+	@include fontface(icons-regular, icons-regular)
+}
+
+@font-face {
+	@include fontface(icomoon, icomoon)
+}
+
 [class^="icon-"], [class*=" icon-"] {
 	font-family: 'icomoon';
 	speak: none;
@@ -112,49 +125,42 @@ $mq-breakpoints: (
 	content: "\e602";
 }
 
-input[type=text], input[type=password], input[type=file], input[type=submit], textarea{-webkit-appearance:none; border-radius:0;}
+input[type=number], input[type=text], input[type=password], input[type=file], input[type=submit], textarea {
+	-webkit-appearance: none;
+	border-radius: 0;
+}
+
 input[type="search"]::-webkit-search-cancel-button {
 	-webkit-appearance: none;
-	display:none;
+	display: none;
 }
+
 input[type=search]::-webkit-search-cancel-button,
 input[type=search]::-webkit-search-decoration,
 input[type=search]::-webkit-search-results-button,
 input[type=search]::-webkit-search-results-decoration {
-	-webkit-appearance:none;
+	-webkit-appearance: none;
 }
+
 input[type=search] {
-	-webkit-appearance:textfield;
-	-webkit-box-sizing:content-box;
+	-webkit-appearance: textfield;
+	-webkit-box-sizing: content-box;
 }
-html{
+
+html {
 	background: $blue;
 	height: 100%;
 }
-body{
+
+body {
 	height: 100%;
-	min-width:320px;
-}
-input[type=number], input[type=text], input[type=password], input[type=file], input[type=submit], textarea{-webkit-appearance:none; border-radius:0;}
-input[type="search"]::-webkit-search-cancel-button {
-	-webkit-appearance: none;
-	display:none;
-}
-input[type=search]::-webkit-search-cancel-button,
-input[type=search]::-webkit-search-decoration,
-input[type=search]::-webkit-search-results-button,
-input[type=search]::-webkit-search-results-decoration {
-	-webkit-appearance:none;
-}
-input[type=search] {
-	-webkit-appearance:textfield;
-	-webkit-box-sizing:content-box;
+	min-width: 320px;
 }
 
 @font-face {
 	font-family: "untitled-font-5";
-	src:url("../fonts/untitled-font-5.eot");
-	src:url("../fonts/untitled-font-5.eot?#iefix") format("embedded-opentype"),
+	src: url("../fonts/untitled-font-5.eot");
+	src: url("../fonts/untitled-font-5.eot?#iefix") format("embedded-opentype"),
 	url("../fonts/untitled-font-5.woff") format("woff"),
 	url("../fonts/untitled-font-5.ttf") format("truetype"),
 	url("../fonts/untitled-font-5.svg#untitled-font-5") format("svg");
@@ -192,20 +198,25 @@ input[type=search] {
 .i-deer:before {
 	content: "a";
 }
+
 .i-eagle:before {
 	content: "b";
 }
+
 .i-landscape:before {
-  content: "c";
+	content: "c";
 }
+
 .i-id:before {
-  content: "d";
+	content: "d";
 }
+
 .i-tag:before {
-  content: "e";
+	content: "e";
 }
+
 .i-bag:before {
-  content: "f";
+	content: "f";
 }
 
 .i {
@@ -234,1382 +245,1623 @@ input[type=search] {
 	/* Better Font Rendering =========== */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+
+	&.growl-item {
+		line-height: normal;
+	}
 }
 
 .icon-arrowdown:before {
 	content: "\e65f";
 }
+
 .icon-book-2:before {
 	content: "\e600";
 }
+
 .icon-computer:before {
 	content: "\e601";
 }
+
 .icon-laptop:before {
 	content: "\e602";
 }
+
 .icon-mail:before {
 	content: "\e603";
 }
+
 .icon-battery:before {
 	content: "\e604";
 }
+
 .icon-bookmark:before {
 	content: "\e605";
 }
+
 .icon-certificat:before {
 	content: "\e606";
 }
+
 .icon-close-2:before {
 	content: "\e607";
 }
+
 .icon-creditcard:before {
 	content: "\e608";
 }
+
 .icon-crosshair:before {
 	content: "\e609";
 }
+
 .icon-down:before {
 	content: "\e60a";
 }
+
 .icon-download:before {
 	content: "\e60b";
 }
+
 .icon-error:before {
 	content: "\e60c";
 }
+
 .icon-expand:before {
 	content: "\e60d";
 }
+
 .icon-eye:before {
 	content: "\e60e";
 }
+
 .icon-help:before {
 	content: "\e60f";
 }
+
 .icon-left:before {
 	content: "\e610";
 }
+
 .icon-menu:before {
 	content: "\e611";
 }
+
 .icon-minus:before {
 	content: "\e612";
 }
+
 .icon-point:before {
 	content: "\e613";
 }
+
 .icon-right:before {
 	content: "\e614";
 }
+
 .icon-save:before {
 	content: "\e615";
 }
+
 .icon-shop:before {
 	content: "\e616";
 }
+
 .icon-sun:before {
 	content: "\e617";
 }
+
 .icon-traffic:before {
 	content: "\e618";
 }
+
 .icon-up:before {
 	content: "\e619";
 }
+
 .icon-wallet:before {
 	content: "\e61a";
 }
+
 .icon-water:before {
 	content: "\e61b";
 }
+
 .icon-wifi:before {
 	content: "\e61c";
 }
+
 .icon-bar-chart:before {
 	content: "\e61d";
 }
+
 .icon-basket:before {
 	content: "\e61e";
 }
+
 .icon-calendar:before {
 	content: "\e61f";
 }
+
 .icon-cloud:before {
 	content: "\e620";
 }
+
 .icon-conversation:before {
 	content: "\e621";
 }
+
 .icon-flag:before {
 	content: "\e622";
 }
+
 .icon-heart:before {
 	content: "\e623";
 }
+
 .icon-lightning:before {
 	content: "\e624";
 }
+
 .icon-line-graph:before {
 	content: "\e625";
 }
+
 .icon-map:before {
 	content: "\e626";
 }
+
 .icon-map-marker:before {
 	content: "\e627";
 }
+
 .icon-microphone:before {
 	content: "\e628";
 }
+
 .icon-pie-chart:before {
 	content: "\e629";
 }
+
 .icon-plus:before {
 	content: "\e62a";
 }
+
 .icon-printer:before {
 	content: "\e62b";
 }
+
 .icon-shaking-hands:before {
 	content: "\e62c";
 }
+
 .icon-shopping-cart:before {
 	content: "\e62d";
 }
+
 .icon-star:before {
 	content: "\e62e";
 }
+
 .icon-tag:before {
 	content: "\e62f";
 }
+
 .icon-thumbtack:before {
 	content: "\e630";
 }
+
 .icon-trash:before {
 	content: "\e631";
 }
+
 .icon-trophy:before {
 	content: "\e632";
 }
+
 .icon-world:before {
 	content: "\e633";
 }
+
 .icon-add-user:before {
 	content: "\e634";
 }
+
 .icon-award:before {
 	content: "\e635";
 }
+
 .icon-bell:before {
 	content: "\e636";
 }
+
 .icon-fast-forward:before {
 	content: "\e637";
 }
+
 .icon-folder:before {
 	content: "\e638";
 }
+
 .icon-idea:before {
 	content: "\e639";
 }
+
 .icon-list-1:before {
 	content: "\e63a";
 }
+
 .icon-list-2:before {
 	content: "\e63b";
 }
+
 .icon-lock:before {
 	content: "\e63c";
 }
+
 .icon-log-out:before {
 	content: "\e63d";
 }
+
 .icon-money:before {
 	content: "\e63e";
 }
+
 .icon-pause:before {
 	content: "\e63f";
 }
+
 .icon-play:before {
 	content: "\e640";
 }
+
 .icon-power:before {
 	content: "\e641";
 }
+
 .icon-refresh:before {
 	content: "\e642";
 }
+
 .icon-rewind:before {
 	content: "\e643";
 }
+
 .icon-search:before {
 	content: "\e644";
 }
+
 .icon-stop:before {
 	content: "\e645";
 }
+
 .icon-thumbs-down:before {
 	content: "\e646";
 }
+
 .icon-thumps-up:before {
 	content: "\e647";
 }
+
 .icon-user:before {
 	content: "\e648";
 }
+
 .icon-video:before {
 	content: "\e649";
 }
+
 .icon-brief-case:before {
 	content: "\e64a";
 }
+
 .icon-camera:before {
 	content: "\e64b";
 }
+
 .icon-check-mark:before {
 	content: "\e64c";
 }
+
 .icon-clock:before {
 	content: "\e64d";
 }
+
 .icon-close-1:before {
 	content: "\e64e";
 }
+
 .icon-document-1:before {
 	content: "\e64f";
 }
+
 .icon-edit:before {
 	content: "\e650";
 }
+
 .icon-gear:before {
 	content: "\e651";
 }
+
 .icon-headphones:before {
 	content: "\e652";
 }
+
 .icon-home:before {
 	content: "\e653";
 }
+
 .icon-image:before {
 	content: "\e654";
 }
+
 .icon-ipad:before {
 	content: "\e655";
 }
+
 .icon-link:before {
 	content: "\e656";
 }
+
 .icon-megaphone:before {
 	content: "\e657";
 }
+
 .icon-mute:before {
 	content: "\e658";
 }
+
 .icon-quote:before {
 	content: "\e659";
 }
+
 .icon-speech-bubble:before {
 	content: "\e65a";
 }
+
 .icon-text:before {
 	content: "\e65b";
 }
+
 .icon-upload:before {
 	content: "\e65c";
 }
+
 .icon-video-camera:before {
 	content: "\e65d";
 }
+
 .icon-iphone:before {
 	content: "\e65e";
 }
 
-
-.btn-default{
+.btn-default {
 	background: $link-color;
-	color:$white;
+	color: $white;
 	font-size: 10px;
-	line-height:14px;
-	padding:0 5px;
-	border-radius:15px;
-	border:0;
-	min-width:60px;
+	line-height: 14px;
+	padding: 0 5px;
+	border-radius: 15px;
+	border: 0;
+	min-width: 60px;
 	@include vertical(inline-block, middle);
-	@include breakpoint($mobile){
-		line-height:12px;
-		padding:2px 5px;
+	@include breakpoint($mobile) {
+		line-height: 12px;
+		padding: 2px 5px;
 	}
+	&.pitched,
 	&.active,
 	&:focus,
-	&:hover{
+	&:hover {
 		background: $light-seagreen;
-		outline:none;
-		color:$white;
+		outline: none;
+		color: $white;
 	}
-	&.active{
+	&.active {
 		background: $red;
-		
-		&:hover{
+
+		&:hover {
 			background: rgba(223, 19, 56, 0.8);
 		}
 	}
-	&.add{
-		min-width:130px;
-		padding:6px 5px 8px;
-		border-radius:3px;
-		letter-spacing:1px;
+	&.add {
+		min-width: 130px;
+		padding: 6px 5px 8px;
+		border-radius: 3px;
+		letter-spacing: 1px;
 		font-size: 14px;
-		line-height:18px;
+		line-height: 18px;
 		background: $text-color;
-		
+
 		&:focus,
-		&:hover{
+		&:hover {
 			background: $link-hover-color;
 		}
-		&.active{
+		&.active {
 			background: $link-color;
 		}
 	}
 }
-#wrapper{
-	position:relative;
-	overflow:hidden;
-	display:table;
+
+#wrapper {
+	position: relative;
+	overflow: hidden;
+	display: table;
 	background: $body-bg;
-	table-layout:fixed;
+	table-layout: fixed;
 	@include square(100%);
-	
-	@include breakpoint($mobile){
+
+	@include breakpoint($mobile) {
 		// display: block;
 		// height: auto;
 	}
 }
-.w1{overflow: hidden;}
-#header{
-	max-width:1330px;
-	margin:0 auto;
+
+.w1 {
+	overflow: hidden;
+}
+
+#header {
+	max-width: 1330px;
+	margin: 0 auto;
 	padding-top: 15px;
 	padding-bottom: 12px;
 	@include element(before, 0, -9999px, 0, -9999px, $blue);
-	z-index:99;
+	z-index: 99;
 }
-.non-logedin{
+
+.non-logedin {
 	@extend %clearfix;
-	@include breakpoint($desktop-large){
-		padding:1px 1.4% 0 1.7%;
+	@include breakpoint($desktop-large) {
+		padding: 1px 1.4% 0 1.7%;
 	}
-	@include breakpoint($tablet){
-		padding:0 17px 0 20px;
+	@include breakpoint($tablet) {
+		padding: 0 17px 0 20px;
 	}
-	.navbar-toggle{
-		margin:-3px 0 0;
+	.navbar-toggle {
+		margin: -3px 0 0;
 	}
-	.navbar-nav{
-		@include breakpoint($mobile){
+	.navbar-nav {
+		@include breakpoint($mobile) {
 			padding-top: 25px;
 		}
 	}
 }
-.navbar{
+
+.navbar {
 	float: right;
 	width: 86.7%;
-	padding:1px 0 0;
-	
-	@include breakpoint($tablet){
+	padding: 1px 0 0;
+
+	@include breakpoint($tablet) {
 		width: 79.9%;
 	}
-	@include breakpoint($mobile){
+	@include breakpoint($mobile) {
 		float: none;
 		width: 100%;
 		@extend %clearfix;
 	}
 }
-.navbar-collapse{
-	@include breakpoint($mobile){
+
+.navbar-collapse {
+	@include breakpoint($mobile) {
 		top: 100%;
 		left: 0;
 		right: 0;
 		background: $blue;
 		margin: 12px 0 0 0;
-		border:0;
-		box-shadow:none;
-		position:absolute;
+		border: 0;
+		box-shadow: none;
+		position: absolute;
 	}
 }
-.navbar{
-	@include breakpoint($mobile){position:static;}
+
+.navbar {
+	@include breakpoint($mobile) {
+		position: static;
+	}
 }
-.navbar-nav{
-	@include breakpoint($mobile){
+
+.navbar-nav {
+	@include breakpoint($mobile) {
 		@include element(before, 0, -9999px, 0, -9999px, $blue);
-		padding:0 20px;
+		padding: 0 20px;
 	}
-	>li{
-		margin:0 41px 0 0;
-		
-		
-		@include breakpoint($mobile){
+	> li {
+		margin: 0 41px 0 0;
+
+		@include breakpoint($mobile) {
 			float: none;
-			margin:0 0 10px;
+			margin: 0 0 10px;
 			display: block;
 		}
-		a{
-			padding:0;
-			
+		a {
+			padding: 0;
+
 			&:hover,
-			&:focus{
-				color:$link-hover-color;
-				outline:none;
+			&:focus {
+				color: $link-hover-color;
+				outline: none;
 			}
 		}
-		&.dropdown{
-			&.open{
-				a{
+		&.dropdown {
+			&.open {
+				a {
 					&:hover,
-					&:focus{
-						color:$link-hover-color;
-						outline:none;
+					&:focus {
+						color: $link-hover-color;
+						outline: none;
 					}
-					&.active{
-						a{color:$light-seagreen;}
+					&.active {
+						a {
+							color: $light-seagreen;
+						}
 					}
 				}
 			}
 		}
 	}
 }
-.navbar-right{
-	margin-right:-5px;
-	@include breakpoint($mobile){
+
+.navbar-right {
+	margin-right: -5px;
+	@include breakpoint($mobile) {
 		float: none;
 		@extend %clearfix;
 		width: 100%;
-		padding:0 20px 25px !important;
+		padding: 0 20px 25px !important;
 	}
-	>li{
-		margin:0 0 0 38px;
-		
-		@include breakpoint($mobile){
-			margin:0 0 10px;
+	> li {
+		margin: 0 0 0 38px;
+
+		@include breakpoint($mobile) {
+			margin: 0 0 10px;
 		}
 	}
 }
-.dropdown-menu{
-	padding:17px 0 0;
-	border:0;
+
+.dropdown-menu {
+	padding: 17px 0 0;
+	border: 0;
 	width: 206px;
-	left:-119px;
+	left: -119px;
 	background: none;
 	@include element2(before, 8px, auto, auto, 50%);
-	position:absolute;
-	border-radius:0 0 10px 10px;
-	
-	@include breakpoint($desktop){
-		padding:16px 0 0;
+	position: absolute;
+	border-radius: 0 0 10px 10px;
+
+	@include breakpoint($desktop) {
+		padding: 16px 0 0;
 	}
-	&:before{
+	&:before {
 		background: url(../images/sprite.png) no-repeat -1px -166px;
 		@include size(28px, 10px);
-		z-index:999;
+		z-index: 999;
 		margin: 0 0 0 15px;
-		
-		@include breakpoint($mobile){
+
+		@include breakpoint($mobile) {
 			display: none;
 		}
 	}
-	.title{
-		font:14px/18px $font-neue-thin;
+	.title {
+		font: 14px/18px $font-neue-thin;
 		background: $white;
-		padding:14px 10px 14px 19px;
+		padding: 14px 10px 14px 19px;
 		text-transform: uppercase;
 		display: block;
-		color:$light-seagreen;
-		letter-spacing:1px;
+		color: $light-seagreen;
+		letter-spacing: 1px;
 	}
-	ul{
+	ul {
 		background: $light-gray;
 		text-transform: uppercase;
 		font-size: 11px;
-		line-height:14px;
-		border-radius:0 0 10px 10px;
+		line-height: 14px;
+		border-radius: 0 0 10px 10px;
 		overflow: hidden;
-		margin:0;
-		@include breakpoint($mobile){
-			border-radius:0;
+		margin: 0;
+		@include breakpoint($mobile) {
+			border-radius: 0;
 		}
-		li{
-			a{
+		li {
+			a {
 				display: block;
-				padding:16px 10px 13px 19px !important;
-				
+				padding: 16px 10px 13px 19px !important;
+
 				&:focus,
-				&:hover{
+				&:hover {
 					background: $white;
 					text-decoration: none;
 				}
-				&.pressed{
+				&.pressed {
 					background: $light-seagreen;
-					color:$white;
-					
+					color: $white;
+
 					&:focus,
-					&:hover{
+					&:hover {
 						background: $light-seagreen;
-						color:$white !important;
+						color: $white !important;
 					}
 				}
-				&.active{
-					a{
+				&.active {
+					a {
 						background: $light-seagreen;
 					}
 				}
 			}
 		}
-		>.active{
-			a{
+		> .active {
+			a {
 				background: $light-seagreen;
-				color:$white;
-				
+				color: $white;
+
 				&:focus,
-				&:hover{
+				&:hover {
 					background: $light-seagreen;
-					color:$white !important;
+					color: $white !important;
 				}
 			}
 		}
 	}
 }
-.logo-holder{
+
+.logo-holder {
 	float: left;
 }
-.logo{
-	margin:0;
+
+.logo {
+	margin: 0;
 	float: left;
 	@include size(111px, 21px);
-	
-	img{@extend %img-responsive;}
+
+	img {
+		@extend %img-responsive;
+	}
 }
-.expert-logedin{
+
+.navbar-default {
+
+	.navbar-nav {
+		> li > div > a {
+			color: $navbar-default-link-color;
+
+			&:hover,
+			&:focus {
+				color: $navbar-default-link-hover-color;
+				background-color: $navbar-default-link-hover-bg;
+				text-decoration: none;
+			}
+		}
+		> li .active > a {
+			&,
+			&:hover,
+			&:focus {
+				color: $navbar-default-link-active-color;
+				background-color: $navbar-default-link-active-bg;
+			}
+		}
+		> .disabled > a {
+			&,
+			&:hover,
+			&:focus {
+				color: $navbar-default-link-disabled-color;
+				background-color: $navbar-default-link-disabled-bg;
+			}
+		}
+	}
+	.navbar-nav {
+		div.open > a {
+			&,
+			&:hover,
+			&:focus {
+				background-color: $navbar-default-link-active-bg;
+				color: $navbar-default-link-active-color;
+			}
+		}
+	}
+}
+
+.navbar-nav > li > div > .dropdown-menu {
+	margin-top: 0;
+	@include border-top-radius(0);
+}
+
+.expert-logedin {
 	@extend %clearfix;
-	@include breakpoint($desktop-large){
-		padding:1px 1.4% 0 1.7%;
+	@include breakpoint($desktop-large) {
+		padding: 1px 1.4% 0 1.7%;
 	}
-	@include breakpoint($tablet){
-		padding:0 17px 0 20px;
+	@include breakpoint($tablet) {
+		padding: 0 17px 0 20px;
 	}
-	@include breakpoint($mobile){
-		padding:0;
+	@include breakpoint($mobile) {
+		padding: 0;
 	}
-	.logo-holder{
-		margin:0 33px 0 0;
-		
-		@include breakpoint($mobile){
+	.logo-holder {
+		margin: 0 33px 0 0;
+
+		@include breakpoint($mobile) {
 			float: none;
 			width: 100%;
-			margin:0 0 20px;
+			margin: 0 0 20px;
 			@extend %clearfix;
 			@include vertical(inline-block, top);
 		}
 	}
-	.logo{
-		margin:0 30px 0 0;
+	.logo {
+		margin: 0 30px 0 0;
 	}
-	.navbar{
+	.navbar {
 		float: left;
 		width: 69.5%;
-		padding:1px 0 0;
-		
-		@include breakpoint($tablet){
+		padding: 1px 0 0;
+
+		@include breakpoint($tablet) {
 			width: 65%;
 		}
-		@include breakpoint($mobile){
+		@include breakpoint($mobile) {
 			width: 100%;
 			float: none;
 			@extend %clearfix;
-			padding:0 20px;
+			padding: 0 20px;
 		}
 	}
-	.navbar-nav{
+	.navbar-nav {
 		@extend %clearfix;
 		text-align: center;
-		margin:0;
+		margin: 0;
 		float: none;
 		width: 100%;
-		
-		@include breakpoint($tablet){
-			text-align:left;
+
+		@include breakpoint($tablet) {
+			text-align: left;
 		}
-		@include breakpoint($mobile){
-			padding:25px 20px;
+		@include breakpoint($mobile) {
+			padding: 25px 20px;
 		}
-		>li{
+		> li {
 			float: none;
 			@include vertical(inline-block, top);
-			margin:0 14px;
-			
-			@include breakpoint($mobile){
+			margin: 0 14px;
+
+			@include breakpoint($mobile) {
 				float: none;
-				margin:0 0 10px;
+				margin: 0 0 10px;
 				display: block;
 			}
-			a{padding:0;}
+			a {
+				padding: 0;
+			}
 		}
 	}
 }
-.navbar-toggle{
-	margin:0 -11px 0 0;
-	padding:8px;
+
+.navbar-toggle {
+	margin: 0 -11px 0 0;
+	padding: 8px;
 }
-.client-logedin{
+
+.client-logedin {
 	@extend %clearfix;
-	@include breakpoint($desktop-large){
-		padding:1px 1.4% 0 1.7%;
+	@include breakpoint($desktop-large) {
+		padding: 1px 1.4% 0 1.7%;
 	}
-	@include breakpoint($tablet){
-		padding:0 17px 0 20px;
+	@include breakpoint($tablet) {
+		padding: 0 17px 0 20px;
 	}
-	@include breakpoint($mobile){padding:0;}
-	.logo-holder{
-		margin:0 33px 0 0;
-		
-		@include breakpoint($tablet){
-			margin:0 25px 0 0;
+	@include breakpoint($mobile) {
+		padding: 0;
+	}
+	.logo-holder {
+		margin: 0 33px 0 0;
+
+		@include breakpoint($tablet) {
+			margin: 0 25px 0 0;
 		}
-		@include breakpoint($mobile){
+		@include breakpoint($mobile) {
 			float: none;
 			width: 100%;
-			margin:0 0 20px;
+			margin: 0 0 20px;
 			@extend %clearfix;
 			@include vertical(inline-block, top);
 		}
 	}
-	.logo{
-		margin:0 30px 0 0;
+	.logo {
+		margin: 0 30px 0 0;
 	}
-	.navbar{
+	.navbar {
 		float: left;
 		width: 69.5%;
-		padding:1px 0 0;
-		
-		@include breakpoint($tablet){
+		padding: 1px 0 0;
+
+		@include breakpoint($tablet) {
 			width: 65%;
 		}
-		@include breakpoint($mobile){
+		@include breakpoint($mobile) {
 			width: 100%;
 			float: none;
 			@extend %clearfix;
-			padding:0 20px;
+			padding: 0 20px;
 		}
 	}
-	.navbar-nav{
+	.navbar-nav {
 		@extend %clearfix;
 		text-align: center;
-		margin:0;
+		margin: 0;
 		float: none;
 		width: 100%;
-		
-		@include breakpoint($tablet){
-			text-align:left;
-			padding:1px 0 0;
+
+		@include breakpoint($tablet) {
+			text-align: left;
+			padding: 1px 0 0;
 			font-size: 16px;
-			line-height:20px;
+			line-height: 20px;
 		}
-		@include breakpoint($mobile){
-			padding:25px 20px;
+		@include breakpoint($mobile) {
+			padding: 25px 20px;
 		}
-		>li{
+		> li {
 			float: none;
 			@include vertical(inline-block, top);
-			margin:0 14px;
-			@include breakpoint($tablet){
-				margin:0 0 0 16px;
-				
-				&:first-child{margin-left: 0;}
+			margin: 0 14px;
+			@include breakpoint($tablet) {
+				margin: 0 0 0 16px;
+
+				&:first-child {
+					margin-left: 0;
+				}
 			}
-			@include breakpoint($mobile){
+			@include breakpoint($mobile) {
 				float: none;
-				margin:0 0 10px;
+				margin: 0 0 10px;
 				display: block;
 			}
-			a{padding:0;}
+			a {
+				padding: 0;
+			}
 		}
 	}
 }
-.client-login{
-	position:relative;
+
+.client-login {
+	position: relative;
 	float: right;
-	margin:-6px 0 0;
-	
-	@include breakpoint($mobile){
-		margin:0;
+	margin: -6px 0 0;
+
+	@include breakpoint($mobile) {
+		margin: 0;
 		position: absolute;
 		right: 26px;
 		top: -4px;
 	}
-	.btn-primary{
-		border:0;
+	.btn-primary {
+		border: 0;
 		background: none;
-		padding:0;
-		border-radius:50%;
+		padding: 0;
+		border-radius: 50%;
 		overflow: hidden;
 		float: right;
 		@include square(33px);
 		@include element2(before, 0, 0, 0, 0);
 		@include element2(after, 0, 0, 0, 0);
-		
-		&:before{
+
+		&:before {
 			background: rgba(73, 87, 105, 0.5);
 			display: none;
 		}
-		&:after{
+		&:after {
 			background: rgba(0, 225, 191, 0.5);
 			display: none;
 		}
-		&:hover{
+		&:hover {
 			text-decoration: none;
-			outline:none;
-			&:before{display: block;}
+			outline: none;
+			&:before {
+				display: block;
+			}
 		}
-		&:focus{outline:none;}
-		&.active{
-			&:after{display: block;}
+		&:focus {
+			outline: none;
+		}
+		&.active {
+			&:after {
+				display: block;
+			}
 		}
 	}
-	&:hover{
-		.btn-primary{
-			&:before{display: block;}
+	&:hover {
+		.btn-primary {
+			&:before {
+				display: block;
+			}
 		}
-		.client-drop{display: block;}
+		.client-drop {
+			display: block;
+		}
 	}
 }
-.client-drop{
+
+.client-drop {
 	display: none;
-	padding:12px 0 0;
-	border:0;
+	padding: 12px 0 0;
+	border: 0;
 	width: 206px;
 	top: 100%;
-	right:-16px;
+	right: -16px;
 	background: none;
 	@include element2(before, 4px, 17px, auto, auto);
-	position:absolute;
-	z-index:999;
-	@include breakpoint($mobile){
+	position: absolute;
+	z-index: 999;
+	@include breakpoint($mobile) {
 		width: 180px;
 	}
-	&:before{
+	&:before {
 		background: url(../images/sprite.png) no-repeat -1px -166px;
 		@include size(28px, 10px);
-		z-index:999;
+		z-index: 999;
 	}
-	.drop-box{
-		border:0;
+	.drop-box {
+		border: 0;
 		margin: 0;
-		padding:0;
+		padding: 0;
 		background: $light-gray;
-		border-radius:0 0 10px 10px;
+		border-radius: 0 0 10px 10px;
 		overflow: hidden;
 	}
-	.title{
-		font:14px/18px $font-neue-thin;
+	.title {
+		font: 14px/18px $font-neue-thin;
 		background: $white;
-		padding:14px 10px 14px 14px;
+		padding: 14px 10px 14px 14px;
 		text-transform: uppercase;
 		display: block;
-		color:$light-seagreen;
-		letter-spacing:1px;
-		
-		@include breakpoint($mobile){
+		color: $light-seagreen;
+		letter-spacing: 1px;
+
+		@include breakpoint($mobile) {
 			font-size: 12px;
 		}
 	}
-	ul{
+	ul {
 		text-transform: uppercase;
 		font-size: 11px;
-		line-height:14px;
+		line-height: 14px;
 		overflow: hidden;
-		margin:0;
-		
-		@include breakpoint($mobile){
+		margin: 0;
+
+		@include breakpoint($mobile) {
 			font-size: 11px;
 		}
-		li{
-			border-top:1px solid #f0f0f1;
-			a{
+		li {
+			border-top: 1px solid #f0f0f1;
+			a {
 				display: block;
-				padding:16px 10px 12px 37px;
-				position:relative;
-				color:$light-blue;
-				
-				&.pressed{
+				padding: 16px 10px 12px 37px;
+				position: relative;
+				color: $light-blue;
+
+				&.pressed {
 					background: $light-seagreen;
-					color:$white;
-					
+					color: $white;
+
 					&:focus,
-					&:hover{
+					&:hover {
 						background: $light-seagreen;
-						color:$white;
+						color: $white;
 					}
 					.icon-user,
 					.icon-power,
-					.icon-gear{color:$white;}
+					.icon-gear {
+						color: $white;
+					}
 				}
 				&:focus,
-				&:hover{
+				&:hover {
 					background: $white;
 					text-decoration: none;
-					outline:none;
+					outline: none;
 				}
-				&.active{
-					a{
+				&.active {
+					a {
 						background: $light-seagreen;
 					}
 				}
 				.icon-user,
 				.icon-power,
-				.icon-gear{
-					position:absolute;
+				.icon-gear {
+					position: absolute;
 					left: 12px;
 					top: 50%;
-					margin:-10px 0 0 0;
+					margin: -10px 0 0 0;
 					font-size: 19px;
-					color:$link-color;
-					
-					@include breakpoint($mobile){
+					color: $link-color;
+
+					@include breakpoint($mobile) {
 						font-size: 18px;
 					}
 				}
 			}
-			&:first-child{border:0;}
+			&:first-child {
+				border: 0;
+			}
 		}
-		>.active{
-			a{
+		> .active {
+			a {
 				background: $light-seagreen;
-				color:$white;
-				
+				color: $white;
+
 				&:focus,
-				&:hover{
+				&:hover {
 					background: $light-seagreen;
-					color:$white;
+					color: $white;
 				}
 				.icon-user,
 				.icon-power,
-				.icon-gear{color:$white;}
+				.icon-gear {
+					color: $white;
+				}
 			}
 		}
 	}
 }
-.notifications-block{
+
+.notifications-block {
 	float: left;
-	margin:0;
-	position:relative;
-	z-index:999;
-	
-	.btn-primary{
+	margin: 0;
+	position: relative;
+	z-index: 999;
+
+	.btn-primary {
 		background: none;
-		border:0;
-		padding:0;
-		color:$light-blue;
+		border: 0;
+		padding: 0;
+		color: $light-blue;
 		font-size: 25px;
-		line-height:12px;
-		position:relative;
-		
+		line-height: 12px;
+		position: relative;
+
 		&:focus,
-		&:hover{
+		&:hover {
 			text-decoration: none;
-			outline:none;
-			color:$link-hover-color;
+			outline: none;
+			color: $link-hover-color;
 		}
-		.count{
-			border-radius:15px;
+		.count {
+			border-radius: 15px;
 			background: $red;
-			color:$white;
+			color: $white;
 			display: none;
 			font-size: 11px;
-			line-height:14px;
+			line-height: 14px;
 			text-align: center;
 			width: 24px;
-			padding:1px 0 0;
+			padding: 1px 0 0;
 			position: absolute;
 			top: 0;
 			right: -12px;
 		}
-		&.active{
-			color:$light-seagreen;
-			.count{display: block;}
+		&.active {
+			color: $light-seagreen;
+			.count {
+				display: block;
+			}
 		}
 	}
 }
-.notification-drop{
-	padding:14px 0 0;
-	border:0;
+
+.notification-drop {
+	padding: 14px 0 0;
+	border: 0;
 	width: 364px;
 	top: 100%;
 	left: 50%;
-	margin:0 0 0 -177px;
+	margin: 0 0 0 -177px;
 	background: none;
 	@include element2(before, 5px, auto, auto, 50%);
-	position:absolute;
-	
-	@include breakpoint($mobile){
+	position: absolute;
+
+	@include breakpoint($mobile) {
 		width: 280px;
-		margin:0 0 0 -150px;
+		margin: 0 0 0 -150px;
 	}
-	&:before{
+	&:before {
 		background: url(../images/sprite.png) no-repeat -1px -166px;
 		@include size(28px, 10px);
-		margin:0 0 0 -21px;
-		z-index:999;
-		
-		@include breakpoint($mobile){
-			margin:0 0 0 -4px;
+		margin: 0 0 0 -21px;
+		z-index: 999;
+
+		@include breakpoint($mobile) {
+			margin: 0 0 0 -4px;
 		}
 	}
-	.well{
-		border:0;
+	.well {
+		border: 0;
 		margin: 0;
-		padding:0;
+		padding: 0;
 		background: $light-gray;
-		border-radius:0 0 10px 10px;
+		border-radius: 0 0 10px 10px;
 		overflow: hidden;
 	}
-	.scroll-area{
+	.scroll-area {
 		height: 320px;
 		width: 100% !important;
 		overflow: auto;
 	}
-	.title{
-		font:14px/18px $font-neue-thin;
-		letter-spacing:1px;
+	.title {
+		font: 14px/18px $font-neue-thin;
+		letter-spacing: 1px;
 		background: $white;
-		padding:14px 22px 12px 24px;
+		padding: 14px 22px 12px 24px;
 		text-transform: uppercase;
-		color:$light-seagreen;
+		color: $light-seagreen;
 		overflow: hidden;
-		@include breakpoint($mobile){
+		@include breakpoint($mobile) {
 			font-size: 12px;
-			line-height:16px;
-			padding:15px;
+			line-height: 16px;
+			padding: 15px;
 		}
-		.activity{
+		.activity {
 			float: left;
 		}
-		.marked{
+		.marked {
 			float: right;
 			font-size: 11px;
-			letter-spacing:1px;
-			word-spacing:-2px;
-			margin:2px 0 0;
-			@include breakpoint($mobile){
+			letter-spacing: 1px;
+			word-spacing: -2px;
+			margin: 2px 0 0;
+			@include breakpoint($mobile) {
 				font-size: 10px;
-				margin:0;
+				margin: 0;
 			}
 		}
-		a{
-			color:#597a96;
+		a {
+			color: #597a96;
 			&:focus,
-			&:hover{
-				color:$light-seagreen;
+			&:hover {
+				color: $light-seagreen;
 				text-decoration: none;
-				outline:none;
+				outline: none;
 			}
-			&.active{color:$light-seagreen;}
+			&.active {
+				color: $light-seagreen;
+			}
 		}
 	}
-	ul{
+	ul {
 		text-transform: uppercase;
 		font-size: 11px;
-		line-height:14px;
+		line-height: 14px;
 		overflow: hidden;
 		font-weight: 600;
-		margin:0;
-		li{
-			a{
+		margin: 0;
+		li {
+			a {
 				display: block;
-				padding:24px 10px 27px 72px;
-				color:$light-blue;
-				position:relative;
-				
-				@include breakpoint($mobile){
-					padding:18px 10px 20px 64px;
+				padding: 24px 10px 27px 72px;
+				color: $light-blue;
+				position: relative;
+
+				@include breakpoint($mobile) {
+					padding: 18px 10px 20px 64px;
 				}
 				&:focus,
-				&:hover{
+				&:hover {
 					background: $white;
 					text-decoration: none;
-					outline:none;
+					outline: none;
 				}
-				&.active{
-					a{
+				&.active {
+					a {
 						background: $light-seagreen;
 					}
 				}
 				.icon-add-user,
 				.icon-flag,
 				.icon-trophy,
-				.icon-crosshair{
-					position:absolute;
+				.icon-crosshair {
+					position: absolute;
 					left: 20px;
 					top: 50%;
-					margin:-18px 0 0;
+					margin: -18px 0 0;
 					font-size: 32px;
-					color:$link-color;
-					
-					@include breakpoint($mobile){
+					color: $link-color;
+
+					@include breakpoint($mobile) {
 						font-size: 25px;
 					}
 				}
-				.icon-flag{
+				.icon-flag {
 					left: 23px;
-					margin:-19px 0 0;
+					margin: -19px 0 0;
 				}
-				.icon-trophy{
+				.icon-trophy {
 					font-size: 33px;
-					margin:-19px 0 0;
+					margin: -19px 0 0;
 				}
-				&.pressed{
+				&.pressed {
 					background: $light-seagreen;
-					color:$white;
+					color: $white;
 					&:focus,
-					&:hover{
+					&:hover {
 						background: $light-seagreen;
-						color:$white;
+						color: $white;
 					}
-					time{color:$white;}
+					time {
+						color: $white;
+					}
 					.icon-add-user,
 					.icon-flag,
 					.icon-trophy,
-					.icon-crosshair{color:$white;}
+					.icon-crosshair {
+						color: $white;
+					}
 				}
 			}
-			time{
+			time {
 				display: block;
-				color:$white2;
+				color: $white2;
 				margin: 1px 0 0;
 				font-size: 12px;
-				line-height:14px;
+				line-height: 14px;
 				font-weight: 400;
 			}
-			
+
 		}
-		>.active{
-			time{color:$white;}
-			a{
+		> .active {
+			time {
+				color: $white;
+			}
+			a {
 				background: $light-seagreen;
-				color:$white;
-				
+				color: $white;
+
 				&:focus,
-				&:hover{
+				&:hover {
 					background: $light-seagreen;
-					color:$white;
+					color: $white;
 				}
 				.icon-add-user,
 				.icon-flag,
 				.icon-trophy,
-				.icon-crosshair{color:$white;}
+				.icon-crosshair {
+					color: $white;
+				}
 			}
 		}
-		&.pressed{
-			time{color:$white;}
-			a{
+		&.pressed {
+			time {
+				color: $white;
+			}
+			a {
 				background: $light-seagreen;
-				color:$white;
+				color: $white;
 				&:focus,
-				&:hover{
+				&:hover {
 					background: $light-seagreen;
-					color:$white;
+					color: $white;
 				}
 				.icon-add-user,
 				.icon-flag,
 				.icon-trophy,
-				.icon-crosshair{color:$white;}
+				.icon-crosshair {
+					color: $white;
+				}
 			}
 		}
-	}
-}
-#main{overflow: hidden;}
-.main-banner{
-	@extend %clearfix;
-	@extend %backgroundreset;
-	@include element2(before, 0, 0, 0, 0);
-	z-index:1;
-	&:before{
-		z-index:-1;
-		background: rgba($link-color, 0.89);
-	}
-}
-.banner{
-	padding-top: 48px;
-	padding-bottom: 15px;
-	color:$white;
-	font-size:10px;
-	line-height:10px;
-	font-weight: 600;
-	
-	h2,
-	h1{
-		margin:0 0 1px;
-		color:$white;
-		font-size: 22px;
-		line-height:26px;
-		
-		@include breakpoint($mobile){
-			font-size: 18px;
-			line-height:22px;
-		}
-	}
-	.holder{
-		@extend %clearfix;
-		padding:0 21.4% 0 21.9%;
-		margin:0 0 51px;
-		@media only screen and (max-width:1366px){}
-		@include breakpoint($tablet){
-			padding:0 1.7% 0 2.8%;
-		}
-		@include breakpoint($mobile){
-			padding:0;
-			margin:0 0 30px;
-		}
-	}
-	p{margin: 0;}
-}
-.banner-frame{
-	float: left;
-	width: 60%;
-	margin:0 13px 0 0;
-	position:relative;
-	
-	@include breakpoint($mobile){
-		float: none;
-		width: 100%;
-		@extend %clearfix;
-		margin:0 0 20px;
-	}
-	.alignleft{
-		@include vertical(inline-block, top);
-		float: left;
-		@include square(81px);
-		margin:0 20px 0 0;
-		position:relative;
-		
-		@include breakpoint($mobile){
-			margin:0 10px 0 0;
-		}
-		.img-box{
-			overflow: hidden;
-			border-radius:50%;
-			@include square(100%);
-			display: block;
-			position: relative;
-			&:hover{
-				.over{display: block;}
-			}
-			&.active{
-				.over2{display: block;}
-			}
-		}
-		img{@extend %img-responsive;}
-		.over{
-			@extend %postionreset;
-			text-align: center;
-			background: rgba($white, 0.8);
-			padding:10px 8px;
-			display: none;
-			@include square(100%);
-			@include v-align2(txt, $valign: middle);
-			
-			&:before{margin: 0;}
-			.txt{
-				color:$link-color;
-				font:14px/18px $font-neue-thin;
-			}
-		}
-		.over2{
-			@extend %postionreset;
-			text-align: center;
-			background: rgba(0, 225, 191, 0.8);
-			padding:10px 8px;
-			display: none;
-			@include square(100%);
-			@include v-align2(txt, $valign: middle);
-			
-			&:before{margin: 0;}
-			.txt{
-				color:$link-color;
-				font:14px/18px $font-neue-thin;
-			}
-		}
-		.tooltip2{
-			width:179px;
-			left: 7px;
-			text-align: center;
-			top:100%;
-			bottom:auto;
-			padding:0;
-			margin:0;
-			position:absolute;
-			font:10px/12px $font-family-base;
-			.tool-txt{
-				padding:7px 3px 6px;
-				color:$suva-gray;
-				background:$body-bg;
-				@include arrow-lazy($al-direction: top, $al-size: 7px, $al-color: $body-bg, $al-center: 50%, $al-margin: -1px, $al-pseudo: before);
-				&:before{margin:0 0 0 -32px;}
-			}
-		}
-		&.hover{
-			.tooltip2{
-				max-height: 500px;
-			}
-		}
-	}
-	.txt-box{
-		@include vertical(inline-block, top);
-		width: 68%;
-		padding:3px 0 0;
 	}
 }
 
-.info-nav{
-	margin:0 0 0 2px;
-	
-	dt{
-		line-height:12px;
-		float: left;
-		width: 60px;
-		margin:0 4px 0 0;
-	}
-	dd{
-		line-height:12px;
-		overflow: hidden;
-		margin:0;
-	}
-}
-.banner-rattings{
+#main {
 	overflow: hidden;
-	padding:3px 0 0;
-	
-	.rattings{
-		background: url(../images/sprite.png) no-repeat;
-		@include size(81px, 78px);
-		padding:21px 10px 14px;
-		text-align: center;
-		font:24px/28px $font-ultra-light;
-		float: left;
-		margin:0 13px 0 0;
-	}
-	.box{
-		overflow: hidden;
-		
-		h2{margin: 0 0 3px;}
+}
+
+.main-banner {
+	@extend %clearfix;
+	@extend %backgroundreset;
+	@include element2(before, 0, 0, 0, 0);
+	z-index: 1;
+	&:before {
+		z-index: -1;
+		background: rgba($link-color, 0.89);
 	}
 }
-.linked-nav{
-	margin:0;
-	text-align: center;
-	font:18px/22px $font-neue-thin;
-	
-	li{
-		padding: 0;
-		margin:0 32px;
-		@include vertical(inline-block, top);
-		
-		@include breakpoint($mobile){
-			display: block;
-			margin:0 0 10px;
+
+.banner {
+	padding-top: 48px;
+	padding-bottom: 15px;
+	color: $white;
+	font-size: 10px;
+	line-height: 10px;
+	font-weight: 600;
+
+	h2,
+	h1 {
+		margin: 0 0 1px;
+		color: $white;
+		font-size: 22px;
+		line-height: 26px;
+
+		@include breakpoint($mobile) {
+			font-size: 18px;
+			line-height: 22px;
 		}
-		a{
-			padding:0;
-			color:$white;
-			
-			&:focus,
-			&:hover{
-				text-decoration: none;
-				color:$text-color;
-				outline:none;
+	}
+	.holder {
+		@extend %clearfix;
+		padding: 0 21.4% 0 21.9%;
+		margin: 0 0 51px;
+		@media only screen and (max-width: 1366px) {
+		}
+		@include breakpoint($tablet) {
+			padding: 0 1.7% 0 2.8%;
+		}
+		@include breakpoint($mobile) {
+			padding: 0;
+			margin: 0 0 30px;
+		}
+	}
+	p {
+		margin: 0;
+	}
+}
+
+.banner-frame {
+	float: left;
+	width: 60%;
+	margin: 0 13px 0 0;
+	position: relative;
+
+	@include breakpoint($mobile) {
+		float: none;
+		width: 100%;
+		@extend %clearfix;
+		margin: 0 0 20px;
+	}
+	.alignleft {
+		@include vertical(inline-block, top);
+		float: left;
+		@include square(81px);
+		margin: 0 20px 0 0;
+		position: relative;
+
+		@include breakpoint($mobile) {
+			margin: 0 10px 0 0;
+		}
+		.img-box {
+			overflow: hidden;
+			border-radius: 50%;
+			@include square(100%);
+			display: block;
+			position: relative;
+			&:hover {
+				.over {
+					display: block;
+				}
+			}
+			&.active {
+				.over2 {
+					display: block;
+				}
 			}
 		}
-		&.active{
-			a{color:$light-seagreen;}
+		img {
+			@extend %img-responsive;
+		}
+		.over {
+			@extend %postionreset;
+			text-align: center;
+			background: rgba($white, 0.8);
+			padding: 10px 8px;
+			display: none;
+			@include square(100%);
+			@include v-align2(txt, $valign: middle);
+
+			&:before {
+				margin: 0;
+			}
+			.txt {
+				color: $link-color;
+				font: 14px/18px $font-neue-thin;
+			}
+		}
+		.over2 {
+			@extend %postionreset;
+			text-align: center;
+			background: rgba(0, 225, 191, 0.8);
+			padding: 10px 8px;
+			display: none;
+			@include square(100%);
+			@include v-align2(txt, $valign: middle);
+
+			&:before {
+				margin: 0;
+			}
+			.txt {
+				color: $link-color;
+				font: 14px/18px $font-neue-thin;
+			}
+		}
+		.tooltip {
+			width: 179px;
+			left: 7px !important;
+			text-align: center;
+			top: 100%;
+			bottom: auto;
+			padding: 0;
+			margin: 0;
+			position: absolute;
+			font: 10px/12px $font-family-base;
+			max-height: 500px;
+			.tooltip-inner {
+				padding: 7px 3px 6px;
+				color: $suva-gray;
+				background: $body-bg;
+				@include arrow-lazy($al-direction: top, $al-size: 7px, $al-color: $body-bg, $al-center: 50%, $al-margin: -1px, $al-pseudo: before);
+				&:before {
+					margin: 0 0 0 -32px;
+				}
+			}
+		}
+	}
+	.txt-box {
+		@include vertical(inline-block, top);
+		width: 68%;
+		padding: 3px 0 0;
+	}
+}
+
+.info-nav {
+	margin: 0 0 0 2px;
+
+	dt {
+		line-height: 12px;
+		float: left;
+		width: 120px;
+		margin: 0 4px 0 0;
+	}
+	dd {
+		line-height: 12px;
+		overflow: hidden;
+		margin: 0;
+	}
+}
+
+.banner-rattings {
+	overflow: hidden;
+	padding: 3px 0 0;
+
+	.rattings {
+		background: url(../images/sprite.png) no-repeat;
+		@include size(81px, 78px);
+		padding: 21px 10px 14px;
+		text-align: center;
+		font: 24px/28px $font-ultra-light;
+		float: left;
+		margin: 0 13px 0 0;
+	}
+	.box {
+		overflow: hidden;
+
+		h2 {
+			margin: 0 0 3px;
 		}
 	}
 }
-.info-block{
+
+.linked-nav {
+	margin: 0;
+	text-align: center;
+	font: 18px/22px $font-neue-thin;
+
+	li {
+		padding: 0;
+		margin: 0 32px;
+		@include vertical(inline-block, top);
+
+		@include breakpoint($mobile) {
+			display: block;
+			margin: 0 0 10px;
+		}
+		a {
+			padding: 0;
+			color: $white;
+
+			&:focus,
+			&:hover {
+				text-decoration: none;
+				color: $text-color;
+				outline: none;
+			}
+		}
+		&.active {
+			a {
+				color: $light-seagreen;
+			}
+		}
+	}
+}
+
+.info-block {
 	padding-top: 43px;
 	padding-bottom: 23px;
-	&.market{
+	&.market {
 		padding-top: 47px;
 		padding-bottom: 0;
 	}
 }
-.info-frame{
+
+.info-frame {
 	@extend %clearfix;
 	width: 103%;
-	@include breakpoint($tablet){
-		padding:0 0 0 21px;
+	@include breakpoint($tablet) {
+		padding: 0 0 0 21px;
 	}
-	@include breakpoint($mobile){
-		padding:0;
+	@include breakpoint($mobile) {
+		padding: 0;
 		width: 290px;
 		margin: 0 auto;
 	}
-	&.active{
-		padding:0 5% 0 7.3%;
-		@include breakpoint($desktop2){
-			padding:0;
+	&.active {
+		padding: 0 5% 0 7.3%;
+		@include breakpoint($desktop2) {
+			padding: 0;
 		}
-		@include breakpoint($tablet){
-			padding:0 0 0 3%;
+		@include breakpoint($tablet) {
+			padding: 0 0 0 3%;
 		}
-		@include breakpoint($mobile){
-			padding:0;
+		@include breakpoint($mobile) {
+			padding: 0;
 		}
 	}
-	&.market{
+	&.market {
 		width: 103%;
-		padding:0;
-		text-align:left;
-		@include breakpoint($tablet){
-			padding:0 0 0 5px;
+		padding: 0;
+		text-align: left;
+		@include breakpoint($tablet) {
+			padding: 0 0 0 5px;
 		}
-		@include breakpoint($mobile){ width: 100%; }
-		.info-col{
+		@include breakpoint($mobile) {
+			width: 100%;
+		}
+		.info-col {
 			width: 225px;
 			font-size: 12px;
-			line-height:16px;
-			margin:0 14px 46px 0;
-			min-height:335px;
-			@include breakpoint($mobile){
+			line-height: 16px;
+			margin: 0 14px 46px 0;
+			height: 442px;
+			@include breakpoint($mobile) {
 				width: 245px;
-				margin:0 auto 30px;
+				margin: 0 auto 30px;
 			}
-			h2{
+			h2 {
 				font-size: 12px;
-				line-height:16px;
-				padding:11px 35px 9px 21px;
-				margin:0 -22px 15px;
-				
-				&:before{
+				line-height: 16px;
+				padding: 11px 35px 9px 21px;
+				margin: 0 -22px 15px;
+
+				&:before {
 					right: 9px;
 					font-size: 24px;
 				}
 			}
-			.title{
+			.title {
 				font-size: 14px;
-				line-height:18px;
-				margin:0 0 5px 0;
+				line-height: 18px;
+				margin: 0 0 5px 0;
 			}
-			p{margin:0 0 40px;}
-			.client-info{
-				&.inactive{
-					margin:-5px 0 7px;
+			p {
+				margin: 0 0 40px;
+			}
+			.client-info {
+				&.inactive {
+					margin: -5px 0 7px;
 				}
 			}
-			.add-nav{
-				margin:0 0 2px;
-				li{
-					margin:0 0 9px;
-					a{
-						.icon-map-marker{
+			.add-nav {
+				margin: 0 0 2px;
+				li {
+					margin: 0 0 9px;
+					a {
+						.icon-map-marker {
 							font-size: 17px;
 							left: -20px;
 							top: -2px;
@@ -1617,61 +1869,66 @@ input[type=search] {
 					}
 				}
 			}
-			.buttons-nav{
-				&.add{
-					li{
-						padding:8px 2px;
-						.ico{
+			.buttons-nav {
+				&.add {
+					li {
+						padding: 8px 2px;
+						.ico {
 							font-size: 19px;
-							margin:3px -1px 2px 4px;
-							@include breakpoint($mobile){
-								margin:0 -1px 0 4px;
-								line-height:9px;
+							margin: 3px -1px 2px 4px;
+							@include breakpoint($mobile) {
+								margin: 0 -1px 0 4px;
+								line-height: 9px;
 							}
-							.icon-trophy{
-								font-size:19px;
-								margin:0;
+							.icon-trophy {
+								font-size: 19px;
+								margin: 0;
 							}
-							&.trophy{
+							&.trophy {
 								margin: 2px -1px 2px -14px;
-								@include breakpoint($mobile){margin: 0 -1px 0 -14px;}
+								@include breakpoint($mobile) {
+									margin: 0 -1px 0 -14px;
+								}
 							}
 						}
 					}
-					.btn-default{
-						min-width:60px;
+					.btn-default {
+						min-width: 60px;
 					}
 				}
 			}
 		}
 	}
 }
-.info-col{
-	text-align:left;
-	min-height:291px;
-	width: 328px;
-	position:relative;
-	border-radius:5px;
+
+.info-col {
+	text-align: left;
+	width: 340px;
+	height: 372px;
+	position: relative;
+	border-radius: 5px;
 	@include vertical(inline-block, top);
-	margin:0 1.9% 38px 0;
-	padding:0 22px 98px;
+	margin: 0 1.9% 38px 0;
+	padding: 0 22px 98px;
 	background: $white;
-	font:13px/15px $font-arial;
-	position:relative;
-	
-	@include breakpoint($desktop2){
+	font: 13px/15px $font-arial;
+	position: relative;
+
+	@include breakpoint($desktop2) {
 		width: 292px;
 	}
-	@include breakpoint($tablet){
+	@include breakpoint($tablet) {
 		width: 328px;
-		margin:0 2.6% 38px 0;
+		margin: 0 2.6% 38px 0;
 	}
-	@include breakpoint($mobile){
+	@include breakpoint($mobile) {
 		width: auto;
 		display: block;
-		margin:0 auto 30px;
+		margin: 0 auto 30px;
 	}
-	p{margin: 0 0 33px;}
+	p {
+		margin: 0 0 33px;
+	}
 	.info-footer {
 		position: absolute;
 		bottom: 0;
@@ -1679,756 +1936,832 @@ input[type=search] {
 		right: 0;
 		padding: 0 22px;
 	}
-	.title{
-		font:18px/22px $font-neue-thin;
+	.title {
+		font: 18px/22px $font-neue-thin;
 		display: block;
-		margin:0 30px 7px 0;
-		color:$link-color;
+		margin: 0 30px 7px 0;
+		color: $link-color;
 	}
-	h2{
+	h2 {
 		text-transform: capitalize;
-		font:700 14px/18px $font-family-base;
+		font: 700 14px/18px $font-family-base;
 		background: $light-gray;
-		padding:10px 37px 8px 21px;
-		margin:0 -22px 12px;
-		border-radius:5px 5px 0 0;
+		padding: 10px 37px 8px 21px;
+		margin: 0 -22px 12px;
+		border-radius: 5px 5px 0 0;
 		@include element2(before, 50%, 15px, auto, auto);
-		&:before{
-			margin:-10px 0 0;
+		&:before {
+			margin: -10px 0 0;
 			font-size: 26px;
-			line-height:20px;
-			color:$light-gray3;
-			content: "\f023";
+			line-height: 20px;
+			color: $light-gray3;
+			content: "";
 			font-family: "fontawesome";
 		}
-		.tooltip2{
-			max-width:182px;
-			left: 8px;
-			top: -1px;
-			bottom:auto;
-			position:absolute;
-			.tool-txt{
-				padding:7px 10px;
-				@include arrow-lazy($al-direction: right, $al-size: 7px, $al-color: $blue, $al-center: 50%, $al-margin: -1px, $al-pseudo: before);
-			}
-		}
-		&.hover{
-			.tooltip2{
-				max-height: 500px;
-			}
+		&.exclusive:before {
+			content: '\f023';
 		}
 	}
-	.info-box{
+	.exclusive-tooltip {
+		max-width: 182px;
+		left: 8px !important;
+		top: -1px !important;
+		bottom: auto;
+		position: absolute;
+		max-height: 500px;
+		.tooltip-inner {
+			padding: 7px 10px;
+			@include arrow-lazy($al-direction: right, $al-size: 7px, $al-color: $blue, $al-center: 50%, $al-margin: -1px, $al-pseudo: before);
+		}
+	}
+	.marketplace-item {
+		.exclusive-tooltip {
+			left: 100px !important;
+		}
+	}
+	.info-box {
 		@extend %clearfix;
-		
-		@include breakpoint($desktop2){
-			margin:0 0 10px;
+
+		@include breakpoint($desktop2) {
+			margin: 0 0 10px;
 		}
-		@include breakpoint($tablet){
-			margin:0 0 10px;
+		@include breakpoint($tablet) {
+			margin: 0 0 10px;
 		}
 	}
-	.over{
+	.over {
 		@extend %postionreset;
-		border-radius:5px;
+		border-radius: 5px;
 		background: rgba($white, 0.9);
 		display: none;
-		.icon-error{
-			color:$white;
-			text-shadow:-1px -1px 0 rgba(0, 0, 0, 0.3);
-			position:absolute;
+		.icon-error {
+			color: $white;
+			text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
+			position: absolute;
 			left: 50%;
 			top: 50%;
-			margin:-56px 0 0 -51px;
-			font-size:103px;
+			margin: -56px 0 0 -51px;
+			font-size: 103px;
 		}
 	}
-	.info-box{
-		.client-info{
+	.info-box {
+		.client-info {
 			float: left;
-			max-width:230px;
-			@include breakpoint($mobile){ margin: 0 0 10px -5px; }
+			max-width: 230px;
+			@include breakpoint($mobile) {
+				margin: 0 0 10px -5px;
+			}
 		}
-		
+
 	}
-	.buttons-nav{
+	.buttons-nav {
 		position: relative;
 		margin: 0 -22px;
 	}
-	&.disable{
-		.over{display: block;}
+	&.disable {
+		.over {
+			display: block;
+		}
 	}
 }
-.star-rattings{
+
+.star-rattings {
 	float: right;
-	@include breakpoint($desktop2){
+	@include breakpoint($desktop2) {
 		float: right;
 		margin: 0 -15px 0 0;
 	}
-	@include breakpoint($tablet){
+	@include breakpoint($tablet) {
 		float: right;
 		margin: 0;
 	}
-	@include breakpoint($mobile){
+	@include breakpoint($mobile) {
 		margin: 0 -15px 0 0;
 	}
-	.icon-star{
+	.icon-star {
 		@include vertical(inline-block, middle);
-		margin:0;
+		margin: 0;
 		font-size: 19px;
-		color:$link-color;
+		color: $link-color;
 	}
-	.rattings{
+	.rattings {
 		@include vertical(inline-block, middle);
-		color:$link-color;
-		
-		.num{
+		color: $link-color;
+
+		.num {
 			font-size: 14px;
 			@include vertical(inline-block, middle);
 		}
 	}
 }
-.client-info{
+
+.client-info {
 	@extend %clearfix;
-	margin:0 0 10px;
-	color:$link-color;
+	margin: 0 0 10px;
+	color: $link-color;
 	font-size: 11px;
-	position:relative;
-	.alignleft{
-		margin:0 2px 0 0;
+	position: relative;
+	.alignleft {
+		margin: 0 2px 0 0;
 		@include vertical(inline-block, middle);
-		border-radius:50%;
+		border-radius: 50%;
 		overflow: hidden;
 		@include square(24px);
 		@include element2(before, 0, 0, 0, 0);
-		
-		&:before{
+
+		&:before {
 			background: rgba($white, 0.5);
 			display: none;
 		}
-		img{@extend %img-responsive;}
-		&:hover{
-			&:before{display: block;}
+		img {
+			@extend %img-responsive;
+		}
+		&:hover {
+			&:before {
+				display: block;
+			}
 			text-decoration: none;
 		}
 	}
-	.tooltip2{
+	.tooltip {
 		@extend %clearfix;
 		right: auto;
 		left: -53px;
 		top: 100%;
-		bottom:auto;
-		margin:-2px 0 0;
-		max-width:181px;
-		.tool-txt {
-			margin:10px;
-			padding:7px 17px 7px 9px;
-			&:before{
-				margin:0 0 -1px -32px;
+		bottom: auto;
+		margin: -2px 0 0;
+		max-width: 181px;
+		max-height: 500px;
+		.tooltip-inner {
+			margin: 10px;
+			padding: 7px 17px 7px 9px;
+			&:before {
+				margin: 0 0 -1px -32px;
 			}
 		}
 	}
-	&.hover{
-		.tooltip2{
-			max-height:500px;
-		}
-	}
-	.txt{
+	.txt {
 		@include vertical(inline-block, middle);
 	}
-	&.inactive{
-		color:$light-gray2;
-		margin:-5px 0 7px;
-		.alignleft{
+	&.inactive {
+		color: $light-gray2;
+		margin: -5px 0 7px;
+		.alignleft {
 			width: auto;
 			height: auto;
-			margin:0 -1px 0 -4px;
-			
-			.icon-add-user{
-				color:$light-gray2;
+			margin: 0 -1px 0 -4px;
+
+			.icon-add-user {
+				color: $light-gray2;
 				font-size: 30px;
 			}
 		}
-		.txt{margin:0;}
+		.txt {
+			margin: 4px 0 0;
+		}
 	}
 }
-.add-nav{
+
+.add-nav {
 	font-size: 10px;
-	line-height:12px;
-	margin:0 0 10px;
+	line-height: 12px;
+	margin: 0 0 10px;
 	text-transform: capitalize;
 	@extend %clearfix;
-	position:relative;
-	
-	li{
+	position: relative;
+
+	li {
 		padding: 0 14px;
-		
-		@include breakpoint($desktop2){
+
+		@include breakpoint($desktop2) {
 			padding: 0 2px 0 14px;
 		}
-		@include breakpoint($tablet){
+		@include breakpoint($tablet) {
 			padding: 0 14px;
 		}
-		@include breakpoint($mobile){
+		@include breakpoint($mobile) {
 			padding: 0 2px 0 14px;
 		}
-		a{
-			position:relative;
-			color:$link-color;
-			
+		a {
+			position: relative;
+			color: $link-color;
+
 			.icon-map-marker,
-			.icon-tag{
+			.icon-tag {
 				position: absolute;
 				top: -3px;
 				left: -17px;
-				color:$link-color;
+				color: $link-color;
 				font-size: 15px;
 			}
-			.icon-tag{transform:scaleX(-1);}
-			.icon-map-marker{
+			.icon-tag {
+				transform: scaleX(-1);
+			}
+			.icon-map-marker {
 				font-size: 17px;
-				left:-15px;
+				left: -15px;
 			}
 			&:focus,
-			&:hover{
+			&:hover {
 				text-decoration: none;
-				color:$link-hover-color;
-				outline:none;
+				color: $link-hover-color;
+				outline: none;
 			}
 		}
 	}
 }
-.buttons-nav{
-	margin:0 -22px;
-	position:relative;
+
+.buttons-nav {
+	margin: 0 -22px;
+	position: relative;
 	@extend %clearfix;
-	border-top:1px solid #d9dfe6;
-	
-	li{
-		padding:12px 2px 10px;
+	border-top: 1px solid #d9dfe6;
+
+	li {
+		padding: 12px 2px 10px;
 		float: left;
 		width: 33.33%;
 		text-align: center;
-		border-left:1px solid #d9dfe6;
-		
-		&:first-child{
-			border:0;
+		//white-space: nowrap;
+		border-left: 1px solid #d9dfe6;
+
+		&:first-child {
+			border: 0;
 		}
-		.ico{
+		.ico {
 			@include vertical(inline-block, middle);
-			color:$link-color;
+			color: $link-color;
 			font-size: 19px;
-			line-height:18px;
-			margin:-1px -1px 0 10px;
+			line-height: 18px;
+			margin: -1px -1px 0 5px;
 			&:focus,
-			&:hover{
+			&:hover {
 				text-decoration: none;
-				outline:none;
+				outline: none;
 			}
 			.icon-trophy,
-			.icon-user{
+			.icon-user {
 				@include vertical(inline-block, middle);
-				margin:-2px -1px 0 -7px;
+				margin: -2px -1px 0 -7px;
 			}
-			.icon-trophy{
+			.icon-trophy {
 				font-size: 17px;
-				margin:0 -8px 0 -22px;
+				margin: 0 -8px 0 -22px;
 			}
 		}
 	}
-	&.add{
-		li{
+	&.add {
+		li {
 			width: 50%;
-			padding:5px 2px;
-			
-			.ico{
+			padding: 5px 2px;
+
+			.ico {
 				font-size: 31px;
-				margin:0 0 0 -7px;
+				margin: 0 0 0 -7px;
 			}
 		}
-		.btn-default{
-			min-width:88px;
+		.btn-default {
+			min-width: 88px;
 		}
 	}
-	&.hover{
+	&.hover {
 		text-decoration: none;
-		.tooltip2{
+		.tooltip2 {
 			max-height: 1000px;
 		}
 	}
 }
-.tooltip2{
+
+.tooltip {
 	text-transform: none;
-	color:$white;
-	font:10px/12px $font-family-base;
+	color: $white;
+	font: 10px/12px $font-family-base;
 	@include vertical(inline-block, top);
-	position:absolute;
-	top:100%;
+	position: absolute;
+	top: 100%;
 	right: 1px;
 	@include transition (max-height, 0.15s, ease);
-	z-index:999;
-	max-height:0;
+	z-index: 999;
+	max-height: 0;
 	overflow: hidden;
-	margin:-10px 0 0;
-	.tool-txt{
+	margin: -10px 0 0;
+	.tooltip-arrow {
+		display: none
+	}
+	.tooltip-inner {
 		margin: 10px;
 		@include arrow-lazy($al-direction: top, $al-size: 7px, $al-color: $blue, $al-center: 50%, $al-margin: -1px, $al-pseudo: before);
 		display: block;
-		background:$blue;
+		background: $blue;
 		padding: 8px;
-		border-radius:4px;
-		box-shadow:-1px 3px 5px rgba(4, 26, 55, 0.32);
+		border-radius: 4px;
+		box-shadow: -1px 3px 5px rgba(4, 26, 55, 0.32);
 	}
 }
-.footer-block{
+
+.footer-block {
 	overflow: hidden;
-	background: $blue;
 	background: #001232;
-	display:table-footer-group;
+	display: table-footer-group;
 	@include size(100%, 1%);
-	
-	@include breakpoint($mobile){
+
+	@include breakpoint($mobile) {
 		// display: block;
 		// height: auto;
 	}
 }
-.footer-holder{
-	max-width:1308px;
-	margin:0 auto;
+
+.footer-holder {
+	max-width: 1308px;
+	margin: 0 auto;
 	@extend %clearfix;
-	padding:24px 0 0;
-	
-	@include breakpoint($mobile){
-		padding:24px 28px 0;
+	padding: 24px 0 0;
+
+	@include breakpoint($mobile) {
+		padding: 24px 28px 0;
 	}
-	@include breakpoint($mobile){
-		padding:24px 10px 0;
+	@include breakpoint($mobile) {
+		padding: 24px 10px 0;
 	}
 }
-.footer-aside{
+
+.footer-aside {
 	margin-bottom: 21px;
-	.box{
+	.box {
 		@extend %clearfix;
-		@include breakpoint($desktop-large){
-			padding:0 2.3% 0 2.5%;
+		@include breakpoint($desktop-large) {
+			padding: 0 2.3% 0 2.5%;
 		}
 	}
-	.block{
+	.block {
 		float: left;
-		@include breakpoint($mobile2){
+		@include breakpoint($mobile2) {
 			float: none;
 			overflow: hidden;
 		}
 	}
-	.footer-logo{
+	.footer-logo {
 		float: right;
-		margin:-5px 0 0;
-		@include breakpoint($desktop2){margin:-5px 0 0;}
-		@include breakpoint($tablet){margin: 0;}
-		@include breakpoint($mobile){margin: 0 -13px 0 0;}
-		@include breakpoint($mobile2){
+		margin: -5px 0 0;
+		@include breakpoint($desktop2) {
+			margin: -5px 0 0;
+		}
+		@include breakpoint($tablet) {
+			margin: 0;
+		}
+		@include breakpoint($mobile) {
+			margin: 0 -13px 0 0;
+		}
+		@include breakpoint($mobile2) {
 			padding-top: 30px;
 			text-align: center;
 			float: none;
 			@extend %clearfix;
 		}
 	}
-	.logo{
+	.logo {
 		width: 184px;
 		height: 131px;
 		float: right;
-		margin:0 -3px 0 0;
-		color:$light-blue;
-		a{
-			color:$light-blue;
+		margin: 0 -3px 0 0;
+		color: $light-blue;
+		a {
+			color: $light-blue;
 			&:hover,
-			&:focus{
+			&:focus {
 				text-decoration: none;
-				outline:none;
+				outline: none;
 			}
-			img{color:$light-blue;}
+			img {
+				color: $light-blue;
+			}
 		}
-		@include breakpoint($desktop){
-			margin:-4px -9px 0 0;
+		@include breakpoint($desktop) {
+			margin: -4px -9px 0 0;
 		}
-		@include breakpoint($tablet){
-			margin:-4px -3px 0 0;
+		@include breakpoint($tablet) {
+			margin: -4px -3px 0 0;
 		}
-		@include breakpoint($mobile){
+		@include breakpoint($mobile) {
 			float: none;
-			margin:0;
+			margin: 0;
 			@include vertical(inline-block, top);
 		}
 	}
-	.column{
-		float:left;
+	.column {
+		float: left;
 		width: 120px;
-		margin:0 15px 0 0;
-		@include breakpoint($mobile){
-			margin:0 6px 0 0;
+		margin: 0 15px 0 0;
+		@include breakpoint($mobile) {
+			margin: 0 6px 0 0;
 			width: 106px;
 		}
-		h2{
-			margin:0 0 11px;
-			color:$white;
+		h2 {
+			margin: 0 0 11px;
+			color: $white;
 			font-size: 22px;
-			line-height:26px;
+			line-height: 26px;
 		}
-		ul{
+		ul {
 			overflow: hidden;
-			margin:0;
+			margin: 0;
 			font-size: 12px;
-			line-height:14px;
-			li{
-				padding:0 0 6px;
-				
-				a{
-					color:$light-blue;
-					
+			line-height: 14px;
+			li {
+				padding: 0 0 6px;
+
+				a {
+					color: $light-blue;
+
 					&:focus,
-					&:hover{
+					&:hover {
 						text-decoration: none;
-						color:$link-hover-color;
-						outline:none;
+						color: $link-hover-color;
+						outline: none;
 					}
 				}
-				&.active{
-					a{color:$light-seagreen;}
+				&.active {
+					a {
+						color: $light-seagreen;
+					}
 				}
 			}
 		}
 	}
 }
-#footer{
-	color:$light-blue;
+
+#footer {
+	color: $light-blue;
 	font-size: 8px;
 	padding-top: 17px;
 	padding-bottom: 15px;
-	line-height:11px;
+	line-height: 11px;
 	@include element(before, 0, -9999px, auto, -9999px, $blue3);
-	
-	@include breakpoint($mobile){text-align: center;}
-	&:before{
+
+	@include breakpoint($mobile) {
+		text-align: center;
+	}
+	&:before {
 		display: block;
 		height: 1px;
 	}
-	p{margin: 0;}
-	.box2{
-		@extend %clearfix;
-		@include breakpoint($desktop-large){padding:0 3.0% 0 2.5%;}
+	p {
+		margin: 0;
 	}
-	.block1{
+	.box2 {
+		@extend %clearfix;
+		@include breakpoint($desktop-large) {
+			padding: 0 3.0% 0 2.5%;
+		}
+	}
+	.block1 {
 		float: left;
-		@include breakpoint($mobile){
+		@include breakpoint($mobile) {
 			float: none;
 			overflow: hidden;
-			margin:0 0 10px;
+			margin: 0 0 10px;
 		}
 	}
 }
-.copyrights{
+
+.copyrights {
 	@include vertical(inline-block, middle);
-	margin:0 17px 0 0;
-	@include breakpoint($mobile){margin:0 0 10px;}
-	a{
-		color:$light-blue;
-		
+	margin: 0 17px 0 0;
+	@include breakpoint($mobile) {
+		margin: 0 0 10px;
+	}
+	a {
+		color: $light-blue;
+
 		&:focus,
-		&:hover{
-			color:$white;
+		&:hover {
+			color: $white;
 			text-decoration: none;
 		}
 	}
 }
-.footer-address{
+
+.footer-address {
 	@include vertical(inline-block, middle);
-	margin:0;
-	@include breakpoint($mobile){margin:0 0 10px;}
-	a{
-		color:$light-blue;
-		
+	margin: 0;
+	@include breakpoint($mobile) {
+		margin: 0 0 10px;
+	}
+	a {
+		color: $light-blue;
+
 		&:focus,
-		&:hover{
-			color:$white;
+		&:hover {
+			color: $white;
 			text-decoration: none;
 		}
 	}
 }
-.privacy-nav{
-	margin:0 9px 0 0;
+
+.privacy-nav {
+	margin: 0 9px 0 0;
 	@include vertical(inline-block, middle);
-	
-	@include breakpoint($mobile){
-		margin:0 0 10px;
+
+	@include breakpoint($mobile) {
+		margin: 0 0 10px;
 	}
-	li{
-		margin:0 11px 0 0;
+	li {
+		margin: 0 11px 0 0;
 		@include element2(before, 2px, auto, auto, -7px);
-		
-		&:before{
+
+		&:before {
 			@include size(1px, 6px);
-			background:$light-blue;
+			background: $light-blue;
 		}
-		&:first-child{
-			&:before{display: none;}
+		&:first-child {
+			&:before {
+				display: none;
+			}
 		}
-		a{
-			color:$white;
-			
+		a {
+			color: $white;
+
 			&:focus,
-			&:hover{
-				color:$light-blue;
+			&:hover {
+				color: $light-blue;
 				text-decoration: none;
 			}
 		}
-		&.active{
-			a{color:$light-seagreen;}
+		&.active {
+			a {
+				color: $light-seagreen;
+			}
 		}
 	}
 }
-.social-networks{
+
+.social-networks {
 	float: right;
-	margin:-3px 10px 0 0;
-	@include breakpoint($desktop2){margin:-3px 3px 0 0;}
-	@include breakpoint($mobile){
+	margin: -3px 10px 0 0;
+	@include breakpoint($desktop2) {
+		margin: -3px 3px 0 0;
+	}
+	@include breakpoint($mobile) {
 		float: none;
 		overflow: hidden;
 	}
-	li{
-		padding:0;
-		margin:0 0 0 26px;
+	li {
+		padding: 0;
+		margin: 0 0 0 26px;
 		float: left;
-		
-		@include breakpoint($mobile){
+
+		@include breakpoint($mobile) {
 			float: none;
-			margin:0 10px;
+			margin: 0 10px;
 			@include vertical(inline-block, middle);
 		}
-		a{
+		a {
 			display: block;
-			color:$white;
+			color: $white;
 			font-size: 15px;
-			
+
 			&:focus,
-			&:hover{
-				color:$light-blue;
+			&:hover {
+				color: $light-blue;
 				text-decoration: none;
 			}
 		}
-		&.active{
-			a{color:$light-seagreen;}
+		&.active {
+			a {
+				color: $light-seagreen;
+			}
 		}
 	}
 }
-.profile-block{
+
+.profile-block {
 	padding-top: 47px;
 	padding-bottom: 47px;
 }
-.profile-box{
+
+.profile-box {
 	margin-bottom: 11px;
 }
-.profile-info{
+
+.profile-info {
 	background: $light-gray;
-	padding:27px 20px 1px 38px;
-	border-radius:10px;
+	padding: 27px 20px 1px 38px;
+	border-radius: 10px;
 	font-size: 10px;
-	line-height:12px;
-	margin:0 auto;
-	max-width:680px;
-	
-	@include breakpoint($mobile){
-		padding:27px 15px 1px;
-		max-width:inherit;
+	line-height: 12px;
+	margin: 0 auto;
+	max-width: 680px;
+
+	@include breakpoint($mobile) {
+		padding: 27px 15px 1px;
+		max-width: inherit;
 		width: 100%;
-		margin:0;
-	}
-	p{
 		margin: 0;
-		
-		a{
-			color:$blue4;
+	}
+	p {
+		margin: 0;
+
+		a {
+			color: $blue4;
 		}
 	}
-	&.about{
-		font:18px/22px $font-neue-thin;
-		padding:25px 26px 33px 38px;
-		
-		@include breakpoint($mobile){
-			padding:25px 15px 33px;
+	&.about {
+		font: 18px/22px $font-neue-thin;
+		padding: 25px 26px 33px 38px;
+
+		@include breakpoint($mobile) {
+			padding: 25px 15px 33px;
 		}
-		.profile-heading{margin:0 0 20px;}
+		.profile-heading {
+			margin: 0 0 20px;
+		}
 	}
-	.block{
+	.block {
 		overflow: hidden;
-		margin:0 0 45px;
+		margin: 0 0 45px;
 	}
-	.box{
+	.box {
 		float: left;
-		max-width:450px;
-		@include breakpoint($tablet){
+		max-width: 450px;
+		@include breakpoint($tablet) {
 			width: 75%;
-			max-width:inherit;
+			max-width: inherit;
 		}
-		@include breakpoint($mobile){
+		@include breakpoint($mobile) {
 			float: none;
 			overflow: hidden;
 			width: 100%;
-			margin:0 0 20px;
+			margin: 0 0 20px;
 		}
 	}
-	h3{
-		margin:0 0 3px;
+	h3 {
+		margin: 0 0 3px;
 		font-size: 18px;
-		line-height:22px;
+		line-height: 22px;
 	}
-	.info-title{
+	.info-title {
 		@include vertical(inline-block, top);
-		margin:0 0 3px;
+		margin: 0 0 3px;
 		font-size: 12px;
-		line-height:15px;
+		line-height: 15px;
 	}
-	time{
-		margin:0 0 18px;
+	time {
+		margin: 0 0 18px;
 		display: block;
 		font-size: 11px;
-		line-height:13px;
+		line-height: 13px;
 	}
-	.alignright{
+	.alignright {
 		float: right;
-		min-width:100px;
-		
-		@include breakpoint($mobile){
+		min-width: 100px;
+
+		@include breakpoint($mobile) {
 			float: none;
 			@include vertical(inline-block, top);
 		}
-		img{
+		img {
 			@extend %img-responsive2;
 			float: left;
 		}
 	}
-	.frame{
+	.frame {
 		@extend %clearfix;
-		margin:0;
+		margin: 0;
 	}
 }
-.profile-heading{
+
+.profile-heading {
 	@extend %clearfix;
-	margin:0 0 18px -2px;
-	
-	h2{
-		margin:0;
+	margin: 0 0 18px -2px;
+
+	h2 {
+		margin: 0;
 		font-size: 45px;
-		line-height:50px;
-		font-family:$headings-font-family;
+		line-height: 50px;
+		font-family: $headings-font-family;
 		float: left;
-		max-width:450px;
-		
-		@include breakpoint($mobile){
+		max-width: 450px;
+
+		@include breakpoint($mobile) {
 			font-size: 30px;
-			line-height:36px;
+			line-height: 36px;
 		}
 	}
 }
-.btn-edit{
+
+.btn-edit {
 	float: right;
 	font-size: 12px;
-	line-height:14px;
-	color:$text-color;
-	position:relative;
-	
-	@include breakpoint($mobile){margin:16px 0 0;}
-	.fa{
+	line-height: 14px;
+	color: $text-color;
+	position: relative;
+
+	@include breakpoint($mobile) {
+		margin: 16px 0 0;
+	}
+	.fa {
 		position: absolute;
 		left: -27px;
 		top: -6px;
 		font-size: 24px;
 	}
-	&:hover{text-decoration: none;}
+	&:hover {
+		text-decoration: none;
+	}
 }
-.profile-nav{
-	margin:0;
-	padding:15px 0 0 8px;
+
+.profile-nav {
+	margin: 0;
+	padding: 15px 0 0 8px;
 	overflow: hidden;
-	
-	li{
-		padding:0 0 8px 10px;
+
+	li {
+		padding: 0 0 8px 10px;
 		@include arrow-lazy($al-direction: right, $al-size: 4px, $al-color: $link-color, $al-center: 50%, $al-margin: -1px, $al-pseudo: before);
-		
-		&:before{
+
+		&:before {
 			left: 2px;
 			top: 6px;
 		}
-		a{color:$text-color;}
+		a {
+			color: $text-color;
+		}
 	}
 }
-.profile-skills{
+
+.profile-skills {
 	overflow: hidden;
-	margin:0 0 0 -2px;
-	padding:6px 0 23px;
-	
-	h3{
-		margin:0 0 11px;
-		font:600 14px/18px $font-family-base;
+	margin: 0 0 0 -2px;
+	padding: 6px 0 23px;
+
+	h3 {
+		margin: 0 0 11px;
+		font: 600 14px/18px $font-family-base;
 	}
 }
-.skills-nav{
-	margin:0 0 19px;
-	padding:0 28% 0 0;
+
+.skills-nav {
+	margin: 0 0 19px;
+	padding: 0 28% 0 0;
 	font-size: 10px;
-	line-height:20px;
-	
-	li{
-		padding:0;
-		margin:0 4px 8px 0;
-		
-		a{
+	line-height: 20px;
+
+	li {
+		padding: 0;
+		margin: 0 4px 8px 0;
+
+		a {
 			@include vertical(inline-block, top);
 			background: $light-gray4;
-			color:$link-color;
-			border-radius:2px;
+			color: $link-color;
+			border-radius: 2px;
 			overflow: hidden;
-			padding:0 18px 0 0;
-			
-			&:hover{
+			padding: 0 18px 0 0;
+
+			&:hover {
 				text-decoration: none;
 				background: #e0e0e0;
 			}
-			.num{
+			.num {
 				background: $light-seagreen;
-				width:19px;
+				width: 19px;
 				text-align: center;
-				color:$white;
-				margin:0 8px 0 0;
+				color: $white;
+				margin: 0 8px 0 0;
 				@include vertical(inline-block, middle);
 			}
-			.txt{
+			.txt {
 				@include vertical(inline-block, middle);
-				margin:-1px 0 0;
+				margin: -1px 0 0;
 			}
 		}
 	}
 }
-.lang-nav{
-	margin:0;
+
+.lang-nav {
+	margin: 0;
 	overflow: hidden;
-	padding:2px 0 21px;
+	padding: 2px 0 21px;
 	font-size: 10px;
-	line-height:12px;
-	
-	li{
-		padding:0;
-		margin:0 5px 17px 0;
+	line-height: 12px;
+
+	li {
+		padding: 0;
+		margin: 0 5px 17px 0;
 		width: 40%;
-		
-		h3{
-			margin:0 0 2px;
+
+		h3 {
+			margin: 0 0 2px;
 			font-size: 18px;
-			line-height:20px;
-			color:$light-blue2;
+			line-height: 20px;
+			color: $light-blue2;
 		}
-		p{margin: 0;}
+		p {
+			margin: 0;
+		}
 	}
 }
+
 /* multiple select styles */
 .jcf-list-box {
 	overflow: hidden;
@@ -2437,6 +2770,7 @@ input[type=search] {
 	min-width: 200px;
 	margin: 0 15px;
 }
+
 /* select options styles */
 .jcf-list {
 	display: inline-block;
@@ -2447,24 +2781,29 @@ input[type=search] {
 	font-size: 12px;
 	width: 100%;
 }
+
 .jcf-list .jcf-list-content {
 	vertical-align: top;
 	display: inline-block;
 	overflow: auto;
 	width: 100%;
 }
+
 .jcf-list ul {
 	list-style: none;
 	padding: 0;
 	margin: 0;
 }
+
 .jcf-list ul li {
 	overflow: hidden;
 	display: block;
 }
+
 .jcf-list .jcf-overflow {
 	overflow: auto;
 }
+
 .jcf-list .jcf-option {
 	white-space: nowrap;
 	overflow: hidden;
@@ -2474,15 +2813,18 @@ input[type=search] {
 	color: #656565;
 	height: 1%;
 }
+
 .jcf-list .jcf-disabled {
 	background: #fff !important;
 	color: #aaa !important;
 }
+
 .jcf-select-drop .jcf-hover,
 .jcf-list-box .jcf-selected {
 	background: #e6e6e6;
 	color: #000;
 }
+
 .jcf-list .jcf-optgroup-caption {
 	white-space: nowrap;
 	font-weight: bold;
@@ -2491,24 +2833,28 @@ input[type=search] {
 	cursor: default;
 	color: #000;
 }
+
 .jcf-list .jcf-optgroup .jcf-option {
 	padding-left: 30px;
 }
+
 /* custom scrollbars styles */
 .jcf-scrollable-wrapper {
 	width: 100% !important;
 	box-sizing: content-box;
 	position: relative;
 }
+
 .jcf-scrollbar-vertical {
 	position: absolute;
 	cursor: default;
 	background: none;
 	width: 5px;
 	bottom: 0;
-	right: 4px;
+	right: 0;
 	top: 0;
 }
+
 .jcf-scrollbar-vertical .jcf-scrollbar-dec,
 .jcf-scrollbar-vertical .jcf-scrollbar-inc {
 	background: none;
@@ -2517,17 +2863,20 @@ input[type=search] {
 	left: 0;
 	top: 0;
 }
+
 .jcf-scrollbar-vertical .jcf-scrollbar-inc {
 	top: auto;
 	bottom: 0;
 }
+
 .jcf-scrollbar-vertical .jcf-scrollbar-handle {
 	background: #cbd4d9;
 	height: 1px;
 	width: 5px;
-	border-radius:15px;
-	border:1px solid #cbd4d9;
+	border-radius: 15px;
+	border: 1px solid #cbd4d9;
 }
+
 .jcf-scrollbar-horizontal {
 	position: absolute;
 	background: #e3e3e3;
@@ -2538,6 +2887,7 @@ input[type=search] {
 	width: 1px;
 	height: 14px;
 }
+
 .jcf-scrollbar-horizontal .jcf-scrollbar-dec,
 .jcf-scrollbar-horizontal .jcf-scrollbar-inc {
 	display: inline-block;
@@ -2547,326 +2897,341 @@ input[type=search] {
 	height: 14px;
 	width: 14px;
 }
+
 .jcf-scrollbar-horizontal .jcf-scrollbar-inc {
 	left: auto;
 	right: 0;
 }
+
 .jcf-scrollbar-horizontal .jcf-scrollbar-slider {
 	display: inline-block;
 	position: relative;
 	height: 14px;
 }
+
 .jcf-scrollbar-horizontal .jcf-scrollbar-handle {
 	position: absolute;
 	background: #888;
 	height: 14px;
 }
+
 .jcf-scrollbar.jcf-inactive .jcf-scrollbar-handle {
 	visibility: hidden;
 }
-.jcf-scrollbar.jcf-inactive .jcf-scrollbar-dec, 
+
+.jcf-scrollbar.jcf-inactive .jcf-scrollbar-dec,
 .jcf-scrollbar.jcf-inactive .jcf-scrollbar-inc {
 	background: #e3e3e3;
 }
-.market-banner{
+
+.market-banner {
 	@extend %clearfix;
 	@extend %backgroundreset;
 	@include element2(before, 0, 0, 0, 0);
-	z-index:1;
-	&:before{
-		z-index:-1;
+	z-index: 1;
+	&:before {
+		z-index: -1;
 		background: rgba($link-color, 0.89);
 	}
 }
-.market-block{
+
+.market-block {
 	@extend %clearfix;
 	height: 100%;
-	position:relative;
-	color:$white;
-	min-height:218px;
+	position: relative;
+	color: $white;
+	min-height: 218px;
 }
-.market-form-block{@extend %clearfix;}
-.buttons-holder{
+
+.market-form-block {
 	@extend %clearfix;
-	z-index:999;
-	padding:15px 4px;
-	
-	.btn-primary{
-		padding:0;
-		border:0;
+}
+
+.buttons-holder {
+	@extend %postionreset;
+	z-index: 999;
+	top: auto;
+	padding: 15px 4px;
+
+	.btn-primary {
+		padding: 0;
+		border: 0;
 		background: none;
-		font:300 15px/18px $font-family-base;
-		color:$white;
+		font: 300 15px/18px $font-family-base;
+		color: $white;
 		opacity: 1;
-		text-shadow:none;
-		box-shadow:none;
-		&.search{
+		text-shadow: none;
+		box-shadow: none;
+		&.search {
 			float: right;
 		}
-		.icon-search{
+		.icon-search {
 			font-size: 20px;
-			color:$white;
+			color: $white;
 		}
-		&.close{
+		&.close {
 			float: left;
 		}
 		&:focus,
-		&:hover{
+		&:hover {
 			text-decoration: none;
-			outline:none;
+			outline: none;
 			opacity: 0.5;
 		}
 	}
 }
-.market-search{
+
+.market-search {
 	@extend %clearfix;
-	padding:0 9px;
-	display: none;
-	
-	@include breakpoint($mobile){
-		position:static;
+	padding: 0 9px 50px;
+	@extend %postionreset;
+
+	@include breakpoint($mobile) {
+		position: static;
 		left: auto;
 		right: auto;
-		bottom:auto;
-		top:auto;
+		bottom: auto;
+		top: auto;
 	}
-	.advance-search{
-		height:168px;
-		margin:0;
-		padding:0;
+	.well {
+		min-height: 168px;
+		margin: 0;
+		padding: 0;
 		background: none;
-		border:0;
+		border: 0;
 		@include v-align(market-form, $valign: middle);
-		&.advance{
-			height:196px;
-			@include breakpoint($mobile2){ height: auto; }
+
+		&.advance-search {
 			@include v-align(advance-nav, $valign: middle);
 		}
+		&.advance {
+			min-height: 196px;
+		}
+	}
+	&.advance {
+		padding: 0 9px 50px;
 	}
 }
-.market-form{
-	margin:41px 0 0 12px;
+
+.market-form {
+	margin: 27px 0 0 0;
 	width: 100%;
-	@include breakpoint($mobile){margin:41px 0 0 0;}
-	.form-group{
-		margin:0;
-		@extend %clearfix;
+
+	.form-group {
+		margin: 0;
 	}
-	label{
-		float: left;
-		font:40px/58px $font-ultra-light;
-		color:$white;
-		margin:5px 27px 0 0;
-		@include element(after, 11px, auto, auto, 100%, #00e1bf);
-		@include breakpoint($mobile){
-			font-size: 30px;
-			line-height:40px;
-			margin:0 17px 0 0;
-		}
-		&:after{
-			@include size(2px, 41px);
-			margin:0 0 0 14px;
-			@include breakpoint($mobile){
-				height: 30px;
-				margin:0 0 0 8px;
-				top: 7px;
-			}
-		}
-	}
-	.form-control{
-		border:0;
-		float: left;
+	.form-control {
+		border: 0;
 		background: none;
-		@include size(78%, 70px);
-		box-shadow:none;
-		font:40px/58px $font-ultra-light;
-		color:$white;
-		@include breakpoint($mobile){
-			@include size(62%, 40px);
-			line-height:28px;
-			font-size: 30px;
+		@include size(100%, 70px);
+		box-shadow: none;
+		font: 40px/58px $font-ultra-light;
+		color: $white;
+
+		@include placeholder {
+			color: $white;
 		}
-		@include placeholder{color:$white;}
 	}
 }
-.advance-holder{
+
+.advance-holder {
 	@extend %clearfix;
-	
-	.buttons-holder{
-		padding:18px 4px;
+
+	.buttons-holder {
+		padding: 18px 4px 9px;
 	}
 }
-.advance-natural{
+
+.advance-natural {
 	@extend %clearfix;
-	
-	&.advance{
-		min-height:246px;
+
+	&.advance {
+		min-height: 246px;
 	}
-	.advance-holder{
+	.advance-holder {
 		@extend %clearfix;
 	}
 }
-.advance-nav{
-	margin:0;
-	padding:34px 0 0;
+
+.advance-nav {
+	margin: 0;
+	padding: 34px 0 0;
 	width: 100%;
 	text-align: center;
-	font:40px/40px $font-ultra-light;
-	@include breakpoint($mobile){
+	font: 40px/40px $font-ultra-light;
+	@include breakpoint($mobile) {
 		font-size: 25px;
-		line-height:30px;
+		line-height: 30px;
 	}
-	li{
-		padding:0;
-		margin:0 87px 10px 17px;
-		
-		@include breakpoint($mobile){
-			margin:0 76px 20px 10px;
+	li {
+		padding: 0;
+		margin: 0 87px 10px 17px;
+
+		@include breakpoint($mobile) {
+			margin: 0 76px 20px 10px;
 		}
-		a{
-			color:$white;
+		a {
+			color: $white;
 			position: relative;
-			.icon-arrowdown{
+			&.search-link-exclusive:before {
+				color: #fff;
+				content: "";
+				display: inline-block;
+				font-family: 'icons-regular';
+				font-size: 23px;
+				font-style: normal;
+				font-variant: normal;
+				font-weight: normal;
+				line-height: 20px;
+				margin: -2px 5px 0 -2px;
+				text-transform: none;
+				vertical-align: middle;
+			}
+			.icon-arrowdown {
 				position: absolute;
 				top: 0;
 				left: 100%;
-				margin: 7px 0 0 6px ;
-				color:$light-seagreen;
+				margin: 7px 0 0 6px;
+				color: $light-seagreen;
 				font-size: 39px;
-				@include breakpoint($mobile){
+				@include breakpoint($mobile) {
 					font-size: 23px;
 					margin: 3px 0 0 11px;
 				}
 			}
-			.fa{
+			.fa {
 				position: absolute;
 				top: 16px;
 				left: 100%;
-				margin:0 0 0 3px;
-				color:$light-seagreen;
+				margin: 0 0 0 3px;
+				color: $light-seagreen;
 				font-size: 70px;
-				line-height:20px;
-				@include breakpoint($mobile){
+				line-height: 20px;
+				@include breakpoint($mobile) {
 					font-size: 45px;
-					margin:0 0 0 7px;
+					margin: 0 0 0 7px;
 					top: 8px;
 				}
 			}
-			.icon-lock{
+			.icon-lock {
 				@include vertical(inline-block, middle);
-				margin:-2px 5px 0 -2px;
-				color:$white;
+				margin: -2px 5px 0 -2px;
+				color: $white;
 				font-size: 23px;
-				line-height:20px;
+				line-height: 20px;
 			}
-			&:hover{
+			&:hover {
 				text-decoration: none;
 				opacity: 0.5;
-				outline:none;
+				outline: none;
 			}
-			&:focus{
-				outline:none;
+			&:focus {
+				outline: none;
 				text-decoration: none;
 			}
-			&.active{
-				a{
-					color:$light-seagreen;
+			&.active {
+				a {
+					color: $light-seagreen;
 					opacity: 1;
 				}
 			}
 		}
 	}
-	&.filed-out{
-		li{
-			margin:0 76px 10px 6px;
-			
-			@include breakpoint($mobile){
-				margin:0 76px 20px 6px;
+	&.filed-out {
+		li {
+			margin: 0 76px 10px 6px;
+
+			@include breakpoint($mobile) {
+				margin: 0 76px 20px 6px;
 			}
-			a{
-				.fa{margin:0 0 0 13px;}
+			a {
+				.fa {
+					margin: 0 0 0 13px;
+				}
 			}
 		}
 	}
-	&.max{
-		@include breakpoint($desktop-large){
-			text-align:left;
+	&.max {
+		@include breakpoint($desktop-large) {
+			text-align: left;
 		}
-		@include breakpoint($tablet){
-			padding:44px 0 0 8px;
+		@include breakpoint($tablet) {
+			padding: 44px 0 0 8px;
 		}
-		li{
-			margin:0 76px 13px 6px;
-			
-			@include breakpoint($mobile){
-				margin:0 76px 20px 6px;
+		li {
+			margin: 0 76px 13px 6px;
+
+			@include breakpoint($mobile) {
+				margin: 0 76px 20px 6px;
 			}
-			a{
-				.fa{
-					margin:0 0 0 4px;
-					@include breakpoint($mobile){
-						position:static;
+			a {
+				.fa {
+					margin: 0 0 0 4px;
+					@include breakpoint($mobile) {
+						position: static;
 						@include vertical(inline-block, bottom);
 						left: auto;
-						top:auto;
+						top: auto;
 					}
 				}
 			}
 		}
 	}
-	&.advance{
-		text-align:left;
+	&.advance {
+		text-align: left;
 		font-size: 40px;
-		line-height:40px;
-		padding:34px 0 0 4px;
-		@include breakpoint($tablet){
+		line-height: 40px;
+		padding: 0 0 0 4px;
+		@include breakpoint($tablet) {
 			font-size: 26px;
-			line-height:30px;
+			line-height: 30px;
 		}
-		@include breakpoint($mobile){
+		@include breakpoint($mobile) {
 			font-size: 20px;
-			line-height:26px;
+			line-height: 26px;
 		}
-		li{
-			margin:0 71px 14px 6px;
-			
-			@include breakpoint($desktop2){
-				margin:0 56px 14px 6px;
+		li {
+			margin: 0 71px 14px 6px;
+
+			@include breakpoint($desktop2) {
+				margin: 0 56px 14px 6px;
 			}
-			@include breakpoint($tablet){
-				margin:0 58px 14px 6px;
+			@include breakpoint($tablet) {
+				margin: 0 58px 14px 6px;
 			}
-			@include breakpoint($mobile){
-				margin:0 25px 20px 6px;
+			@include breakpoint($mobile) {
+				margin: 0 25px 20px 6px;
 			}
-			a{
-				.icon-arrowdown{
+			a {
+				.icon-arrowdown {
 					margin: 17px 0 0 6px;
 					font-size: 25px;
 					top: 0;
-					@include breakpoint($tablet){ margin: 7px 0 0 8px; }
-					@include breakpoint($mobile){
-						position:static;
+					@include breakpoint($tablet) {
+						margin: 7px 0 0 8px;
+					}
+					@include breakpoint($mobile) {
+						position: static;
 						@include vertical(inline-block, bottom);
 						left: auto;
-						top:auto;
+						top: auto;
 						font-size: 21px;
 						margin: 0 0 3px 5px;
 					}
 				}
-				.fa{
-					margin:0 0 0 4px;
+				.fa {
+					margin: 0 0 0 4px;
 					font-size: 46px;
 					top: 22px;
-					@include breakpoint($tablet){
-						margin:0 0 0 2px;
+					@include breakpoint($tablet) {
+						margin: 0 0 0 2px;
 						top: 9px;
 					}
-					@include breakpoint($mobile){
-						position:static;
+					@include breakpoint($mobile) {
+						position: static;
 						@include vertical(inline-block, bottom);
 						left: auto;
-						top:auto;
+						top: auto;
 						font-size: 35px;
 					}
 				}
@@ -2874,117 +3239,121 @@ input[type=search] {
 		}
 	}
 }
-.btn-search{
+
+.btn-search {
 	float: right;
-	color:$white;
-	font:300 15px/18px $font-family-base;
-	
+	color: $white;
+	font: 300 15px/18px $font-family-base;
+
 	&:hover,
-	&:focus{
+	&:focus {
 		opacity: 0.5;
-		color:$white;
+		color: $white;
 		text-decoration: none;
-		outline:none;
+		outline: none;
 	}
-	.icon-search{
+	.icon-search {
 		font-size: 22px;
 	}
 }
 
-.filter-search{
+.filter-search {
 	background: $link-color;
 	@include element(before, 0, -9999px, 0, -9999px, $link-color);
-	padding:11px 3px 13px;
-	.btn-default{
+	padding: 11px 3px 13px;
+	.btn-default {
 		background: none;
-		border:1px solid $white;
-		color:$white;
+		border: 1px solid $white;
+		color: $white;
 		font-size: 10px;
-		line-height:12px;
-		border-radius:7px;
-		padding:3px 8px 4px 15px;
+		line-height: 12px;
+		border-radius: 7px;
+		padding: 3px 8px 4px 15px;
 		@include vertical(inline-block, middle);
-		margin:0 11px 0 0;
-		
-		.icon-cross{
-			margin:0 0 0 10px;
+		margin: 0 11px 0 0;
+
+		.icon-cross {
+			margin: 0 0 0 10px;
 			font-size: 8px;
 		}
-		
+
 		&:hover,
-		&:focus{
-			border-color:$light-seagreen;
+		&:focus {
+			border-color: $light-seagreen;
 		}
 	}
-	.Clear-filters{
+	.Clear-filters {
 		@include vertical(inline-block, middle);
-		color:$white;
+		color: $white;
 		font-size: 10px;
-		line-height:12px;
-		position:relative;
-		
-		.icon-cross{
+		line-height: 12px;
+		position: relative;
+
+		.icon-cross {
 			position: absolute;
 			left: 100%;
 			top: 3px;
-			margin:0 0 0 7px;
+			margin: 0 0 0 7px;
 			font-size: 8px;
 		}
 		&:hover,
-		&:focus{
-			color:$light-seagreen;
-			border-color:$light-seagreen;
+		&:focus {
+			color: $light-seagreen;
+			border-color: $light-seagreen;
 			text-decoration: none;
-			outline:none;
+			outline: none;
 		}
 	}
 }
+
 .modal-dialog {
-	&.catagories{
+	&.catagories {
 		width: 640px;
-		color:$white;
-		.jcf-scrollbar-handle{
+		color: $white;
+		.jcf-scrollbar-handle {
 			background: transparent;
-			border:0;
+			border: 0;
 		}
-		@include breakpoint($mobile){
+		@include breakpoint($mobile) {
 			width: 300px;
 		}
-		.modal-content{
+		.modal-content {
 			background: none;
-			box-shadow:none;
-			color:$white;
-			padding:48px 0 0;
-			border:0;
-			
-			@include breakpoint($mobile){padding:100px 0 0;}
-		}
-		.modal-header{
-			padding:0 14px;
-			border:0;
-			margin:0 0 32px;
-		}
-		.modal-title{
-			color:$white;
-			font-size: 50px;
-			line-height:45px;
-			
-			@include breakpoint($mobile){
-				font-size: 28px;
-				line-height:30px;
+			box-shadow: none;
+			color: $white;
+			padding: 48px 0 0;
+			border: 0;
+
+			@include breakpoint($mobile) {
+				padding: 100px 0 0;
 			}
 		}
-		.modal-body{
+		.modal-header {
+			padding: 0 14px;
+			border: 0;
+			margin: 0 0 32px;
+		}
+		.modal-title {
+			color: $white;
+			font-size: 50px;
+			line-height: 45px;
+
+			@include breakpoint($mobile) {
+				font-size: 28px;
+				line-height: 30px;
+			}
+		}
+		.modal-body {
 			padding: 0;
-			color:$white;
+			color: $white;
 			overflow: hidden;
 		}
-		.close{
-			color:$white;
-			box-shadow:none;
-			font:34px/46px $font-ultra-light;
-			border-radius:50%;
-			border:1px solid $white;
+		.close {
+			color: $white;
+			box-shadow: none;
+			font: 34px/46px $font-ultra-light;
+			border-radius: 50%;
+			border: 1px solid $white;
 			@include square(48px);
 			opacity: 1;
 			text-align: center;
@@ -2992,385 +3361,470 @@ input[type=search] {
 			right: -33px;
 			top: 1px;
 			margin: 0;
-			
-			@include breakpoint($mobile){
+
+			@include breakpoint($mobile) {
 				right: 10px;
 				top: 50px;
 				@include square(38px);
 				font-size: 30px;
-				line-height:20px;
+				line-height: 20px;
 			}
-			span{
+			span {
 				@include vertical(inline-block, middle);
-				margin:-6px 0 0;
+				margin: -6px 0 0;
 				text-indent: -9999px;
 				background: url(../images/sprite.png) no-repeat -9px -97px;
 				@include square(16px);
-				@include breakpoint($mobile){ margin:9px 0 0; }
+				@include breakpoint($mobile) {
+					margin: 9px 0 0;
+				}
 			}
 			&:focus,
-			&:hover{
+			&:hover {
 				opacity: 0.7;
-				outline:none;
+				outline: none;
 			}
 		}
 		button {
 			&.close {
 				padding: 0;
-				span{
-					@include breakpoint($mobile){ margin: -7px 0 0; }
+				span {
+					@include breakpoint($mobile) {
+						margin: -7px 0 0;
+					}
 				}
 			}
 		}
-		.catagory-col{
+		.catagory-col {
 			float: left;
 			width: 252px;
-			margin:0 0 0 112px;
-			
-			@include breakpoint($mobile){
+			margin: 0;
+
+			@include breakpoint($mobile) {
 				float: none;
 				width: 100%;
 				overflow: hidden;
-				margin:0 0 30px;
+				margin: 0 0 30px;
 			}
-			h3{
-				color:$white;
-				margin:0 0 15px 17px;
+			h3 {
+				color: $white;
+				margin: 0 0 15px 17px;
 				font-size: 30px;
-				line-height:34px;
-				
-				@include breakpoint($mobile){
+				line-height: 34px;
+
+				@include breakpoint($mobile) {
 					font-size: 20px;
-					line-height:26px;
+					line-height: 26px;
 				}
 			}
-			.catagrized{
+			.catagrized {
 				display: block;
 				text-transform: uppercase;
-				margin:0 0 6px 17px;
-				font:25px/30px $font-ultra-light;
+				margin: 0 0 6px 17px;
+				font: 25px/30px $font-ultra-light;
+				&.first {
+					margin-top: 0
+				}
 			}
-			&:first-child{margin-left: 0;}
+			&:first-child {
+				margin-right: 112px;
+			}
+			&.sort {
+				padding: 12px 0 0;
+			}
 		}
 	}
 }
-.catagory-nav{
-	margin:0 0 24px;
-	font:15px/18px $font-ultra-light;
+
+.modal-dialog.catagories {
+	.modal-body.productType {
+		overflow: visible;
+		.catagory-col {
+			width: auto;
+			padding: 0;
+			.item-wrapper {
+				display: inline;
+				&.first {
+					display: block;
+					margin-bottom: 26px;
+					.item {
+						display: inline-block;
+						padding-right: 20px;
+					}
+				}
+			}
+		}
+	}
+}
+
+.item-wrapper {
+	padding: 0;
+	margin: 0 0 5px;
+	font: 15px/18px $font-ultra-light;
 	overflow: hidden;
-	
-	@include breakpoint($mobile){
+
+	@include breakpoint($mobile) {
 		font-size: 16px;
 	}
-	li{
-		padding:0;
-		margin:0 0 5px;
-		a{
-			display: block;
-			color:$white;
-			border-radius:7px;
-			overflow: hidden;
-			padding:3px 3px 4px 17px;
-			
-			&:focus,
-			&:hover{
-				text-decoration: none;
-				outline:none;
-				color:$text-color;
-			}
+	.item {
+		display: block;
+		color: $white;
+		border-radius: 7px;
+		overflow: hidden;
+		padding: 3px 3px 4px 17px;
+		cursor: pointer;
+
+		&:focus,
+		&:hover {
+			text-decoration: none;
+			outline: none;
+			color: $text-color;
 		}
-		&.active{
-			a{
-				background: $light-green;
-				color:$light-seagreen;
-			}
+		&.active {
+			background: $light-green;
+			color: $light-seagreen;
 		}
 	}
-	&.sort{
+	.sort & {
+		margin: 0 0 9px;
 		font-size: 30px;
-		line-height:34px;
-		padding:12px 0 0;
-		@include breakpoint($mobile){
+		line-height: 34px;
+		padding: 12px 0 0;
+		@include breakpoint($mobile) {
 			font-size: 20px;
-			line-height:24px;
+			line-height: 24px;
 		}
-		li{margin: 0 0 9px;}
+		li {
+			margin: 0 0 9px;
+		}
 	}
 }
-.creat-project{
+
+.create-project {
 	padding-top: 84px;
 	padding-bottom: 20px;
-	
-	@include breakpoint($mobile){
+
+	@include breakpoint($mobile) {
 		padding-top: 35px;
 		padding-bottom: 35px;
 	}
-	&.poke{
+	&.poke {
 		padding-top: 74px;
 		padding-bottom: 76px;
-		
-		@include breakpoint($mobile){
+
+		@include breakpoint($mobile) {
 			padding-top: 35px;
 			padding-bottom: 35px;
 		}
 	}
 }
-.project-heading{
+
+.project-heading {
 	margin-bottom: 40px;
-	color:$link-color;
+	color: $link-color;
 	text-align: center;
-	font:20px/24px $font-neue-thin;
-	
-	@include breakpoint($mobile){
+	font: 20px/24px $font-neue-thin;
+
+	@include breakpoint($mobile) {
 		font-size: 14px;
-		line-height:20px;
+		line-height: 20px;
 	}
-	.block{
-		max-width:640px;
-		margin:0 auto;
-		@include breakpoint($mobile){
-			max-width:inherit;
+	.block {
+		max-width: 640px;
+		margin: 0 auto;
+		@include breakpoint($mobile) {
+			max-width: inherit;
 			width: 100%;
-			margin:0;
+			margin: 0;
 		}
 	}
-	h1{
+	h1 {
 		margin: 0 0 5px;
 		font-size: 37px;
-		line-height:40px;
-		color:$link-color;
-		
-		@include breakpoint($mobile){
+		line-height: 40px;
+		color: $link-color;
+
+		@include breakpoint($mobile) {
 			font-size: 25px;
-			line-height:30px;
-			br{display: none;}
+			line-height: 30px;
+			br {
+				display: none;
+			}
 		}
 	}
-	p{
+	p {
 		margin: 0;
-		@include breakpoint($mobile){
-			br{display: none;}
+		@include breakpoint($mobile) {
+			br {
+				display: none;
+			}
 		}
 	}
-	&.poke{
-		color:$link-color;
+	&.poke {
+		color: $link-color;
 		text-align: center;
-		
-		p{margin: 0 0 51px;}
-		h1{
+
+		p {
+			margin: 0 0 51px;
+		}
+		h1 {
 			font-size: 39px;
-			line-height:46px;
-			margin:0 0 8px;
-			
-			@include breakpoint($mobile){
+			line-height: 46px;
+			margin: 0 0 8px;
+
+			@include breakpoint($mobile) {
 				font-size: 25px;
-				line-height:30px;
+				line-height: 30px;
 			}
 		}
 	}
 }
-.project-form{
-	margin:0;
+
+.project-form {
+	margin: 0;
 	float: left;
-	max-width:400px;
-	padding:0 0 14px;
-	@include breakpoint($mobile){
-		margin:0 0 30px;
-		max-width:inherit;
+	max-width: 400px;
+	padding: 0 0 14px;
+	@include breakpoint($mobile) {
+		margin: 0 0 30px;
+		max-width: inherit;
 		width: 100%;
 		overflow: hidden;
 		float: none;
 	}
-	.form-group{
-		border-radius:7px;
+	.form-group {
+		border-radius: 7px;
 		background: $white;
-		padding:26px 19px 25px 28px;
+		padding: 26px 19px 25px 28px;
 		overflow: hidden;
-		margin:0 0 16px;
-		
-		@include breakpoint($mobile){
-			padding:26px 10px 25px;
+		margin: 0 0 16px;
+
+		@include breakpoint($mobile) {
+			padding: 26px 10px 25px;
 		}
-		&.select{
-			label{
+		&.select {
+			label {
 				margin: 5px 0 0;
-				@include breakpoint($mobile){margin: 7px 0 0; }
-			}
-			&.add{
-				padding:25px 20px 23px 28px;
-				@include breakpoint($mobile){
-					padding:26px 10px 25px;
-				}
-				label{
-					margin:-1px 0 0;
+				@include breakpoint($mobile) {
+					margin: 7px 0 0;
 				}
 			}
+			&.add {
+				padding: 25px 20px 23px 28px;
+				@include breakpoint($mobile) {
+					padding: 26px 10px 25px;
+				}
+				label {
+					margin: -1px 0 0;
+				}
+			}
+		}
+		.product-type .jcf-radio {
+			display: none;
 		}
 	}
 	.form-label,
-	label{
+	label {
 		float: left;
-		max-width:120px;
-		margin:-3px 0 0 1px;
-		font:14px/17px $font-neue-thin;
-		color:$light-gray6;
-		
-		@include breakpoint($mobile){
+		max-width: 120px;
+		margin: -3px 0 0 1px;
+		font: 14px/17px $font-neue-thin;
+		color: $light-gray6;
+
+		@include breakpoint($mobile) {
 			font-size: 12px;
-			line-height:14px;
+			line-height: 14px;
 		}
 	}
-	.form-col{
+	.form-col {
 		float: right;
 		width: 62.9%;
-		position:relative;
+		position: relative;
 	}
-	.jcf-checkbox{
+	.jcf-checkbox {
 		width: 0;
 		height: 0;
-		opacity:0;
-		margin:0;
+		opacity: 0;
+		margin: 0;
 	}
-	.form-control{
-		box-shadow:none;
-		padding:5px 20px;
-		font:600 11px/17px $font-family-base;
-		resize:none;
-		
-		@include breakpoint($mobile){
-			padding:5px 10px;
+	.form-control {
+		box-shadow: none;
+		padding: 5px 20px;
+		font: 600 11px/17px $font-family-base;
+		resize: none;
+
+		@include breakpoint($mobile) {
+			padding: 5px 10px;
 			font-size: 10px;
 		}
-		&.textarea1{
+		&.textarea1 {
 			height: 129px;
 		}
-		&.textarea2{
+		&.textarea2 {
 			height: 259px;
 		}
 	}
-	.btn-close{
+	.btn-close {
 		position: absolute;
 		top: 50%;
 		right: 12px;
 		text-indent: -9999px;
 		background: url(../images/sprite.png) no-repeat -38px -105px;
 		@include square(5px);
-		margin:-2px 0 0;
+		margin: -2px 0 0;
 	}
-	.form-row{
+	.form-row {
 		@extend %clearfix;
-		margin:0 0 5px;
-		position:relative;
-		
-		.img-box{
+		margin: 0 0 5px;
+		position: relative;
+
+		.img-box {
 			overflow: hidden;
-			
-			img{@extend %img-responsive2;}
+
+			img {
+				@extend %img-responsive2;
+			}
 		}
-		&.polygon{
-			padding:25px 0 14px;
-		}
-		&.assesment{
-			@include breakpoint($mobile){
-				.form-control{
-					font-size: 9px;
-					padding:5px 15px 5px 10px;
+		&.polygon {
+			padding: 25px 0 14px;
+			&.competetive {
+				position: relative;
+				& > span {
+					color: #a0a3aa;
+					font: 10px/12px "HelveticaNeueW82-Regula", Arial, Helvetica, sans-serif;
+					position: absolute;
+					z-index: 99;
+					&.text-2 {
+						bottom: -4px;
+						top: auto;
+					}
+					&.text-3 {
+						bottom: -4px;
+						left: auto;
+						right: -2px;
+						top: auto;
+					}
+				}
+			}
+			.swot-list {
+				text-align: center;
+				@extend %listreset;
+				li {
+					@include vertical(inline-block, top);
+					width: 96px;
+					height: 77px;
+					border-radius: 5px;
+					background: #00e1bf;
+					margin: 0 2px 10px;
+					@include v-align2(text, middle);
+					color: #fff;
 				}
 			}
 		}
-		.polygon-txt{
+		&.assesment {
+			@include breakpoint($mobile) {
+				.form-control {
+					font-size: 9px;
+					padding: 5px 15px 5px 10px;
+				}
+			}
+		}
+		.polygon-txt {
 			display: block;
-			font:10px/12px $font-family-base;
-			color:$text-color;
+			font: 10px/12px $font-family-base;
+			color: $text-color;
 			left: 0;
 			top: 24px;
 			@include element(before, 100%, auto, auto, 0, $light-seagreen);
 			position: absolute;
-			
-			&:before{
+
+			&:before {
 				@include size(24px, 1px);
-				margin:2px 0 0;
+				margin: 2px 0 0;
 			}
-			&.add{
-				text-align:right;
+			&.add {
+				text-align: right;
 				left: auto;
 				right: 0;
-				
-				&:before{
+
+				&:before {
 					left: auto;
 					right: 0;
 					background: $red;
 				}
 			}
 		}
-		&.txt-box{
+		&.txt-box {
 			font-size: 11px;
-			line-height:16px;
-			padding:5px 0 0 0;
-			color:$input-color;
-			
-			p{margin: 0 0 15px;}
-		}
-		&.budget{
-			padding:41px 0 12px;
-		}
-		&.report{
-			padding:9px 0 0 2px;
-		}
-		&.error{
-			.form-control{
-				border-color:$red;
+			line-height: 16px;
+			padding: 5px 0 0 0;
+			color: $input-color;
+
+			p {
+				margin: 0 0 15px;
 			}
 		}
-		&.active{
-			.form-control{
-				background:$suva-gray3;
+		&.budget {
+			padding: 41px 0 12px;
+		}
+		&.report {
+			padding: 9px 0 0 2px;
+		}
+		&.error {
+			.form-control {
+				border-color: $red;
 			}
-			.btn-close{
+		}
+		&.active {
+			.form-control {
+				background: $suva-gray3;
+			}
+			.btn-close {
 				background: url(../images/sprite.png) no-repeat -22px -148px;
 				@include square(10px);
-				
-				@include breakpoint($tablet){
-					background-position:-53px -105px;
+
+				@include breakpoint($tablet) {
+					background-position: -53px -105px;
 					@include square(5px);
 				}
 			}
 		}
-		.read{
+		.read {
 			@include vertical(inline-block, top);
 			font-size: 10px;
-			line-height:12px;
+			line-height: 12px;
 		}
-		h2{
-			margin:0 0 8px;
-			font:700 10px/12px $font-family-base;
-			color:$text-color;
+		h2 {
+			margin: 0 0 8px;
+			font: 700 10px/12px $font-family-base;
+			color: $text-color;
 		}
-		.report-example{
+		.report-example {
 			float: right;
-			color:$link-color;
+			color: $link-color;
 			font-size: 10px;
-			line-height:12px;
+			line-height: 12px;
 		}
-		.error-txt{
+		.error-txt {
 			display: block;
-			color:$red;
+			color: $red;
 		}
 	}
 }
-.report-nav{
+
+.report-nav {
 	@extend %clearfix;
-	margin:0;
-	padding:0 0 17px;
+	margin: 0;
+	padding: 0 0 17px;
 	font-size: 10px;
-	line-height:13px;
-	
-	li{
+	line-height: 13px;
+
+	li {
 		position: relative;
-		margin:0 0 11px;
-		padding:0 0 0 20px;
-		
-		.icon-check-mark{
+		margin: 0 0 11px;
+		padding: 0 0 0 20px;
+
+		.icon-check-mark {
 			position: absolute;
 			left: -1px;
 			top: -1px;
@@ -3378,46 +3832,52 @@ input[type=search] {
 		}
 	}
 }
-.checkbox-holder{
+
+.checkbox-holder {
 	overflow: hidden;
 	width: 108%;
-	margin:0 0 -8px;
-	.checkbox{
-		padding:5px;
-		margin:0 4.8% 8px 0;
+	margin: 0 0 -8px;
+	.checkbox {
+		padding: 5px;
+		margin: 0 4.8% 8px 0;
 		@include size(44%, 52px);
-		border-radius:5px;
+		border-radius: 5px;
 		@include vertical(inline-block, top);
 		background: $light-gray;
-		border:1px solid $light-gray;
-		font:600 11px/13px $font-family-base;
+		border: 1px solid $light-gray;
+		font: 600 11px/13px $font-family-base;
 		text-align: center;
 		text-transform: uppercase;
-		max-width:inherit;
-		color:$input-color;
+		max-width: inherit;
+		color: $input-color;
 		@include v-align2(txt, $valign: middle);
-		.txt { font-family: $font-family-base; }
-		@include breakpoint($mobile){
+		.txt {
+			font-family: $font-family-base;
+		}
+		@include breakpoint($mobile) {
 			font-size: 9px;
-			line-height:10px;
-			padding:5px 3px;
+			line-height: 10px;
+			padding: 5px 3px;
 		}
-		&.jcf-label-active{
+		&.jcf-label-active {
 			background: $suva-gray3;
-			border-color:$suva-gray3;
+			border-color: $suva-gray3;
 		}
-		&.error{
-			border-color:$red;
+		&.error {
+			border-color: $red;
 		}
-		.txt2{
+		.txt2 {
 			font-size: 8px;
 			font-weight: 400;
 			display: block;
-			margin:-3px 0;
-			@include breakpoint($mobile){margin: 0;}
+			margin: -3px 0;
+			@include breakpoint($mobile) {
+				margin: 0;
+			}
 		}
 	}
 }
+
 /* custom checkbox styles */
 .jcf-checkbox {
 	vertical-align: middle;
@@ -3429,24 +3889,29 @@ input[type=search] {
 	border: 0;
 	margin: 0 6px 0 0;
 	@include size(19px, 18px);
-	border-radius:3px;
+	border-radius: 3px;
 }
-.jcf-checkbox span{
-	position:absolute;
-	display:none;
-	height:6px;
-	width:9px;
-	top:50%;
-	left:50%;
-	margin:-7px 0 0 -6px;
-	border:3px solid $blue;
-	border-width:0 0 2px 2px;
+
+.jcf-checkbox span {
+	position: absolute;
+	display: none;
+	height: 6px;
+	width: 9px;
+	top: 50%;
+	left: 50%;
+	margin: -7px 0 0 -6px;
+	border: 3px solid $blue;
+	border-width: 0 0 2px 2px;
 	-moz-transform: rotate(-40deg);
 	-ms-transform: rotate(-40deg);
 	-webkit-transform: rotate(-40deg);
 	transform: rotate(-40deg);
 }
-:root .jcf-checkbox span {margin:-4px 0 0 -5px;}
+
+:root .jcf-checkbox span {
+	margin: -4px 0 0 -5px;
+}
+
 .jcf-checkbox input[type="checkbox"] {
 	position: absolute;
 	width: 100%;
@@ -3456,7 +3921,11 @@ input[type=search] {
 	left: 0;
 	top: 0;
 }
-.jcf-checkbox.jcf-checked span{display:block;}
+
+.jcf-checkbox.jcf-checked span {
+	display: block;
+}
+
 /* custom radio styles */
 .jcf-radio {
 	vertical-align: middle;
@@ -3465,21 +3934,23 @@ input[type=search] {
 	overflow: hidden;
 	cursor: default;
 	background: $suva-gray3;
-	border:none;
+	border: none;
 	border-radius: 50%;
 	margin: 0 3px 0 0;
 	@include square(8px);
 }
-.jcf-radio span{
-	display:none;
-	position:absolute;
-	top:0;
-	left:0;
-	right:0;
-	bottom:0;
-	background:none;
-	border-radius:100%;
+
+.jcf-radio span {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: none;
+	border-radius: 100%;
 }
+
 .jcf-radio input[type="radio"] {
 	position: absolute;
 	height: 100%;
@@ -3489,7 +3960,11 @@ input[type=search] {
 	left: 0;
 	top: 0;
 }
-.jcf-radio.jcf-checked span {display:block;}
+
+.jcf-radio.jcf-checked span {
+	display: block;
+}
+
 /* custom select styles */
 .jcf-select {
 	display: inline-block !important;
@@ -3499,46 +3974,49 @@ input[type=search] {
 	margin: 0;
 	width: 100%;
 	height: 29px;
-	border-radius:3px;
-	border:1px solid transparent;
+	border-radius: 3px;
+	border: 1px solid transparent;
 	text-transform: uppercase;
-	
-	&.jcf-drop-active{
-		box-shadow:0 1px 2px rgba(0, 0, 0, 0.1);
-		.jcf-select-opener{
+
+	&.jcf-drop-active {
+		box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+		.jcf-select-opener {
 			@include arrow-lazy($al-direction: top, $al-size: 4px, $al-color: #979ba3, $al-center: 50%, $al-margin: -1px, $al-pseudo: before);
 			position: absolute;
-			
-			&:before{
+
+			&:before {
 				top: 50%;
-				margin:-3px 0 0 -6px;
+				margin: -3px 0 0 -6px;
 			}
 		}
 	}
-	&.error{
-		border-color:$red;
+	&.error {
+		border-color: $red;
 	}
 }
+
 .jcf-select select {
 	z-index: 1;
 	left: 0;
 	top: 0;
 }
+
 .jcf-select .jcf-select-text {
-	text-overflow:ellipsis;
+	text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow: hidden;
 	cursor: default;
 	display: block;
-	font:11px/16px $font-neue-medium;
+	font: 11px/16px $font-neue-medium;
 	margin: 7px 24px 5px 19px;
-	color:$input-color;
-	
-	@include breakpoint($mobile){
+	color: $input-color;
+
+	@include breakpoint($mobile) {
 		margin: 7px 24px 5px 10px;
 		font-size: 10px;
 	}
 }
+
 .jcf-select .jcf-select-opener {
 	text-align: center;
 	background: none;
@@ -3548,43 +4026,48 @@ input[type=search] {
 	top: 0;
 	@include arrow-lazy($al-direction: down, $al-size: 4px, $al-color: #979ba3, $al-center: 50%, $al-margin: -1px, $al-pseudo: before);
 	position: absolute;
-	
-	&:before{
+
+	&:before {
 		top: 0;
-		left:0;
-		margin:13px 0 0 4px;
+		left: 0;
+		margin: 13px 0 0 4px;
 	}
 }
+
 body > .jcf-select-drop {
 	position: absolute;
 	margin: -1px 0 0;
 	z-index: 10020;
 }
+
 body > .jcf-select-drop.jcf-drop-flipped {
 	margin: 1px 0 0;
-	
+
 	.jcf-select-drop-content {
-		box-shadow:0 -1px 2px rgba(0, 0, 0, 0.1);
+		box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.1);
 	}
 }
+
 .jcf-select .jcf-select-drop {
 	position: absolute;
-	margin-top: 0px;
+	margin-top: 0;
 	z-index: 9999;
 	top: 100%;
 	left: -1px;
 	right: -1px;
 }
+
 .jcf-select .jcf-drop-flipped {
 	bottom: 100%;
 	top: auto;
 }
+
 .jcf-select-drop .jcf-select-drop-content {
-	border:0;
-	box-shadow:0 1px 2px rgba(0, 0, 0, 0.1);
-	
-	&:before{
-		background:#f5f6f8;
+	border: 0;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+
+	&:before {
+		background: #f5f6f8;
 		border: 0 none;
 		bottom: auto;
 		content: "";
@@ -3596,6 +4079,7 @@ body > .jcf-select-drop.jcf-drop-flipped {
 		width: 100%;
 	}
 }
+
 /* multiple select styles */
 .jcf-list-box {
 	overflow: hidden;
@@ -3604,63 +4088,70 @@ body > .jcf-select-drop.jcf-drop-flipped {
 	min-width: 200px;
 	margin: 0 15px;
 }
+
 /* select options styles */
 .jcf-list {
 	display: inline-block;
 	vertical-align: top;
 	position: relative;
 	background: $input-bg;
-	font:11px/14px $font-neue-medium;
+	font: 11px/14px $font-neue-medium;
 	width: 100%;
-	text-transform: uppercase;
-	border-radius:0 0 3px 3px;
+	border-radius: 0 0 3px 3px;
 	overflow: hidden;
 	text-transform: uppercase;
-	
-	@include breakpoint($mobile){
+
+	@include breakpoint($mobile) {
 		font-size: 8px;
 	}
 }
+
 .jcf-list .jcf-list-content {
 	vertical-align: top;
 	display: inline-block;
 	overflow: auto;
 	width: 100%;
 }
+
 .jcf-list ul {
 	list-style: none;
 	padding: 0;
 	margin: 0;
 }
+
 .jcf-list ul li {
 	overflow: hidden;
 	display: block;
 }
+
 .jcf-list .jcf-overflow {
 	overflow: auto;
 }
+
 .jcf-list .jcf-option {
-	white-space: nowrap;
 	overflow: hidden;
 	cursor: default;
 	display: block;
 	padding: 5px 5px 5px 20px;
 	color: $input-color;
 	height: 1%;
-	
-	@include breakpoint($mobile){
+
+	@include breakpoint($mobile) {
 		padding: 5px 5px 5px 10px;
 	}
 }
+
 .jcf-list .jcf-disabled {
 	background: #fff !important;
 	color: #aaa !important;
 }
+
 .jcf-select-drop .jcf-hover,
 .jcf-list-box .jcf-selected {
 	background: $text-color;
 	color: $white;
 }
+
 .jcf-list .jcf-optgroup-caption {
 	white-space: nowrap;
 	font-weight: bold;
@@ -3669,406 +4160,442 @@ body > .jcf-select-drop.jcf-drop-flipped {
 	cursor: default;
 	color: #000;
 }
+
 .jcf-list .jcf-optgroup .jcf-option {
 	padding-left: 30px;
 }
-.radio-buttons{
+
+.radio-buttons {
 	@extend %clearfix;
-	.project-radio{
+	.project-radio {
 		display: block;
 		background: $input-bg;
-		color:$input-color;
-		padding:5px;
+		color: $input-color;
+		padding: 5px;
 		@include size(100%, 29px);
-		margin:0;
-		max-width:inherit;
+		margin: 0;
+		max-width: inherit;
 		float: none;
 		text-transform: uppercase;
-		border-radius:3px;
-		border:1px solid transparent;
-		font:600 11px/17px $font-family-base;
-		
-		@include breakpoint($mobile){
+		border-radius: 3px;
+		border: 1px solid transparent;
+		font: 600 11px/17px $font-family-base;
+
+		@include breakpoint($mobile) {
 			font-size: 10px;
 		}
-		&.jcf-label-active{
-			background:$suva-gray3;
-			.jcf-radio{
+		&.jcf-label-active {
+			background: $suva-gray3;
+			.jcf-radio {
 				background: $input-bg;
-				color:$input-color;
+				color: $input-color;
 			}
 		}
-		&.error{
-			border-color:$red;
+		&.error {
+			border-color: $red;
 		}
 	}
 }
-.progress-frame{
-	border-radius:15px;
+
+.progress-frame {
+	border-radius: 15px;
 	background: $suva-gray3;
 	@include size(100%, 4px);
 	@extend %clearfix;
-	
-	.progress-bar{
-		border-radius:15px 0 0  15px;
+
+	.progress-bar {
+		border-radius: 15px 0 0 15px;
 		@include vertical(inline-block, top);
 		background: $link-hover-color;
 		@include element(before, 0, auto, auto, 100%, $link-hover-color);
-		
-		&:before{
-			margin:-4px 0 0 -13px;
+
+		&:before {
+			margin: -4px 0 0 -13px;
 			@include square(13px);
-			border-radius:50%;
+			border-radius: 50%;
 		}
-		.num{
+		.num {
 			left: 100%;
 			top: -43px;
 			width: 74px;
-			border:1px solid $red;
-			border-radius:5px;
+			border: 1px solid $red;
+			border-radius: 5px;
 			background: $input-bg;
 			font-size: 11px;
-			line-height:14px;
+			line-height: 14px;
 			font-weight: 600;
-			color:$input-color;
+			color: $input-color;
 			text-align: center;
-			margin:0 0 0 -43px;
-			padding:7px 5px 6px;
+			margin: 0 0 0 -43px;
+			padding: 7px 5px 6px;
 			@include arrow-lazy($al-direction: down, $al-size: 8px, $al-color: #f5f6f8, $al-center: 50%, $al-margin: -1px, $al-pseudo: before);
-			position:absolute;
+			position: absolute;
 		}
 	}
 }
-.delete-project{
-	color:$blue;
+
+.delete-project {
+	color: $blue;
 	@include vertical(inline-block, top);
-	margin:15px 0 0 39px;
-	position:relative;
-	font:12px/14px $font-neue-thin;
-	
-	.icon{
+	margin: 15px 0 0 39px;
+	position: relative;
+	font: 12px/14px $font-neue-thin;
+
+	.icon {
 		left: -35px;
 		top: -4px;
-		color:$red;
+		color: $red;
 		position: absolute;
 		font-size: 30px;
-		line-height:20px;
+		line-height: 20px;
 	}
 	&:focus,
-	&:hover{
+	&:hover {
 		text-decoration: none;
-		outline:none;
-		.icon{
-			color:$text-color;
+		outline: none;
+		.icon {
+			color: $text-color;
 		}
 	}
-	&.active{
-		.cross{
-			color:$blue;
+	&.active {
+		.cross {
+			color: $blue;
 		}
 	}
 }
-#sidebar{
-	max-width:225px;
+
+#sidebar {
+	max-width: 225px;
 	float: right;
-	@include breakpoint($mobile){
-		margin:0 auto 30px;
+	@include breakpoint($mobile) {
+		margin: 0 auto 30px;
 		float: none;
 		overflow: hidden;
 	}
 }
-.widget{
+
+.widget {
 	overflow: hidden;
-	margin:0 0 10px;
+	margin: 0 0 10px;
 	background: $white;
-	border-radius:7px;
-	padding:0 12px;
-	position:relative;
-	
-	&.project-widget{
-		padding:17px 6px 16px 62px;
-		
-		h2{
-			position:relative;
-			margin:0;
-			font:700 14px/16px $font-family-base;
-			color:$link-color;
-			
-			.txt{
-				color:$text-color;
+	border-radius: 7px;
+	padding: 0 12px;
+	position: relative;
+
+	&.project-widget {
+		padding: 17px 6px 16px 62px;
+
+		h2 {
+			position: relative;
+			margin: 0;
+			font: 700 14px/16px $font-family-base;
+			color: $link-color;
+
+			.txt {
+				color: $text-color;
 				display: block;
 			}
 		}
-		.icon-idea{
+		.icon-idea {
 			position: absolute;
 			left: -55px;
 			top: 50%;
 			font-size: 48px;
-			margin:-28px 0 0;
-			color:#212121;
+			margin: -28px 0 0;
+			color: #212121;
 		}
 	}
-	.error-txt{
+	.error-txt {
 		display: block;
 		text-align: center;
-		color:$red;
+		color: $red;
 		font-size: 12px;
-		line-height:14px;
-		padding:9px 0 0;
+		line-height: 14px;
+		padding: 9px 0 0;
 	}
-	&.buttons-widget{
+	&.buttons-widget {
 		background: none;
 		padding-top: 6px;
-		
-		.btn-default{
-			padding:5px 5px 6px;
+
+		.btn-default {
+			padding: 5px 5px 6px;
 			display: block;
-			margin:0 0 7px;
-			border-radius:3px;
+			margin: 0 0 7px;
+			border-radius: 3px;
 			text-transform: capitalize;
-			font:17px/20px $font-ultra-light;
-			background:$light-seagreen2;
-			
-			&:hover{background: $dark-green;}
-			&.active{background: $dark-green2;}
-			&.preview{
+			font: 17px/20px $font-ultra-light;
+			background: $light-seagreen2;
+
+			&:hover {
+				background: $dark-green;
+			}
+			&.active {
+				background: $dark-green2;
+			}
+			&.preview {
 				background: $text-color;
-				&:hover{background: $dark-gray;}
-				&.active{background: $link-hover-color;}
+				&:hover {
+					background: $dark-gray;
+				}
+				&.active {
+					background: $link-hover-color;
+				}
+			}
+			&[disabled] {
+				background: $light-gray3;
+			}
+		}
+		&.inline {
+			.btn-default {
+				display: inline-block;
 			}
 		}
 	}
-	&.info-widget{
+	&.info-widget {
+		width: 225px;
 		padding: 0;
-		
-		.info-col{
-			position:relative;
+
+		.info-col {
+			position: relative;
 			width: 100%;
-			margin:0;
+			margin: 0;
 			font-size: 12px;
-			padding:0 17px 42px 20px;
-			h2{
+			padding: 0 17px 42px 20px;
+			h2 {
+				min-height: 37px;
 				font-size: 12px;
 				margin: 0 -20px 15px;
-				padding:11px 30px 8px 19px;				
-				&:before{
+				padding: 11px 30px 8px 19px;
+				&:before {
 					font-size: 24px;
 					right: 10px;
 				}
 			}
-			.title{
+			.title {
 				font-size: 14px;
-				line-height:18px;
-				margin:0 0 6px;
+				line-height: 18px;
+				margin: 0 0 6px;
 			}
-			p{margin: 0 0 30px;}
-			.client-info{
-				&.inactive{
-					margin:-5px 0 5px;
-					.alignleft{
-						margin:0 0 0 -2px;
+			p {
+				margin: 0 0 30px;
+			}
+			.client-info {
+				&.inactive {
+					margin: -5px 0 5px;
+					.alignleft {
+						margin: 0 0 0 -2px;
 					}
 				}
 			}
-			.add-nav{
-				li{
+			.add-nav {
+				li {
 					display: block;
-					padding:0 16px;
-					margin:0 0 9px;
-					
-					.icon-map-marker{
+					padding: 0 16px;
+					margin: 0 0 9px;
+
+					.icon-map-marker {
 						left: -19px;
 					}
 				}
 			}
-			.buttons-nav{
+			.buttons-nav {
 				position: absolute;
 				left: 0;
 				right: 0;
-				bottom:0;
-				margin:0;
-				&.add{
-					li{
-						padding:10px 2px 12px;
-						.ico{
-							margin:-1px 0 0 9px;
+				bottom: 0;
+				margin: 0;
+				&.add {
+					li {
+						padding: 10px 2px 12px;
+						.ico {
+							margin: -1px 0 0 9px;
 							font-size: 20px;
-							&.trophy{
-								margin:0 -1px 0 -9px;
+							&.trophy {
+								margin: 0 -1px 0 -9px;
 								font-size: 19px;
 							}
 						}
 					}
-					.btn-default{
-						min-width:61px;
-						font:10px/14px $font-neue-medium;
+					.btn-default {
+						min-width: 61px;
+						font: 10px/14px $font-neue-medium;
 					}
 				}
 			}
 		}
 	}
 }
-.modal-dialog{
-	&.delete-projects{
+
+.modal-dialog {
+	&.delete-projects {
 		width: 512px;
-		margin:295px auto 0;
-		
-		@include breakpoint($mobile){
+
+		@include breakpoint($mobile) {
 			width: 300px;
-			margin:50px auto 0;
 		}
-		.modal-content{
+		.modal-content {
 			position: relative;
-			color:$link-color;
-			font:18px/22px $font-neue-thin;
-			padding:36px 55px 34px 47px;
-			
-			@include breakpoint($mobile){
-				padding:50px 15px 34px;
+			color: $link-color;
+			font: 18px/22px $font-neue-thin;
+			padding: 36px 55px 34px 47px;
+
+			@include breakpoint($mobile) {
+				padding: 50px 15px 34px;
 			}
 		}
-		.close{
+		.close {
 			font-size: 30px;
-			line-height:20px;
+			line-height: 20px;
 			opacity: 1;
 			top: 16px;
 			right: 13px;
-			color:$link-hover-color;
+			color: $link-hover-color;
 			position: absolute;
-			&:hover{
+			&:hover {
 				opacity: 0.5;
 			}
 		}
-		.modal-header{
-			padding:0 0 2px;
-			border:none;
-			.modal-title{
+		.modal-header {
+			padding: 0 0 2px;
+			border: none;
+			.modal-title {
 				font-size: 40px;
-				line-height:50px;
-				
-				@include breakpoint($mobile){
+				line-height: 50px;
+
+				@include breakpoint($mobile) {
 					font-size: 25px;
-					line-height:28px;
+					line-height: 28px;
 				}
 			}
 		}
-		.modal-body{
-			padding:0 0 24px;
-			p{
+		.modal-body {
+			padding: 0 0 24px;
+			p {
 				margin: 0;
-				@include breakpoint($mobile){
-					br{display: none;}
+				@include breakpoint($mobile) {
+					br {
+						display: none;
+					}
 				}
 			}
 		}
-		.modal-footer{
-			padding:0;
-			border:0;
-			text-align:left;
-			
-			.btn-default{
-				min-width:150px;
-				margin:0 18px 0 0;
+		.modal-footer {
+			padding: 0;
+			border: 0;
+			text-align: left;
+
+			.btn-default {
+				min-width: 150px;
+				margin: 0 18px 0 0;
 				background: $pink;
 				font-size: 13px;
-				line-height:16px;
+				line-height: 16px;
 				font-weight: 400;
-				border-radius:3px;
-				padding:11px 5px;
-				
-				@include breakpoint($mobile){
-					min-width:110px;
+				border-radius: 3px;
+				padding: 11px 5px;
+
+				@include breakpoint($mobile) {
+					min-width: 110px;
 				}
 				&:focus,
-				&:hover{
+				&:hover {
 					background: $dark-brown;
 				}
-				&.active{background: $dark-brown2;}
-				&.cancel{
+				&.active {
+					background: $dark-brown2;
+				}
+				&.cancel {
 					background: $light-gray7;
-					
+
 					&:focus,
-					&:hover{
+					&:hover {
 						background: $link-hover-color;
 					}
-					&.active{background: $link-color;}
+					&.active {
+						background: $link-color;
+					}
 				}
 			}
 		}
 	}
 }
-.poke-buttons{
-	padding:0;
+
+.poke-buttons {
+	padding: 0;
 	@extend %clearfix;
-	
-	@include breakpoint($mobile){
-		padding:0;
+
+	@include breakpoint($mobile) {
+		padding: 0;
 	}
-	.box{
+	.box {
 		float: right;
-		
-		@include breakpoint($mobile){
+
+		@include breakpoint($mobile) {
 			overflow: hidden;
 			float: none;
 		}
 	}
-	.btn-default{
+	.btn-default {
 		float: right;
-		margin:0 0 0 10px;
-		box-shadow:none;
-		padding:7px 5px;
-		font:14px/18px $font-family-base;
-		
-		@include breakpoint($mobile){
+		margin: 0 0 0 10px;
+		box-shadow: none;
+		padding: 7px 5px;
+		font: 14px/18px $font-family-base;
+
+		@include breakpoint($mobile) {
 			float: none;
-			margin:0 5px;
+			margin: 0 5px;
 			@include vertical(inline-block, top);
 		}
-		&.free{
-			min-width:110px;
+		&.free {
+			min-width: 110px;
 			background: $light-seagreen3;
-			
-			&:hover{
+
+			&:hover {
 				background: $dark-green;
 			}
-			&.active{background: $dark-green2;}
-			&.skip{
+			&.active {
+				background: $dark-green2;
+			}
+			&.skip {
 				background: $white;
-				color:$text-color;
-				
-				&:hover{
-					background:$light-gray8;
+				color: $text-color;
+
+				&:hover {
+					background: $light-gray8;
 				}
-				&.active{
+				&.active {
 					color: $white;
-					background:$text-color;
+					background: $text-color;
 				}
 			}
 		}
 	}
 }
-.back-project{
+
+.back-project {
 	float: left;
 	text-transform: uppercase;
-	margin:10px 0 0 46px;
-	color:$text-color;
-	font:300 12px/14px $font-family-base;
-	position:relative;
-	
-	@include breakpoint($mobile){
+	margin: 10px 0 0 46px;
+	color: $text-color;
+	font: 300 12px/14px $font-family-base;
+	position: relative;
+
+	@include breakpoint($mobile) {
 		@include vertical(inline-block, top);
 		float: none;
-		margin:10px 0 15px 46px;
+		margin: 10px 0 15px 46px;
 	}
 	&:focus,
-	&:hover{
-		color:$link-hover-color;
+	&:hover {
+		color: $link-hover-color;
 		text-decoration: none;
-		outline:none;
+		outline: none;
 	}
-	&.active{color:$link-color;}
-	.icon-left{
-		line-height: 15px;
+	&.active {
+		color: $link-color;
+	}
+	.icon-left {
 		position: absolute;
 		left: -47px;
 		top: -13px;
@@ -4076,231 +4603,250 @@ body > .jcf-select-drop.jcf-drop-flipped {
 		line-height: 39px;
 	}
 }
-.project-towcols{
-	max-width:640px;
-	margin:0 auto;
-	overflow: hidden;
-	@include breakpoint($mobile){
-		max-width:inherit;
-		width: 100%;
-		margin:0;
-	}
-}
-.pokes-block{
-	overflow: hidden;
-	margin:-1px auto 0;
+
+.project-towcols {
 	max-width: 640px;
-	@include breakpoint($mobile){
-		max-width:inherit;
+	margin: 0 auto;
+	overflow: hidden;
+	@include breakpoint($mobile) {
+		max-width: inherit;
 		width: 100%;
-		margin:0;
+		margin: 0;
 	}
 }
-.poke-experts{
+
+.pokes-block {
+	overflow: hidden;
+	margin: -1px auto 0;
+	max-width: 640px;
+	@include breakpoint($mobile) {
+		max-width: inherit;
+		width: 100%;
+		margin: 0;
+	}
+}
+
+.poke-experts {
 	@extend %clearfix;
-	margin:0 0 10px;
-	padding:13px 19px 10px;
+	margin: 0 0 10px;
+	padding: 13px 19px 10px;
 	width: 100%;
-	border-radius:5px;
+	border-radius: 5px;
 	background: $white;
-	
-	.alignleft{
+
+	.alignleft {
 		@include square(27px);
 		overflow: hidden;
-		border-radius:50%;
+		border-radius: 50%;
 		float: left;
-		margin:0 5px 0 0;
-		
-		@include breakpoint($mobile){
+		margin: 0 5px 0 0;
+
+		@include breakpoint($mobile) {
 			@include vertical(inline-block, top);
 			float: none;
-			margin:0 5px;
+			margin: 0 5px;
 		}
 	}
-	.poke-close{
+	.poke-close {
 		float: right;
-		margin:-5px -3px -4px 6px;
-		color:$text-color;
+		margin: -5px -3px -4px 6px;
+		color: $text-color;
 		font-size: 34px;
-		line-height:10px;
-		.icon-close-2{display: none;}
+		line-height: 10px;
+		.icon-close-2 {
+			display: none;
+		}
 		&:focus,
-		&:hover{
+		&:hover {
 			opacity: 0.7;
 			text-decoration: none;
-			outline:none;
+			outline: none;
 		}
-		@include breakpoint($mobile){
+		@include breakpoint($mobile) {
 			float: none;
 			@include vertical(inline-block, top);
-			margin:-4px 5px 0;
+			margin: -4px 5px 0;
 		}
 	}
-	.block{
-		@include breakpoint($mobile){
-			padding:5px 0 0;
+	.block {
+		@include breakpoint($mobile) {
+			padding: 5px 0 0;
 			overflow: hidden;
 			text-align: center;
-			margin:0 0 5px;
+			margin: 0 0 5px;
 		}
 	}
-	&:hover{
+	&:hover {
 		background: $input-bg;
 	}
-	&.active{
+	&.active {
 		background: $blue5;
-		
-		.poke-nav{color:$white;}
-		.poke-close{
-			color:$white;
-			.icon-close-2{display: block;}
-			.icon-plus{display: none;}
+
+		.poke-nav {
+			color: $white;
+		}
+		.poke-close {
+			color: $white;
+			.icon-close-2 {
+				display: block;
+			}
+			.icon-plus {
+				display: none;
+			}
 		}
 	}
 }
-.poke-nav{
+
+.poke-nav {
 	overflow: hidden;
-	margin:0;
-	padding:5px 0 0;
+	margin: 0;
+	padding: 5px 0 0;
 	text-align: center;
-	color:$text-color;
-	font:11px/14px $font-neue-medium;
-	
-	@include breakpoint($mobile){
+	color: $text-color;
+	font: 11px/14px $font-neue-medium;
+
+	@include breakpoint($mobile) {
 		font-size: 10px;
 	}
-	li{
-		margin:0 13px;
-		padding:0;
-		@include breakpoint($mobile){
-			margin:0 0 5px;
+	li {
+		margin: 0 13px;
+		padding: 0;
+		@include breakpoint($mobile) {
+			margin: 0 0 5px;
 		}
 	}
 }
-.balance-block{
+
+.balance-block {
 	padding-top: 47px;
 	padding-bottom: 63px;
 }
-.balance-box{
+
+.balance-box {
 	margin-bottom: 19px;
 }
-.table-box{
+
+.table-box {
 	margin-bottom: 42px;
-	h3{
-		margin:0 auto 15px;
+	h3 {
+		margin: 0 auto 15px;
 		font-size: 26px;
-		line-height:30px;
-		max-width:680px;
-		padding:0 0 0 20px;
-		@include breakpoint($mobile){
-			max-width:inherit;
+		line-height: 30px;
+		max-width: 680px;
+		padding: 0 0 0 20px;
+		@include breakpoint($mobile) {
+			max-width: inherit;
 			width: 100%;
 		}
 	}
 }
-.balance-heading{
+
+.balance-heading {
 	overflow: hidden;
 	background: $input-bg;
-	padding:17px 21px 19px 30px;
-	border-radius:7px;
-	max-width:680px;
-	margin:0 auto;
-	
-	@include breakpoint($mobile){
-		padding:17px 15px 19px;
+	padding: 17px 21px 19px 30px;
+	border-radius: 7px;
+	max-width: 680px;
+	margin: 0 auto;
+
+	@include breakpoint($mobile) {
+		padding: 17px 15px 19px;
 		text-align: center;
-		max-width:inherit;
+		max-width: inherit;
 		width: 100%;
 	}
-	h2{
+	h2 {
 		margin: 0;
 		float: left;
-		max-width:420px;
+		max-width: 420px;
 		font-size: 35px;
-		line-height:38px;
-		
-		@include breakpoint($mobile){
+		line-height: 38px;
+
+		@include breakpoint($mobile) {
 			float: none;
 			width: 100%;
-			max-width:inherit;
+			max-width: inherit;
 			overflow: hidden;
-			margin:0 0 10px;
+			margin: 0 0 10px;
 			font-size: 24px;
-			line-height:30px;
+			line-height: 30px;
 		}
 	}
-	.btn-default{
+	.btn-default {
 		background: $light-gray7;
-		min-width:196px;
+		min-width: 196px;
 		float: right;
-		margin:5px 0 0;
+		margin: 5px 0 0;
 		text-transform: uppercase;
-		padding:8px 5px 6px;
-		
-		@include breakpoint($mobile){
+		padding: 8px 5px 6px;
+
+		@include breakpoint($mobile) {
 			float: none;
 			@include vertical(inline-block, top);
 		}
-		&:hover{
+		&:hover {
 			background: $link-hover-color;
 		}
-		&.active{
+		&.active {
 			background: $light-seagreen;
 		}
 	}
 }
-.balance-table{
-	border-radius:9px;
+
+.balance-table {
+	border-radius: 9px;
 	overflow: hidden;
-	padding:0 19px 15px;
+	padding: 0 19px 15px;
 	background: $white;
-	color:$blue;
-	font:10px/14px $font-family-base;
-	max-width:680px;
-	margin:0 auto;
-	
-	@include breakpoint($mobile){
+	color: $blue;
+	font: 10px/14px $font-family-base;
+	max-width: 680px;
+	margin: 0 auto;
+
+	@include breakpoint($mobile) {
 		background: $light-gray;
-		padding:0;
-		max-width:inherit;
+		padding: 0;
+		max-width: inherit;
 		width: 100%;
-		margin:0;
+		margin: 0;
 	}
-	.thead{
+	.thead {
 		overflow: hidden;
-		margin:0 -30px 20px;
-		padding:13px 3.3% 12px;
+		margin: 0 -30px 20px;
+		padding: 13px 3.3% 12px;
 		background: $input-bg;
-		font:18px/22px $font-ultra-light;
-		
-		@include breakpoint($mobile){display: none;}
-		.table-row{
+		font: 18px/22px $font-ultra-light;
+
+		@include breakpoint($mobile) {
+			display: none;
+		}
+		.table-row {
 			margin-bottom: 0;
 			padding-top: 0;
 			padding-bottom: 0;
 		}
 	}
-	.tbody{
+	.tbody {
 		@extend %clearfix;
-		
-		@include breakpoint($mobile){
-			display:block;
-			border-left:100px solid $input-bg;
-			float:left;
-			width:100%;
-			padding:15px 10px 6px;
+
+		@include breakpoint($mobile) {
+			display: block;
+			border-left: 100px solid $input-bg;
+			float: left;
+			width: 100%;
+			padding: 15px 10px 6px;
 		}
 	}
-	.table-row{
+	.table-row {
 		@extend %clearfix;
 		background: $light-gray;
-		border-radius:9px;
-		margin:0 0 3px;
-		padding:11px 3.4% 11px 3.6%;
-		
-		@include breakpoint($mobile){
-			border-radius:0;
-			padding:0;
+		border-radius: 9px;
+		margin: 0 0 3px;
+		padding: 11px 3.4% 11px 3.6%;
+
+		@include breakpoint($mobile) {
+			border-radius: 0;
+			padding: 0;
 		}
 	}
 	.cell06,
@@ -4308,435 +4854,454 @@ body > .jcf-select-drop.jcf-drop-flipped {
 	.cell04,
 	.cell03,
 	.cell02,
-	.cell01{
+	.cell01 {
 		float: left;
 		width: 14.4%;
-		
-		@include breakpoint($mobile){
+
+		@include breakpoint($mobile) {
 			@extend %clearfix;
 			float: none;
-			clear:both;
-			width:100% !important;
-			white-space:nowrap;
-			border-top:0;
-			padding:0 0 0 10px;
-			margin:0 0 6px;
+			clear: both;
+			width: 100% !important;
+			white-space: nowrap;
+			border-top: 0;
+			padding: 0 0 0 10px;
+			margin: 0 0 6px;
 			background: $white;
-			
+
 			&:before {
-				content:attr(title);
+				content: attr(title);
 				padding: 4px 10px 3px;
 				@include vertical(inline-block, middle);
-				color:$blue !important;
-				font-weight:bold;
-				width:110px;
-				margin:0 0 0 -110px;
-				position:relative;
-				white-space:normal;
-				background:$white;
+				color: $blue !important;
+				font-weight: bold;
+				width: 110px;
+				margin: 0 0 0 -110px;
+				position: relative;
+				white-space: normal;
+				background: $white;
 				font-size: 11px;
 			}
-			.txt{
-				white-space:normal;
+			.txt {
+				white-space: normal;
 				@include vertical(inline-block, middle);
 			}
 		}
 	}
-	.cell02{
+	.cell02 {
 		width: 11.5%;
-		@include breakpoint($mobile){
+		@include breakpoint($mobile) {
 			width: 100%;
 		}
 	}
-	.cell03{
+	.cell03 {
 		width: 16.6%;
-		@include breakpoint($mobile){
+		@include breakpoint($mobile) {
 			width: 100%;
 		}
 	}
-	.cell04{
+	.cell04 {
 		width: 30%;
-		@include breakpoint($mobile){
+		@include breakpoint($mobile) {
 			width: 100%;
 		}
 	}
-	.cell05{
+	.cell05 {
 		width: 11.4%;
-		text-align:right;
-		@include breakpoint($mobile){
-			text-align:left;
+		text-align: right;
+		@include breakpoint($mobile) {
+			text-align: left;
 			width: 100%;
 		}
 	}
-	.cell06{
+	.cell06 {
 		width: 16%;
-		text-align:right;
-		@include breakpoint($mobile){
-			text-align:left;
+		text-align: right;
+		@include breakpoint($mobile) {
+			text-align: left;
 			width: 100%;
 		}
 	}
-	.total-row{
-		padding:13px 3.4% 2px 3.6%;
+	.total-row {
+		padding: 13px 3.4% 2px 3.6%;
 		overflow: hidden;
-		font:20px/24px $font-ultra-light;
-		
-		@include breakpoint($mobile){
+		font: 20px/24px $font-ultra-light;
+
+		@include breakpoint($mobile) {
 			font-size: 16px;
-			line-height:20px;
+			line-height: 20px;
 		}
 	}
-	.total{
+	.total {
 		float: left;
 	}
-	.amount{
+	.amount {
 		float: right;
 	}
-	&.upcomming{
-		.cell05{
+	&.upcomming {
+		.cell05 {
 			float: right;
 		}
 	}
 }
-.modal-dialog{
-	&.withdraw-initiated{
+
+.modal-dialog {
+	&.withdraw-initiated {
 		width: 512px;
-		margin:254px auto 0;
 		text-align: center;
-		color:$link-color;
-		font:22px/30px $font-neue-thin;
-		
-		@include breakpoint($mobile){
+		color: $link-color;
+		font: 22px/30px $font-neue-thin;
+
+		@include breakpoint($mobile) {
 			width: 300px;
 			font-size: 16px;
-			line-height:20px;
+			line-height: 20px;
 		}
-		.modal-content{
-			padding:129px 10px 142px;
-			@include breakpoint($mobile){padding:90px 10px;}
+		.modal-content {
+			padding: 129px 10px 142px;
+			@include breakpoint($mobile) {
+				padding: 90px 10px;
+			}
 		}
-		.modal-header{
-			padding:0 0 16px;
-			border:0;
+		.modal-header {
+			padding: 0 0 16px;
+			border: 0;
 		}
-		.modal-body{
-			padding:0 0 16px;
-			border:0;
+		.modal-body {
+			padding: 0 0 16px;
+			border: 0;
 		}
-		.modal-footer{
-			border:0;
-			padding:0;
+		.modal-footer {
+			border: 0;
+			padding: 0;
 			text-align: center;
 		}
-		p{
+		p {
 			margin: 0;
-			@include breakpoint($mobile){
-				br{display: none;}
+			@include breakpoint($mobile) {
+				br {
+					display: none;
+				}
 			}
 		}
-		.modal-title{
+		.modal-title {
 			font-size: 45px;
-			line-height:50px;
-			margin:0;
-			color:$link-color;
-			
-			@include breakpoint($mobile){
+			line-height: 50px;
+			margin: 0;
+			color: $link-color;
+
+			@include breakpoint($mobile) {
 				font-size: 30px;
-				line-height:35px;
+				line-height: 35px;
 			}
 		}
-		.btn-default{
+		.btn-default {
 			float: none;
 			@include vertical(inline-block, top);
-			min-width:195px;
+			min-width: 195px;
 			font-size: 13px;
-			line-height:16px;
-			padding:10px 5px 10px;
+			line-height: 16px;
+			padding: 10px 5px 10px;
 			background: $light-seagreen;
-			font:13px/16px $font-family-base;
-			
-			&:hover{
+			font: 13px/16px $font-family-base;
+
+			&:hover {
 				background: $dark-green3;
 			}
-			&.active{
+			&.active {
 				background: $blue6;
 			}
 		}
 	}
-	.close{
+	.close {
 		font-size: 30px;
-		line-height:20px;
+		line-height: 20px;
 		opacity: 1;
 		top: 16px;
 		right: 13px;
-		color:$link-hover-color;
+		color: $link-hover-color;
 		position: absolute;
-		&:hover{
+		&:hover {
 			opacity: 0.5;
 		}
 	}
 }
-.modal-dialog{
-	margin: 32px auto;
-	&.withdraw-balance{
+
+.modal-dialog {
+	&.withdraw-balance {
 		width: 512px;
-		margin: 30px auto 0;
-		@include breakpoint($mobile){
+
+		@include breakpoint($mobile) {
 			width: 300px;
 		}
-		.modal-content{
-			padding:39px 47px 26px;
-			
-			@include breakpoint($mobile){
-				padding:45px 15px;
+		.modal-content {
+			padding: 39px 47px 26px;
+
+			@include breakpoint($mobile) {
+				padding: 45px 15px;
 			}
 		}
-		.modal-header{
-			padding:0 0 26px;
-			border:0;
-			color:$link-color;
-			font:18px/22px $font-neue-thin;
-			
-			@include breakpoint($mobile){
+		.modal-header {
+			padding: 0 0 26px;
+			border: 0;
+			color: $link-color;
+			font: 18px/22px $font-neue-thin;
+
+			@include breakpoint($mobile) {
 				font-size: 16px;
-				line-height:20px;
+				line-height: 20px;
 			}
-			.modal-title{
+			.modal-title {
 				font-size: 40px;
-				line-height:46px;
-				margin:0;
-				color:$link-color;
-				
-				@include breakpoint($mobile){
+				line-height: 46px;
+				margin: 0;
+				color: $link-color;
+
+				@include breakpoint($mobile) {
 					font-size: 25px;
-					line-height:30px;
+					line-height: 30px;
 				}
 			}
-			p{
+			p {
 				margin: 0;
 			}
 		}
-		.modal-body{
-			padding:0 0 16px;
-			border:0;
+		.modal-body {
+			padding: 0 0 16px;
+			border: 0;
 		}
-		.modal-footer{
-			border:0;
-			padding:0;
+		.modal-footer {
+			border: 0;
+			padding: 0;
 			text-align: center;
 		}
 	}
-	.close{
+	.close {
 		font-size: 35px;
-		line-height:20px;
+		line-height: 20px;
 		top: 14px;
-		opacity:1;
+		opacity: 1;
 		outline: none;
 		padding: 0;
 		border: 0;
 		right: 12px;
-		color:$link-hover-color;
+		color: $link-hover-color;
 		position: absolute;
 		margin: 0;
 		&:focus,
-		&:hover{
-			color:$text-color;
+		&:hover {
+			color: $text-color;
 		}
-		&.active{
-			color:$link-color;
+		&.active {
+			color: $link-color;
 		}
 	}
 }
-.withdraw-form{
-	margin:0;
+
+.withdraw-form {
+	margin: 0;
 	@extend %clearfix;
-	
-	.form-group{
-		margin:0 0 10px;
+
+	.form-group {
+		margin: 0 0 10px;
 		@extend %clearfix;
-		
-		label{
+
+		label {
 			display: block;
-			margin:0 0 9px 9px;
-			color:$input-color;
+			margin: 0 0 9px 9px;
+			color: $input-color;
 			text-transform: uppercase;
-			font:700 10px/13px $font-family-base;
-			
-			sup{
-				color:$red;
+			font: 700 10px/13px $font-family-base;
+
+			sup {
+				color: $red;
 				@include vertical(inline-block, top);
-				margin:11px 0 0 1px;
+				margin: 11px 0 0 1px;
 			}
 		}
-		.checkbox{
-			margin:0;
-			color:$blue;
+		.checkbox {
+			margin: 0;
+			color: $blue;
 			@include vertical(inline-block, middle);
-			font:12px/14px $font-neue-thin;
-			text-transform:none;
+			font: 12px/14px $font-neue-thin;
+			text-transform: none;
 		}
-		.columns{
+		.columns {
 			float: left;
 			width: 70.9%;
-			
-			@include breakpoint($mobile){
+
+			@include breakpoint($mobile) {
 				width: 100%;
 				float: none;
 				@extend %clearfix;
-				margin:0 0 10px;
+				margin: 0 0 10px;
 			}
-			&:first-child{
+			&:first-child {
 				width: 24.2%;
-				margin-right:19px;
-				
-				@include breakpoint($mobile){
-					margin-right:0;
+				margin-right: 19px;
+
+				@include breakpoint($mobile) {
+					margin-right: 0;
 					width: 100%;
 				}
 			}
 		}
-		&.check{
-			padding:14px 0 0;
+		&.check {
+			padding: 14px 0 0;
 		}
-		&.others{
-			padding:7px 0 8px;
-			
-			@include breakpoint($mobile){
-				padding:0;
+		&.others {
+			padding: 7px 0 8px;
+
+			@include breakpoint($mobile) {
+				padding: 0;
 			}
 			&.success,
-			&.error{
+			&.error {
 				.form-control.ng-invalid,
 				.form-control.ng-invalid-required,
 				.ng-invalid,
 				.ng-invalid-required,
-				.form-control{
-					border-color:$input-bg;
+				.form-control {
+					border-color: $input-bg;
 				}
 			}
-			.columns{
-				&.error{
-					.form-control{
-						border-color:$red;
+			.columns {
+				&.error {
+					.form-control {
+						border-color: $red;
 					}
 				}
-				&.success{
-					.form-control{
-						border-color:$light-seagreen;
+				&.success {
+					.form-control {
+						border-color: $light-seagreen;
 					}
 				}
 			}
 		}
-		.col2{
+		.col2 {
 			float: left;
 			width: 25%;
-			margin:0 10px 0 0;
-			
-			@include breakpoint($mobile){
+			margin: 0 10px 0 0;
+
+			@include breakpoint($mobile) {
 				width: 100%;
 				float: none;
 				@extend %clearfix;
-				margin:0 0 10px;
+				margin: 0 0 10px;
 			}
 		}
-		.txt-col{
-			padding:25px 0 0;
+		.txt-col {
+			padding: 25px 0 0;
 			overflow: hidden;
-			color:$link-color;
+			color: $link-color;
 			font-size: 10px;
-			line-height:12px;
-			
-			@include breakpoint($mobile){
-				padding:0;
+			line-height: 12px;
+
+			@include breakpoint($mobile) {
+				padding: 0;
 			}
-			p{margin: 0;}
-			a{
+			p {
+				margin: 0;
+			}
+			a {
 				font-weight: 700;
 				text-decoration: none;
 			}
 		}
-		&.form-txt{
-			padding:29px 0 0;
+		&.form-txt {
+			padding: 29px 0 0;
 			overflow: hidden;
-			color:$link-color;
+			color: $link-color;
 			font-size: 10px;
-			line-height:12px;
-			
-			@include breakpoint($mobile){
-				padding:10px 0 0;
+			line-height: 12px;
+
+			@include breakpoint($mobile) {
+				padding: 10px 0 0;
 			}
-			p{
+			p {
 				margin: 0;
-				a{
+				a {
 					font-weight: 700;
 					text-decoration: none;
 				}
 			}
 		}
-		&.buttons{
+		&.buttons {
 			text-align: center;
 		}
-		&.error{
+		&.error {
 			.jcf-select,
-			.form-control{
-				border-color:$red;
+			.form-control {
+				border-color: $red;
 			}
 		}
-		&.success{
+		&.success {
 			.jcf-select,
-			.form-control{
-				border-color:$light-seagreen;
+			.form-control {
+				border-color: $light-seagreen;
 			}
 		}
 	}
-	.form-control{
-		box-shadow:none !important;
-		padding:4px 12px;
-		line-height:19px;
-		position:relative;
-		border-radius:3px;
+	.form-control {
+		box-shadow: none !important;
+		padding: 4px 12px;
+		line-height: 19px;
+		position: relative;
+		border-radius: 3px;
 	}
-	.btn-default{
+	.btn-default {
 		float: none;
 		@include vertical(inline-block, top);
-		min-width:195px;
+		min-width: 195px;
 		font-size: 13px;
-		line-height:16px;
-		padding:10px 5px 10px;
-		border-radius:4px;
+		line-height: 16px;
+		padding: 10px 5px 10px;
+		border-radius: 4px;
 		background: $light-seagreen;
-		font:13px/16px $font-family-base;
-		.txt2{
+		font: 13px/16px $font-family-base;
+		.txt2 {
 			display: none;
 		}
-		@include breakpoint($mobile){
-			min-width:124px;
+		@include breakpoint($mobile) {
+			min-width: 124px;
 		}
-		&:hover{
+		&:hover {
 			background: $dark-green3;
 		}
-		&.confirm{
-			.txt2{display: block;}
-			.txt{display: none;}
+		&.confirm {
+			.txt2 {
+				display: block;
+			}
+			.txt {
+				display: none;
+			}
 		}
-		&.active{
+		&.active {
 			background: $blue6;
 		}
-		&.cancel{
-			margin-left:22px;
+		&.cancel {
+			margin-left: 22px;
 			background: $light-gray7;
-			
-			@include breakpoint($mobile){margin-left:15px;}
-			&:hover{
+
+			@include breakpoint($mobile) {
+				margin-left: 15px;
+			}
+			&:hover {
 				background: $light-blue3;
 			}
-			&.active{
+			&.active {
 				background: $blue7;
 			}
 		}
 	}
 }
-.exclusive { min-height: 400px; }
+
+.modal-body {
+	.exclusivity {
+		min-height: 400px;
+	}
+}
+
 .exclusive-box {
 	padding: 4px 0 4px 110px;
 	.icon-lock {
@@ -4745,160 +5310,184 @@ body > .jcf-select-drop.jcf-drop-flipped {
 		left: 0;
 		font-size: 100px;
 	}
-	font:15px/18px $font-ultra-light;
+	font: 15px/18px $font-ultra-light;
 	h3 {
-		font:20px/25px $font-ultra-light;
+		font: 20px/25px $font-ultra-light;
 		margin: 0 0 6px;
 		color: $white;
 	}
 	position: relative;
 }
-.research-frame {
-	margin: 0 -100px 0 0;
-	@include breakpoint($mobile){
-		margin: 0;
-		width: 100%;
-	}
-	.research-post {
-		h3 {
-			color: #a0a3aa;
-			font-size: 21px;
-			line-height: 25px;
-			background: #f5f6f8;
-			text-align: center;
-			margin: 0 0 28px;
-			padding: 13px 10px 15px;
+
+.catagory-col {
+	.catagory-research {
+		margin: 0 -70px 0 0;
+		@include breakpoint($mobile) {
+			margin: 0;
+			width: 100%;
 		}
-		display: inline-block;
-		vertical-align: top;
-		width: 288px;
-		min-height: 297px;
-		background: $white;
-		overflow: hidden;
-		border-radius: 10px;
-		margin: 0 58px 68px 0;
-		@include breakpoint($mobile){
-			margin: 0 auto 30px;
-			display: block;
-		}
-		&:hover {
-			box-shadow: 0 0 0 6px #417d7b;
-		}
-		&.active {
-			box-shadow: 0 0 0 6px #00e1bf;
-			.img-frame {
-				.img-hover { z-index: 5; }
+		.research-post {
+			cursor: pointer;
+			font-size: 14px;
+			line-height: 1.42857;
+			h3 {
+				color: #a0a3aa;
+				font-size: 21px;
+				line-height: 25px;
+				background: #f5f6f8;
+				text-align: center;
+				margin: 0 0 28px;
+				padding: 13px 10px 15px;
 			}
-			.swot {
-				.swot-list {
-					li { background: #107574; }
-				}
-			}
-		}
-		.img-frame {
-			position: relative;
-			margin: 0 36px 0 31px;
-			img { @extend %img-responsive; }
-			.img-hover {
-				position: absolute;
-				top: 0;
-				left: 0;
-				z-index: -1;
-			}
-		}
-		.polygone {
-			margin: 0 45px;
-			span {
-				z-index: 99;
-				color: #000;
-				position: absolute;
-			}
-			.polygon-txt{
+			display: inline-block;
+			vertical-align: top;
+			width: 288px;
+			min-height: 297px;
+			background: $white;
+			overflow: hidden;
+			border-radius: 10px;
+			margin: 0 58px 68px 0;
+			@include breakpoint($mobile) {
+				margin: 0 auto 30px;
 				display: block;
-				font:10px/12px $font-family-base;
-				color:$text-color;
-				left: 0;
-				top: 0;
-				margin: 1px 0 0 -14px;
-				@include element(before, 100%, auto, auto, 0, $light-seagreen);
-				position: absolute;
-				&:before{
-					@include size(24px, 1px);
-					margin:2px 0 0;
+			}
+			&:hover {
+				box-shadow: 0 0 0 6px #417d7b;
+			}
+			&.active {
+				box-shadow: 0 0 0 6px #00e1bf;
+				.img-frame {
+					.img-hover {
+						z-index: 5;
+					}
 				}
-				&.add{
-					text-align:right;
-					left: auto;
-					right: 0;
-					margin: 1px -12px 0 0;
-					&:before{
+				.swot {
+					.swot-list {
+						li {
+							background: #107574;
+						}
+					}
+				}
+			}
+			.img-frame {
+				position: relative;
+				margin: 0 36px 0 31px;
+				img {
+					@extend %img-responsive;
+				}
+				.img-hover {
+					position: absolute;
+					top: 0;
+					left: 0;
+					z-index: -1;
+				}
+			}
+			.polygone {
+				margin: 0 45px;
+				span {
+					z-index: 99;
+					color: #000;
+					position: absolute;
+				}
+				.polygon-txt {
+					display: block;
+					font: 10px/12px $font-family-base;
+					color: $text-color;
+					left: 0;
+					top: 0;
+					margin: 1px 0 0 -14px;
+					@include element(before, 100%, auto, auto, 0, $light-seagreen);
+					position: absolute;
+					&:before {
+						@include size(24px, 1px);
+						margin: 2px 0 0;
+					}
+					&.add {
+						text-align: right;
 						left: auto;
 						right: 0;
-						background: $red;
+						margin: 1px -12px 0 0;
+						&:before {
+							left: auto;
+							right: 0;
+							background: $red;
+						}
+					}
+				}
+			}
+			.competetive {
+				margin: 0 36px 0 31px;
+				span {
+					font: 10px/12px $font-family-base;
+					z-index: 99;
+					position: absolute;
+					color: $text-color;
+					&.text-2 {
+						top: auto;
+						bottom: -4px;
+					}
+					&.text-3 {
+						top: auto;
+						left: auto;
+						right: -2px;
+						bottom: -4px;
+					}
+				}
+			}
+			.swot {
+				margin: 0;
+				text-align: center;
+				.swot-list {
+					@extend %listreset;
+					li {
+						@include vertical(inline-block, top);
+						width: 106px;
+						height: 87px;
+						border-radius: 5px;
+						background: #00e1bf;
+						margin: 0 2px 10px;
+						@include v-align2(text, middle);
 					}
 				}
 			}
 		}
-		.competetive {
-			margin: 0 36px 0 31px;
-			span {
-				font:10px/12px $font-family-base;
-				z-index: 99;
-				color: #000;
-				position: absolute;
-				color:$text-color;
-				&.text-2 {
-					top: auto;
-					bottom: -4px;
-				}
-				&.text-3 {
-					top: auto;
-					left: auto;
-					right: -2px;
-					bottom: -4px;
-				}
-			}
-		}
-		.swot {
-			margin: 0;
-			text-align: center;
-			.swot-list {
-				@extend %listreset;
-				li {
-					@include vertical(inline-block, top);
-					width: 106px;
-					height: 87px;
-					border-radius: 5px;
-					background: #00e1bf;
-					margin: 0 2px 10px;
-					@include v-align2(text, middle);
-				}
-			}
-		}
 	}
 }
+
 /*.ng-touched.ng-invalid,
 .ng-touched.ng-invalid-required,
 .jcf-select.jcf-select-ng-untouched{*/
-.ng-invalid,
-.ng-invalid-required{
-	border-color: #df1338;
+.ng-dirty.ng-invalid,
+.ng-dirty.form-input.ng-invalid,
+.ng-dirty.ng-invalid-required {
+	border-color: #df1338 !important;
 }
-.catagory-scroll{
-	height: 435px;
+
+.catagory-scroll {
+	height: 435px !important;
 	width: 100% !important;
-	#modal &{ overflow: auto; }
+	#modal & {
+		overflow: auto;
+	}
 }
+
 .jcf-number {
 	display: inline-block;
 	position: relative;
 	height: 29px;
 	width: 100%;
-	box-shadow:none !important;
+	box-shadow: none !important;
 }
-.jcf-number input {-moz-appearance: textfield;}
+
+.jcf-number input {
+	-moz-appearance: textfield;
+}
+
 .jcf-number input::-webkit-inner-spin-button,
-.jcf-number input::-webkit-outer-spin-button {-webkit-appearance: none;}
+.jcf-number input::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+}
+
 .jcf-number input {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -4906,8 +5495,9 @@ body > .jcf-select-drop.jcf-drop-flipped {
 	padding: 3px 27px 3px 7px;
 	margin: 0;
 	height: 100%;
-	box-shadow:none !important;
+	box-shadow: none !important;
 }
+
 .jcf-number .jcf-btn-dec,
 .jcf-number .jcf-btn-inc {
 	position: absolute;
@@ -4917,18 +5507,22 @@ body > .jcf-select-drop.jcf-drop-flipped {
 	right: 1px;
 	top: 1px;
 }
+
 .jcf-number .jcf-btn-dec {
 	top: auto;
 	bottom: 1px;
 }
+
 .jcf-number .jcf-btn-dec:hover,
 .jcf-number .jcf-btn-inc:hover {
 	background: none;
 }
+
 .jcf-number.jcf-disabled .jcf-btn-dec:hover,
 .jcf-number.jcf-disabled .jcf-btn-inc:hover {
 	background: #aaa;
 }
+
 .jcf-number .jcf-btn-dec:before,
 .jcf-number .jcf-btn-inc:before {
 	position: absolute;
@@ -4941,83 +5535,79 @@ body > .jcf-select-drop.jcf-drop-flipped {
 	border: 3px solid #979ba3;
 	border-color: transparent transparent #979ba3 transparent;
 }
+
 .jcf-number .jcf-btn-dec:before {
 	margin: -2px 0 0 -4px;
 	border-color: #979ba3 transparent transparent transparent;
 }
-.modal-dialog.catagories .catagory-col.product { width: 288px; }
+
+.modal-dialog.catagories .catagory-col.product {
+	width: 288px;
+}
+
 .jcf-number.jcf-disabled .jcf-btn-dec:before,
 .jcf-number.jcf-disabled .jcf-btn-inc:before,
 .jcf-number .jcf-btn-dec.jcf-disabled:before,
 .jcf-number .jcf-btn-inc.jcf-disabled:before {
 	opacity: 0.3;
 }
+
 .jcf-number.jcf-disabled input {
 	background: #ddd;
 }
-.ngdialog .ngdialog-overlay { background: rgba($modal-backdrop-bg, .8); }
 
-
-// Start CSS by riverco.de
-// @import "styleguide";
-.l{
-	width: 640px;
-	margin: 0 auto;
-	overflow: hidden;
-	.l-col1{
-		width: 400px;
-		float: left;
-	}
-	.l-col2{
-		width: 225px;
-		float: right;
-	}
+.ngdialog .ngdialog-overlay {
+	background: rgba($modal-backdrop-bg, .8);
 }
-hr{
+
+hr {
 	border-top: 20px solid green !important;
 }
 
-.delete-project{
-	min-height: 37px;	
+.delete-project {
+	min-height: 37px;
 }
-.info-col_small{
+
+.info-col_small {
 	width: 225px;
 	font-size: 12px;
 	line-height: 16px;
 	margin: 0 14px 46px 0;
-	min-height:335px;
-	@include breakpoint($mobile){
+	min-height: 335px;
+	@include breakpoint($mobile) {
 		width: 245px;
-		margin:0 auto 30px;
+		margin: 0 auto 30px;
 	}
-	h2{
+	h2 {
 		font-size: 12px;
-		line-height:16px;
-		padding:11px 35px 9px 21px;
-		margin:0 -22px 15px;
-		
-		&:before{
+		line-height: 16px;
+		padding: 11px 35px 9px 21px;
+		margin: 0 -22px 15px;
+
+		&:before {
 			right: 9px;
 			font-size: 24px;
 		}
 	}
-	.title{
+	.title {
 		font-size: 14px;
-		line-height:18px;
-		margin:0 0 5px 0;
+		line-height: 18px;
+		margin: 0 0 5px 0;
 	}
-	p{margin:0 0 40px;}
-	.client-info{
-		&.inactive{
-			margin:-5px 0 7px;
+	p {
+		margin: 0 0 40px;
+	}
+	.client-info {
+		&.inactive {
+			margin: -5px 0 7px;
 		}
 	}
-	.add-nav{
-		margin:0 0 2px;
-		li{
-			margin:0 0 9px;
-			a{
-				.icon-map-marker{
+	.add-nav {
+		margin: 0 0 2px;
+		li {
+			margin: 0 0 9px;
+			a {
+				.icon-map-marker {
 					font-size: 17px;
 					left: -20px;
 					top: -2px;
@@ -5025,39 +5615,43 @@ hr{
 			}
 		}
 	}
-	.buttons-nav{
-		&.add{
-			li{
-				padding:8px 2px;
-				.ico{
+	.buttons-nav {
+		&.add {
+			li {
+				padding: 8px 2px;
+				.ico {
 					font-size: 19px;
-					margin:3px -1px 2px 4px;
-					@include breakpoint($mobile){
-						margin:0 -1px 0 4px;
-						line-height:9px;
+					margin: 3px -1px 2px 4px;
+					@include breakpoint($mobile) {
+						margin: 0 -1px 0 4px;
+						line-height: 9px;
 					}
-					.icon-trophy{
-						font-size:19px;
-						margin:0;
+					.icon-trophy {
+						font-size: 19px;
+						margin: 0;
 					}
-					&.trophy{
+					&.trophy {
 						margin: 2px -1px 2px -14px;
-						@include breakpoint($mobile){margin: 0 -1px 0 -14px;}
+						@include breakpoint($mobile) {
+							margin: 0 -1px 0 -14px;
+						}
 					}
 				}
 			}
-			.btn-default{
-				min-width:60px;
+			.btn-default {
+				min-width: 60px;
 			}
 		}
 	}
 }
-.steps{
+
+.steps {
 	list-style: none;
 	overflow: hidden;
 	margin: 0 0 25px 0;
 	padding: 0;
-	li{
+	.btn-default {
+		background: transparent;
 		width: 118px;
 		height: 36px;
 		border: 1px solid #011A35;
@@ -5069,141 +5663,95 @@ hr{
 		line-height: 36px;
 		border-radius: 10px;
 		position: relative;
-		&:hover {			
-			background-color: #E4E4E4;
-			border-color: #E4E4E4;
-			color: #011A35;
-			a {
-				color: #011A35;
-			}
+		&:hover,
+		&:focus {
+			background: transparent;
+			border-color: #011A35;
+			color: #495769;
 		}
-		&:active {
-			background-color: #A0A3AA;
-			border-color: #A0A3AA;
-			color: #fff;
-			a {
-				color: #fff;
-			}
-		}
-		a{
-			display: block;
-			height: 36px;
-			text-align: center;
-			text-decoration: none;
-		}
-		&:last-child{
+		&:last-child {
 			margin-right: 0;
 		}
-		&.steps__done{
-			&:before{
+		&.done {
+			&:before {
 				content: ' ';
 				position: absolute;
 				width: 14px;
 				height: 0;
 				border-top: 1px solid #011A35;
-				position: absolute;
 				left: 100%;
 				top: 50%;
 			}
-			&:hover {			
-				background-color: #E4E4E4;
-				border-color: #E4E4E4;
-				color: #011A35;
-				a {
-					color: #011A35;
-				}
-			}
-			&:active {
-				background-color: #A0A3AA;
-				border-color: #A0A3AA;
-				color: #fff;
-				a {
-					color: #fff;
-				}
-			}
-			&.is-completed {
-				border-color: #00E1BF;
-			}
-			&.is-required {
-				border-color: #DF1338;
-			}
 		}
-		&.steps__active{
+		&.active {
 			border-color: #A0A3AA;
 			background: #A0A3AA;
 		}
-		&.steps__go{
+		&.go {
 			border-color: #2EE1C3;
 			background: #2EE1C3;
-			&:hover {			
-				background-color: #183E4C;
-				border-color: #183E4C;
-			}
-			&:active {
-				background-color: #001936;
-				border-color: #001936;
-			}
-			a{
-				color: #fff;
-			}
+			color: #fff;
 		}
 	}
 }
-h1.h1{
+
+h1.h1 {
 	font-size: 36px;
 	color: #011A35;
 	font-weight: normal;
 	font-family: $font-family-base;
 	margin-bottom: 35px;
 }
-.fieldset{
+
+.fieldset {
 	border-radius: 7px;
 	background: #fff;
 	padding: 18px 19px 30px 35px;
 	overflow: hidden;
 	margin: 0 0 16px;
-	h3{
+	h3 {
 		font-size: 14px;
 		font-weight: normal;
 		color: #858F97;
 		font-family: $font-family-base;
 		margin-bottom: 15px;
 	}
-	.col1{
+	.col1 {
 		float: left;
-		width: 48%;
+		width: 50%;
 	}
-	.col2{
+	.col2 {
 		float: right;
-		width: 48%;
+		width: 50%;
 	}
-	.fieldset__title{
-		
+	.fieldset__title {
+
 		margin-bottom: 18px;
-		h2{
+		h2 {
 			font-family: $font-family-base;
 			font-size: 20px;
 			font-weight: normal;
 			margin-bottom: 5px;
 		}
-		p{
+		p {
 			font-size: 10px;
 			color: #011A35;
 		}
 	}
 }
-.fieldcheck{
+
+.fieldcheck {
 	margin-left: 20px;
 	overflow: hidden;
 	position: relative;
-	label{
+	label {
 		display: block;
 		cursor: pointer;
 	}
-	input{
+	input {
 		display: none;
 	}
-	span{
+	span {
 		display: block;
 		padding-left: 30px;
 		font-size: 12px;
@@ -5211,7 +5759,7 @@ h1.h1{
 		color: #051B34;
 		padding-top: 2px;
 	}
-	.checkbox-visual{
+	.checkbox-visual {
 		position: absolute;
 		left: 0;
 		top: 0;
@@ -5219,16 +5767,18 @@ h1.h1{
 		height: 18px;
 		background: #A0A3AA;
 		-webkit-border-radius: 4px;
-				border-radius: 4px;
+		border-radius: 4px;
+		border: 1px solid;
 		display: inline-block;
 		vertical-align: middle;
 		margin-right: 10px;
 	}
-	input:checked +.checkbox-visual{
+	input:checked + .checkbox-visual {
 		background: #A0A3AA url(../images/checkbox.png) no-repeat 50% 50%;
 	}
 }
-.button{
+
+.button {
 	display: inline-block;
 	cursor: pointer;
 	border-radius: 5px;
@@ -5243,12 +5793,12 @@ h1.h1{
 	background: #2EE1C3;
 	border: none;
 	outline: none;
-	&.button_gray{
+	&.button_gray {
 		background: #A8AAB0;
 		&:hover {
 			background-color: #495769;
 		}
-		&:active{
+		&:active {
 			background-color: #001936;
 		}
 	}
@@ -5257,18 +5807,18 @@ h1.h1{
 		&:hover {
 			background-color: #183E4C;
 		}
-		&:active{
+		&:active {
 			background-color: #001936;
 		}
 	}
-	&:hover{
+	&:hover {
 		background-color: #183E4C;
 		color: #fff;
 	}
-	&:active{
+	&:active {
 		background-color: #001936;
 	}
-	&.button_small,&.button_small:hover{
+	&.button_small, &.button_small:hover {
 		height: 30px;
 		width: 100px;
 		margin-right: 5px;
@@ -5277,16 +5827,19 @@ h1.h1{
 		line-height: 30px;
 	}
 }
-.timezone-select{
+
+.timezone-select {
 	display: inline-block;
 	width: 50%;
 	margin-right: 17px;
 	vertical-align: top;
 }
+
 /* valik */
 .fieldset__fields {
 	font-size: 0;
 }
+
 .fieldset__field {
 	width: 222px;
 	display: inline-block;
@@ -5305,19 +5858,23 @@ h1.h1{
 	display: inline-block;
 	vertical-align: top;
 	-webkit-border-radius: 3px;
-			border-radius: 3px;
+	border-radius: 3px;
 }
+
 .btn-gray:hover {
 	background-color: #183E4C;
 }
+
 .btn-gray:active {
 	background-color: #001936;
 }
-input[type=number].form-input, input[type=text].form-input, input[type=password].form-input, input[type=file].form-input, input[type=submit].form-input, textarea.form-input {  
+
+input[type=number].form-input, input[type=text].form-input, input[type=password].form-input, input[type=file].form-input, input[type=submit].form-input, textarea.form-input {
 	-moz-border-radius: 3px;
 	-webkit-border-radius: 3px;
 	border-radius: 3px;
 }
+
 .form-input {
 	color: #979BA3;
 	font-size: 11px;
@@ -5330,9 +5887,10 @@ input[type=number].form-input, input[type=text].form-input, input[type=password]
 	border-radius: 3px;
 	width: 100%;
 	-webkit-box-sizing: border-box;
-	 -moz-box-sizing: border-box;
-			box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
+
 .form-textarea {
 	color: #979BA3;
 	font-size: 11px;
@@ -5347,64 +5905,102 @@ input[type=number].form-input, input[type=text].form-input, input[type=password]
 	text-transform: uppercase;
 	resize: none;
 	-webkit-box-sizing: border-box;
-	 -moz-box-sizing: border-box;
-			box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
+
 .form-input.is-error {
 	border-color: #DF1338;
 }
-.fieldset__card {  
-	width: 50%;  
+
+.fieldset__card {
+	width: 50%;
 	max-width: 258px;
 	display: inline-block;
 	vertical-align: top;
 	padding: 10px 0 0;
 }
+
 @media only screen and (max-width: 767px) {
 	.fieldset__card {
-	width: 100%;
+		width: 100%;
 	}
 }
+
 .fieldset__card .form-input {
 	padding: 6px 20px 6px 40px;
 }
+
 .fieldset__card-number .form-input {
 	text-transform: uppercase;
 	padding: 6px 60px 6px 40px;
 }
+
 .fieldset__label {
 	display: block;
 	padding: 0 8px 0 0;
 	position: relative;
 	margin: 0;
 }
+
 .fieldset__label .icon {
 	position: absolute;
 	top: 50%;
 }
+
 .fieldset__label .icon-creditcard {
 	font-size: 22px;
 	margin-top: -12px;
 	left: 8px;
 }
+
 .fieldset__label .icon-user {
 	font-size: 18px;
 	margin-top: -10px;
 	left: 11px;
 }
-.fieldset__label .icon-dk-visa {
-	background: url(../images/dk-visa.png) no-repeat center center;
-	width: 33px;
-	height: 20px;
-	margin-top: -10px;
-	right: 19px;
+
+.fieldset__label {
+	.icon {
+		&-card-type {
+			background: transparent no-repeat center center;
+			width: 33px;
+			height: 20px;
+			margin-top: -10px;
+			right: 19px;
+		}
+		&-visa {
+			background-image: url("../images/visa.png");
+		}
+		&-american_express {
+			background-image: url("../images/amex.png");
+		}
+		&-mastercard {
+			background-image: url("../images/mastercard.png");
+		}
+		&-discover {
+
+		}
+		&-jcb {
+			background-image: url("../images/jcb.png");
+		}
+		&-diners_club {
+
+		}
+		&-unknown {
+
+		}
+	}
 }
+
 .fieldset__update {
 	padding: 10px 0 0;
 }
+
 .fieldset__update .btn-gray {
 	margin: 0 18px 0 0;
 }
+
 .fieldset__update p {
 	font-size: 10px;
 	color: #979BA3;
@@ -5413,6 +6009,7 @@ input[type=number].form-input, input[type=text].form-input, input[type=password]
 	padding: 8px 0 7px;
 	margin: 0;
 }
+
 .fieldset__error {
 	color: #DF1338;
 	font-size: 11px;
@@ -5421,51 +6018,61 @@ input[type=number].form-input, input[type=text].form-input, input[type=password]
 	left: 100%;
 	width: 65px;
 	margin-left: 19px;
+	z-index: 9999;
 }
+
 @media only screen and (max-width: 767px) {
 	.fieldset__error {
-	position: static;
-	margin: 10px 0 0;
-	display: block;
+		position: static;
+		margin: 10px 0 0;
+		display: block;
 	}
 }
+
 .fieldset__field .fieldset__label {
 	padding: 0;
 }
+
 .fieldset__btns {
 	text-align: justify;
 	font-size: 0;
 	padding: 20px 0 0;
 }
+
 .fieldset__btns:after {
 	content: "";
 	display: inline-block;
 	width: 100%;
 }
+
 .fieldset__small {
 	width: 75px;
 	display: inline-block;
 	vertical-align: top;
 	margin: 0 15px 0 0;
 }
+
 @media only screen and (max-width: 767px) {
 	.fieldset__small {
-	width: 40%;
-	max-width: 157px;
+		width: 40%;
+		max-width: 157px;
 	}
 }
+
 .fieldset__country {
 	width: 222px;
 	display: inline-block;
 	vertical-align: top;
 	margin: 0 15px 0 0;
 }
+
 @media only screen and (max-width: 767px) {
 	.fieldset__country {
-	width: 100%;
-	max-width: 300px;
+		width: 100%;
+		max-width: 300px;
 	}
 }
+
 .fieldset__medium {
 	width: 92px;
 	display: inline-block;
@@ -5479,57 +6086,89 @@ input[type=number].form-input, input[type=text].form-input, input[type=password]
 
 @media only screen and (max-width: 767px) {
 	.fieldset {
-	padding-right: 35px;
+		padding-right: 35px;
 	}
 	.timezone-select {
-	display: block;
-	margin-bottom: 10px;
-	width: 100%;
-	max-width: 300px;
+		display: block;
+		margin-bottom: 10px;
+		width: 100%;
+		max-width: 300px;
 	}
 	.fieldset .col1, .fieldset .col2 {
-	float: none;
-	width: 100%;
+		float: none;
+		width: 100%;
 	}
 	.fieldcheck {
-	margin-left: 10px;
+		margin-left: 10px;
 	}
 }
-@media only screen and (max-width: 767px) {  
 
-	.l .l-col2, .l .l-col1, .l {
-	width: 100%;
-	max-width: 400px;
-	clear: both;
-	float: none;
-	margin: 0 auto;
+@media only screen and (max-width: 767px) {
+
+	.l {
+		width: 100%;
+		max-width: 400px;
+		clear: both;
+		float: none;
+		margin: 0 auto;
 	}
 	.info-col_small {
-	width: 100%;
+		width: 100%;
 	}
 	.steps li {
-	float: none;
-	text-align: center;
-	margin: 0 auto 13px;
+		float: none;
+		text-align: center;
+		margin: 0 auto 13px;
 	}
 	.steps li.steps__done:before {
-	left: 50%;
-	top: 100%;
-	border: none;
-	border-left: 1px solid #011A35;
-	width: 0;
-	height: 14px;
+		left: 50%;
+		top: 100%;
+		border: none;
+		border-left: 1px solid #011A35;
+		width: 0;
+		height: 14px;
 	}
 	.steps li:last-child {
-	margin: 0 auto;
+		margin: 0 auto;
 	}
 	.form-buttons {
-	text-align: center;
+		text-align: center;
 	}
 	.form-buttons .button {
-	margin: 0 10px 10px;
+		margin: 0 10px 10px;
 	}
+}
+
+.ngdialog-content {
+	background-color: transparent;
+	display: table;
+	margin: auto;
+	height: 100%;
+	& > .modal-dialog {
+		display: table-cell;
+		vertical-align: middle;
+	}
+}
+
+.modal-body {
+	.client__box {
+		float: none;
+		width: 90%;
+		margin: auto;
+	}
+}
+
+.user-info {
+	& > img {
+		max-width: 100%;
+	}
+}
+
+input:-moz-submit-invalid, input:required, input:invalid {
+	border-color: transparent;
+	box-shadow: none;
 }
 
 @import "signup";
 @import "vadim";
+@import "create-project";

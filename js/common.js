@@ -60,4 +60,37 @@ $(document).ready(function() {
 			api.reinitialise(s);
 		};
 	});
+
+	$('.js-slick').slick({
+		infinite: false,
+		slidesToShow: 1,
+		centerMode: true,
+		centerPadding: '28%',
+		slidesToScroll: 1,
+		arrows: true,
+		responsive: [
+			{
+				breakpoint: 1024,
+				settings: {
+					centerPadding: '0',
+					fade: true,
+				}
+			}
+		]
+	});
+
+	$('.js-slick-right').on('click', function() {
+		$('.slick-next').trigger('click');
+	});
+	$('.js-slick-left').on('click', function() {
+		$('.slick-prev').trigger('click');
+	});
+	$(window).resize(function() {
+		$('.js-slick-right').on('click', function() {
+			$('.slick-next').trigger('click');
+		});
+		$('.js-slick-left').on('click', function() {
+			$('.slick-prev').trigger('click');
+		});
+	});
 });
