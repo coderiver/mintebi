@@ -219,9 +219,9 @@
     position: absolute;
     top: 50%;
     left: 100%;
-    width: 130px;
+    width: 13vw;
+    font-size: 1vw;
     color: #f5f6f8;
-    font-size: 13.77px;
     line-height: 1.2;
     font-family: 'HelveticaNeueW01-Lt', Arial, sans-serif;
     text-align: left;
