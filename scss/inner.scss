@@ -297,7 +297,7 @@ $retina-hd: 2.5; // hd retina > 2.5x
 		top: -50px;
 		visibility: hidden;
 		opacity: 0;
-		transition: all 1s;
+		transition: visibility 1s, opacity 1s, top 1s;
 		@include breakpoint($tablet) {
 			width: 100%;
 			max-width: 410px;
@@ -342,7 +342,7 @@ $retina-hd: 2.5; // hd retina > 2.5x
 		left: -50px;
 		visibility: hidden;
 		opacity: 0;
-		transition: all 1s;
+		transition: visibility 1s, opacity 1s, left 1s;
 		@include breakpoint($desktop2) {
 			margin: 5px 5px 0;
 		}		
@@ -427,16 +427,16 @@ $retina-hd: 2.5; // hd retina > 2.5x
 				opacity: 0;
 				position: relative;
 				&.is-blank {
-					transition: all 0.5s 0.2s;
+					transition: visibility 0.5s 0.2s, opacity 0.5s 0.2s, bottom 0.5s 0.2s;
 				}
 				&.is-phone {
-					transition: all 0.5s 0.4s;
+					transition: visibility 0.5s 0.4s, opacity 0.5s 0.4s, bottom 0.5s 0.4s;
 				}
 				&.is-hands {
-					transition: all 0.5s 0.6s;
+					transition: visibility 0.5s 0.6s, opacity 0.5s 0.6s, bottom 0.5s 0.6s;
 				}
 				&.is-settings {
-					transition: all 0.5s 0.8s;
+					transition: visibility 0.5s 0.8s, opacity 0.5s 0.8s, bottom 0.5s 0.8s;
 				}
 			}
 		}
@@ -448,7 +448,7 @@ $retina-hd: 2.5; // hd retina > 2.5x
 			top: -50px;
 			visibility: hidden;
 			opacity: 0;
-			transition: all 1s;
+			transition: visibility 1s, opacity 1s, top 1s;
 			@include breakpoint($tablet) {
 				font-size: 30px;
 				max-width: 550px;
@@ -609,7 +609,7 @@ $retina-hd: 2.5; // hd retina > 2.5x
 			height: 115%;
 			opacity: 0;
 			visibility: hidden;
-			transition: all 1s;
+			transition: visibility 1s, opacity 1s, bottom 1s;
 			@include breakpoint($desktop2) {
 				height: 100%;
 			}	
@@ -655,7 +655,7 @@ $retina-hd: 2.5; // hd retina > 2.5x
 			right: -100px;
 			opacity: 0;
 			visibility: hidden;
-			transition: all 1s;
+			transition: visibility 1s, opacity 1s, right 1s;
 			@include breakpoint($tablet) {
 				width: 560px;
 				top: auto;
@@ -710,7 +710,7 @@ $retina-hd: 2.5; // hd retina > 2.5x
 		top: -150px;
 		opacity: 0;
 		visibility: hidden;
-		transition: all 1s;
+		transition: visibility 1s, opacity 1s, top 1s;
 		@include breakpoint($tablet) {
 			padding: 64px 0 0;
 			max-width: 670px;

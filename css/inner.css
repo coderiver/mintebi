@@ -215,7 +215,7 @@
     top: -50px;
     visibility: hidden;
     opacity: 0;
-    transition: all 1s; }
+    transition: visibility 1s, opacity 1s, top 1s; }
     @media only screen and (max-width: 991px) {
       .orb__img {
         width: 100%;
@@ -250,7 +250,7 @@
     left: -50px;
     visibility: hidden;
     opacity: 0;
-    transition: all 1s; }
+    transition: visibility 1s, opacity 1s, left 1s; }
     @media only screen and (max-width: 1240px) {
       .orb__info {
         margin: 5px 5px 0; } }
@@ -312,13 +312,13 @@
         opacity: 0;
         position: relative; }
         .orb__services ul li.is-blank {
-          transition: all 0.5s 0.2s; }
+          transition: visibility 0.5s 0.2s, opacity 0.5s 0.2s, bottom 0.5s 0.2s; }
         .orb__services ul li.is-phone {
-          transition: all 0.5s 0.4s; }
+          transition: visibility 0.5s 0.4s, opacity 0.5s 0.4s, bottom 0.5s 0.4s; }
         .orb__services ul li.is-hands {
-          transition: all 0.5s 0.6s; }
+          transition: visibility 0.5s 0.6s, opacity 0.5s 0.6s, bottom 0.5s 0.6s; }
         .orb__services ul li.is-settings {
-          transition: all 0.5s 0.8s; }
+          transition: visibility 0.5s 0.8s, opacity 0.5s 0.8s, bottom 0.5s 0.8s; }
     .orb__services .fs35 {
       max-width: 640px;
       margin: 0 auto 30px;
@@ -326,7 +326,7 @@
       top: -50px;
       visibility: hidden;
       opacity: 0;
-      transition: all 1s; }
+      transition: visibility 1s, opacity 1s, top 1s; }
       @media only screen and (max-width: 991px) {
         .orb__services .fs35 {
           font-size: 30px;
@@ -440,7 +440,7 @@
       height: 115%;
       opacity: 0;
       visibility: hidden;
-      transition: all 1s; }
+      transition: visibility 1s, opacity 1s, bottom 1s; }
       @media only screen and (max-width: 1240px) {
         .i-section.is-reports img {
           height: 100%; } }
@@ -473,7 +473,7 @@
       right: -100px;
       opacity: 0;
       visibility: hidden;
-      transition: all 1s; }
+      transition: visibility 1s, opacity 1s, right 1s; }
       @media only screen and (max-width: 991px) {
         .i-section.is-phone img {
           width: 560px;
@@ -520,7 +520,7 @@
     top: -150px;
     opacity: 0;
     visibility: hidden;
-    transition: all 1s; }
+    transition: visibility 1s, opacity 1s, top 1s; }
     @media only screen and (max-width: 991px) {
       .i-section__inner {
         padding: 64px 0 0;
