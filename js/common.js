@@ -150,9 +150,6 @@ $(document).ready(function() {
 
 			if(start_visibility >= block_position){
 				$(this).addClass('is-visible');
-			}
-			else {
-				$(this).removeClass('is-visible');
 			};
 		});
 	}

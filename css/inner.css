@@ -197,19 +197,22 @@
     @media only screen and (max-width: 1240px) {
       .orb__top {
         padding: 0; } }
-  .orb__inner {
-    max-width: 1194px;
-    margin: 0 auto; }
-    @media only screen and (max-width: 991px) {
-      .orb__inner {
-        max-width: 670px; } }
-    @media only screen and (max-width: 991px) {
-      .orb__inner {
-        max-width: 460px; } }
+    .orb__top.is-visible .orb__img {
+      top: 0;
+      opacity: 1;
+      visibility: visible; }
+    .orb__top.is-visible .orb__info {
+      left: 0;
+      opacity: 1;
+      visibility: visible; }
   .orb__img {
     display: inline-block;
     position: relative;
-    width: 50%; }
+    width: 50%;
+    top: -50px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 1s; }
     @media only screen and (max-width: 991px) {
       .orb__img {
         width: 100%;
@@ -240,7 +243,11 @@
     width: 92%;
     margin: -115px auto 0;
     position: relative;
-    z-index: 2; }
+    z-index: 2;
+    left: -50px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 1s; }
     @media only screen and (max-width: 1240px) {
       .orb__info {
         margin: 5px 5px 0; } }
@@ -263,6 +270,23 @@
     text-align: left; }
   .orb .fs35, .orb p {
     color: #F0EBE7; }
+  .orb__inner {
+    max-width: 1194px;
+    margin: 0 auto; }
+    @media only screen and (max-width: 991px) {
+      .orb__inner {
+        max-width: 670px; } }
+    @media only screen and (max-width: 991px) {
+      .orb__inner {
+        max-width: 460px; } }
+    .orb__inner.is-visible .orb__services .fs35 {
+      top: 0;
+      opacity: 1;
+      visibility: visible; }
+    .orb__inner.is-visible .orb__services ul li {
+      visibility: visible;
+      opacity: 1;
+      bottom: 0; }
   .orb__services {
     font-size: 0;
     margin: 232px 0 0; }
@@ -279,9 +303,27 @@
         .orb__services ul {
           max-width: 590px;
           margin: 0 auto; } }
+      .orb__services ul li {
+        bottom: -50px;
+        visibility: hidden;
+        opacity: 0;
+        position: relative; }
+        .orb__services ul li.is-blank {
+          transition: all 0.5s 0.2s; }
+        .orb__services ul li.is-phone {
+          transition: all 0.5s 0.4s; }
+        .orb__services ul li.is-hands {
+          transition: all 0.5s 0.6s; }
+        .orb__services ul li.is-settings {
+          transition: all 0.5s 0.8s; }
     .orb__services .fs35 {
       max-width: 640px;
-      margin: 0 auto 30px; }
+      margin: 0 auto 30px;
+      position: relative;
+      top: -50px;
+      visibility: hidden;
+      opacity: 0;
+      transition: all 1s; }
       @media only screen and (max-width: 991px) {
         .orb__services .fs35 {
           font-size: 30px;
