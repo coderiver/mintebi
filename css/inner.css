@@ -197,6 +197,9 @@
     @media only screen and (max-width: 1240px) {
       .orb__top {
         padding: 0; } }
+    @media only screen and (max-width: 767px) {
+      .orb__top {
+        min-height: 1px; } }
     .orb__top.is-visible .orb__img {
       top: 0;
       opacity: 1;
@@ -457,6 +460,12 @@
       right: 55px;
       opacity: 1;
       visibility: visible; }
+      @media only screen and (max-width: 991px) {
+        .i-section.is-phone.is-visible img {
+          right: 9px; } }
+      @media only screen and (max-width: 767px) {
+        .i-section.is-phone.is-visible img {
+          right: -40px; } }
     .i-section.is-phone img {
       position: absolute;
       top: 128px;
@@ -468,14 +477,12 @@
       @media only screen and (max-width: 991px) {
         .i-section.is-phone img {
           width: 560px;
-          right: 9px;
           top: auto;
           bottom: 60px; } }
       @media only screen and (max-width: 767px) {
         .i-section.is-phone img {
           width: 547px;
-          bottom: 40px;
-          right: -40px; } }
+          bottom: 40px; } }
   .i-section.is-market {
     height: 925px; }
     .i-section.is-market:after {

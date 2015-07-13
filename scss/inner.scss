@@ -273,6 +273,9 @@ $retina-hd: 2.5; // hd retina > 2.5x
 		@include breakpoint($desktop2) {
 			padding: 0;
 		}
+		@include breakpoint($mobile) {
+			min-height: 1px;
+		}
 		&.is-visible {
 			.orb__img {
 				top: 0;
@@ -636,6 +639,12 @@ $retina-hd: 2.5; // hd retina > 2.5x
 				right: 55px;
 				opacity: 1;
 				visibility: visible;
+				@include breakpoint($tablet) {
+					right: 9px;
+				}				
+				@include breakpoint($mobile) {
+					right: -40px;
+				}
 			}
 		}
 		
@@ -649,14 +658,12 @@ $retina-hd: 2.5; // hd retina > 2.5x
 			transition: all 1s;
 			@include breakpoint($tablet) {
 				width: 560px;
-				right: 9px;
 				top: auto;
 				bottom: 60px;
 			}		
 			@include breakpoint($mobile) {
 				width: 547px;
 				bottom: 40px;
-				right: -40px;
 			}
 		}
 	}
