@@ -2881,3 +2881,133 @@ $retina-hd: 2.5; // hd retina > 2.5x
 		margin: 0 auto;
 	}
 }
+
+.terms-header {
+	text-align: center;
+	padding: 135px 30px 190px;
+	background: url(../images/terms.jpg) no-repeat center top;
+	-webkit-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+	@include breakpoint($desktop-large) {
+		-webkit-background-size: auto;
+		     -o-background-size: auto;
+		        background-size: auto;
+	}
+	h1 {
+		font-size: 62px;
+		line-height: 1.2;
+		color: #F5F6F8;
+		font-family: $font-ulight;
+		margin: 0;
+		@include breakpoint($mobile) {
+			font-size: 38px;
+		}
+	}
+}
+
+.terms {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 48px 30px;
+	color: #001936;
+	@include breakpoint($desktop) {
+		max-width: 798px;
+		padding: 48px 15px;
+	}
+	@include breakpoint($tablet) {
+		max-width: 590px;
+	}
+	
+	&__btns {
+		font-size: 0;
+		padding: 30px 0;
+	}
+
+	&__btn {
+		font-size: 29px;
+		color: #001936;
+		line-height: 1;
+		background-color: #F5F6F8;
+		-moz-border-radius: 7px;
+		-webkit-border-radius: 7px;
+		border-radius: 7px;
+		width: 173px;
+		padding: 24px 15px 22px;
+		border: none;
+		outline: none;
+		margin: 0 12px 0 0;
+		
+		@include breakpoint($mobile) {
+			font-size: 23px;
+			padding: 19px 15px 17px;
+			width: 135px;
+		}
+		
+		&.is-active {
+			color: #00E1BF;
+			background-color: #001936;
+		}
+	}
+
+	&__section {
+		padding: 0 0 30px;
+	}
+	
+	h2 {
+		font-size: 30px;
+		color: #001936;
+		font-family: $font-medium;
+		margin: 0 0 50px;
+	}
+
+	h3 {
+		font-size: 30px;
+		color: #001936;
+		font-family: $font-reg;
+		margin: 0;
+		padding: 6px 0;
+		
+		@include breakpoint($desktop-large) {
+			font-size: 25px;
+		}
+		@include breakpoint($desktop) {
+			font-size: 16px;
+			font-family: $font-medium;
+		}
+		@include breakpoint($tablet) {
+			font-size: 25px;
+			font-family: $font-reg;
+		}
+
+		&.fs30 {
+			@include breakpoint($desktop) {
+				font-size: 30px;
+			}
+			@include breakpoint($desktop) {
+				font-size: 25px;
+			}
+		}
+	}
+
+	p, ul {
+		font-size: 16px;
+		font-family: $font-reg;
+	}
+
+	p {
+		margin: 0;
+		padding: 8px 0;
+	}
+
+	li {
+		margin: 0;
+		padding: 8px 0;
+	}
+
+	ul {
+		margin: 0;
+		padding: 20px 0 40px;
+		list-style-type: none;
+	}
+}

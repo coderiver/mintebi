@@ -107,6 +107,17 @@
     color: #0C283F;
     padding: 2px 0;
     float: right; }
+  .s-field__input {
+    position: relative; }
+  .s-field .error {
+    position: absolute;
+    padding: 9px 10px; }
+    .s-field .error_left, .s-field .error_right {
+      top: 0; }
+    .s-field .error_left {
+      left: 100%; }
+    .s-field .error_right {
+      right: 100%; }
 
 .s-btn {
   color: #fff;
@@ -390,7 +401,7 @@ input.s-input::-webkit-input-placeholder {
         text-align: center;
         font-size: 25px; } }
   .s-email__box {
-    padding: 10px 0 0; }
+    padding: 10px 0 10px; }
   .s-email__row {
     margin: 0 -5px; }
     .s-email__row:after {
@@ -400,6 +411,7 @@ input.s-input::-webkit-input-placeholder {
   .s-email__medium, .s-email__small {
     float: left;
     padding: 0 5px 10px;
+    position: relative;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box; }
@@ -465,6 +477,30 @@ input.s-input::-webkit-input-placeholder {
       background-color: #183E4C; }
     .s-email .fieldcheck input:checked + .checkbox-visual {
       background: #183E4C url(../images/checkbox.png) no-repeat 50% 50%; }
+  .s-email .error {
+    position: absolute;
+    padding: 8px 10px; }
+    .s-email .error_top-left, .s-email .error_top-right, .s-email .error_top {
+      top: 100%;
+      margin-top: -4px; }
+    .s-email .error_top-left {
+      left: 0; }
+    .s-email .error_top-right {
+      right: 0; }
+    .s-email .error_top {
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+      transform: translateX(-50%); }
+    .s-email .error_bot-left, .s-email .error_bot-right, .s-email .error_bot {
+      bottom: 100%;
+      margin-bottom: 6px; }
+    .s-email .error_bot-left {
+      left: 0; }
+    .s-email .error_bot-right {
+      right: 0; }
 
 .e-btn {
   font-size: 16px;
@@ -731,6 +767,16 @@ input.s-input::-webkit-input-placeholder {
         background-color: #FFF;
         -webkit-border-radius: 50%;
         border-radius: 50%; }
+  .client .error {
+    position: absolute;
+    padding: 9px 10px; }
+    .client .error_left, .client .error_right {
+      top: 50%;
+      margin-top: -14px; }
+    .client .error_left {
+      left: 100%; }
+    .client .error_right {
+      right: 100%; }
 
 .btn-sub {
   color: #F5F6F8;
@@ -1993,7 +2039,8 @@ body.select-ttn .jcf-select, body.select-ttn .jcf-list {
   padding: 12px 10px;
   line-height: 1;
   margin: 0 10px;
-  position: relative; }
+  position: relative;
+  z-index: 200; }
   .error:before {
     content: "";
     position: absolute; }

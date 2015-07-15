@@ -315,8 +315,14 @@
 							<div class="s-form">
 								<div class="s-field">
 									<form action="">
-										<input type="text" class="form-input" placeholder="mail">
-										<input type="password" class="form-input" placeholder="password">
+										<div class="s-field__input">
+											<input type="text" class="form-input" placeholder="mail">
+											<div class="error error_left">Invalid email</div>
+										</div>
+										<div class="s-field__input">
+											<input type="password" class="form-input" placeholder="password">
+											<div class="error error_left">Invalid password</div>
+										</div>
 										<button class="s-btn">Login with email</button>
 										<div class="fieldcheck">
 											<label>
