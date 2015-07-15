@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html ng-app="mintebiApp">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mintebi</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/all.css">
+	<link rel="stylesheet" href="css/ngDialog.css">
+	<script type="text/javascript" src="http://fast.fonts.net/jsapi/48f89ee6-4f00-484c-ad3c-df5a74d4c60d.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<div class="invalid">
+			<h4>Invalid cardholder name</h4>
+			<div class="error error_top-left">Invalid cardholder name</div>
+			<div class="error error_top">Invalid cardholder name</div>
+			<div class="error error_right">Invalid cardholder name</div>
+			<div class="error error_top-right">Invalid cardholder name</div>
+			<div class="error">Invalid cardholder name</div>
+			<div class="error error_bot-left">Invalid cardholder name</div>
+			<div class="error error_bot">Invalid cardholder name</div>
+			<div class="error error_left">Invalid cardholder name</div>
+			<div class="error error_bot-right">Invalid cardholder name</div>
+			<div class="error">Invalid cardholder name</div>
+		</div>
+		<div class="invalid">
+			<h4>Please enter a valid email</h4>
+			<div class="error error_top-left">Please enter a valid email</div>
+			<div class="error error_top">Please enter a valid email</div>
+			<div class="error error_right">Please enter a valid email</div>
+			<div class="error error_top-right">Please enter a valid email</div>
+			<div class="error">Please enter a valid email</div>
+			<div class="error error_bot-left">Please enter a valid email</div>
+			<div class="error error_bot">Please enter a valid email</div>
+			<div class="error error_left">Please enter a valid email</div>
+			<div class="error error_bot-right">Please enter a valid email</div>
+			<div class="error">Please enter a valid email</div>
+		</div>
+		<div class="invalid">
+			<h4>Account does not exist</h4>
+			<div class="error error_top-left">Account does not exist</div>
+			<div class="error error_top">Account does not exist</div>
+			<div class="error error_right">Account does not exist</div>
+			<div class="error error_top-right">Account does not exist</div>
+			<div class="error">Account does not exist</div>
+			<div class="error error_bot-left">Account does not exist</div>
+			<div class="error error_bot">Account does not exist</div>
+			<div class="error error_left">Account does not exist</div>
+			<div class="error error_bot-right">Account does not exist</div>
+			<div class="error">Account does not exist</div>
+		</div>
+		<div class="invalid">
+			<h4>Invalid password</h4>
+			<div class="error error_top-left">Invalid password</div>
+			<div class="error error_top">Invalid password</div>
+			<div class="error error_right">Invalid password</div>
+			<div class="error error_top-right">Invalid password</div>
+			<div class="error">Invalid password</div>
+			<div class="error error_bot-left">Invalid password</div>
+			<div class="error error_bot">Invalid password</div>
+			<div class="error error_left">Invalid password</div>
+			<div class="error error_bot-right">Invalid password</div>
+			<div class="error">Invalid password</div>
+		</div>
+		<div class="invalid">
+			<h4>Invalid email</h4>
+			<div class="error error_top-left">Invalid email</div>
+			<div class="error error_top">Invalid email</div>
+			<div class="error error_right">Invalid email</div>
+			<div class="error error_top-right">Invalid email</div>
+			<div class="error">Invalid email</div>
+			<div class="error error_bot-left">Invalid email</div>
+			<div class="error error_bot">Invalid email</div>
+			<div class="error error_left">Invalid email</div>
+			<div class="error error_bot-right">Invalid email</div>
+			<div class="error">Invalid email</div>
+		</div>
+		<div class="invalid">
+			<h4>Terms & conditions not accepted</h4>
+			<div class="error error_top-left">Required</div>
+			<div class="error error_top">Required</div>
+			<div class="error error_right">Required</div>
+			<div class="error error_top-right">Required</div>
+			<div class="error">Required</div>
+			<div class="error error_bot-left">Required</div>
+			<div class="error error_bot">Required</div>
+			<div class="error error_left">Required</div>
+			<div class="error error_bot-right">Required</div>
+			<div class="error">Required</div>
+		</div>
+		<div class="invalid">
+			<h4>Invalid expiration date</h4>
+			<div class="error error_top-left">Invalid expiration date</div>
+			<div class="error error_top">Invalid expiration date</div>
+			<div class="error error_right">Invalid expiration date</div>
+			<div class="error error_top-right">Invalid expiration date</div>
+			<div class="error">Invalid expiration date</div>
+			<div class="error error_bot-left">Invalid expiration date</div>
+			<div class="error error_bot">Invalid expiration date</div>
+			<div class="error error_left">Invalid expiration date</div>
+			<div class="error error_bot-right">Invalid expiration date</div>
+			<div class="error">Invalid expiration date</div>
+		</div>
+	</div>
+	<script src="js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/angular.min.js"></script>
+	<script type="text/javascript" src="js/ngDialog.min.js"></script>
+	<script type="text/javascript" src="js/angular.validate.js"></script>
+	<script type="text/javascript" src="js/angular.openClose.js"></script>
+	<script type="text/javascript" src="js/application.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/jcf.angular.js"></script>
+	<script>
+		jQuery('[data-toggle="dropdown"]').each(function() {
+			var item = jQuery(this),
+				parent = item.parent();
+			 
+			parent.one('mousemove', function() {
+				parent.hover(function() {
+					parent.addClass('open');
+				}, function() {
+					parent.removeClass('open');
+				}).trigger('mouseover');
+			});
+		});
+		if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+		   var msViewportStyle = document.createElement("style")
+		   msViewportStyle.appendChild(
+		  document.createTextNode(
+			"@-ms-viewport{width:auto!important}"
+		  )
+		   )
+		   document.getElementsByTagName("head")[0].appendChild(msViewportStyle)
+		 }
+	</script>
+</body>
+</html>

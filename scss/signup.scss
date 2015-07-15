@@ -1,3 +1,33 @@
+$mobile2: 479px;  // mobile 479px and less 
+$mobile: 767px;  // mobile 767px and less 
+$tablet: 991px; // tablet 992px {desktop - 1} and less 
+$desktop: 1050px; // desktop 1009px {desktop - 1} and less 
+$desktop2: 1240px; // desktop 1240px {desktop - 1} and less 
+$desktop-large: 1366px; // desktop 1366px {desktop - 1} and less 
+$retina: 1.5;    // standart retina > 1.5x
+$retina-hd: 2.5; // hd retina > 2.5x
+
+$font-neue-thin: 'HelveticaNeueW01-Thin', Arial, sans-serif;
+$font-ultra-light: 'HelveticaNeueW01-UltLt', Arial, sans-serif;
+$font-neue-medium: 'HelveticaNeueW01-65Medi', Arial, sans-serif;
+$font-light: 'HelveticaNeueW01-Lt', Arial, sans-serif;
+$font-thin-italic: 'HelveticaNeueThin-Italic', Arial, sans-serif;
+$font-reg: 'HelveticaNeueW82-Regula', Arial, sans-serif;
+
+// breakpoints mixin
+@mixin breakpoint($rule){
+	@if ($rule == $retina or $rule == $retina-hd){
+		@media only screen and ( min-resolution : #{$retina*96} ), ( -webkit-min-device-pixel-ratio : #{$retina} ){
+		 @content;
+		}
+	}
+	@else{
+		@media only screen and (max-width: #{$rule}){
+		 @content;
+		}  
+	}
+}
+
 #wrapper {
 	&.is-bg {
 		// background: url(../images/bg-man2.jpg) no-repeat top center;
@@ -2642,4 +2672,139 @@ body {
 			}
 		}
 	}
+}
+
+.invalid {
+	max-width: 788px;
+	margin: 0 auto;
+	
+	.error {
+		margin: 10px;
+	}
+	
+	h4 {
+		color: #010101;
+		font-size: 21px;
+		line-height: 1.2;
+		font-family: $font-reg;
+		margin: 10px;
+	}
+}
+
+.error {
+	font-size: 10px;
+	font-family: $font-reg;
+	color: #FFF;
+	background-color: #001936;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	-moz-box-shadow: -2.9px 4px 5px rgba(4, 26, 55, 0.19);
+	-webkit-box-shadow: -2.9px 4px 5px rgba(4, 26, 55, 0.19);
+	box-shadow: -2.9px 4px 5px rgba(4, 26, 55, 0.19);
+	white-space: nowrap;
+	display: inline-block;
+	vertical-align: top;
+	padding: 12px 10px;
+	line-height: 1;
+	margin: 0 10px;
+	position: relative;
+	
+	&:before {
+		content: "";
+		position: absolute;
+	}
+
+	&_top, &_top-left, &_top-right, &_bot, &_bot-left, &_bot-right {
+		&:before {
+			width: 18px;
+			height: 5px;
+		}		
+	}
+
+	&_top, &_top-left, &_top-right {
+		&:before {
+			background: url(../images/e-top.png);
+		}		
+	}
+
+	&_bot, &_bot-left, &_bot-right {
+		&:before {
+			background: url(../images/e-bot.png);
+		}		
+	}
+
+	&_left, &_right {
+		&:before {
+			width: 4px;
+			height: 12px;
+		}		
+	}
+
+	&_left {
+		&:before {
+			background: url(../images/e-left.png);
+		}
+	}
+
+	&_right {
+		&:before {
+			background: url(../images/e-right.png);
+		}		
+	}
+
+	&_top {
+		&:before {
+			bottom: 100%;
+			left: 50%;
+			margin-left: -9px;
+		}			
+	}
+	&_top-left {
+		&:before {
+			bottom: 100%;
+			left: 9px;
+		}		
+	}	
+	&_top-right {
+		&:before {
+			bottom: 100%;
+			right: 9px;
+		}
+			
+	}
+	&_left {
+		&:before {
+			top: 50%;
+			margin-top: -6px;
+			right: 100%;
+		}
+		
+	}
+	&_right {
+		&:before {
+			top: 50%;
+			left: 100%;
+			margin-top: -6px;
+		}		
+	}
+	&_bot {
+		&:before {
+			top: 100%;
+			left: 50%;
+			margin-left: -9px;
+		}		
+	}	
+	&_bot-left {
+		&:before {
+			top: 100%;
+			left: 9px;
+		}		
+	}	
+	&_bot-right {
+		&:before {
+			top: 100%;
+			right: 9px;
+		}		
+	}	
 }
