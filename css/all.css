@@ -8690,12 +8690,12 @@ body.select-ttn .jcf-select, body.select-ttn .jcf-list {
     color: #010101;
     font-size: 21px;
     line-height: 1.2;
-    font-family: 'HelveticaNeueW82-Regula', Arial, sans-serif;
+    font-family: 'HelveticaNeueW82-Regula', Arial, Helvetica, sans-serif;
     margin: 10px; }
 
 .error {
   font-size: 10px;
-  font-family: 'HelveticaNeueW82-Regula', Arial, sans-serif;
+  font-family: 'HelveticaNeueW82-Regula', Arial, Helvetica, sans-serif;
   color: #FFF;
   background-color: #001936;
   -moz-border-radius: 4px;

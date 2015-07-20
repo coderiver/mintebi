@@ -2766,14 +2766,14 @@ body {
 		color: #010101;
 		font-size: 21px;
 		line-height: 1.2;
-		font-family: $font-reg;
+		font-family: $font-family-base;
 		margin: 10px;
 	}
 }
 
 .error {
 	font-size: 10px;
-	font-family: $font-reg;
+	font-family: $font-family-base;
 	color: #FFF;
 	background-color: #001936;
 	-moz-border-radius: 4px;

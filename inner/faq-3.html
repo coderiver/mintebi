@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html ng-app="mintebiApp">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mintebi</title>
+	<link rel="stylesheet" href="../css/bootstrap.css">
+	<link rel="stylesheet" href="../css/all.css">
+	<link rel="stylesheet" href="../css/ngDialog.css">
+	<link rel="stylesheet" href="../css/inner.css">
+	<script type="text/javascript" src="http://fast.fonts.net/jsapi/48f89ee6-4f00-484c-ad3c-df5a74d4c60d.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<div class="w1">
+			<header id="header">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="non-logedin" style="display:block;">
+								<div class="logo-holder">
+									<strong class="logo"><a href="#"><img src="../images/logo.png" alt="Mintebi"></a></strong>
+								</div>
+								<nav class="navbar navbar-default">
+									<!-- Brand and toggle get grouped for better mobile display -->
+									<div class="navbar-header">
+										<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+											<span class="sr-only">Toggle navigation</span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+										</button>
+									</div>
+									<!-- Collect the nav links, forms, and other content for toggling -->
+									<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+										<ul class="nav navbar-nav">
+											<li><a href="#">Client</a></li>
+											<li><a href="#">Expert</a></li>
+										</ul>
+										<ul class="nav navbar-nav navbar-right">
+											<li><a href="#">Sign up</a></li>
+											<li><a href="#">Login</a></li>
+										</ul>
+									</div>
+								</nav>
+							</div>
+							<div class="expert-logedin" style="display:none;">
+								<div class="logo-holder">
+									<strong class="logo"><a href="#"><img src="../images/logo.png" alt="Mintebi"></a></strong>
+									<div class="notifications-block">
+										<a class="btn btn-primary active" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+											<i class="fa fa-bell-o"></i><span class="count">10</span>
+										</a>
+										<div class="collapse notification-drop" id="collapseExample">
+											<div class="well">
+												<div class="title"><a href="#" class="activity active">recent activity</a> <a href="#" class="marked">marked all as read</a></div>
+												<div class="scroll-area jcf-scrollable" jcf>
+													<ul class="list-unstyled">
+														<li>
+															<a href="#">
+																<span class="icon icon-add-user"></span>YOU HAVE 5 NEW EXPERTS PITCHED
+																<time datetime="2015-01-01">34 minutes ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-flag"></span>YOUR PROJECT IS NOW IN PITCH
+																<time datetime="2015-01-01">2 days ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-trophy"></span>WELCOME TO MINTEbI
+																<time datetime="2015-01-01">1 week ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-crosshair"></span>lorem upsum sit amet
+																<time datetime="2015-01-01">2 weeks ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-add-user"></span>YOU HAVE 5 NEW EXPERTS PITCHED
+																<time datetime="2015-01-01">34 minutes ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-flag"></span>YOUR PROJECT IS NOW IN PITCH
+																<time datetime="2015-01-01">2 days ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-trophy"></span>WELCOME TO MINTEbI
+																<time datetime="2015-01-01">1 week ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-crosshair"></span>lorem upsum sit amet
+																<time datetime="2015-01-01">2 weeks ago</time>
+															</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<nav class="navbar navbar-default">
+									<!-- Brand and toggle get grouped for better mobile display -->
+									<div class="navbar-header">
+										<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+											<span class="sr-only">Toggle navigation</span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+										</button>
+									</div>
+									<!-- Collect the nav links, forms, and other content for toggling -->
+									<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+										<ul class="nav navbar-nav">
+											<li><a href="#">Market place <span class="sr-only">(current)</span></a></li>
+											<li><a href="#">Library</a></li>
+											<li><a href="#">My Mintebi</a></li>
+											<li class="dropdown">
+												<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Help</a>
+												<div class="dropdown-menu" role="menu">
+													<strong class="title">Help &amp; Resources</strong>
+													<ul class="list-unstyled">
+														<li><a href="#">FAQ</a></li>
+														<li><a href="#">Our Rules</a></li>
+														<li><a href="#">Expert handbook</a></li>
+														<li><a href="#">trust &amp; Safty</a></li>
+														<li><a href="#">Trems of use  &amp; Privacy</a></li>
+													</ul>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</nav>
+								<div class="client-login">
+									<a class="btn btn-primary">
+										<span data-picture data-alt="image description">
+											<span data-src="../images/img10-large.png" data-width="33" data-height="33"></span>
+											<span data-src="../images/img10-large2x.png" data-width="33" data-height="33" data-media="(-webkit-min-device-pixel-ratio:1.5), (min-resolution:1.5dppx)" ></span> <!-- retina 2x desktop -->
+											<span data-src="../images/img10-medium2x.png" data-width="33" data-height="33" data-media="(max-width:1023px) and (-webkit-min-device-pixel-ratio:1.5), (max-width:1023px) and (min-resolution:144dpi)" ></span> <!-- retina 2x tablet -->
+											<span data-src="../images/img10-small.png" data-width="33" data-height="33" data-media="(max-width:767px)" ></span> <!-- retina 1x mobile -->
+											<span data-src="../images/img10-small2x.png" data-width="33" data-height="33" data-media="(max-width:767px) and (-webkit-min-device-pixel-ratio:1.5), (max-width:767px) and (min-resolution:144dpi)" ></span> <!-- retina 2x mobile -->
+											<!--[if (lt IE 9) & (!IEMobile)]>
+												<span data-src="images/img10-large.png"></span>
+											<![endif]-->
+											<!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+											<noscript><img src="../images/img10-large.png" width="33" height="33" alt="image description" ></noscript>
+										</span>
+									</a>
+									<div class="client-drop">
+										<div class="drop-box">
+											<strong class="title">Andreas buchwalD</strong>
+											<ul class="list-unstyled">
+												<li><a href="#"><span class="icon icon-user"></span>my profile</a></li>
+												<li><a href="#"><span class="icon icon-gear"></span>account settings</a></li>
+												<li><a href="#"><span class="icon icon-power"></span>logout</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="client-logedin" style="display:none;">
+								<div class="logo-holder">
+									<strong class="logo"><a href="#"><img src="../images/logo.png" alt="Mintebi"></a></strong>
+									<div class="notifications-block">
+										<a class="btn btn-primary active" data-toggle="collapse" href="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
+											<i class="fa fa-bell-o"></i><span class="count">10</span>
+										</a>
+										<div class="collapse notification-drop" id="collapseExample3">
+											<div class="well">
+												<div class="title"><a href="#" class="activity active">recent activity</a> <a href="#" class="marked">marked all as read</a></div>
+												<div class="scroll-area jcf-scrollable" jcf>
+													<ul class="list-unstyled">
+														<li>
+															<a href="#">
+																<span class="icon icon-add-user"></span>YOU HAVE 5 NEW EXPERTS PITCHED
+																<time datetime="2015-01-01">34 minutes ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-flag"></span>YOUR PROJECT IS NOW IN PITCH
+																<time datetime="2015-01-01">2 days ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-trophy"></span>WELCOME TO MINTEbI
+																<time datetime="2015-01-01">1 week ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-crosshair"></span>lorem upsum sit amet
+																<time datetime="2015-01-01">2 weeks ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-add-user"></span>YOU HAVE 5 NEW EXPERTS PITCHED
+																<time datetime="2015-01-01">34 minutes ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-flag"></span>YOUR PROJECT IS NOW IN PITCH
+																<time datetime="2015-01-01">2 days ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-trophy"></span>WELCOME TO MINTEbI
+																<time datetime="2015-01-01">1 week ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-crosshair"></span>lorem upsum sit amet
+																<time datetime="2015-01-01">2 weeks ago</time>
+															</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<nav class="navbar navbar-default">
+									<!-- Brand and toggle get grouped for better mobile display -->
+									<div class="navbar-header">
+										<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-3">
+											<span class="sr-only">Toggle navigation</span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+										</button>
+									</div>
+									<!-- Collect the nav links, forms, and other content for toggling -->
+									<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-3">
+										<ul class="nav navbar-nav">
+											<li><a href="#">Create a project <span class="sr-only">(current)</span></a></li>
+											<li><a href="#">Market place</a></li>
+											<li><a href="#">Library</a></li>
+											<li><a href="#">My Mintebi</a></li>
+											<li class="dropdown">
+												<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Help</a>
+												<div class="dropdown-menu" role="menu">
+													<strong class="title">Help &amp; Resources</strong>
+													<ul class="list-unstyled">
+														<li><a href="#">FAQ</a></li>
+														<li><a href="#">Our Rules</a></li>
+														<li><a href="#">Expert handbook</a></li>
+														<li><a href="#">trust &amp; Safty</a></li>
+														<li><a href="#">Trems of use  &amp; Privacy</a></li>
+													</ul>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</nav>
+								<div class="client-login">
+									<a class="btn btn-primary">
+										<span data-picture data-alt="image description">
+											<span data-src="../images/img10-large.png" data-width="33" data-height="33"></span>
+											<span data-src="../images/img10-large2x.png" data-width="33" data-height="33" data-media="(-webkit-min-device-pixel-ratio:1.5), (min-resolution:1.5dppx)" ></span> <!-- retina 2x desktop -->
+											<span data-src="../images/img10-medium2x.png" data-width="33" data-height="33" data-media="(max-width:1023px) and (-webkit-min-device-pixel-ratio:1.5), (max-width:1023px) and (min-resolution:144dpi)" ></span> <!-- retina 2x tablet -->
+											<span data-src="../images/img10-small.png" data-width="33" data-height="33" data-media="(max-width:767px)" ></span> <!-- retina 1x mobile -->
+											<span data-src="../images/img10-small2x.png" data-width="33" data-height="33" data-media="(max-width:767px) and (-webkit-min-device-pixel-ratio:1.5), (max-width:767px) and (min-resolution:144dpi)" ></span> <!-- retina 2x mobile -->
+											<!--[if (lt IE 9) & (!IEMobile)]>
+												<span data-src="images/img10-large.png"></span>
+											<![endif]-->
+											<!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+											<noscript><img src="../images/img10-large.png" width="33" height="33" alt="image description" ></noscript>
+										</span>
+									</a>
+									<div class="client-drop">
+										<div class="drop-box">
+											<strong class="title">Andreas buchwalD</strong>
+											<ul class="list-unstyled">
+												<li><a href="#"><span class="icon icon-user"></span>my profile</a></li>
+												<li><a href="#"><span class="icon icon-gear"></span>account settings</a></li>
+												<li><a href="#"><span class="icon icon-power"></span>logout</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<main id="main" role="main" class="faq-wrap">
+
+				<!-- begin faq-header  -->
+				<section class="faq-header">
+					<h1>Client Questions FAQ</h1>
+					<div class="faq-search">
+						<form action="">
+							<div class="faq-search__field">
+								<i class="icon-in icon-in-zoom"></i>
+								<i class="icon icon-close-1"></i>
+								<input type="text" class="faq-search__input" placeholder="Search the FAQ by Keyword">
+							</div>
+							<button class="faq-search__btn">Search</button>
+						</form>						
+					</div>
+				</section>
+				<!-- end faq-header -->
+				
+				<div class="faq__overlay"></div>
+
+				<div class="faq__nav">
+					<i class="icon icon-close-2"></i>
+					<h2>Navigate</h2>
+					<div class="faq__nav-links">
+						<i class="icon-in icon-in-question"></i>
+						<div class="faq__nav-box">
+							<h4>Mintebi Basis</h4>
+							<ul>
+								<li><a href="#">Mintebi 101</a></li>
+								<li><a href="#">Accountability</a></li>
+								<li><a href="#">Confidentiality</a></li>
+								<li><a href="#">Reporting a Project</a></li>
+							</ul>
+						</div>
+						<div class="faq__nav-box">
+							<h4>Expert Questions</h4>
+							<ul>
+								<li><a href="#" class="is-active">Getting started</a></li>
+								<li><a href="#">Discover the market place</a></li>
+								<li><a href="#">Pitching on a project</a></li>
+								<li><a href="#">Working on a project</a></li>
+								<li><a href="#">After a project ends</a></li>
+								<li><a href="#">Getting paid</a></li>
+							</ul>
+						</div>
+						<div class="faq__nav-box">
+							<h4>Client Questions</h4>
+							<ul>
+								<li><a href="#">Getting started</a></li>
+								<li><a href="#">Creating a project</a></li>
+								<li><a href="#">Managing a project</a></li>
+								<li><a href="#">The Library</a></li>
+								<li><a href="#">Secure payment</a></li>
+							</ul>
+						</div>
+					</div>					
+				</div>
+
+				<div class="faq__mob">
+					<div class="faq__orbit">
+						<i class="icon-in icon-in-question"></i>
+					</div>
+					<div class="faq__mob-links">
+						<i class="icon-in icon-in-question"></i>
+						<div class="faq__mob-box">
+							<h4>Mintebi Basis</h4>
+							<ul>
+								<li><a href="#">Mintebi 101</a></li>
+								<li><a href="#">Accountability</a></li>
+								<li><a href="#">Confidentiality</a></li>
+								<li><a href="#">Reporting a Project</a></li>
+							</ul>
+						</div>
+						<div class="faq__mob-box">
+							<h4>Expert Questions</h4>
+							<ul>
+								<li><a href="#" class="is-active">Getting started</a></li>
+								<li><a href="#">Discover the market place</a></li>
+								<li><a href="#">Pitching on a project</a></li>
+								<li><a href="#">Working on a project</a></li>
+								<li><a href="#">After a project ends</a></li>
+								<li><a href="#">Getting paid</a></li>
+							</ul>
+						</div>
+						<div class="faq__mob-box">
+							<h4>Client Questions</h4>
+							<ul>
+								<li><a href="#">Getting started</a></li>
+								<li><a href="#">Creating a project</a></li>
+								<li><a href="#">Managing a project</a></li>
+								<li><a href="#">The Library</a></li>
+								<li><a href="#">Secure payment</a></li>
+							</ul>
+						</div>
+					</div>					
+				</div>
+				
+				<!-- begin faq  -->
+				<section class="faq">
+					<div class="faq__content">
+						<div class="faq__section">
+							<h2>Client questions: Getting started</h2>
+							<div class="faq__box">
+								<h3>How can I sign up for Mintebi?</h3>
+								<p>You can sign up as a client for Mintebi using your Linkedin profile or email. <br>You need a valid credit card to sign up, but it will only be charged after the 30 days free trial. You can cancel anytime.</p>
+							</div>
+							<div class="faq__box">
+								<h3>Is it binding to sign up?</h3>
+								<p>No. You can cancel or suspend your membership at any time.</p>
+							</div>
+							<div class="faq__box">
+								<h3>What does it cost to be a member?</h3>
+								<p>We currently offer a free trial period of 30 days for clients. After that the price is € 39.00 per month. You will need to provide credit card details upon sign up, however if you cancel before the end of the trial period you will not be charged.</p>
+							</div>
+							<div class="faq__box">
+								<h3>Why should I go for a paid (client) account?</h3>
+								<p>A client account enables you to create your very own projects, meaning you can design and order custom-made expert reports. With a client account you can also browse and buy archived reports from the library. <br>A Mintebi client account is the fastest and most cost-efficient way to access in-depth primary research from industry experts across many sectors.</p>
+							</div>
+						</div>
+						<div class="faq__section">
+							<h2>Client questions: Creating a project</h2>
+							<div class="faq__box">
+								<h3>How do I create my own project?</h3>
+								<p>From your dashboard go to “Create a project”. Complete the fields and you are ready to go.</p>
+							</div>
+							<div class="faq__box">
+								<h3>Are projects restricted to deal with one industry?</h3>
+								<p>Yes. We currently support about 150 industries you can choose from. <br>This framework is to avoid confusion about the general focus industry. In the project description you can elaborate further on the topic, e.g. limiting the scope to a special sub-industry or segment.</p>
+							</div>
+							<div class="faq__box">
+								<h3>Are projects restricted to deal with one country?</h3>
+								<p>No. “Global” is also an option, however, you cannot select multiple countries as the geographical scope. <br>Simply select one specific country or “Global”. This framework is to ensure a finite scope, so the right experts will engage in your project.</p>
+							</div>
+							<div class="faq__box">
+								<h3>What project type should I go for?</h3>
+								<p>We currently support four project types. The content, structure and format of the report(s) you receive are defined by the project type. In general the reports are about 3-8 pages in length and resemble executive summaries - brief but substance-loaded and including info-graphics.</p>
+								<p><b>SWOT</b></p>
+								<ul class="faq__list">
+									<li>Focusing on strengths, weaknesses, opportunities and threats for a target company of your choice - the expert will define three themes per area and provide an underlying explanation to each theme</li>
+									<li>The expert’s take on the target company’s short term growth prospects and margin development</li>
+									<li>The SWOT is an excellent choice for a competitor analysis, or for validating a business case</li>
+								</ul>
+								<p><b>Competetive Landscape</b></p>
+								<ul class="faq__list">
+									<li>A two-dimensional mapping of key players in an industry of your choice - you can leave it to the expert to define the two strategic parameters, e.g. “innovation” and “ability to execute”, or you can define it yourself</li>
+									<li>The report also includes estimated market shares, and an assessment of the competitive situation</li>
+									<li>If you are to familiarise yourself with the players in a new market or segment, Competitive Landscape is the type of project that will get you up to speed</li>
+								</ul>
+								<p><b>Market Size & Growth</b></p>
+								<ul class="faq__list">
+									<li>Estimate of the total market value, its current growth rate and analysis of key growth drivers</li>
+									<li>It includes a customer, product and value-proposition analysis, and an explanation of key growth drivers.</li>
+									<li>This type of project will help you understand a new market and its full potential</li>
+								</ul>
+								<p><b>Performance Assessment</b></p>
+								<ul class="faq__list">
+									<li>A comparison of the target company’s performance with that of its closest peers, including a listing of the peer companies</li>
+									<li>You name the target company and define the performance parameters, e.g. “service”, “product range”, “innovation” etc.</li>
+									<li>Underlying explanations for each of the scores</li>
+									<li>Do you want to know how your company or a competitor performs in the eyes of industry insiders? Then this is the project to go for</li>
+								</ul>
+							</div>
+							<div class="faq__box">
+								<h3>Why choose a longer duration?</h3>
+								<p>The longer the project duration, the more experts your project will attract. <br>If you are not in a hurry, choose a 7 day duration to+ give potential experts more time to plan ahead.</p>
+							</div>
+							<div class="faq__box">
+								<h3>Exclusivity or non-exclusivity?</h3>
+								<p>Reports from exclusive projects are for your eyes only and will not be added to the library for other clients to buy at a later point. This also means that the expert will be prevented from reselling the report.</p>
+								<p>Reports from non-exclusive projects are added to the library three weeks after the project deadline. Other clients will be able to buy these reports at a 25% percent discount compared to the original project budget amount.</p>
+								<p>Unless it is critical for you that no other clients will be able to read the same report (three weeks after you get it), we recommend you go for a non-exclusive project. This will attract more experts and at a lower cost for you.</p>
+							</div>
+							<div class="faq__box">
+								<h3>Am I associated with a report in the library?</h3>
+								<p>No. As a client you can enjoy full confidentiality and will not be associated with reports in the library in any way. Only the authoring expert will be associated with reports in the library.</p>
+							</div>
+							<div class="faq__box">
+								<h3>What budget to set?</h3>
+								<p>The budget is the price (in euros) that you as the client will pay for each report delivered for the project. A high budget will attract more experts to your project, and the higher seniority you are looking for, the higher your budget should be. If you simply need to understand basic facts, go for a lower budget. Once your project is created, you cannot change the budget (or any other details).</p>
+							</div>
+							<div class="faq__box">
+								<h3>What should I include in the project title?</h3>
+								<p>The project title should describe your project in one sentence. We recommend including both industry and geography in the project title. “Fitness centers in the UK and the impact of obesity” works fine, while “Luxury retail” is too broad and is not a good option.</p>
+							</div>
+							<div class="faq__box">
+								<h3>Why do I need to add both a short and long description?</h3>
+								<p>The short project description is disclosed on the market place with the other project details. The short description also accommodates the report in the library (for non-exclusive projects). Make sure that prospective experts have enough information to pitch, but reserve more sensitive and specified details for the long description.</p>
+								<p>The long description is confidential and will only be disclosed to the expert(s) you accept for the project. <br>A long description gives you the opportunity to elaborate and provide additional sensitive details for the scope. </p>
+								<p>The more thorough your description is, the more precise and relevant the report will most likely be. The long project description is optional.</p>
+							</div>
+							<div class="faq__box">
+								<h3>Can I remain anonymous?</h3>
+								<p>Yes. By selecting “keep my anonymous” when creating a project, your identity will be hidden from everyone (including the experts you work with) throughout the project. If “keep me anonymous” is not selected, the experts working on your project will know your name, however all experts have agreed to a non-disclosure agreement as a part of the terms and conditions. We recommend using the anonymous option if your inquiry is sensitive.</p>
+							</div>
+							<div class="faq__box">
+								<h3>Is it binding to create a project?</h3>
+								<p>No. Whether you choose to approve any experts is entirely up to you. You can close the project at any time and remove it from the market place.</p>
+							</div>
+							<div class="faq__box">
+								<h3>Will people know that I posted the project?</h3>
+								<p>No. Your identity as a client is confidential and not disclosed along with the project on the market place. Only experts, who you accept for your project, will become familiar with your identity (except if you choose to be kept anonymous). All experts, including the ones working on your project, have agreed to a non-disclosure agreement as part of the Terms & Conditions. Make sure you do not reveal your identity in the project description or title - unless you wish to do so.</p>
+							</div>
+							<div class="faq__box">
+								<h3>Does Mintebi guarantee that experts will pitch for my project?</h3>
+								<p>No. The ability of a project to attract qualified experts varies greatly and depends on several factors including the scope and budget of the project. If you do not receive the expected number of pitches from experts, try posting a new project instead - see if you can be more clear in your description and raise the budget if possible.</p>
+							</div>
+						</div>
+						<div class="faq__section">
+							<h2>Client questions: Managing a project</h2>
+							<div class="faq__box">
+								<h3>I have created a project, what then?</h3>
+								<p>Once your project is active it is displayed on the market place. The market place is where prospective experts find and pitch for your project.</p>
+								<p>The market place contains all open projects, which means that your project competes with other projects for experts.</p>
+							</div>
+							<div class="faq__box">
+								<h3>Where do I manage my project?</h3>
+								<p>Once your project is active, a dedicated folder will appear in your “My Mintebi” under “Active Projects”. This is where you will manage the project and find your reports as they pop in. This is also where you accept (or reject) incoming pitches.</p>
+							</div>
+							<div class="faq__box">
+								<h3>What happens when I accept a pitch?</h3>
+								<p>Once you have accepted a pitch, you have entered an agreement with the expert to deliver a report to your project. </p>
+								<p>The agreement is binding, therefore we encourage you to check out the expert’s experience and credentials before you accept a pitch. You can work with as many experts as you like. Each expert will deliver a report as specified. To gain multiple perspectives on the same subject, you can accept more than one expert.</p>
+							</div>
+							<div class="faq__box">
+								<h3>Why do I need to provide credit card details?</h3>
+								<p>When you accept a pitch you order a report. We will reserve the budget amount on your credit card and charge it once you receive the report. If a report is not received on time, the reservation will be cancelled immediately.</p>
+							</div>
+							<div class="faq__box">
+								<h3>When can I accept pitches?</h3>
+								<p>You can accept pitches as long as your project is open. You can close a project at any time. If you do not close a project, it will close automatically 48 hours before the deadline for projects with a duration of 3, 5 and 7 days. <br>Projects with a duration of 24 hours (express projects) close 12 hours before the deadline. This is to ensure that experts have enough time to do a proper job. Therefore, make sure to accept experts you would like to work with before the project closes.</p>
+							</div>
+							<div class="faq__box">
+								<h3>Does Mintebi guarantee deliveries?</h3>
+								<p>No. It is the expert’s responsibility to deliver the report as agreed. As a client you do not pay for any report that is not delivered before deadline.</p>
+								<p>Experts who fail to deliver as promised are issued a warning and will be suspended from the Mintebi community if it happens again within 90 days. In general Mintebi experts are very professional and deliver as promised.</p>
+							</div>
+							<div class="faq__box">
+								<h3>Does Mintebi secure the quality of reports?</h3>
+								<p>Yes and no. If we find that the report does not meet our guidelines, we will refund your payment immediately, just email us at support@mintebi.com and explain the issue.</p>
+								<p>In general, Mintebi does not review or guarantee the content of any report. The expert is responsible for providing qualified answers and insights. Also your ability as a client to scope the project might influence the quality of the report.</p>
+							</div>
+							<div class="faq__box">
+								<h3>Does Mintebi screen experts?</h3>
+								<p>Yes. Experts need to complete an online application before joining the community. We only accept experts that meet certain criteria, including w.r.t. professional experience, education and English proficiency. <br>However, Mintebi does not investigate the validity of the information provided by the expert.</p>
+								<p>Before accepting an expert for your project you should always check out his/her resumé which includes an average rating from previous projects.</p>
+							</div>
+							<div class="faq__box">
+								<h3>Are experts rated?</h3>
+								<p>Yes. After each delivery you have the opportunity to do a review of the expert’s performance. A review consists of a rating from 1-5 (5 is for an excellent report), and a comment. </p>
+								<p>An expert’s average rating is displayed on his/her profile and is available for potential clients to see before a pitch is accepted. The comment you provide in a review is only available for the expert as feedback.</p>
+							</div>
+							<div class="faq__box">
+								<h3>Can I have a telephone conference (telco)?</h3>
+								<p>Yes. As a follow up to the report you can invite the expert for a telephone conference (telco). You simply click “invite for telco” from the project folder and add a comment on what topics and questions you want to discuss. The expert will then get back to you suggesting multiple time slots, from which you choose one or reject. The telco is easily managed from the project’s folder in the my Mintebi section.</p>
+							</div>
+							<div class="faq__box">
+								<h3>How does the telco work?</h3>
+								<p>Once you have confirmed the telco it is automatically scheduled and we forward dial in details to you and the expert. We host and facilitate the telco, so all you need to do is dial in at the right time.</p>
+								<p>You can be up to 40 participants at no extra costs, but we recommend that you limit the audience to 1-3 (active) participants to get the most out of it. You can dial in from any regular phone, including land lines and cells.</p>
+							</div>
+							<div class="faq__box">
+								<h3>What is the price of the telco?</h3>
+								<p>All telcos have a maximum duration of 30 minutes and is priced at 75% of the project’s budget amount. So if you paid €400 for the report, the telco will cost you €300-, which include all costs except those charged by your local carrier - the dial in number will be local to the expert’s country of residence.</p>
+								<p>The amount is reserved on your credit card once you confirm the suggested time slot, but will not be charged before the call is done. We log all call meta data (dial time and end etc.) to make sure that the expert dialled in as agreed.</p>
+							</div>
+							<div class="faq__box">
+								<h3>Can i cancel a scheduled telco?</h3>
+								<p>Yes. If you cancel before the telco starts, the reservation on your credit card will be cancelled in full. If you do not dial-in or cancel after the telco is started, you will be charged 50% of the credit card reservation to compensate the expert.</p>
+							</div>
+							<div class="faq__box">
+								<h3>Are telcos recorded?</h3>
+								<p>No.</p>
+							</div>
+						</div>
+						<div class="faq__section">
+							<h2>Client questions:  The Library</h2>
+							<div class="faq__box">
+								<h3>What is the Library?</h3>
+								<p>The library is a collection of archived reports from previous projects.</p>
+								<p>Reports from non-exclusive projects are added to the Library three weeks after the project ends. Only clients can browse and buy reports from the library.</p>
+							</div>
+							<div class="faq__box">
+								<h3>How is the Library organized?</h3>
+								<p>Reports delivered as part of the same project are bundled together. A bundle may therefore hold one or more individual reports. As a client you are free to buy how many of the reports you would like.</p>
+							</div>
+							<div class="faq__box">
+								<h3>How are reports in the library priced?</h3>
+								<p>Reports in the library are priced at a discount of 25% percent relative to their original budget. Immediately after a client has acquired the report it will be available for download.</p>
+							</div>
+							<div class="faq__box">
+								<h3>Do people know if I buy a report from the Library?</h3>
+								<p>No. <br>Only the relevant expert will be notified that his/her report has been resold, and he/she will not know who bought it.</p>
+							</div>
+							<div class="faq__box">
+								<h3>What are the fees?</h3>
+								<p>As a client with Mintebi you do not pay any fees in addition to the monthly subscription.</p>
+							</div>
+							<div class="faq__box">
+								<h3>Can I get the reports anywhere else?</h3>
+								<p>No. All reports in the library are the property of Mintebi and are not distributed legally anywhere else.</p>
+							</div>
+						</div>
+						<div class="faq__section">
+							<h2>Client questions: Secure payment</h2>							
+							<div class="faq__box">
+								<h3>When do I need to use a credit card?</h3>
+								<ol>
+									<li>When signing up - this is necessary to pay for future subscriptions. We currently offer a 30 day free trial, and nothing will be charged if you cancel your subscription before the end of the trial period.</li>
+									<li>When accepting a pitch - this is a reservation that will only be charged <br>once the report is delivered on time.</li>
+									<li>When buying a report from the library.</li>
+									<li>When confirming a telephone conference (telco). Mintebi covers all 3rd party fees associated with credit card payments.</li>
+								</ol>
+							</div>
+							<div class="faq__box">
+								<h3>How are payments handled?</h3>
+								<p>Mintebi has partnered with US-based Stripe to ensure you a seamless and secure payment experience. Stripe processes all our credit card payments, including your subscription, and Mintebi does not store any credit card information ourselves.</p>
+								<p>Stripe is an international and recognized payment processing provider. <br>Go to www.stripe.com for more information.</p>
+							</div>
+						</div>
+					</div>
+					<div class="faq__sidebar">
+						<div class="faq__sidebar-box">
+							<h4>Mintebi Basis</h4>
+							<ul>
+								<li><a href="#">Mintebi 101</a></li>
+								<li><a href="#">Accountability</a></li>
+								<li><a href="#">Confidentiality</a></li>
+								<li><a href="#">Reporting a Project</a></li>
+							</ul>
+						</div>
+						<div class="faq__sidebar-box">
+							<h4>Expert Questions</h4>
+							<ul>
+								<li><a href="#" class="is-active">Getting started</a></li>
+								<li><a href="#">Discover the market place</a></li>
+								<li><a href="#">Pitching on a project</a></li>
+								<li><a href="#">Working on a project</a></li>
+								<li><a href="#">After a project ends</a></li>
+								<li><a href="#">Getting paid</a></li>
+							</ul>
+						</div>
+						<div class="faq__sidebar-box">
+							<h4>Client Questions</h4>
+							<ul>
+								<li><a href="#">Getting started</a></li>
+								<li><a href="#">Creating a project</a></li>
+								<li><a href="#">Managing a project</a></li>
+								<li><a href="#">The Library</a></li>
+								<li><a href="#">Secure payment</a></li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<!-- end faq -->
+
+			</main>
+		</div>
+		<div class="footer-block">
+			<div class="footer-holder">
+				<div class="container-fluid">
+					<aside class="row footer-aside">
+						<div class="col-xs-12">
+							<div class="box">
+								<div class="block">
+									<nav class="column">
+										<h2>About us</h2>
+										<ul class="list-unstyled">
+											<li><a href="#">What is mintebi?</a></li>
+											<li><a href="#">Our Team</a></li>
+											<li><a href="#">Careers</a></li>
+											<li><a href="#">Contact</a></li>
+										</ul>
+									</nav>
+									<nav class="column">
+										<h2>Help</h2>
+										<ul class="list-unstyled">
+											<li><a href="#">FAQ</a></li>
+											<li><a href="#">Our Rules</a></li>
+											<li><a href="#">Expert Handbook</a></li>
+											<li><a href="#">Trust &amp; Safety</a></li>
+										</ul>
+									</nav>
+								</div>
+								<div class="footer-logo">
+									<strong class="logo"><a href="#"><img src="../images/logo2.svg" width="179" height="131" alt="Mintebi"></a></strong>
+								</div>
+							</div>
+						</div>
+					</aside>
+					<footer id="footer" class="row">
+						<div class="col-xs-12">
+							<div class="box2">
+								<div class="block1">
+									<span class="copyrights">Copyright © 2015 Mintebi APS. All rights reserved.</span>
+									<ul class="privacy-nav list-inline">
+										<li><a href="#">Terms of Use</a></li>
+										<li><a href="#">Privacy Policy</a></li>
+									</ul>
+									<address class="footer-address">Mintebi APS, Sankt Annae Plads 11, 1250 Copenhagen, Denmark</address>
+								</div>
+								<ul class="social-networks list-inline">
+									<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</footer>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade delete">
+			<div class="modal-dialog delete-projects">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><span class="icon icon-close-2"></span></span></button>
+						<h2 class="modal-title">Are you sure you want to clear your projcet</h2>
+					</div>
+					<div class="modal-body">
+						<p>This action cannot be undone and will<br> immediately cleared from the system.</p>
+					</div>
+					<div class="modal-footer">
+						<a href="#" class="btn btn-default" data-dismiss="modal">Clear</a>
+						<a href="#" class="btn btn-default cancel">Cancel</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="../js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/angular.min.js"></script>
+	<script type="text/javascript" src="../js/ngDialog.min.js"></script>
+	<script type="text/javascript" src="../js/angular.validate.js"></script>
+	<script type="text/javascript" src="../js/angular.openClose.js"></script>
+	<script type="text/javascript" src="../js/application.js"></script>
+	<script type="text/javascript" src="../js/common.js"></script>
+	<script type="text/javascript" src="../js/main.js"></script>
+	<script type="text/javascript" src="../js/jcf.angular.js"></script>
+	<script>
+		jQuery('[data-toggle="dropdown"]').each(function() {
+			var item = jQuery(this),
+				parent = item.parent();
+			 
+			parent.one('mousemove', function() {
+				parent.hover(function() {
+					parent.addClass('open');
+				}, function() {
+					parent.removeClass('open');
+				}).trigger('mouseover');
+			});
+		});
+		if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+		   var msViewportStyle = document.createElement("style")
+		   msViewportStyle.appendChild(
+		  document.createTextNode(
+			"@-ms-viewport{width:auto!important}"
+		  )
+		   )
+		   document.getElementsByTagName("head")[0].appendChild(msViewportStyle)
+		 }
+	</script>
+</body>
+</html>

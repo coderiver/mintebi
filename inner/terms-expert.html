@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html ng-app="mintebiApp">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mintebi</title>
+	<link rel="stylesheet" href="../css/bootstrap.css">
+	<link rel="stylesheet" href="../css/all.css">
+	<link rel="stylesheet" href="../css/ngDialog.css">
+	<link rel="stylesheet" href="../css/inner.css">
+	<script type="text/javascript" src="http://fast.fonts.net/jsapi/48f89ee6-4f00-484c-ad3c-df5a74d4c60d.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<div class="w1">
+			<header id="header">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="non-logedin" style="display:block;">
+								<div class="logo-holder">
+									<strong class="logo"><a href="#"><img src="../images/logo.png" alt="Mintebi"></a></strong>
+								</div>
+								<nav class="navbar navbar-default">
+									<!-- Brand and toggle get grouped for better mobile display -->
+									<div class="navbar-header">
+										<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+											<span class="sr-only">Toggle navigation</span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+										</button>
+									</div>
+									<!-- Collect the nav links, forms, and other content for toggling -->
+									<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+										<ul class="nav navbar-nav">
+											<li><a href="#">Client</a></li>
+											<li><a href="#">Expert</a></li>
+										</ul>
+										<ul class="nav navbar-nav navbar-right">
+											<li><a href="#">Sign up</a></li>
+											<li><a href="#">Login</a></li>
+										</ul>
+									</div>
+								</nav>
+							</div>
+							<div class="expert-logedin" style="display:none;">
+								<div class="logo-holder">
+									<strong class="logo"><a href="#"><img src="../images/logo.png" alt="Mintebi"></a></strong>
+									<div class="notifications-block">
+										<a class="btn btn-primary active" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+											<i class="fa fa-bell-o"></i><span class="count">10</span>
+										</a>
+										<div class="collapse notification-drop" id="collapseExample">
+											<div class="well">
+												<div class="title"><a href="#" class="activity active">recent activity</a> <a href="#" class="marked">marked all as read</a></div>
+												<div class="scroll-area jcf-scrollable" jcf>
+													<ul class="list-unstyled">
+														<li>
+															<a href="#">
+																<span class="icon icon-add-user"></span>YOU HAVE 5 NEW EXPERTS PITCHED
+																<time datetime="2015-01-01">34 minutes ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-flag"></span>YOUR PROJECT IS NOW IN PITCH
+																<time datetime="2015-01-01">2 days ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-trophy"></span>WELCOME TO MINTEbI
+																<time datetime="2015-01-01">1 week ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-crosshair"></span>lorem upsum sit amet
+																<time datetime="2015-01-01">2 weeks ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-add-user"></span>YOU HAVE 5 NEW EXPERTS PITCHED
+																<time datetime="2015-01-01">34 minutes ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-flag"></span>YOUR PROJECT IS NOW IN PITCH
+																<time datetime="2015-01-01">2 days ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-trophy"></span>WELCOME TO MINTEbI
+																<time datetime="2015-01-01">1 week ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-crosshair"></span>lorem upsum sit amet
+																<time datetime="2015-01-01">2 weeks ago</time>
+															</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<nav class="navbar navbar-default">
+									<!-- Brand and toggle get grouped for better mobile display -->
+									<div class="navbar-header">
+										<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+											<span class="sr-only">Toggle navigation</span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+										</button>
+									</div>
+									<!-- Collect the nav links, forms, and other content for toggling -->
+									<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+										<ul class="nav navbar-nav">
+											<li><a href="#">Market place <span class="sr-only">(current)</span></a></li>
+											<li><a href="#">Library</a></li>
+											<li><a href="#">My Mintebi</a></li>
+											<li class="dropdown">
+												<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Help</a>
+												<div class="dropdown-menu" role="menu">
+													<strong class="title">Help &amp; Resources</strong>
+													<ul class="list-unstyled">
+														<li><a href="#">FAQ</a></li>
+														<li><a href="#">Our Rules</a></li>
+														<li><a href="#">Expert handbook</a></li>
+														<li><a href="#">trust &amp; Safty</a></li>
+														<li><a href="#">Trems of use  &amp; Privacy</a></li>
+													</ul>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</nav>
+								<div class="client-login">
+									<a class="btn btn-primary">
+										<span data-picture data-alt="image description">
+											<span data-src="../images/img10-large.png" data-width="33" data-height="33"></span>
+											<span data-src="../images/img10-large2x.png" data-width="33" data-height="33" data-media="(-webkit-min-device-pixel-ratio:1.5), (min-resolution:1.5dppx)" ></span> <!-- retina 2x desktop -->
+											<span data-src="../images/img10-medium2x.png" data-width="33" data-height="33" data-media="(max-width:1023px) and (-webkit-min-device-pixel-ratio:1.5), (max-width:1023px) and (min-resolution:144dpi)" ></span> <!-- retina 2x tablet -->
+											<span data-src="../images/img10-small.png" data-width="33" data-height="33" data-media="(max-width:767px)" ></span> <!-- retina 1x mobile -->
+											<span data-src="../images/img10-small2x.png" data-width="33" data-height="33" data-media="(max-width:767px) and (-webkit-min-device-pixel-ratio:1.5), (max-width:767px) and (min-resolution:144dpi)" ></span> <!-- retina 2x mobile -->
+											<!--[if (lt IE 9) & (!IEMobile)]>
+												<span data-src="images/img10-large.png"></span>
+											<![endif]-->
+											<!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+											<noscript><img src="../images/img10-large.png" width="33" height="33" alt="image description" ></noscript>
+										</span>
+									</a>
+									<div class="client-drop">
+										<div class="drop-box">
+											<strong class="title">Andreas buchwalD</strong>
+											<ul class="list-unstyled">
+												<li><a href="#"><span class="icon icon-user"></span>my profile</a></li>
+												<li><a href="#"><span class="icon icon-gear"></span>account settings</a></li>
+												<li><a href="#"><span class="icon icon-power"></span>logout</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="client-logedin" style="display:none;">
+								<div class="logo-holder">
+									<strong class="logo"><a href="#"><img src="../images/logo.png" alt="Mintebi"></a></strong>
+									<div class="notifications-block">
+										<a class="btn btn-primary active" data-toggle="collapse" href="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
+											<i class="fa fa-bell-o"></i><span class="count">10</span>
+										</a>
+										<div class="collapse notification-drop" id="collapseExample3">
+											<div class="well">
+												<div class="title"><a href="#" class="activity active">recent activity</a> <a href="#" class="marked">marked all as read</a></div>
+												<div class="scroll-area jcf-scrollable" jcf>
+													<ul class="list-unstyled">
+														<li>
+															<a href="#">
+																<span class="icon icon-add-user"></span>YOU HAVE 5 NEW EXPERTS PITCHED
+																<time datetime="2015-01-01">34 minutes ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-flag"></span>YOUR PROJECT IS NOW IN PITCH
+																<time datetime="2015-01-01">2 days ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-trophy"></span>WELCOME TO MINTEbI
+																<time datetime="2015-01-01">1 week ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-crosshair"></span>lorem upsum sit amet
+																<time datetime="2015-01-01">2 weeks ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-add-user"></span>YOU HAVE 5 NEW EXPERTS PITCHED
+																<time datetime="2015-01-01">34 minutes ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-flag"></span>YOUR PROJECT IS NOW IN PITCH
+																<time datetime="2015-01-01">2 days ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-trophy"></span>WELCOME TO MINTEbI
+																<time datetime="2015-01-01">1 week ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-crosshair"></span>lorem upsum sit amet
+																<time datetime="2015-01-01">2 weeks ago</time>
+															</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<nav class="navbar navbar-default">
+									<!-- Brand and toggle get grouped for better mobile display -->
+									<div class="navbar-header">
+										<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-3">
+											<span class="sr-only">Toggle navigation</span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+										</button>
+									</div>
+									<!-- Collect the nav links, forms, and other content for toggling -->
+									<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-3">
+										<ul class="nav navbar-nav">
+											<li><a href="#">Create a project <span class="sr-only">(current)</span></a></li>
+											<li><a href="#">Market place</a></li>
+											<li><a href="#">Library</a></li>
+											<li><a href="#">My Mintebi</a></li>
+											<li class="dropdown">
+												<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Help</a>
+												<div class="dropdown-menu" role="menu">
+													<strong class="title">Help &amp; Resources</strong>
+													<ul class="list-unstyled">
+														<li><a href="#">FAQ</a></li>
+														<li><a href="#">Our Rules</a></li>
+														<li><a href="#">Expert handbook</a></li>
+														<li><a href="#">trust &amp; Safty</a></li>
+														<li><a href="#">Trems of use  &amp; Privacy</a></li>
+													</ul>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</nav>
+								<div class="client-login">
+									<a class="btn btn-primary">
+										<span data-picture data-alt="image description">
+											<span data-src="../images/img10-large.png" data-width="33" data-height="33"></span>
+											<span data-src="../images/img10-large2x.png" data-width="33" data-height="33" data-media="(-webkit-min-device-pixel-ratio:1.5), (min-resolution:1.5dppx)" ></span> <!-- retina 2x desktop -->
+											<span data-src="../images/img10-medium2x.png" data-width="33" data-height="33" data-media="(max-width:1023px) and (-webkit-min-device-pixel-ratio:1.5), (max-width:1023px) and (min-resolution:144dpi)" ></span> <!-- retina 2x tablet -->
+											<span data-src="../images/img10-small.png" data-width="33" data-height="33" data-media="(max-width:767px)" ></span> <!-- retina 1x mobile -->
+											<span data-src="../images/img10-small2x.png" data-width="33" data-height="33" data-media="(max-width:767px) and (-webkit-min-device-pixel-ratio:1.5), (max-width:767px) and (min-resolution:144dpi)" ></span> <!-- retina 2x mobile -->
+											<!--[if (lt IE 9) & (!IEMobile)]>
+												<span data-src="images/img10-large.png"></span>
+											<![endif]-->
+											<!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+											<noscript><img src="../images/img10-large.png" width="33" height="33" alt="image description" ></noscript>
+										</span>
+									</a>
+									<div class="client-drop">
+										<div class="drop-box">
+											<strong class="title">Andreas buchwalD</strong>
+											<ul class="list-unstyled">
+												<li><a href="#"><span class="icon icon-user"></span>my profile</a></li>
+												<li><a href="#"><span class="icon icon-gear"></span>account settings</a></li>
+												<li><a href="#"><span class="icon icon-power"></span>logout</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<main id="main" role="main">
+				
+				<!-- begin terms-header  -->
+				<section class="terms-header">
+					<h1>Terms and Conditions</h1>
+				</section>
+				<!-- end terms-header -->
+
+				<!-- begin terms  -->
+				<section class="terms">
+					<div class="terms__btns">
+						<a href="#" class="terms__btn is-active">Experts</a>
+						<a href="#" class="terms__btn">Clients</a>
+					</div>
+					<h2>Expert Terms and conditions</h2>
+					<div class="terms__section">
+						<h3 class="fs30">1. Introduction</h3>
+						<p>1.1. These terms and conditions (“Terms & Conditions”) are entered into between you (“you”, “your” or “Expert”) and Mintebi ApS (“Mintebi”), a Danish public limited liability company with company registration no. 36428198, with its principal place of business in Copenhagen, Denmark and governs your use of www.mintebi.com (“the Website”).</p>
+						<p>1.2. Upon registering a profile through the Website you accept and agree to be bound by these Terms & Conditions.</p>
+						<p>1.3. You confirm that you are authorised to engage in Projects as defined below and have obtained all approvals, permissions and consents required, including your employer’s consent if required.</p>
+						<p>1.4. If you do not agree with any of the provisions in these Terms & Conditions, do not use the Website.</p>
+						<p>1.5. The Website is only available in English, and all sales agreements are entered into in English.</p>
+					</div>
+					<div class="terms__section">
+						<h3>2. Contact information and definitions</h3>
+						<ul>
+							<li>2.1. Mintebi can be contacted at:</li>
+							<li>Mintebi ApS</li>
+							<li>Sankt Annae Plads 11</li>
+							<li>1250 Copenhagen</li>
+							<li>Denmark</li>
+							<li>Email: info@mintebi.com</li>
+							<li>Telephone: +45 40993822</li>
+						</ul>
+						<p>2.2. Terms used in these Terms & Conditions have the following meaning: “Agreement” means these Terms and Conditions, the Privacy Policy, any and all Proposals accepted by you, and all other documents referred to in these Terms and Conditions;</p>
+						<p>“Confidential Information” means any information, whether in written or any other form (including oral information), which is identified as confidential or is clearly by its nature confidential including without limitation any and all information which concerns the business, finance, organization or future plans of any and all Clients and/or of Mintebi (including the rates Mintebi agree with you in respect of any Project), the identity of any Client(s) and the subject matter of a Project save that, where such information is already in the public domain or has been provided by a third party other than as a result of a breach of an obligation of confidentiality, then such information will not be regarded as confidential;</p>
+						<p>“Client” means the organizations or individuals who engage Mintebi for the purposes of consulting with you or other Experts introduced by Mintebi. This also includes any client (if any) of the Client on whose behalf or in respect of which the Client is undertaking the Project;</p>
+						<p>“Intellectual Property” means all patents, rights to inventions, utility models, copyright and related rights, trademarks, service marks, trade, business and domain names, rights in goodwill or to sue for passing off, rights in designs, rights in computer software, database rights, topography rights, rights in confidential information and any other intellectual property rights, whether registered or unregistered, and including all applications and renewals in any part of the world;</p>
+						<p>“Privacy Policy” means the privacy policy posted at www.mintebi.com (as amended from time to time);</p>
+						<p>“Project” means any type of project or discussion with Client(s) or potential clients. Such project(s) may take place remotely (including by telephone (including participation in conference calls), email or other electronic messaging) and/or involve the provision of information in writing such as reports or participation in surveys within the scope pre-determined by Mintebi, and/or any Client and set out in a Proposal;</p>
+						<p>“Proposal” means a proposal provided by Mintebi to you setting out the agreed scope of a Project or Projects and relevant Client details which may be sent by letter or email or which may be accessible through your personal Expert web page;</p>
+						<p>“Work Product” has the meaning given in clause 6.3.</p>
+					</div>
+					<div class="terms__section">
+						<h3>3. Projects</h3>
+						<p>3.1. Mintebi will request you to participate in Projects relevant to your Expert knowledge and expertise. These requests will be presented to you in the form of a Proposal or in such other manner as Mintebi finds appropriate. By accepting any Proposal or other engagement offered or introduced to you by Mintebi, you confirm to Mintebi that (at the date of your acceptance) your biographical information on your profile remains true, accurate, not misleading in any way and current and that you are fully acquainted with the subject matter and scope of the discussion planned for the Project.</p>
+						<p>3.2. You acknowledge and agree that when taking part in Projects you shall be acting in your own capacity as an independent contractor and in doing so shall not be the employee, agent, legal representative, or partner of Mintebi or have the right or authority to assume or create any obligation or responsibility, whether express or implied, on behalf of or in the name of Mintebi.</p>
+						<p>3.3. When participating in a Project, you must consider yourself to be qualified with your expert background to sufficiently fulfill the scope set out in the Proposal and conduct a satisfactory Project.</p>
+						<p>3.4. When participating in a Project, you shall at all times stay within the parameters of the Project as set out in the Proposal.</p>
+					</div>
+					<div class="terms__section">
+						<h3>4. Expert undertakings</h3>
+						<p>4.1. You represent, warrant and undertake that at the date on which you accept these Terms and Conditions and at all times thereafter during the term of this Agreement:</p>
+						<p>4.1.1. you will perform your obligations hereunder and undertake all Projects diligently, Expertly, to the best of your skill and ability and with no less than reasonable care and skill;</p>
+						<p>4.1.2. all biographical and other information that you provide to Mintebi is true and accurate in all respects, up-to-date and not misleading in any way. You must provide notice to Mintebi of any change in your employment or career information as soon as reasonably practical. Without prejudice to the generality of theforegoing, you must specifically inform Mintebi if you are: (i) a current employee or advisor or consultant to any government, government department, government agency or to any public authority wheresoever located or have been so employed or engaged during the past two years; (ii) currently involved with any clinical trial or test or have been so involved where the results of such trial or test have not been publicly disclosed; (iii) a current employee in any capacity or consultant to a public listed company or any subsidiary of a public listed company or have been so employed or engaged during the preceding twelve months.</p>
+						<p>4.1.3. you have not been found guilty of or sentenced for any insider dealing, market abuse, money laundering or similar offences in any jurisdiction and you will inform Mintebi immediately upon becoming aware of any investigation involving you, or any charge brought against you, for such offences by an authority in any jurisdiction;</p>
+						<p>4.1.4. you recognize that certain types of advice are restricted and regulated. You will not, at any time, provide any investment, legal, financial, accountancy, or medical advice to any Client including without limitation, recommending, rating or valuing any security or providing advice regarding the investment, purchase or sale of any securities;</p>
+						<p>4.1.5. if you are a government official or employee, you will not discuss government legislation, regulation, policy, contracts or any other business that you, as a government official or employee, would be in a position to vote upon or otherwise influence;</p>
+						<p>4.1.6. if you are a medical Expert, you will not discuss clinical trial results, patient experience information and any other non-public information regarding trials which are not yet public;</p>
+						<p>4.1.7. if you are an auditor or a former auditor, you will not comment on any company you have audited in the three years prior to the Project;</p>
+						<p>4.1.8. you will not participate in any Project or provide any information relating to any company in which you are currently an officer, director, employee or contractor, agent, legal representative, partner, joint venture or affiliate;</p>
+						<p>4.1.9. you will not participate in any Project at any time should your employer, to the best of your knowledge, be subject of a tender offer;</p>
+						<p>4.1.10. you will not participate in any Project for a Client that is, to the best of your knowledge, a competitor of your current employer or a company for which you serve as an officer or director;</p>
+						<p>4.1.11. you will not participate in any Project or provide any information that would or would be likely to result in (i) a breach of applicable laws or regulation, (ii) a breach of any agreement or any obligation to a third party including without limitation an obligation owing to your employer, (iii) a Expert, regulatory or ethical conflict, (iv) a breach of a duty of confidentiality, (v) the disclosure of any inside information or non-public information concerning a quoted company or instrument or any trade secret; or (vi) if there is any other legal reason why you may not or should not participate in such Project or provide such information.</p>
+						<p>If you are a franchisee, in addition to the above restrictions, you will not discuss the franchisor's financial performance, strategic plans or new product development or any other matter which is likely to reveal confidential information about the franchisor. If you are an officer, director or employee of a direct competitor of Mintebi’s Client you should not participate in a Project with that Client.</p>
+						<p>4.1.12. you have full authority to and you have obtained all necessary approvals, permissions, consents, waivers that may be required for your participation in each Project and otherwise perform your obligations hereunder. For example, if you are employed, your contract of employment or employer’s policies or code of conduct may require you to obtain your employer’s prior consent to your participation in Projects or you may be required to seek consent from an entity, agency or client to whom you previously provided or with whom you have an agreement in place to provide consultancy services. You should review all such employment contracts, policies, codes of conduct and agreements and obtain any consents that may be required;</p>
+						<p>4.1.13. you will in connection with Project’s: (i) comply with all applicable laws, statutes, regulations and codes relating to anti-bribery and anti-corruption (the “Requirements”); (ii) not engage in any activity, practice or conduct which would constitute an offence under the Requirements; (iii) not do, or omit to do, any act that will cause or lead Mintebi or any of its Clients to be in breach of any of the Requirements; and</p>
+						<p>4.1.14. you acknowledge that Mintebi’s Clients operate valuable businesses and therefore agree not to directly or indirectly contact, or solicit, or attempt to solicit any of Mintebi’s Clients which you have participated in a Project with, other than through Mintebi. This clause is effective from the time when you are introduced to a Client and extends to cover the period of one (1) year from the date of your last Project with the Client. This clause does not apply to the extent that you have a proven pre-existing relationship or association, based on past work performed. If you are offered employment through a contract of services or otherwise by one of Mintebi’s Clients, Mintebi imposes no restrictions,but must be notified in accordance with section </p>
+						<p>4.1.2 above.</p>
+						<p>4.1.15. You acknowledge that you must not take Clients to any location with any connection or association with the subject matter of the Project which is not publicly accessible without having obtained the written permission from (i) Mintebi and (ii) the person or entity which owns or occupies said location.</p>
+					</div>
+					<div class="terms__section">
+						<h3>5. Term and termination</h3>
+						<p>5.1. These Terms & Conditions shall come into force on the date of your acceptance of it and shall continue until terminated by either you or Mintebi in accordance with this clause 5.</p>
+						<p>5.2. You may terminate these Terms & Conditions at any time with or without cause on written notice to Mintebi at the address stated at the beginning of these Terms & Conditions or by email info@mintebi.com or by cancelling your membership on the Website.</p>
+						<p>5.3. Mintebi may terminate these Terms and Conditions at any time with or without cause on written notice to you at your designated email address or other designated contact address.</p>
+						<p>5.4. Notwithstanding termination, the obligations of confidentiality listed in section 7 of these Terms & Conditions shall survive indefinitely.</p>
+					</div>
+					<div class="terms__section">
+						<h3>6. Intellectual property rights</h3>
+						<p>6.1. All Intellectual Property rights in any material provided by you to Mintebi and contained on the Website belong to Mintebi. None of this material may be reproduced or redistributed without Mintebi's prior written consent.</p>
+						<p>6.2. You will not provide confidential, proprietary or trade secret information in any Project that may infringe, misappropriate or conflict with any Intellectual Property rights of any third party.</p>
+						<p>6.3. Unless otherwise agreed with a Client in writing, you warrant that any documentation or any other material (including without limitation reports, studies, data, diagrams, charts, specifications, and programs) (“Work Product”) provided by you to a Client are original works and do not infringe any third party’s Intellectual Property rights and you hereby agree to grant to the Client which is supplied with Work Products a non-exclusive, royalty-free, perpetual license to use any and all Intellectual Property rights subsisting in such Work Products in the course of its business.</p>
+						<p>6.4. You hereby indemnify and agree to keep Mintebi indemnified against any and all liabilities it may incur in connection with any claims or proceedings brought against Mintebi based on a claim that the Work Product provided to a Client infringes any Intellectual Property rights or other proprietary rights of any third party.</p>
+						<p>6.5. Notwithstanding any other provision of these Terms & Conditions, as between the parties, Mintebi will be the sole and exclusive owner of any and all Intellectual Property rights and Work Products. You hereby irrevocably assign, with full title guarantee, any and all Intellectual Property rights and Work Products (including without limitation copyright) to Mintebi on an exclusive basis, without any specific territorial limitation or restriction and without any royalty and agree that Mintebi will have the right, without limitation, to use, distribute, reproduce, publish, reprint, make transcripts of, modify, adapt, sublicense, and/or publicly display, in whole or in part, in any language or format and in all media such Intellectual Property rights for any commercial or noncommercial purpose unless otherwise agreed in writing. The assignment will be effective immediately when the Intellectual Property right or Work Product is completed and you agree to execute such documents or take such other steps as may be necessary to give full effect to such assignment. Should Mintebi resell Intellectual Property rights or Work Products, the Expert will for this action be compensated in accordance with its agreement with Mintebi.</p>
+						<p>6.6. You hereby irrevocably waive any and all moral rights in Intellectual Property rights in favour of Mintebi and its successors, assigns and licensees for all purposes and for the full term of any such rights.</p>
+						<p>6.7. You shall not use the name “Mintebi” or any other trademark, symbol or logo</p>
+						<p>of Mintebi other than with the prior written consent of Mintebi.</p>
+					</div>
+					<div class="terms__section">
+						<h3>7. Confidentiality</h3>
+						<p>7.1. You acknowledge and agree that any Confidential Information disclosed to you during your participation in a Project, or leading up to or in connection with a Project, or otherwise pursuant to these Terms & Conditions is the proprietary and confidential property of Mintebi and/or Clients. You undertake to keep confidential and not disclose the Confidential Information to any third party except insofar as:</p>
+						<p>7.1.1. to obtain any necessary consent or approval required by you from a third party to participate in a Project provided such disclosure is strictly necessary, is on an "as needed" basis, is made subject to a requirement of confidentiality, and provided that you obtain Mintebi's and the Client's prior approval in each case; or </p>
+						<p>7.2. the Confidential Information is required to be disclosed by law or by regulation, provided that you shall to the fullest extent legally permissible notify Mintebi, or the Client as appropriate, of the information to be disclosed and of the circumstances in which the disclosure is alleged to be required as early as reasonably possible before such disclosure must be made and shall take all reasonable action to avoid and limit such disclosure. For the avoidance of doubt, you acknowledge and agree that you will not disclose any Confidential Information of Mintebi to any Client or other third party. You will not use any Confidential Information for any purpose other than for consulting with Mintebi Clients in accordance with the terms of this Agreement.</p>
+						<p>7.3. You acknowledge and agree that any breach of this clause 7 may cause irreparable harm to Mintebi and/or its Client(s) and that damages would be an insufficient remedy in respect of such breach. Without prejudice to any other rights it may have, Mintebi shall be entitled to seek relief and other applicable equitable remedies in respect of any such breach.</p>
+					</div>
+					<div class="terms__section">
+						<h3>8. Data protection</h3>
+						<p>8.1. Mintebi shall at all times comply with all applicable data protection and privacy legislation regarding the processing of all personal data obtained or held by Mintebi. For the purposes of this clause, the term "personal data" shall have the meaning given in the Danish Act on Processing of Personal Data.</p>
+						<p>8.2. Mintebi may store and process personal data submitted by you, such as your name, contact details and biographical information for the purposes of administering your participation in Projects and may disclose such personal data to Clients in connection with consulting opportunities and related matters. You also acknowledge and agree that in certain circumstances Mintebi may be obliged to disclose your personal data to third parties, for example, (i) in order to comply with any requirements of law or any legal process, or (ii) to protect and defend the rights of property of Mintebi, and/or Mintebi Clients.</p>
+						<p>8.3. You are responsible for ensuring that the personal data relating to you and held by Mintebi is true, accurate, not misleading in any way and kept up-todate at all times by logging into your personal Expert account on the Website and updating your profile when required.</p>
+					</div>
+					<div class="terms__section">
+						<h3>9. Terms of payment</h3>
+						<p>9.1. Within seven (7) days of the conclusion of the Project, Mintebi will deposit the agreed amount in the Proposal to your Mintebi profile balance, excluding the transaction fee of 12 per cent. Mintebi charges Clients immediately after the conclusion of the Project.</p>
+						<p>9.2. You can at all times request to have your Mintebi profile balance withdrawn. Should you wish to withdraw your Mintebi profile balance, you may upload your own invoice.</p>
+						<p>9.3. In the rare event that you do not receive payment, you shall inform Mintebi in writing (for the avoidance of doubt, email shall suffice as "in writing") within six (6) months after the conclusion of the Project, stating that payment has not been received.</p>
+						<p>9.4. Mintebi will investigate all queries of non-payment and shall use its best endeavours to ensure the relevant payments are executed as soon as possible thereafter.</p>
+						<p>9.5. Mintebi reserves the right of non-payment of fees for the following reasons:</p>
+						<p>9.5.1. arranging a Project directly with a Client without notifying Mintebi prior to the Project;</p>
+						<p>9.5.2. failure to notify Mintebi within the 6 month period mentioned in clause 9.3 above, that payment has not been completed.</p>
+						<p>9.5.3. non fulfillment of Client requirements set out in the Proposal, including, but not limited to, requirements regarding duty of care and Expertism.</p>
+						<p>9.6. In regards to clause 9.5.3, Mintebi reserves the right to decide whether the quality of the Work Product and/or Project is satisfactory should the Work Product and/or Project be disputed by a Client.</p>
+					</div>
+					<div class="terms__section">
+						<h3>10. Liability</h3>
+						<p>10.1. Except where otherwise stated in these Terms & Conditions, Mintebi shall not be liable for any loss or damage, or any costs, expenses or other claims including without limitation:(i) loss of profit: loss of business; (ii) loss of revenue; (iii) loss of goodwill; (iv) loss of anticipated savings; (v) loss of any data or information and/or (vii) special or indirect loss or consequential loss or otherwise which arise out of or in connection with these Terms & Conditions.</p>
+					</div>
+					<div class="terms__section">
+						<h3>11. Assignment and sub-contracting</h3>
+						<p>11.1. Mintebi may transfer, assign, subcontract or otherwise part with any or all of its rights and obligations under these Terms & Conditions.</p>
+						<p>11.2. You may not assign or sub-contract your rights and obligations under these Terms & Conditions to a third party without Mintebi's prior written consent.</p>
+					</div>
+					<div class="terms__section">
+						<h3>12. Alteration or amendments to the Terms & Conditions</h3>
+						<p>12.1. Mintebi reserves the right to make changes to the Website, policies, and these Terms & Conditions at any time. You will receive a written notification of any changes to the Website, policies and these Terms & Conditions. Failure to notify you of changes to the Website, policies and these Terms & Conditions will not affect the validity and enforceability of the said changes. Your usage of the Website and your Expert undertakings will be subject to the policies and the Terms & Conditions in force at the time that you use the Website. If any of these Terms & Conditions are deemed invalid, void or for any reason unenforceable, such term or condition will be deemed severable and will not affect the validity and enforceability of the remaining conditions.</p>
+					</div>
+					<div class="terms__section">
+						<h3>13. Governing law and venue</h3>
+						<p>13.1. These Terms & Conditions are governed by Danish law, and the parties hereby irrevocably submit to the exclusive jurisdiction of the Danish Courts.</p>
+					</div>
+				</section>
+				<!-- end terms -->
+			</main>
+		</div>
+		<div class="footer-block">
+			<div class="footer-holder">
+				<div class="container-fluid">
+					<aside class="row footer-aside">
+						<div class="col-xs-12">
+							<div class="box">
+								<div class="block">
+									<nav class="column">
+										<h2>About us</h2>
+										<ul class="list-unstyled">
+											<li><a href="#">What is mintebi?</a></li>
+											<li><a href="#">Our Team</a></li>
+											<li><a href="#">Careers</a></li>
+											<li><a href="#">Contact</a></li>
+										</ul>
+									</nav>
+									<nav class="column">
+										<h2>Help</h2>
+										<ul class="list-unstyled">
+											<li><a href="#">FAQ</a></li>
+											<li><a href="#">Our Rules</a></li>
+											<li><a href="#">Expert Handbook</a></li>
+											<li><a href="#">Trust &amp; Safety</a></li>
+										</ul>
+									</nav>
+								</div>
+								<div class="footer-logo">
+									<strong class="logo"><a href="#"><img src="../images/logo2.svg" width="179" height="131" alt="Mintebi"></a></strong>
+								</div>
+							</div>
+						</div>
+					</aside>
+					<footer id="footer" class="row">
+						<div class="col-xs-12">
+							<div class="box2">
+								<div class="block1">
+									<span class="copyrights">Copyright © 2015 Mintebi APS. All rights reserved.</span>
+									<ul class="privacy-nav list-inline">
+										<li><a href="#">Terms of Use</a></li>
+										<li><a href="#">Privacy Policy</a></li>
+									</ul>
+									<address class="footer-address">Mintebi APS, Sankt Annae Plads 11, 1250 Copenhagen, Denmark</address>
+								</div>
+								<ul class="social-networks list-inline">
+									<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</footer>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade delete">
+			<div class="modal-dialog delete-projects">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><span class="icon icon-close-2"></span></span></button>
+						<h2 class="modal-title">Are you sure you want to clear your projcet</h2>
+					</div>
+					<div class="modal-body">
+						<p>This action cannot be undone and will<br> immediately cleared from the system.</p>
+					</div>
+					<div class="modal-footer">
+						<a href="#" class="btn btn-default" data-dismiss="modal">Clear</a>
+						<a href="#" class="btn btn-default cancel">Cancel</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="../js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/angular.min.js"></script>
+	<script type="text/javascript" src="../js/ngDialog.min.js"></script>
+	<script type="text/javascript" src="../js/angular.validate.js"></script>
+	<script type="text/javascript" src="../js/angular.openClose.js"></script>
+	<script type="text/javascript" src="../js/application.js"></script>
+	<script type="text/javascript" src="../js/common.js"></script>
+	<script type="text/javascript" src="../js/main.js"></script>
+	<script type="text/javascript" src="../js/jcf.angular.js"></script>
+	<script>
+		jQuery('[data-toggle="dropdown"]').each(function() {
+			var item = jQuery(this),
+				parent = item.parent();
+			 
+			parent.one('mousemove', function() {
+				parent.hover(function() {
+					parent.addClass('open');
+				}, function() {
+					parent.removeClass('open');
+				}).trigger('mouseover');
+			});
+		});
+		if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+		   var msViewportStyle = document.createElement("style")
+		   msViewportStyle.appendChild(
+		  document.createTextNode(
+			"@-ms-viewport{width:auto!important}"
+		  )
+		   )
+		   document.getElementsByTagName("head")[0].appendChild(msViewportStyle)
+		 }
+	</script>
+</body>
+</html>

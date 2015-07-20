@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html ng-app="mintebiApp">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mintebi</title>
+	<link rel="stylesheet" href="../css/bootstrap.css">
+	<link rel="stylesheet" href="../css/all.css">
+	<link rel="stylesheet" href="../css/ngDialog.css">
+	<link rel="stylesheet" href="../css/inner.css">
+	<script type="text/javascript" src="http://fast.fonts.net/jsapi/48f89ee6-4f00-484c-ad3c-df5a74d4c60d.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<div class="w1">
+			<header id="header">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="non-logedin" style="display:block;">
+								<div class="logo-holder">
+									<strong class="logo"><a href="#"><img src="../images/logo.png" alt="Mintebi"></a></strong>
+								</div>
+								<nav class="navbar navbar-default">
+									<!-- Brand and toggle get grouped for better mobile display -->
+									<div class="navbar-header">
+										<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+											<span class="sr-only">Toggle navigation</span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+										</button>
+									</div>
+									<!-- Collect the nav links, forms, and other content for toggling -->
+									<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+										<ul class="nav navbar-nav">
+											<li><a href="#">Client</a></li>
+											<li><a href="#">Expert</a></li>
+										</ul>
+										<ul class="nav navbar-nav navbar-right">
+											<li><a href="#">Sign up</a></li>
+											<li><a href="#">Login</a></li>
+										</ul>
+									</div>
+								</nav>
+							</div>
+							<div class="expert-logedin" style="display:none;">
+								<div class="logo-holder">
+									<strong class="logo"><a href="#"><img src="../images/logo.png" alt="Mintebi"></a></strong>
+									<div class="notifications-block">
+										<a class="btn btn-primary active" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+											<i class="fa fa-bell-o"></i><span class="count">10</span>
+										</a>
+										<div class="collapse notification-drop" id="collapseExample">
+											<div class="well">
+												<div class="title"><a href="#" class="activity active">recent activity</a> <a href="#" class="marked">marked all as read</a></div>
+												<div class="scroll-area jcf-scrollable" jcf>
+													<ul class="list-unstyled">
+														<li>
+															<a href="#">
+																<span class="icon icon-add-user"></span>YOU HAVE 5 NEW EXPERTS PITCHED
+																<time datetime="2015-01-01">34 minutes ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-flag"></span>YOUR PROJECT IS NOW IN PITCH
+																<time datetime="2015-01-01">2 days ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-trophy"></span>WELCOME TO MINTEbI
+																<time datetime="2015-01-01">1 week ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-crosshair"></span>lorem upsum sit amet
+																<time datetime="2015-01-01">2 weeks ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-add-user"></span>YOU HAVE 5 NEW EXPERTS PITCHED
+																<time datetime="2015-01-01">34 minutes ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-flag"></span>YOUR PROJECT IS NOW IN PITCH
+																<time datetime="2015-01-01">2 days ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-trophy"></span>WELCOME TO MINTEbI
+																<time datetime="2015-01-01">1 week ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-crosshair"></span>lorem upsum sit amet
+																<time datetime="2015-01-01">2 weeks ago</time>
+															</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<nav class="navbar navbar-default">
+									<!-- Brand and toggle get grouped for better mobile display -->
+									<div class="navbar-header">
+										<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+											<span class="sr-only">Toggle navigation</span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+										</button>
+									</div>
+									<!-- Collect the nav links, forms, and other content for toggling -->
+									<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+										<ul class="nav navbar-nav">
+											<li><a href="#">Market place <span class="sr-only">(current)</span></a></li>
+											<li><a href="#">Library</a></li>
+											<li><a href="#">My Mintebi</a></li>
+											<li class="dropdown">
+												<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Help</a>
+												<div class="dropdown-menu" role="menu">
+													<strong class="title">Help &amp; Resources</strong>
+													<ul class="list-unstyled">
+														<li><a href="#">FAQ</a></li>
+														<li><a href="#">Our Rules</a></li>
+														<li><a href="#">Expert handbook</a></li>
+														<li><a href="#">trust &amp; Safty</a></li>
+														<li><a href="#">Trems of use  &amp; Privacy</a></li>
+													</ul>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</nav>
+								<div class="client-login">
+									<a class="btn btn-primary">
+										<span data-picture data-alt="image description">
+											<span data-src="../images/img10-large.png" data-width="33" data-height="33"></span>
+											<span data-src="../images/img10-large2x.png" data-width="33" data-height="33" data-media="(-webkit-min-device-pixel-ratio:1.5), (min-resolution:1.5dppx)" ></span> <!-- retina 2x desktop -->
+											<span data-src="../images/img10-medium2x.png" data-width="33" data-height="33" data-media="(max-width:1023px) and (-webkit-min-device-pixel-ratio:1.5), (max-width:1023px) and (min-resolution:144dpi)" ></span> <!-- retina 2x tablet -->
+											<span data-src="../images/img10-small.png" data-width="33" data-height="33" data-media="(max-width:767px)" ></span> <!-- retina 1x mobile -->
+											<span data-src="../images/img10-small2x.png" data-width="33" data-height="33" data-media="(max-width:767px) and (-webkit-min-device-pixel-ratio:1.5), (max-width:767px) and (min-resolution:144dpi)" ></span> <!-- retina 2x mobile -->
+											<!--[if (lt IE 9) & (!IEMobile)]>
+												<span data-src="images/img10-large.png"></span>
+											<![endif]-->
+											<!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+											<noscript><img src="../images/img10-large.png" width="33" height="33" alt="image description" ></noscript>
+										</span>
+									</a>
+									<div class="client-drop">
+										<div class="drop-box">
+											<strong class="title">Andreas buchwalD</strong>
+											<ul class="list-unstyled">
+												<li><a href="#"><span class="icon icon-user"></span>my profile</a></li>
+												<li><a href="#"><span class="icon icon-gear"></span>account settings</a></li>
+												<li><a href="#"><span class="icon icon-power"></span>logout</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="client-logedin" style="display:none;">
+								<div class="logo-holder">
+									<strong class="logo"><a href="#"><img src="../images/logo.png" alt="Mintebi"></a></strong>
+									<div class="notifications-block">
+										<a class="btn btn-primary active" data-toggle="collapse" href="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
+											<i class="fa fa-bell-o"></i><span class="count">10</span>
+										</a>
+										<div class="collapse notification-drop" id="collapseExample3">
+											<div class="well">
+												<div class="title"><a href="#" class="activity active">recent activity</a> <a href="#" class="marked">marked all as read</a></div>
+												<div class="scroll-area jcf-scrollable" jcf>
+													<ul class="list-unstyled">
+														<li>
+															<a href="#">
+																<span class="icon icon-add-user"></span>YOU HAVE 5 NEW EXPERTS PITCHED
+																<time datetime="2015-01-01">34 minutes ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-flag"></span>YOUR PROJECT IS NOW IN PITCH
+																<time datetime="2015-01-01">2 days ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-trophy"></span>WELCOME TO MINTEbI
+																<time datetime="2015-01-01">1 week ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-crosshair"></span>lorem upsum sit amet
+																<time datetime="2015-01-01">2 weeks ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-add-user"></span>YOU HAVE 5 NEW EXPERTS PITCHED
+																<time datetime="2015-01-01">34 minutes ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-flag"></span>YOUR PROJECT IS NOW IN PITCH
+																<time datetime="2015-01-01">2 days ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-trophy"></span>WELCOME TO MINTEbI
+																<time datetime="2015-01-01">1 week ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-crosshair"></span>lorem upsum sit amet
+																<time datetime="2015-01-01">2 weeks ago</time>
+															</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<nav class="navbar navbar-default">
+									<!-- Brand and toggle get grouped for better mobile display -->
+									<div class="navbar-header">
+										<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-3">
+											<span class="sr-only">Toggle navigation</span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+										</button>
+									</div>
+									<!-- Collect the nav links, forms, and other content for toggling -->
+									<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-3">
+										<ul class="nav navbar-nav">
+											<li><a href="#">Create a project <span class="sr-only">(current)</span></a></li>
+											<li><a href="#">Market place</a></li>
+											<li><a href="#">Library</a></li>
+											<li><a href="#">My Mintebi</a></li>
+											<li class="dropdown">
+												<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Help</a>
+												<div class="dropdown-menu" role="menu">
+													<strong class="title">Help &amp; Resources</strong>
+													<ul class="list-unstyled">
+														<li><a href="#">FAQ</a></li>
+														<li><a href="#">Our Rules</a></li>
+														<li><a href="#">Expert handbook</a></li>
+														<li><a href="#">trust &amp; Safty</a></li>
+														<li><a href="#">Trems of use  &amp; Privacy</a></li>
+													</ul>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</nav>
+								<div class="client-login">
+									<a class="btn btn-primary">
+										<span data-picture data-alt="image description">
+											<span data-src="../images/img10-large.png" data-width="33" data-height="33"></span>
+											<span data-src="../images/img10-large2x.png" data-width="33" data-height="33" data-media="(-webkit-min-device-pixel-ratio:1.5), (min-resolution:1.5dppx)" ></span> <!-- retina 2x desktop -->
+											<span data-src="../images/img10-medium2x.png" data-width="33" data-height="33" data-media="(max-width:1023px) and (-webkit-min-device-pixel-ratio:1.5), (max-width:1023px) and (min-resolution:144dpi)" ></span> <!-- retina 2x tablet -->
+											<span data-src="../images/img10-small.png" data-width="33" data-height="33" data-media="(max-width:767px)" ></span> <!-- retina 1x mobile -->
+											<span data-src="../images/img10-small2x.png" data-width="33" data-height="33" data-media="(max-width:767px) and (-webkit-min-device-pixel-ratio:1.5), (max-width:767px) and (min-resolution:144dpi)" ></span> <!-- retina 2x mobile -->
+											<!--[if (lt IE 9) & (!IEMobile)]>
+												<span data-src="images/img10-large.png"></span>
+											<![endif]-->
+											<!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+											<noscript><img src="../images/img10-large.png" width="33" height="33" alt="image description" ></noscript>
+										</span>
+									</a>
+									<div class="client-drop">
+										<div class="drop-box">
+											<strong class="title">Andreas buchwalD</strong>
+											<ul class="list-unstyled">
+												<li><a href="#"><span class="icon icon-user"></span>my profile</a></li>
+												<li><a href="#"><span class="icon icon-gear"></span>account settings</a></li>
+												<li><a href="#"><span class="icon icon-power"></span>logout</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<main id="main" role="main" class="faq-wrap">
+
+				<!-- begin faq-header  -->
+				<section class="faq-header">
+					<h1>Mintebi Basis FAQ</h1>
+					<div class="faq-search">
+						<form action="">
+							<div class="faq-search__field">
+								<i class="icon-in icon-in-zoom"></i>
+								<i class="icon icon-close-1"></i>
+								<input type="text" class="faq-search__input" placeholder="Search the FAQ by Keyword">
+							</div>
+							<button class="faq-search__btn">Search</button>
+						</form>						
+					</div>
+				</section>
+				<!-- end faq-header -->
+				
+				<div class="faq__overlay"></div>
+
+				<div class="faq__nav">
+					<i class="icon icon-close-2"></i>
+					<h2>Navigate</h2>
+					<div class="faq__nav-links">
+						<i class="icon-in icon-in-question"></i>
+						<div class="faq__nav-box">
+							<h4>Mintebi Basis</h4>
+							<ul>
+								<li><a href="#">Mintebi 101</a></li>
+								<li><a href="#">Accountability</a></li>
+								<li><a href="#">Confidentiality</a></li>
+								<li><a href="#">Reporting a Project</a></li>
+							</ul>
+						</div>
+						<div class="faq__nav-box">
+							<h4>Expert Questions</h4>
+							<ul>
+								<li><a href="#" class="is-active">Getting started</a></li>
+								<li><a href="#">Discover the market place</a></li>
+								<li><a href="#">Pitching on a project</a></li>
+								<li><a href="#">Working on a project</a></li>
+								<li><a href="#">After a project ends</a></li>
+								<li><a href="#">Getting paid</a></li>
+							</ul>
+						</div>
+						<div class="faq__nav-box">
+							<h4>Client Questions</h4>
+							<ul>
+								<li><a href="#">Getting started</a></li>
+								<li><a href="#">Creating a project</a></li>
+								<li><a href="#">Managing a project</a></li>
+								<li><a href="#">The Library</a></li>
+								<li><a href="#">Secure payment</a></li>
+							</ul>
+						</div>
+					</div>					
+				</div>
+
+				<div class="faq__mob">
+					<div class="faq__orbit">
+						<i class="icon-in icon-in-question"></i>
+					</div>
+					<div class="faq__mob-links">
+						<i class="icon-in icon-in-question"></i>
+						<div class="faq__mob-box">
+							<h4>Mintebi Basis</h4>
+							<ul>
+								<li><a href="#">Mintebi 101</a></li>
+								<li><a href="#">Accountability</a></li>
+								<li><a href="#">Confidentiality</a></li>
+								<li><a href="#">Reporting a Project</a></li>
+							</ul>
+						</div>
+						<div class="faq__mob-box">
+							<h4>Expert Questions</h4>
+							<ul>
+								<li><a href="#" class="is-active">Getting started</a></li>
+								<li><a href="#">Discover the market place</a></li>
+								<li><a href="#">Pitching on a project</a></li>
+								<li><a href="#">Working on a project</a></li>
+								<li><a href="#">After a project ends</a></li>
+								<li><a href="#">Getting paid</a></li>
+							</ul>
+						</div>
+						<div class="faq__mob-box">
+							<h4>Client Questions</h4>
+							<ul>
+								<li><a href="#">Getting started</a></li>
+								<li><a href="#">Creating a project</a></li>
+								<li><a href="#">Managing a project</a></li>
+								<li><a href="#">The Library</a></li>
+								<li><a href="#">Secure payment</a></li>
+							</ul>
+						</div>
+					</div>					
+				</div>
+				
+				<!-- begin faq  -->
+				<section class="faq">
+					<div class="faq__content">
+						<div class="faq__section">
+							<h2>Mintebi Basics: Mintebi 101</h2>
+							<div class="faq__box">
+								<h3>What are the basics?</h3>
+								<p><b>Projects</b> are created by clients with the purpose of gaining strategic knowledge about an industry-specific subject. The <b>Market Place</b> contains all open projects.</p>
+								<p>The <b>Client</b> is the project owner and sponsor. The client chooses which expert(s) he/she finds most qualified for the project.</p>
+								<p><b>Experts</b> are industry professionals who hold industry specific knowledge.</p>
+								<p>The <b>pitch</b> is the notification the client will receive when an expert decides that he/she wants to work on the project.</p>
+								<p>The <b>report</b> is the expert’s final delivered product to the client. The report resembles an executive summary, containing the information of interest. The report is generated automatically when the expert completes a project by answering a number of predefined questions.</p>
+								<p>The <b>budget</b> is the payment (in euros) any expert working on the project will receive when delivering a report before it is due. Experts receive reviews from the client after a project ends.</p>
+								<p>The <b>Library</b> contains archived reports. Only reports from non-exclusive projects are added to the library.</p>
+								<p>Clients can invite the expert for a <b>telephone conference (telco)</b> as a natural follow-up to the report.</p>
+							</div>
+							<div class="faq__box">
+								<h3>What is Mintebi?</h3>
+								<p>Mintebi is a professional hub for knowledge sharing. <br>We connect business decision makers with leading industry experts, and provide the productivity and collaboration tools that enable a seamless knowledgesharing.</p>
+							</div>
+							<div class="faq__box">
+								<h3>How does Mintebi work?</h3>
+								<p>Every Client sets his own project details, including the industry, geography and budget. From the market place all experts in the community can pitch to work on an open project. All experts have a personal profile on the platform, and the client is free to select any number of experts for the project.</p>
+								<p>The expert completes a project by answering a number of predefined questions, which are grouped into logical sections. The software then takes care of generating the report.</p>
+								<p>Accepting a pitch is the same as ordering a report and therefore binding. Money are reserved on the client’s credit card when a pitch is accepted, and paid out to the expert upon delivery of the report within its deadline.</p>
+							</div>
+							<div class="faq__box">
+								<h3>What is Mintebi for?</h3>
+								<p>Mintebi is all about easily digestible and easily actionable market intelligence. <br>Market Intelligence is strategic information gathered by companies for the purpose of accurate and confident decision making. Industry experts possess this knowledge and can therefore provide business decision makers with a more complete picture of ongoing corporate performances in a set of given market conditions.</p>
+								<p>We currently support the following <br>four project types:</p>
+								<ul>
+									<li>SWOT</li>
+									<li>Competitive Landscape</li>
+									<li>Market Sizing & Growth</li>
+									<li>Performance Assessment</li>
+								</ul>
+								<p>Each project type covers an important aspect of a typical business case and <br>provides the client with an associated report of about 2-6 pages.</p>
+								<p>We support projects within almost 150 different industries, including Energy, Health Care and Information & Communication Technology. </p>
+								<p>Our research solutions are tailor made to clients in private equity, venture capital and investment banking, but appeal to business decision makers in various positions.</p>
+							</div>
+							<div class="faq__box">
+								<h3>What does it mean to be an expert?</h3>
+								<p>An expert is any industry-specific professional who has gained a thorough understanding in a particular area or topic through professional experience.</p>
+								<p>To qualify as an expert you need to have substantial experience within a given industry, including experience in an executive or specialist position.</p>
+								<p>However, you do not need to hold any  specific title, nor do you need any consulting experience. The current requirements are 10 years of professional experience for most industries, and 5-7 years for some, including Information & Communication Technology positions.</p>
+							</div>
+							<div class="faq__box">
+								<h3>Why do people buy insight?</h3>
+								<p>Corporate decision makers operate in fast changing markets and industries, and therefore depend on industry experts to gain new insights and a competitive edge within a compliant framework.</p>
+								<p>What might seem as common knowledge to a seasoned industry practitioner can be a hard nut to crack for an investor or consultant with a tight deadline.</p>
+								<p>Still, knowledge is an abstract unit, so there is a need to define a level playing field and a common delivery form. This is exactly what Mintebi does.</p>
+							</div>
+							<div class="faq__box">
+								<h3>Where do clients come from?</h3>
+								<p>Our clients are leading professionals from private equity and venture capital firms (investment funds) and financial advisory firms. Our clients are highly paid medium-to-high seniority individuals working under tight deadlines, who face important strategic decisions on a continued basis.</p>
+								<p>They need the best possible foundation of information to make the right decisions, and stay ahead of competition.</p>
+							</div>
+							<div class="faq__box">
+								<h3>What are the fees?</h3>
+								<p>We believe in transparency and simplicity, which is reflected in our fee structure. Memberships are free for experts, and clients pay a monthly subscription of € 39.00. With a client-membership you can create your own projects and browse through the library for archived reports.</p>
+								<p>Mintebi charges a 12% flat commission on the payments from client to expert. We do not charge anything to make payouts to experts or for processing credit card payments, and we also cover all associated 3rd party costs.</p>
+								<p>This means that clients pay exactly the budget amount and nothing more, while experts receive 88% of the client’s payment at their personal bank account. This is the same for reports acquired through live projects and the library, and for telcos.</p>
+							</div>
+						</div>
+						<div class="faq__section">
+							<h2>Mintebi Basics: Accountability</h2>
+							<div class="faq__box">
+								<h3>Who is responsible for delivering a report as promised?</h3>
+								<p>It is the expert’s responsibility to complete the project and deliver the report before deadline. Mintebi is not involved in the development of the projects themselves.</p>
+								<p>Mintebi does not guarantee that reports will be delivered as promised, nor does Mintebi guarantee the content of the report or investigate an expert’s ability to do the report. On the Mintebi platform it is <br>ultimately the client who decide which experts he/she choose to work with. </p>
+								<p>A warning will be issued to any expert that misses a deadline, and if a second deadline is missed within 90 days, the expert will be suspended from the community. Clients only pay for reports that are delivered on time, and any previous reservation is immediately cancelled.</p>
+							</div>
+							<div class="faq__box">
+								<h3>How do clients know if an expert is right for the project?</h3>
+								<p>When an expert pitches for a project a link to the expert’s personal profile will be sent to the client, along with an optional comment.</p>
+								<p>Based on the expert’s profile, the client decides whether or not the expert is qualified for the project.</p>
+								<p>Experts should therefore pay attention to keep their personal profiles up to date with accurate information about professional experience, education etc.</p>
+								<p>In the commentary field of the pitch, experts are encouraged to briefly describe how their experience qualifies them specifically for the project they are about to pitch for.</p>
+							</div>
+							<div class="faq__box">
+								<h3>Does Mintebi guarantee the content of reports?</h3>
+								<p>No. The content of any report, delivered as part of a project or acquired through the Library, is the expert’s personal perspective and has not been reviewed in any way by Mintebi.</p>
+								<p>Experts are expected to address all aspects of the project’s scope when <br>making their report. Experts should only pitch for projects they are qualified for and will be able to deliver a high-quality report to. Experts should avoid all projects where the scope or subject is not clear. <br>they are about to pitch for.</p>
+							</div>
+							<div class="faq__box">
+								<h3>Are experts held accountable for their reports?</h3>
+								<p>In general, experts cannot be held accountable for the content of their report. We do however require that it meets the Mintebi report guidelines. All experts are reviewed by the client after a project ends, and we constantly monitor and manage the expert community.</p>
+								<p>If you have received a report which you believe does not live up to the guidelines please contact our support team at support@mintebi.com within three days from delivery. We will investigate the issue ASAP and if we find that the complaint is justified we will immediately refund your payment. </p>
+								<p>Payments to experts are suspended as we investigate a complaint, and will be cancelled if we find it to be justified.</p>
+							</div>
+							<div class="faq__box">
+								<h3>Are experts validated by Mintebi?</h3>
+								<p>Yes. When signing up for Mintebi, all prospective experts are validated based on their online resumé. Either you submit this as a link to your Linkedin profile or complete our online form. When vetting an expert, we take into account a number of factors, including professional experience.</p>
+								<p>For most industries of expertise, expert applicants need at least 10 years of professional experience to qualify as a Mintebi expert. Mintebi does not review or investigate the credibility of the provided <br>information.</p>
+							</div>
+							<div class="faq__box">
+								<h3>Is accepting a pitch binding?</h3>
+								<p>Yes. Clients provide credit card information when accepting a pitch. The full amount is reserved on the credit card, and will be charged when the report is delivered. Mintebi guarantees that experts will be paid as agreed for any report that meets our report guidelines and is delivered on time.</p>
+							</div>
+							<div class="faq__box">
+								<h3>Will people I work with get my contact information?</h3>
+								<p>No. Mintebi will not disclose any user’s personal or professional contact details. Clients have the opportunity to request an audio conference with the expert, which we will then host and facilitate.</p>
+							</div>
+						</div>	
+						<div class="faq__section">
+							<h2>Mintebi Basics: Confidentiality</h2>
+							<div class="faq__box">
+								<h3>Mintebi Basics: Confidentiality</h3>
+								<p>Trust is a main pillar of the Mintebi platform. All information about our users and their activity on the platform is held strictly confidential. Both expert and client users are bound by the non disclosure agreement included in the <b>Terms & Conditions,</b> which we recommend you read carefully.</p>
+							</div>
+							<div class="faq__box">
+								<h3>Is my identity as a client disclosed on the market place?</h3>
+								<p>No. As a client you are not associated with your project.</p>
+							</div>
+							<div class="faq__box">
+								<h3>Is my identity as a client disclosed to <br>experts?</h3>
+								<p>Unless you select “keep me anonymous” when creating the project, your identity will be disclosed but only to the expert(s) that you accept for the project.</p>
+								<p>Other experts will not know your identity, and experts working on your project are bound by the non disclosure agreement included in the <b>Terms & Conditions.</b></p>
+							</div>
+							<div class="faq__box">
+								<h3>Is my identity as an Expert confidential?</h3>
+								<p>Yes and no. For exclusive projects your identity is disclosed only to the project owner. For non-exclusive projects, your name is displayed as part of your report in the library. Your identity will only be disclosed to the client once he/she has accepted your pitch. When you pitch, only your professional profile, and not your name, will be shared with the client.</p>
+							</div>
+							<div class="faq__box">
+								<h3>As a client can I include confidential information in the project <br>description?</h3>
+								<p>Yes. When creating a project, you are asked to provide both a short and a long project description.</p>
+								<p>The short description is disclosed with the project on the Market Place, while the long version will only be disclosed to the experts you accept for the project. However, keep in mind that the long version should not contain any major surprises as experts pitch for your project based on the short description.</p>
+							</div>
+							<div class="faq__box">
+								<h3>As an expert will my submitted report be <br>publicly available?</h3>
+								<p>No. Whether the client acquire your report as part of a project delivery or through the library, the content is for the client’s internal use only. The report cannot be disclosed or resold to any third party.</p>
+								<p>The Client is bound by the non-disclosure agreement included in the <b>Terms & Conditions.</b></p>
+							</div>
+						</div>	
+						<div class="faq__section">
+							<h2>Mintebi Basics: <br>Reporting a Project</h2>
+							<div class="faq__box">
+								<h3>When should I report a Project to Mintebi?</h3>
+								<p>If you encounter a project which is not compliant with any of the following criteria, please notice Mintebi at support@mintebi.com. This notice must contain a description of the issue and a reference to the project title.</p>
+								<ul class="faq__list">
+									<li>A project may not encourage the <br>disclosure of sensitive or proprietary <br>information</li>
+									<li>A project may not include false or <br>misleading information</li>
+									<li>A project may not include inappropriate wording</li>
+								</ul>
+							</div>
+						</div>					
+					</div>
+					<div class="faq__sidebar">
+						<div class="faq__sidebar-box">
+							<h4>Mintebi Basis</h4>
+							<ul>
+								<li><a href="#">Mintebi 101</a></li>
+								<li><a href="#">Accountability</a></li>
+								<li><a href="#">Confidentiality</a></li>
+								<li><a href="#">Reporting a Project</a></li>
+							</ul>
+						</div>
+						<div class="faq__sidebar-box">
+							<h4>Expert Questions</h4>
+							<ul>
+								<li><a href="#" class="is-active">Getting started</a></li>
+								<li><a href="#">Discover the market place</a></li>
+								<li><a href="#">Pitching on a project</a></li>
+								<li><a href="#">Working on a project</a></li>
+								<li><a href="#">After a project ends</a></li>
+								<li><a href="#">Getting paid</a></li>
+							</ul>
+						</div>
+						<div class="faq__sidebar-box">
+							<h4>Client Questions</h4>
+							<ul>
+								<li><a href="#">Getting started</a></li>
+								<li><a href="#">Creating a project</a></li>
+								<li><a href="#">Managing a project</a></li>
+								<li><a href="#">The Library</a></li>
+								<li><a href="#">Secure payment</a></li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<!-- end faq -->
+
+			</main>
+		</div>
+		<div class="footer-block">
+			<div class="footer-holder">
+				<div class="container-fluid">
+					<aside class="row footer-aside">
+						<div class="col-xs-12">
+							<div class="box">
+								<div class="block">
+									<nav class="column">
+										<h2>About us</h2>
+										<ul class="list-unstyled">
+											<li><a href="#">What is mintebi?</a></li>
+											<li><a href="#">Our Team</a></li>
+											<li><a href="#">Careers</a></li>
+											<li><a href="#">Contact</a></li>
+										</ul>
+									</nav>
+									<nav class="column">
+										<h2>Help</h2>
+										<ul class="list-unstyled">
+											<li><a href="#">FAQ</a></li>
+											<li><a href="#">Our Rules</a></li>
+											<li><a href="#">Expert Handbook</a></li>
+											<li><a href="#">Trust &amp; Safety</a></li>
+										</ul>
+									</nav>
+								</div>
+								<div class="footer-logo">
+									<strong class="logo"><a href="#"><img src="../images/logo2.svg" width="179" height="131" alt="Mintebi"></a></strong>
+								</div>
+							</div>
+						</div>
+					</aside>
+					<footer id="footer" class="row">
+						<div class="col-xs-12">
+							<div class="box2">
+								<div class="block1">
+									<span class="copyrights">Copyright © 2015 Mintebi APS. All rights reserved.</span>
+									<ul class="privacy-nav list-inline">
+										<li><a href="#">Terms of Use</a></li>
+										<li><a href="#">Privacy Policy</a></li>
+									</ul>
+									<address class="footer-address">Mintebi APS, Sankt Annae Plads 11, 1250 Copenhagen, Denmark</address>
+								</div>
+								<ul class="social-networks list-inline">
+									<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</footer>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade delete">
+			<div class="modal-dialog delete-projects">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><span class="icon icon-close-2"></span></span></button>
+						<h2 class="modal-title">Are you sure you want to clear your projcet</h2>
+					</div>
+					<div class="modal-body">
+						<p>This action cannot be undone and will<br> immediately cleared from the system.</p>
+					</div>
+					<div class="modal-footer">
+						<a href="#" class="btn btn-default" data-dismiss="modal">Clear</a>
+						<a href="#" class="btn btn-default cancel">Cancel</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="../js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/angular.min.js"></script>
+	<script type="text/javascript" src="../js/ngDialog.min.js"></script>
+	<script type="text/javascript" src="../js/angular.validate.js"></script>
+	<script type="text/javascript" src="../js/angular.openClose.js"></script>
+	<script type="text/javascript" src="../js/application.js"></script>
+	<script type="text/javascript" src="../js/common.js"></script>
+	<script type="text/javascript" src="../js/main.js"></script>
+	<script type="text/javascript" src="../js/jcf.angular.js"></script>
+	<script>
+		jQuery('[data-toggle="dropdown"]').each(function() {
+			var item = jQuery(this),
+				parent = item.parent();
+			 
+			parent.one('mousemove', function() {
+				parent.hover(function() {
+					parent.addClass('open');
+				}, function() {
+					parent.removeClass('open');
+				}).trigger('mouseover');
+			});
+		});
+		if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+		   var msViewportStyle = document.createElement("style")
+		   msViewportStyle.appendChild(
+		  document.createTextNode(
+			"@-ms-viewport{width:auto!important}"
+		  )
+		   )
+		   document.getElementsByTagName("head")[0].appendChild(msViewportStyle)
+		 }
+	</script>
+</body>
+</html>

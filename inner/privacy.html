@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html ng-app="mintebiApp">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mintebi</title>
+	<link rel="stylesheet" href="../css/bootstrap.css">
+	<link rel="stylesheet" href="../css/all.css">
+	<link rel="stylesheet" href="../css/ngDialog.css">
+	<link rel="stylesheet" href="../css/inner.css">
+	<script type="text/javascript" src="http://fast.fonts.net/jsapi/48f89ee6-4f00-484c-ad3c-df5a74d4c60d.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<div class="w1">
+			<header id="header">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="non-logedin" style="display:block;">
+								<div class="logo-holder">
+									<strong class="logo"><a href="#"><img src="../images/logo.png" alt="Mintebi"></a></strong>
+								</div>
+								<nav class="navbar navbar-default">
+									<!-- Brand and toggle get grouped for better mobile display -->
+									<div class="navbar-header">
+										<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+											<span class="sr-only">Toggle navigation</span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+										</button>
+									</div>
+									<!-- Collect the nav links, forms, and other content for toggling -->
+									<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+										<ul class="nav navbar-nav">
+											<li><a href="#">Client</a></li>
+											<li><a href="#">Expert</a></li>
+										</ul>
+										<ul class="nav navbar-nav navbar-right">
+											<li><a href="#">Sign up</a></li>
+											<li><a href="#">Login</a></li>
+										</ul>
+									</div>
+								</nav>
+							</div>
+							<div class="expert-logedin" style="display:none;">
+								<div class="logo-holder">
+									<strong class="logo"><a href="#"><img src="../images/logo.png" alt="Mintebi"></a></strong>
+									<div class="notifications-block">
+										<a class="btn btn-primary active" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+											<i class="fa fa-bell-o"></i><span class="count">10</span>
+										</a>
+										<div class="collapse notification-drop" id="collapseExample">
+											<div class="well">
+												<div class="title"><a href="#" class="activity active">recent activity</a> <a href="#" class="marked">marked all as read</a></div>
+												<div class="scroll-area jcf-scrollable" jcf>
+													<ul class="list-unstyled">
+														<li>
+															<a href="#">
+																<span class="icon icon-add-user"></span>YOU HAVE 5 NEW EXPERTS PITCHED
+																<time datetime="2015-01-01">34 minutes ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-flag"></span>YOUR PROJECT IS NOW IN PITCH
+																<time datetime="2015-01-01">2 days ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-trophy"></span>WELCOME TO MINTEbI
+																<time datetime="2015-01-01">1 week ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-crosshair"></span>lorem upsum sit amet
+																<time datetime="2015-01-01">2 weeks ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-add-user"></span>YOU HAVE 5 NEW EXPERTS PITCHED
+																<time datetime="2015-01-01">34 minutes ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-flag"></span>YOUR PROJECT IS NOW IN PITCH
+																<time datetime="2015-01-01">2 days ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-trophy"></span>WELCOME TO MINTEbI
+																<time datetime="2015-01-01">1 week ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-crosshair"></span>lorem upsum sit amet
+																<time datetime="2015-01-01">2 weeks ago</time>
+															</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<nav class="navbar navbar-default">
+									<!-- Brand and toggle get grouped for better mobile display -->
+									<div class="navbar-header">
+										<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+											<span class="sr-only">Toggle navigation</span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+										</button>
+									</div>
+									<!-- Collect the nav links, forms, and other content for toggling -->
+									<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+										<ul class="nav navbar-nav">
+											<li><a href="#">Market place <span class="sr-only">(current)</span></a></li>
+											<li><a href="#">Library</a></li>
+											<li><a href="#">My Mintebi</a></li>
+											<li class="dropdown">
+												<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Help</a>
+												<div class="dropdown-menu" role="menu">
+													<strong class="title">Help &amp; Resources</strong>
+													<ul class="list-unstyled">
+														<li><a href="#">FAQ</a></li>
+														<li><a href="#">Our Rules</a></li>
+														<li><a href="#">Expert handbook</a></li>
+														<li><a href="#">trust &amp; Safty</a></li>
+														<li><a href="#">Trems of use  &amp; Privacy</a></li>
+													</ul>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</nav>
+								<div class="client-login">
+									<a class="btn btn-primary">
+										<span data-picture data-alt="image description">
+											<span data-src="../images/img10-large.png" data-width="33" data-height="33"></span>
+											<span data-src="../images/img10-large2x.png" data-width="33" data-height="33" data-media="(-webkit-min-device-pixel-ratio:1.5), (min-resolution:1.5dppx)" ></span> <!-- retina 2x desktop -->
+											<span data-src="../images/img10-medium2x.png" data-width="33" data-height="33" data-media="(max-width:1023px) and (-webkit-min-device-pixel-ratio:1.5), (max-width:1023px) and (min-resolution:144dpi)" ></span> <!-- retina 2x tablet -->
+											<span data-src="../images/img10-small.png" data-width="33" data-height="33" data-media="(max-width:767px)" ></span> <!-- retina 1x mobile -->
+											<span data-src="../images/img10-small2x.png" data-width="33" data-height="33" data-media="(max-width:767px) and (-webkit-min-device-pixel-ratio:1.5), (max-width:767px) and (min-resolution:144dpi)" ></span> <!-- retina 2x mobile -->
+											<!--[if (lt IE 9) & (!IEMobile)]>
+												<span data-src="images/img10-large.png"></span>
+											<![endif]-->
+											<!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+											<noscript><img src="../images/img10-large.png" width="33" height="33" alt="image description" ></noscript>
+										</span>
+									</a>
+									<div class="client-drop">
+										<div class="drop-box">
+											<strong class="title">Andreas buchwalD</strong>
+											<ul class="list-unstyled">
+												<li><a href="#"><span class="icon icon-user"></span>my profile</a></li>
+												<li><a href="#"><span class="icon icon-gear"></span>account settings</a></li>
+												<li><a href="#"><span class="icon icon-power"></span>logout</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="client-logedin" style="display:none;">
+								<div class="logo-holder">
+									<strong class="logo"><a href="#"><img src="../images/logo.png" alt="Mintebi"></a></strong>
+									<div class="notifications-block">
+										<a class="btn btn-primary active" data-toggle="collapse" href="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
+											<i class="fa fa-bell-o"></i><span class="count">10</span>
+										</a>
+										<div class="collapse notification-drop" id="collapseExample3">
+											<div class="well">
+												<div class="title"><a href="#" class="activity active">recent activity</a> <a href="#" class="marked">marked all as read</a></div>
+												<div class="scroll-area jcf-scrollable" jcf>
+													<ul class="list-unstyled">
+														<li>
+															<a href="#">
+																<span class="icon icon-add-user"></span>YOU HAVE 5 NEW EXPERTS PITCHED
+																<time datetime="2015-01-01">34 minutes ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-flag"></span>YOUR PROJECT IS NOW IN PITCH
+																<time datetime="2015-01-01">2 days ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-trophy"></span>WELCOME TO MINTEbI
+																<time datetime="2015-01-01">1 week ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-crosshair"></span>lorem upsum sit amet
+																<time datetime="2015-01-01">2 weeks ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-add-user"></span>YOU HAVE 5 NEW EXPERTS PITCHED
+																<time datetime="2015-01-01">34 minutes ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-flag"></span>YOUR PROJECT IS NOW IN PITCH
+																<time datetime="2015-01-01">2 days ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-trophy"></span>WELCOME TO MINTEbI
+																<time datetime="2015-01-01">1 week ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-crosshair"></span>lorem upsum sit amet
+																<time datetime="2015-01-01">2 weeks ago</time>
+															</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<nav class="navbar navbar-default">
+									<!-- Brand and toggle get grouped for better mobile display -->
+									<div class="navbar-header">
+										<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-3">
+											<span class="sr-only">Toggle navigation</span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+										</button>
+									</div>
+									<!-- Collect the nav links, forms, and other content for toggling -->
+									<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-3">
+										<ul class="nav navbar-nav">
+											<li><a href="#">Create a project <span class="sr-only">(current)</span></a></li>
+											<li><a href="#">Market place</a></li>
+											<li><a href="#">Library</a></li>
+											<li><a href="#">My Mintebi</a></li>
+											<li class="dropdown">
+												<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Help</a>
+												<div class="dropdown-menu" role="menu">
+													<strong class="title">Help &amp; Resources</strong>
+													<ul class="list-unstyled">
+														<li><a href="#">FAQ</a></li>
+														<li><a href="#">Our Rules</a></li>
+														<li><a href="#">Expert handbook</a></li>
+														<li><a href="#">trust &amp; Safty</a></li>
+														<li><a href="#">Trems of use  &amp; Privacy</a></li>
+													</ul>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</nav>
+								<div class="client-login">
+									<a class="btn btn-primary">
+										<span data-picture data-alt="image description">
+											<span data-src="../images/img10-large.png" data-width="33" data-height="33"></span>
+											<span data-src="../images/img10-large2x.png" data-width="33" data-height="33" data-media="(-webkit-min-device-pixel-ratio:1.5), (min-resolution:1.5dppx)" ></span> <!-- retina 2x desktop -->
+											<span data-src="../images/img10-medium2x.png" data-width="33" data-height="33" data-media="(max-width:1023px) and (-webkit-min-device-pixel-ratio:1.5), (max-width:1023px) and (min-resolution:144dpi)" ></span> <!-- retina 2x tablet -->
+											<span data-src="../images/img10-small.png" data-width="33" data-height="33" data-media="(max-width:767px)" ></span> <!-- retina 1x mobile -->
+											<span data-src="../images/img10-small2x.png" data-width="33" data-height="33" data-media="(max-width:767px) and (-webkit-min-device-pixel-ratio:1.5), (max-width:767px) and (min-resolution:144dpi)" ></span> <!-- retina 2x mobile -->
+											<!--[if (lt IE 9) & (!IEMobile)]>
+												<span data-src="images/img10-large.png"></span>
+											<![endif]-->
+											<!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+											<noscript><img src="../images/img10-large.png" width="33" height="33" alt="image description" ></noscript>
+										</span>
+									</a>
+									<div class="client-drop">
+										<div class="drop-box">
+											<strong class="title">Andreas buchwalD</strong>
+											<ul class="list-unstyled">
+												<li><a href="#"><span class="icon icon-user"></span>my profile</a></li>
+												<li><a href="#"><span class="icon icon-gear"></span>account settings</a></li>
+												<li><a href="#"><span class="icon icon-power"></span>logout</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<main id="main" role="main">
+				
+				<!-- begin privacy-header  -->
+				<section class="privacy-header">
+					<h1>Privacy Policy</h1>
+				</section>
+				<!-- end privacy-header -->
+
+				<!-- begin privacy  -->
+				<section class="privacy">
+					<div class="privacy__section">
+						<h3>1. Introduction</h3>
+						<p>1.1. This Privacy Policy sets out how Mintebi ApS (“Mintebi”, “we”, “us”, “our”) collects, uses, shares and protects information (including personally identifiable information) obtained from Clients, Experts and visitors to our website</p>
+						<p>www.mintebi.com.</p>
+						<p>1.2. Clients are subject to Mintebi’s Client Terms & Conditions and Experts are subject to Mintebi’s Expert Terms & Conditions, both of which incorporate this policy. To the extent of any inconsistency between this Privacy Policy and the Client Terms & Conditions or Expert Terms & Conditions, the Client Terms & Conditions or the Expert Terms & Conditions will prevail. If you are neither a Client nor a Expert, by using this website you agree to the collection and use of your data in accordance with this policy.</p>
+						<p>1.3. If you do not agree to this Privacy Policy, please do not register with Mintebi or use the Website or the services provided on it.</p>
+						<p>1.4. Mintebi may change this policy from time to time without notice by updating this page. Any such changes will take effect from the time of such updating. You should check this page from time to time to ensure that you are in agreement with any changes. We will also take all reasonably practical steps to notify you specifically of any changes that materially affect the ways in which your information may be used or shared.</p>
+						<p>1.5. This policy is effective from [Time].</p>
+					</div>
+					<div class="privacy__section">
+						<h3>2. What Mintebi collects</h3>
+						<p>2.1. Experts</p>
+						<p>2.1.1. Experts registering with Mintebi are required to provide personal data, including name, address, and other contact information, as well as detailed information in respect of your academic and professional background and employment history (and other information typically vitae). If you are engaged in a Project with a Mintebi client, we will also require your payment details to be able to effect payment to you for the Project.We may collect additional information through correspondence and other interactions with you.</p>
+						<p>2.2. Clients</p>
+						<p>2.2.1. For Client registrations, we require the full name and address of the Client, a brief description of the Client’s business and the name, title, position and contact details of the designated contact.</p>
+						<p>2.3. In general</p>
+						<p>2.3.1. Experts and Clients registering with Mintebi are required to confirm their agreement to our Privacy Policy and that they agree to our use of any information which may be collected by us. By so doing you agree to our use of the information in accordance with the terms of this Privacy Policy.</p>
+						<p>2.3.2. If you wish to withdraw such consent at any time, you may do so by contacting Mintebi at info@mintebi.com. However, if you do so, you will be unable to continue to be Client or Expert.</p>
+					</div>
+					<div class="privacy__section">
+						<h3>3. What Mintebi does with the information we gather</h3>
+						<p>3.1. Mintebi uses the information which we collect about Clients and Experts to facilitate their participation in Projects.</p>
+						<p>3.2. Experts</p>
+						<p>3.2.1. If you are an Expert, Mintebi uses and analyses all information which we collect about you in order to identify Projects which may be within your field of expertise. We may disclose information about you to Clients who may wish to use you for a Project.</p>
+						<p>3.3. Clients</p>
+						<p>3.3.1. If you are a Client, we use and analyse the information which we collect about you in order to identify the most suitable Experts for the Projects. We share</p>
+						<p>may share your information with Experts in respect of actual and potential Projects for you.</p>
+						<p>3.4. In general</p>
+						<p>3.4.1. The more accurate and detailed the information provided, the better we are able to match Experts to Clients. By registering as an Expert or a Client, you agree that we may contact you by email at the address most recently notified by you to us. We may also use information collected from you to understand your needs and provide you with a better service, and in particular for the following reasons:</p>
+						<p>3.4.1.1. Internal record keeping</p>
+						<p>3.4.1.2. We may use the information to improve our products and services</p>
+						<p>3.4.1.3. We may periodically send promotional emails about new services or other information which we think you may find interesting using the email address which you have provided.</p>
+						<p>3.4.1.4. We may also disclose your information without further notice to you in the following instances: (i) if you have already authorized us to do so; (ii) if we are required to do so by applicable law or pursuant to a court or similar order; (iii) as deemed necessary, in our discretion, to protect our legal rights or property or the legal rights or property of any Expert, Client or third party; and/or (iv) in connection with a sale, merger, assignment, joint venture or other transfer or disposition of part or all of the business, assets or shares in Mintebi.</p>
+						<p>3.4.1.5. We may also use your information to contact you for market research purposes. We may contact you by email, phone or mail.</p>
+						<p>3.4.1.6. In addition, we may disclose your information to third parties if required by law, court order or by a competent regulatory authority.</p>
+					</div>
+					<div class="privacy__section">
+						<h3>4. Security</h3>
+						<p>4.1. We take the security of your personal information seriously and therefore have measures in place to minimize abuse, unauthorized access, loss and unlawful processing.</p>
+						<p>4.2. We cannot, however, guarantee the security of our servers or transmissions between our servers and your computer. Accordingly, all information which you provide to us is supplied at your own risk. Please help us keep your information secure by keeping your password and other account details confidential.</p>
+						<p>4.3. We hold all personal data on our servers within the [Placement of server(s)] We have a global network of Expertsand our Client base is international.</p>
+						<p>Accordingly, in the course of our business your information may be transmitted across borders both inside and outside the European Economic Area.</p>
+					</div>
+					<div class="privacy__section">
+						<h3>5. Cookies</h3>
+						<p>5.1. A browser cookie is a piece of information collected by the Website. It can be either persistent, if it lasts after the browser is closed, or session-based, in which case it is destroyed when the browser is closed.</p>
+						<p>5.2. You agree that Mintebi ApS may from time to time use cookies on your hard drive to store information (such as user-name, password, other personal information, e-mail address, etc.), so you do not have to retype such information each time you visit the Website. These cookies cannot be used to run programs or give your computer viruses, and the assigned cookie will be unique to you. The primary purpose of a cookie is to enable you to save time and facilitate future access to the website.</p>
+					</div>
+					<div class="privacy__section">
+						<h3>6. Controlling your personal information</h3>
+						<p>6.1. We will not sell, distribute or lease your personal information to third parties unless we have your permission or are required by law to do so. We will retain your information for so long as we consider it reasonable ro for as long as it is required by law.</p>
+						<p>6.2. If you believe that any information Mintebi is holding on you is incorrect or incomplete, please contact Mintebi as soon as possible. We will promptly correct any information that is found to be incorrect.</p>
+					</div>
+					<div class="privacy__section">
+						<h3>7. Contact</h3>
+						<p>7.1. Mintebi collects and handles your personal information in accordance with existing laws concerning the processing of personal data. Mintebi welcomes any comments, requests and queries relating to the Privacy Policy or our use of your information, which should be addressed to info@mintebi.com or Mintebi</p>
+						<p>ApS, Sankt Annae Plads 11, 1250 Copenhagen, Denmark.</p>
+					</div>
+				</section>
+				<!-- end privacy -->
+			</main>
+		</div>
+		<div class="footer-block">
+			<div class="footer-holder">
+				<div class="container-fluid">
+					<aside class="row footer-aside">
+						<div class="col-xs-12">
+							<div class="box">
+								<div class="block">
+									<nav class="column">
+										<h2>About us</h2>
+										<ul class="list-unstyled">
+											<li><a href="#">What is mintebi?</a></li>
+											<li><a href="#">Our Team</a></li>
+											<li><a href="#">Careers</a></li>
+											<li><a href="#">Contact</a></li>
+										</ul>
+									</nav>
+									<nav class="column">
+										<h2>Help</h2>
+										<ul class="list-unstyled">
+											<li><a href="#">FAQ</a></li>
+											<li><a href="#">Our Rules</a></li>
+											<li><a href="#">Expert Handbook</a></li>
+											<li><a href="#">Trust &amp; Safety</a></li>
+										</ul>
+									</nav>
+								</div>
+								<div class="footer-logo">
+									<strong class="logo"><a href="#"><img src="../images/logo2.svg" width="179" height="131" alt="Mintebi"></a></strong>
+								</div>
+							</div>
+						</div>
+					</aside>
+					<footer id="footer" class="row">
+						<div class="col-xs-12">
+							<div class="box2">
+								<div class="block1">
+									<span class="copyrights">Copyright © 2015 Mintebi APS. All rights reserved.</span>
+									<ul class="privacy-nav list-inline">
+										<li><a href="#">Terms of Use</a></li>
+										<li><a href="#">Privacy Policy</a></li>
+									</ul>
+									<address class="footer-address">Mintebi APS, Sankt Annae Plads 11, 1250 Copenhagen, Denmark</address>
+								</div>
+								<ul class="social-networks list-inline">
+									<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</footer>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade delete">
+			<div class="modal-dialog delete-projects">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><span class="icon icon-close-2"></span></span></button>
+						<h2 class="modal-title">Are you sure you want to clear your projcet</h2>
+					</div>
+					<div class="modal-body">
+						<p>This action cannot be undone and will<br> immediately cleared from the system.</p>
+					</div>
+					<div class="modal-footer">
+						<a href="#" class="btn btn-default" data-dismiss="modal">Clear</a>
+						<a href="#" class="btn btn-default cancel">Cancel</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="../js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/angular.min.js"></script>
+	<script type="text/javascript" src="../js/ngDialog.min.js"></script>
+	<script type="text/javascript" src="../js/angular.validate.js"></script>
+	<script type="text/javascript" src="../js/angular.openClose.js"></script>
+	<script type="text/javascript" src="../js/application.js"></script>
+	<script type="text/javascript" src="../js/common.js"></script>
+	<script type="text/javascript" src="../js/main.js"></script>
+	<script type="text/javascript" src="../js/jcf.angular.js"></script>
+	<script>
+		jQuery('[data-toggle="dropdown"]').each(function() {
+			var item = jQuery(this),
+				parent = item.parent();
+			 
+			parent.one('mousemove', function() {
+				parent.hover(function() {
+					parent.addClass('open');
+				}, function() {
+					parent.removeClass('open');
+				}).trigger('mouseover');
+			});
+		});
+		if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+		   var msViewportStyle = document.createElement("style")
+		   msViewportStyle.appendChild(
+		  document.createTextNode(
+			"@-ms-viewport{width:auto!important}"
+		  )
+		   )
+		   document.getElementsByTagName("head")[0].appendChild(msViewportStyle)
+		 }
+	</script>
+</body>
+</html>
