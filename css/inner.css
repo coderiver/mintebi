@@ -1587,56 +1587,58 @@
         -o-background-size: cover;
         background-size: cover; } }
 
-.c-rate__inner {
-  max-width: 1086px;
-  margin: 0 auto;
-  padding: 160px 0 140px; }
-  @media only screen and (max-width: 991px) {
-    .c-rate__inner {
-      max-width: 480px; } }
-  .c-rate__inner:after {
-    clear: both;
-    display: block;
-    content: ""; }
-.c-rate__block {
-  float: left;
-  text-align: right;
-  padding: 0 24px 0 0;
-  width: 53%; }
-  @media only screen and (max-width: 991px) {
-    .c-rate__block {
-      float: none;
-      width: 100%;
-      text-align: center;
-      padding: 0; } }
-  .c-rate__block img {
-    max-width: 100%; }
-.c-rate__text {
-  float: left;
-  width: 47%;
-  color: #0C283F;
-  padding: 10px 0; }
-  @media only screen and (max-width: 991px) {
-    .c-rate__text {
-      float: none;
-      width: 100%;
-      text-align: left;
-      max-width: 410px;
-      margin: 0 auto;
-      padding: 10px 15px; } }
-  .c-rate__text span {
-    font-size: 50px;
-    font-family: 'HelveticaNeueW01-UltLt', Arial, sans-serif;
-    display: block;
-    line-height: 1.2;
-    margin-bottom: 7px; }
-  .c-rate__text p {
-    font-size: 17px;
-    font-family: 'HelveticaNeueW01-Thin', Arial, sans-serif;
-    margin-bottom: 17px; }
+.c-rate {
+  padding: 0 15px; }
+  .c-rate__inner {
+    max-width: 1086px;
+    margin: 0 auto;
+    padding: 160px 0 140px; }
     @media only screen and (max-width: 991px) {
-      .c-rate__text p br {
-        display: none; } }
+      .c-rate__inner {
+        max-width: 480px; } }
+    .c-rate__inner:after {
+      clear: both;
+      display: block;
+      content: ""; }
+  .c-rate__block {
+    float: left;
+    text-align: right;
+    padding: 0 24px 0 0;
+    width: 53%; }
+    @media only screen and (max-width: 991px) {
+      .c-rate__block {
+        float: none;
+        width: 100%;
+        text-align: center;
+        padding: 0; } }
+    .c-rate__block img {
+      max-width: 100%; }
+  .c-rate__text {
+    float: left;
+    width: 47%;
+    color: #0C283F;
+    padding: 10px 0; }
+    @media only screen and (max-width: 991px) {
+      .c-rate__text {
+        float: none;
+        width: 100%;
+        text-align: left;
+        max-width: 410px;
+        margin: 0 auto;
+        padding: 10px 15px; } }
+    .c-rate__text span {
+      font-size: 50px;
+      font-family: 'HelveticaNeueW01-UltLt', Arial, sans-serif;
+      display: block;
+      line-height: 1.2;
+      margin-bottom: 7px; }
+    .c-rate__text p {
+      font-size: 17px;
+      font-family: 'HelveticaNeueW01-Thin', Arial, sans-serif;
+      margin-bottom: 17px; }
+      @media only screen and (max-width: 991px) {
+        .c-rate__text p br {
+          display: none; } }
 
 .tile__btn {
   color: #001936;
@@ -2819,7 +2821,8 @@
     font-size: 50px;
     color: #001936;
     font-family: 'HelveticaNeueW01-UltLt', Arial, sans-serif;
-    margin: 0 0 47px; }
+    margin: 0 0 47px;
+    max-width: 910px; }
     @media only screen and (max-width: 767px) {
       .member h2 {
         font-size: 25px;
@@ -3482,7 +3485,7 @@
         .about-quote__box span {
           font-size: 20px;
           font-family: 'HelveticaNeueW01-Thin', Arial, sans-serif; } }
-      @media only screen and (max-width: 991px) {
+      @media only screen and (max-width: 767px) {
         .about-quote__box span {
           font-size: 15px;
           text-align: center;
@@ -3700,15 +3703,31 @@ http://flickity.metafizzy.co
   background: url(../images/contact-header.jpg) no-repeat center top;
   text-align: center;
   padding: 140px 0 185px;
+  line-height: 1.2;
   -webkit-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
+  @media only screen and (max-width: 767px) {
+    .contact-header {
+      padding: 35px 15px 40px;
+      background: #0C283F; } }
   .contact-header h1 {
     margin: 0;
     font-size: 75px;
     color: #FFF;
+    font-family: 'HelveticaNeueW01-UltLt', Arial, sans-serif; }
+    @media only screen and (max-width: 767px) {
+      .contact-header h1 {
+        display: none; } }
+  .contact-header h2 {
+    font-size: 25px;
+    color: #FFF;
     font-family: 'HelveticaNeueW01-UltLt', Arial, sans-serif;
-    line-height: 1.2; }
+    margin: 0;
+    display: none; }
+    @media only screen and (max-width: 767px) {
+      .contact-header h2 {
+        display: block; } }
 
 .contact {
   line-height: 1.2;
@@ -3719,33 +3738,81 @@ http://flickity.metafizzy.co
     bottom: 0;
     left: 0;
     right: 0; }
+    @media only screen and (max-width: 767px) {
+      .contact__map {
+        display: none; } }
   .contact__inner {
-    max-width: 1348px;
+    max-width: 1378px;
     margin: 0 auto;
-    padding: 570px 0 160px; }
+    padding: 570px 15px 160px; }
+    @media only screen and (max-width: 1366px) {
+      .contact__inner {
+        padding: 448px 15px 27px; } }
+    @media only screen and (max-width: 991px) {
+      .contact__inner {
+        padding: 460px 15px 37px; } }
+    @media only screen and (max-width: 767px) {
+      .contact__inner {
+        padding: 10px 15px; } }
   .contact__block {
     background-color: #0C283F;
     -moz-border-radius: 7px;
     -webkit-border-radius: 7px;
     border-radius: 7px;
     font-size: 0;
-    padding: 0 35px;
+    padding: 20px 35px 10px;
     position: relative;
     z-index: 10; }
+    @media only screen and (max-width: 1366px) {
+      .contact__block {
+        max-width: 960px; } }
+    @media only screen and (max-width: 991px) {
+      .contact__block {
+        max-width: 526px; } }
+    @media only screen and (max-width: 767px) {
+      .contact__block {
+        background: none;
+        padding: 20px 0 10px; } }
+    .contact__block:after {
+      display: block;
+      clear: both;
+      content: ""; }
   .contact__box {
     display: inline-block;
     vertical-align: top;
-    width: 33.3%;
-    padding: 20px 20px; }
+    padding: 10px 20px; }
+    @media only screen and (max-width: 767px) {
+      .contact__box {
+        padding: 10px 0; } }
+    .contact__box.is-left {
+      float: left; }
+    .contact__box.is-right {
+      float: right; }
     .contact__box.is-big {
       width: 36.5%; }
+      @media only screen and (max-width: 1366px) {
+        .contact__box.is-big {
+          width: 55%; } }
+      @media only screen and (max-width: 991px) {
+        .contact__box.is-big {
+          width: 100%; } }
     .contact__box.is-small {
       width: 27%; }
+      @media only screen and (max-width: 1366px) {
+        .contact__box.is-small {
+          width: 45%; } }
+      @media only screen and (max-width: 991px) {
+        .contact__box.is-small {
+          width: 100%; } }
   .contact h3 {
     margin: 0 0 15px;
     font-size: 40px;
     font-family: 'HelveticaNeueW01-UltLt', Arial, sans-serif;
     color: #ffffff; }
+    @media only screen and (max-width: 767px) {
+      .contact h3 {
+        color: #0C283F;
+        font-size: 22.5px; } }
   .contact ul {
     padding: 0;
     margin: 0 0 20px;
@@ -3754,7 +3821,79 @@ http://flickity.metafizzy.co
     color: #ffffff;
     font-size: 17px;
     font-family: 'HelveticaNeueW01-Lt', Arial, sans-serif; }
+    @media only screen and (max-width: 767px) {
+      .contact li {
+        color: #0C283F;
+        font-size: 12.5px; } }
     .contact li span {
       font-family: 'HelveticaNeueW01-65Medi', Arial, sans-serif; }
+
+#main.is-error {
+  background-color: #0C283F;
+  font-size: 0;
+  text-align: center; }
+  #main.is-error:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: "";
+    width: 0;
+    height: 100%; }
+
+.page-error {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  line-height: 1.2;
+  padding: 20px 15px;
+  max-width: 500px; }
+  @media only screen and (max-width: 767px) {
+    .page-error {
+      max-width: 280px; } }
+  .page-error__logo {
+    display: inline-block;
+    font-size: 0;
+    max-width: 351px;
+    margin-bottom: 30px;
+    width: 100%; }
+    @media only screen and (max-width: 767px) {
+      .page-error__logo {
+        max-width: 245px; } }
+    .page-error__logo img {
+      width: 100%; }
+  .page-error h3, .page-error p {
+    color: #FFF; }
+  .page-error h3 {
+    font-size: 30px;
+    font-family: 'HelveticaNeueW01-UltLt', Arial, sans-serif;
+    margin: 0 0 18px; }
+    @media only screen and (max-width: 767px) {
+      .page-error h3 {
+        font-size: 22px; } }
+  .page-error p {
+    font-size: 16px;
+    font-family: 'HelveticaNeueW01-Lt', Arial, sans-serif;
+    margin: 0 0 20px; }
+    @media only screen and (max-width: 767px) {
+      .page-error p {
+        font-size: 12px; } }
+  .page-error__btn {
+    font-size: 16px;
+    color: #FFF;
+    background-color: #183E4E;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -moz-box-shadow: 0 0 21px rgba(12, 51, 92, 0.04);
+    -webkit-box-shadow: 0 0 21px rgba(12, 51, 92, 0.04);
+    box-shadow: 0 0 21px rgba(12, 51, 92, 0.04);
+    border: none;
+    outline: none;
+    padding: 10px 45px 8px; }
+    @media only screen and (max-width: 767px) {
+      .page-error__btn {
+        font-size: 14px;
+        padding: 10px 37px 8px; } }
+    .page-error__btn:hover {
+      background: #00e1bf; }
 
 /*# sourceMappingURL=inner.css.map */

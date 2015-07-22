@@ -226,6 +226,15 @@ $(document).ready(function() {
 		};
 	});
 
-	
+	if ($('.js-error-page').length) {
+		$(window).load(function() {
+			$('.js-error-page').css('height', $(window).height() - $('#header').outerHeight() - $('.footer-block').outerHeight());
+			$('.js-error-page').css('min-height', $('.page-error').outerHeight());
+		});
+		$(window).resize(function() {
+			$('.js-error-page').css('height', $(window).height() - $('#header').outerHeight() - $('.footer-block').outerHeight());
+			$('.js-error-page').css('min-height', $('.page-error').outerHeight());
+		});		
+	};
 
 });

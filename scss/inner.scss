@@ -2102,6 +2102,7 @@ $retina-hd: 2.5; // hd retina > 2.5x
 }
 
 .c-rate {
+	padding: 0 15px;
 	
 	&__inner {
 		max-width: 1086px;
@@ -3748,6 +3749,7 @@ $retina-hd: 2.5; // hd retina > 2.5x
 		color: #001936;
 		font-family: $font-ulight;
 		margin: 0 0 47px;
+		max-width: 910px;
 		@include breakpoint($mobile) {
 			font-size: 25px;
 			margin: 0 0 35px;
@@ -4586,7 +4588,7 @@ $retina-hd: 2.5; // hd retina > 2.5x
 				font-size: 20px;
 				font-family: $font-thin;
 			}
-			@include breakpoint($tablet) {
+			@include breakpoint($mobile) {
 				font-size: 15px;
 				text-align: center;
 				padding: 2px 0;
@@ -4882,16 +4884,34 @@ http://flickity.metafizzy.co
 	background: url(../images/contact-header.jpg) no-repeat center top;
 	text-align: center;
 	padding: 140px 0 185px;
+	line-height: 1.2;
 	-webkit-background-size: cover;
 	     -o-background-size: cover;
 	        background-size: cover;
+	@include breakpoint($mobile) {
+		padding: 35px 15px 40px;
+		background: #0C283F;
+	}
 	
 	h1 {
 		margin: 0;
 		font-size: 75px;
 		color: #FFF;
 		font-family: $font-ulight;
-		line-height: 1.2;
+		@include breakpoint($mobile) {
+			display: none;
+		}
+	}
+
+	h2 {
+		font-size: 25px;
+		color: #FFF;
+		font-family: $font-ulight;
+		margin: 0;
+		display: none;
+		@include breakpoint($mobile) {
+			display: block;
+		}
 	}
 }
 
@@ -4905,12 +4925,24 @@ http://flickity.metafizzy.co
 		bottom: 0;
 		left: 0;
 		right: 0;
+		@include breakpoint($mobile) {
+			display: none;
+		}
 	}
 	
 	&__inner {		
-		max-width: 1348px;
+		max-width: 1378px;
 		margin: 0 auto;
-		padding: 570px 0 160px;
+		padding: 570px 15px 160px;
+		@include breakpoint($desktop-large) {
+			padding: 448px 15px 27px;
+		}
+		@include breakpoint($tablet) {
+			padding: 460px 15px 37px;
+		}
+		@include breakpoint($mobile) {
+			padding: 10px 15px;
+		}
 	}
 
 	&__block {
@@ -4919,23 +4951,64 @@ http://flickity.metafizzy.co
 		-webkit-border-radius: 7px;
 		border-radius: 7px;
 		font-size: 0;
-		padding: 0 35px;
+		padding: 20px 35px 10px;
 		position: relative;
-		z-index: 10;
+		z-index: 10;		
+		
+		@include breakpoint($desktop-large) {
+			max-width: 960px;
+		}
+		@include breakpoint($tablet) {
+			max-width: 526px;
+		}
+		@include breakpoint($mobile) {
+			background: none;
+			padding: 20px 0 10px;
+		}
+
+		&:after {
+			display: block;
+			clear: both;
+			content: "";
+		}
 	}
 
 	&__box {
 		display: inline-block;
 		vertical-align: top;
-		width: 33.3%;
-		padding: 20px 20px;
+		padding: 10px 20px;
+		@include breakpoint($mobile) {
+			padding: 10px 0;
+		}
+		
+		&.is-left {
+			float: left;
+		}
+
+		&.is-right {
+			float: right;
+		}
 		
 		&.is-big {
-			width: 36.5%;
+			width: 36.5%;	
+				
+			@include breakpoint($desktop-large) {
+				width: 55%;
+			}
+			@include breakpoint($tablet) {
+				width: 100%;
+			}
 		}
 
 		&.is-small {
-			width: 27%;
+			width: 27%;		
+			
+			@include breakpoint($desktop-large) {
+				width: 45%;
+			}
+			@include breakpoint($tablet) {
+				width: 100%;
+			}
 		}
 	}
 	
@@ -4944,6 +5017,10 @@ http://flickity.metafizzy.co
 		font-size: 40px;
 		font-family: $font-ulight;
 		color: #ffffff;
+		@include breakpoint($mobile) {
+			color: #0C283F;
+			font-size: 22.5px;
+		}
 	}
 
 	ul {
@@ -4956,9 +5033,101 @@ http://flickity.metafizzy.co
 		color: #ffffff;
 		font-size: 17px;
 		font-family: $font-light;
+		@include breakpoint($mobile) {
+			color: #0C283F;
+			font-size: 12.5px;
+		}
 		
 		span {
 			font-family: $font-medium;
+		}
+	}
+}
+
+#main {
+	&.is-error {
+		background-color: #0C283F;
+		font-size: 0;
+		text-align: center;
+		
+		&:before {
+			display: inline-block;
+			vertical-align: middle;
+			content: "";
+			width: 0;
+			height: 100%;
+		}
+	}
+}
+
+.page-error {
+	display: inline-block;
+	vertical-align: middle;
+	width: 100%;
+	line-height: 1.2;
+	padding: 20px 15px;
+	max-width: 500px;
+	@include breakpoint($mobile) {
+		max-width: 280px;
+	}
+	
+	&__logo {
+		display: inline-block;
+		font-size: 0;
+		max-width: 351px;
+		margin-bottom: 30px;
+		width: 100%;
+		@include breakpoint($mobile) {
+			max-width: 245px;
+		}
+		
+		img {
+			width: 100%;
+		}
+	}
+
+	h3, p {
+		color: #FFF;
+	}
+
+	h3 {
+		font-size: 30px;
+		font-family: $font-ulight;
+		margin: 0 0 18px;
+		@include breakpoint($mobile) {
+			font-size: 22px;
+		}
+	}
+
+	p {
+		font-size: 16px;
+		font-family: $font-light;
+		margin: 0 0 20px;
+		@include breakpoint($mobile) {
+			font-size: 12px;
+		}
+	}
+
+	&__btn {
+		font-size: 16px;
+		color: #FFF;
+		background-color: #183E4E;
+		-moz-border-radius: 4px;
+		-webkit-border-radius: 4px;
+		border-radius: 4px;
+		-moz-box-shadow: 0 0 21px rgba(12, 51, 92, 0.04);
+		-webkit-box-shadow: 0 0 21px rgba(12, 51, 92, 0.04);
+		box-shadow: 0 0 21px rgba(12, 51, 92, 0.04);
+		border: none;
+		outline: none;
+		padding: 10px 45px 8px;
+		@include breakpoint($mobile) {
+			font-size: 14px;
+			padding: 10px 37px 8px;
+		}
+
+		&:hover {
+			background: #00e1bf;
 		}
 	}
 }
