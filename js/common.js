@@ -237,4 +237,16 @@ $(document).ready(function() {
 		});		
 	};
 
+
+	$('.reports__nav a').click(function(event) {
+		$('.reports__nav a').removeClass('is-active');
+		$(this).addClass('is-active');
+		ind = $(this).parent().index();
+
+		$('.rt-item').hide();
+		$('.rt-item').eq(ind).show();
+
+		return false;
+	});
+
 });

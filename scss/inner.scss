@@ -5131,3 +5131,148 @@ http://flickity.metafizzy.co
 		}
 	}
 }
+
+
+.reports{
+	background: #0D273E;
+	padding: 260px 0;
+	@include breakpoint($tablet) {
+		padding: 100px 0;
+	}
+	.reports__inner{
+		max-width: 1194px;
+		margin: 0 auto;
+		overflow: hidden;
+		// border: 1px solid red;
+		@include breakpoint($tablet) {
+			// max-width: 670px;
+		}
+	}
+	.reports__pic{
+		float: left;
+		width: 50%;
+		@include breakpoint($tablet) {
+			float: none;
+			width: 50%;
+			margin: 0 auto;
+		}
+		img{
+			width: 100%;
+			display: block;
+		}
+	}
+	.reports__content{
+		float: right;
+		width: 45%;
+		padding-right: 3%;
+		padding-top: 40px;
+		@include breakpoint($tablet) {
+			float: none;
+			width: 90%;
+			margin: 0 auto;
+			padding-top: 15px;
+			padding-right: 0;
+		}
+		h2{
+			font-size: 50px;
+			color: #fff;
+		}
+		p{
+			font-size: 15px;
+			color: #F5F6F8;
+		}
+	}
+	.reports__imp{
+		margin-bottom: 72px;
+	}
+	.rt-item{
+	
+	}
+	.reports__nav{
+		float: left;
+		width: 90px;
+		margin-right: 70px;
+		@include breakpoint($mobile){
+			float: none;
+			width: auto;
+			margin-right: 0;
+		}
+		ul{
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			li{
+				margin-bottom: 25px;
+				height: 74px;
+				cursor: pointer;
+				@include breakpoint($mobile){
+					display: inline-block;
+					vertical-align: middle;
+					width: 90px;
+				}
+				a{
+					display: block;
+					height: 74px;
+					background-repeat: no-repeat;
+				}
+				@for $i from 1 through 4 {
+					.icon#{$i} {
+						background-image: url(../images/icon#{$i}.png);
+						&:hover,&.is-active{
+							background-image: url(../images/icon#{$i}a.png);
+						}
+					}
+				}
+			}
+		}
+	}
+	.reports__texts{
+		overflow: hidden;
+		h3{
+			font-size: 40px;
+			color: #F0EBE7;
+			margin-top: 0;
+			padding-top: 0;
+			margin-bottom: 15px;
+		}
+		ul{
+			font-size: 15px;
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			color: #DBD8D6;
+			margin-bottom: 10px;
+			li{
+				padding-left: 20px;
+				position: relative;
+				margin-bottom: 17px;
+				&:before{
+					position: absolute;
+					content: ' ';
+					top: 7px;
+					left: 0;
+					width: 7px;
+					height: 7px;
+					background: #24E0BF;
+					border-radius: 7px;
+				}
+			}
+		}
+	}
+	.reports__go{
+		display: inline-block;
+		width: 180px;
+		height: 50px;
+		line-height: 50px;
+		background: #A0A3AA;
+		color: #fff;
+		text-align: center;
+		margin-left: 20px;
+		border-radius: 6px;
+		font-size: 17px;
+		text-decoration: none;
+	}
+}
+
+
+
