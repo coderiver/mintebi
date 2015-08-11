@@ -1,0 +1,88 @@
+#main.is-handbook {
+  background-color: #0C283F;
+}
+
+.handbook {
+  padding: 20px 100px;
+  max-width: 1546px;
+  margin: 0 auto;
+  position: relative;
+}
+@media only screen and (max-width: 991px) {
+  .handbook {
+    padding: 20px 60px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .handbook {
+    padding: 0 20px;
+  }
+}
+.handbook__img {
+  position: absolute;
+  top: 20px;
+  right: 0;
+}
+@media only screen and (max-width: 991px) {
+  .handbook__img {
+    width: 140%;
+    position: static;
+    margin-bottom: -30%;
+  }
+}
+.handbook__inner {
+  padding: 200px 0;
+  max-width: 530px;
+  position: relative;
+  z-index: 2;
+}
+@media only screen and (max-width: 1500px) {
+  .handbook__inner {
+    max-width: 430px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .handbook__inner {
+    padding: 30px 0 0;
+    margin: 0 0 -25%;
+  }
+}
+.handbook h3 {
+  margin: 0 0 20px;
+  font-size: 33px;
+  color: #FFF;
+  max-width: 300px;
+  line-height: 1.3;
+}
+@media only screen and (max-width: 1500px) {
+  .handbook h3 {
+    font-size: 30px;
+  }
+}
+.handbook p {
+  margin: 0 0 25px;
+  font-size: 18px;
+  font-family: "HelveticaNeueW01-Lt", Arial, sans-serif;
+  color: #FFF;
+  line-height: 1.3;
+}
+@media only screen and (max-width: 1500px) {
+  .handbook p {
+    font-size: 16px;
+  }
+}
+.handbook__btn {
+  font-size: 17px;
+  color: #fff;
+  font-family: "HelveticaNeueW82-Regula", Arial, sans-serif;
+  padding: 9px 36px 8px;
+  border: none;
+  background-color: #183E4E;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  -moz-box-shadow: 0 0 21px rgba(12, 51, 92, 0.04);
+  -webkit-box-shadow: 0 0 21px rgba(12, 51, 92, 0.04);
+  box-shadow: 0 0 21px rgba(12, 51, 92, 0.04);
+  outline: none;
+}

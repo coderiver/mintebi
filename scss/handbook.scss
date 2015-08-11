@@ -1,0 +1,115 @@
+$font-light: 'HelveticaNeueW01-Lt', Arial, sans-serif;
+$font-thin-italic: 'HelveticaNeueThin-Italic', Arial, sans-serif;
+$font-ulight: 'HelveticaNeueW01-UltLt', Arial, sans-serif;
+$font-thin: 'HelveticaNeueW01-Thin', Arial, sans-serif;
+$font-medium: 'HelveticaNeueW01-65Medi', Arial, sans-serif;
+$font-reg: 'HelveticaNeueW82-Regula', Arial, sans-serif;
+$font-bold: 'HelveticaNeue-Bold', Arial, sans-serif;
+
+$mobile2: 479px;  // mobile 479px and less 
+$mobile: 767px;  // mobile 767px and less 
+$tablet: 991px; // tablet 992px {desktop - 1} and less 
+$desktop: 1050px; // desktop 1009px {desktop - 1} and less 
+$desktop2: 1240px; // desktop 1240px {desktop - 1} and less 
+$desktop-large: 1366px; // desktop 1366px {desktop - 1} and less 
+$retina: 1.5;    // standart retina > 1.5x
+$retina-hd: 2.5; // hd retina > 2.5x
+// breakpoints mixin
+@mixin breakpoint($rule){
+	@if ($rule == $retina or $rule == $retina-hd){
+		@media only screen and ( min-resolution : #{$retina*96} ), ( -webkit-min-device-pixel-ratio : #{$retina} ){
+		 @content;
+		}
+	}
+	@else{
+		@media only screen and (max-width: #{$rule}){
+		 @content;
+		}  
+	}
+}
+#main {
+	&.is-handbook {
+		background-color: #0C283F;
+	}
+}
+
+.handbook {
+	padding: 20px 100px;
+	max-width: 1546px;
+	margin: 0 auto;
+	position: relative;
+	@include breakpoint($tablet) {
+		padding: 20px 60px;
+	}
+	@include breakpoint($mobile) {
+		padding: 0 20px;
+	}
+	
+	&__img {
+		position: absolute;
+		top: 20px;
+		right: 0;
+		
+		@include breakpoint($tablet) {
+			width: 140%;
+			position: static;
+			margin-bottom: -30%;
+		}
+	}
+	
+	&__inner {
+		padding: 200px 0;
+		max-width: 530px;
+		position: relative;
+		z-index: 2;
+		
+		@media only screen and (max-width: 1500px) {
+			max-width: 430px;
+		}
+
+		@include breakpoint($tablet) {
+			padding: 30px 0 0;
+			margin: 0 0 -25%;
+		}
+	}
+	
+	h3 {
+		margin: 0 0 20px;
+		font-size: 33px;
+		color: #FFF;
+		max-width: 300px;
+		line-height: 1.3;
+		
+		@media only screen and (max-width: 1500px) {
+			font-size: 30px;
+		}
+	}
+
+	p {
+		margin: 0 0 25px;
+		font-size: 18px;
+		font-family: $font-light;
+		color: #FFF;
+		line-height: 1.3;
+		
+		@media only screen and (max-width: 1500px) {
+			font-size: 16px;
+		}
+	}
+
+	&__btn {
+		font-size: 17px;
+		color: #fff;
+		font-family: $font-reg;	
+		padding: 9px 36px 8px;
+		border: none;
+		background-color: #183E4E;
+		-moz-border-radius: 4px;
+		-webkit-border-radius: 4px;
+		border-radius: 4px;
+		-moz-box-shadow: 0 0 21px rgba(12, 51, 92, 0.04);
+		-webkit-box-shadow: 0 0 21px rgba(12, 51, 92, 0.04);
+		box-shadow: 0 0 21px rgba(12, 51, 92, 0.04);
+		outline: none;
+	}
+}
