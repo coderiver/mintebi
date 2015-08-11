@@ -249,4 +249,13 @@ $(document).ready(function() {
 		return false;
 	});
 
+	if ($('.js-signup-main').length) {
+        $(window).load(function() {
+            $('.js-signup-main').css('min-height', $('body').outerHeight() - $('#header').outerHeight() - $('.footer-block').outerHeight());          
+        });
+        $(window).resize(function() {
+            $('.js-signup-main').css('min-height', $('body').outerHeight() - $('#header').outerHeight() - $('.footer-block').outerHeight());          
+        });
+    };
+
 });
