@@ -98,6 +98,13 @@ $mq-breakpoints: (
 @font-face {
 	@include fontface(icomoon, icomoon)
 }
+%clearfix {
+  &:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}
 
 [class^="icon-"], [class*=" icon-"] {
 	font-family: 'icomoon';
@@ -711,7 +718,7 @@ body {
 }
 
 .non-logedin {
-	@extend %clearfix;
+	@include clearfix;
 	@include breakpoint($desktop-large) {
 		padding: 1px 1.4% 0 1.7%;
 	}
@@ -727,7 +734,13 @@ body {
 		}
 	}
 }
-
+@mixin clearfix {
+  &:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}
 .navbar {
 	float: right;
 	width: 86.7%;
@@ -739,7 +752,7 @@ body {
 	@include breakpoint($mobile) {
 		float: none;
 		width: 100%;
-		@extend %clearfix;
+		@include clearfix; 
 	}
 }
 
@@ -807,7 +820,7 @@ body {
 	margin-right: -5px;
 	@include breakpoint($mobile) {
 		float: none;
-		@extend %clearfix;
+		@include clearfix;
 		width: 100%;
 		padding: 0 20px 25px !important;
 	}
@@ -967,7 +980,7 @@ body {
 }
 
 .expert-logedin {
-	@extend %clearfix;
+	@include clearfix;
 	@include breakpoint($desktop-large) {
 		padding: 1px 1.4% 0 1.7%;
 	}
@@ -984,7 +997,7 @@ body {
 			float: none;
 			width: 100%;
 			margin: 0 0 20px;
-			@extend %clearfix;
+			@include clearfix;
 			@include vertical(inline-block, top);
 		}
 	}
@@ -1002,12 +1015,12 @@ body {
 		@include breakpoint($mobile) {
 			width: 100%;
 			float: none;
-			@extend %clearfix;
+			@include clearfix;
 			padding: 0 20px;
 		}
 	}
 	.navbar-nav {
-		@extend %clearfix;
+		@include clearfix;
 		text-align: center;
 		margin: 0;
 		float: none;
@@ -1042,7 +1055,7 @@ body {
 }
 
 .client-logedin {
-	@extend %clearfix;
+	@include clearfix;
 	@include breakpoint($desktop-large) {
 		padding: 1px 1.4% 0 1.7%;
 	}
@@ -1062,7 +1075,7 @@ body {
 			float: none;
 			width: 100%;
 			margin: 0 0 20px;
-			@extend %clearfix;
+			@include clearfix;
 			@include vertical(inline-block, top);
 		}
 	}
@@ -1080,12 +1093,12 @@ body {
 		@include breakpoint($mobile) {
 			width: 100%;
 			float: none;
-			@extend %clearfix;
+			@include clearfix;
 			padding: 0 20px;
 		}
 	}
 	.navbar-nav {
-		@extend %clearfix;
+		@include clearfix;
 		text-align: center;
 		margin: 0;
 		float: none;
@@ -1555,7 +1568,7 @@ body {
 }
 
 .main-banner {
-	@extend %clearfix;
+	@include clearfix;
 	@extend %backgroundreset;
 	@include element2(before, 0, 0, 0, 0);
 	z-index: 1;
@@ -1586,7 +1599,7 @@ body {
 		}
 	}
 	.holder {
-		@extend %clearfix;
+		@include clearfix;
 		padding: 0 21.4% 0 21.9%;
 		margin: 0 0 51px;
 		@media only screen and (max-width: 1366px) {
@@ -1613,7 +1626,7 @@ body {
 	@include breakpoint($mobile) {
 		float: none;
 		width: 100%;
-		@extend %clearfix;
+		@include clearfix;
 		margin: 0 0 20px;
 	}
 	.alignleft {
@@ -1790,7 +1803,7 @@ body {
 }
 
 .info-frame {
-	@extend %clearfix;
+	@include clearfix;
 	width: 103%;
 	@include breakpoint($tablet) {
 		padding: 0 0 0 21px;
@@ -1980,7 +1993,7 @@ body {
 		}
 	}
 	.info-box {
-		@extend %clearfix;
+		@include clearfix;
 
 		@include breakpoint($desktop2) {
 			margin: 0 0 10px;
@@ -2056,7 +2069,7 @@ body {
 }
 
 .client-info {
-	@extend %clearfix;
+	@include clearfix;
 	margin: 0 0 10px;
 	color: $link-color;
 	font-size: 11px;
@@ -2084,7 +2097,7 @@ body {
 		}
 	}
 	.tooltip {
-		@extend %clearfix;
+		@include clearfix;
 		right: auto;
 		left: -53px;
 		top: 100%;
@@ -2127,7 +2140,7 @@ body {
 	line-height: 12px;
 	margin: 0 0 10px;
 	text-transform: capitalize;
-	@extend %clearfix;
+	@include clearfix;
 	position: relative;
 
 	li {
@@ -2174,7 +2187,7 @@ body {
 .buttons-nav {
 	margin: 0 -22px;
 	position: relative;
-	@extend %clearfix;
+	@include clearfix;
 	border-top: 1px solid #d9dfe6;
 
 	li {
@@ -2274,7 +2287,7 @@ body {
 .footer-holder {
 	max-width: 1308px;
 	margin: 0 auto;
-	@extend %clearfix;
+	@include clearfix;
 	padding: 24px 0 0;
 
 	@include breakpoint($mobile) {
@@ -2288,7 +2301,7 @@ body {
 .footer-aside {
 	margin-bottom: 21px;
 	.box {
-		@extend %clearfix;
+		@include clearfix;
 		@include breakpoint($desktop-large) {
 			padding: 0 2.3% 0 2.5%;
 		}
@@ -2316,7 +2329,7 @@ body {
 			padding-top: 30px;
 			text-align: center;
 			float: none;
-			@extend %clearfix;
+			@include clearfix;
 		}
 	}
 	.logo {
@@ -2409,7 +2422,7 @@ body {
 		margin: 0;
 	}
 	.box2 {
-		@extend %clearfix;
+		@include clearfix;
 		@include breakpoint($desktop-large) {
 			padding: 0 3.0% 0 2.5%;
 		}
@@ -2625,13 +2638,13 @@ body {
 		}
 	}
 	.frame {
-		@extend %clearfix;
+		@include clearfix;
 		margin: 0;
 	}
 }
 
 .profile-heading {
-	@extend %clearfix;
+	@include clearfix;
 	margin: 0 0 18px -2px;
 
 	h2 {
@@ -2925,7 +2938,7 @@ body {
 }
 
 .market-banner {
-	@extend %clearfix;
+	@include clearfix;
 	@extend %backgroundreset;
 	@include element2(before, 0, 0, 0, 0);
 	z-index: 1;
@@ -2936,7 +2949,7 @@ body {
 }
 
 .market-block {
-	@extend %clearfix;
+	@include clearfix;
 	height: 100%;
 	position: relative;
 	color: $white;
@@ -2944,7 +2957,7 @@ body {
 }
 
 .market-form-block {
-	@extend %clearfix;
+	@include clearfix;
 }
 
 .buttons-holder {
@@ -2982,7 +2995,7 @@ body {
 }
 
 .market-search {
-	@extend %clearfix;
+	@include clearfix;
 	padding: 0 9px 50px;
 	@extend %postionreset;
 
@@ -3035,7 +3048,7 @@ body {
 }
 
 .advance-holder {
-	@extend %clearfix;
+	@include clearfix;
 
 	.buttons-holder {
 		padding: 18px 4px 9px;
@@ -3043,13 +3056,13 @@ body {
 }
 
 .advance-natural {
-	@extend %clearfix;
+	@include clearfix;
 
 	&.advance {
 		min-height: 246px;
 	}
 	.advance-holder {
-		@extend %clearfix;
+		@include clearfix;
 	}
 }
 
@@ -3674,7 +3687,7 @@ body {
 		margin: -2px 0 0;
 	}
 	.form-row {
-		@extend %clearfix;
+		@include clearfix;
 		margin: 0 0 5px;
 		position: relative;
 
@@ -3813,7 +3826,7 @@ body {
 }
 
 .report-nav {
-	@extend %clearfix;
+	@include clearfix;
 	margin: 0;
 	padding: 0 0 17px;
 	font-size: 10px;
@@ -4166,7 +4179,7 @@ body > .jcf-select-drop.jcf-drop-flipped {
 }
 
 .radio-buttons {
-	@extend %clearfix;
+	@include clearfix;
 	.project-radio {
 		display: block;
 		background: $input-bg;
@@ -4201,7 +4214,7 @@ body > .jcf-select-drop.jcf-drop-flipped {
 	border-radius: 15px;
 	background: $suva-gray3;
 	@include size(100%, 4px);
-	@extend %clearfix;
+	@include clearfix;
 
 	.progress-bar {
 		border-radius: 15px 0 0 15px;
@@ -4522,7 +4535,7 @@ body > .jcf-select-drop.jcf-drop-flipped {
 
 .poke-buttons {
 	padding: 0;
-	@extend %clearfix;
+	@include clearfix;
 
 	@include breakpoint($mobile) {
 		padding: 0;
@@ -4627,7 +4640,7 @@ body > .jcf-select-drop.jcf-drop-flipped {
 }
 
 .poke-experts {
-	@extend %clearfix;
+	@include clearfix;
 	margin: 0 0 10px;
 	padding: 13px 19px 10px;
 	width: 100%;
@@ -4827,7 +4840,7 @@ body > .jcf-select-drop.jcf-drop-flipped {
 		}
 	}
 	.tbody {
-		@extend %clearfix;
+		@include clearfix;
 
 		@include breakpoint($mobile) {
 			display: block;
@@ -4838,7 +4851,7 @@ body > .jcf-select-drop.jcf-drop-flipped {
 		}
 	}
 	.table-row {
-		@extend %clearfix;
+		@include clearfix;
 		background: $light-gray;
 		border-radius: 9px;
 		margin: 0 0 3px;
@@ -4859,7 +4872,7 @@ body > .jcf-select-drop.jcf-drop-flipped {
 		width: 14.4%;
 
 		@include breakpoint($mobile) {
-			@extend %clearfix;
+			@include clearfix;
 			float: none;
 			clear: both;
 			width: 100% !important;
@@ -5100,11 +5113,11 @@ body > .jcf-select-drop.jcf-drop-flipped {
 
 .withdraw-form {
 	margin: 0;
-	@extend %clearfix;
+	@include clearfix;
 
 	.form-group {
 		margin: 0 0 10px;
-		@extend %clearfix;
+		@include clearfix;
 
 		label {
 			display: block;
@@ -5133,7 +5146,7 @@ body > .jcf-select-drop.jcf-drop-flipped {
 			@include breakpoint($mobile) {
 				width: 100%;
 				float: none;
-				@extend %clearfix;
+				@include clearfix;
 				margin: 0 0 10px;
 			}
 			&:first-child {
@@ -5186,7 +5199,7 @@ body > .jcf-select-drop.jcf-drop-flipped {
 			@include breakpoint($mobile) {
 				width: 100%;
 				float: none;
-				@extend %clearfix;
+				@include clearfix;
 				margin: 0 0 10px;
 			}
 		}
@@ -6167,6 +6180,33 @@ input[type=number].form-input, input[type=text].form-input, input[type=password]
 input:-moz-submit-invalid, input:required, input:invalid {
 	border-color: transparent;
 	box-shadow: none;
+}
+.wanttowork{
+	text-align: center;
+	padding: 60px 0; 
+	.wanttowork__icon{
+		display: inline-block;
+		vertical-align: middle;
+		margin-bottom: 20px;
+		width: 84px;
+		height: 36px;
+		background:  url(../images/key.png) no-repeat 0 0;
+		-webkit-background-size: contain;
+		     -o-background-size: contain;
+		        background-size: contain;
+	}
+	h3{
+		font-size: 24px;
+		text-align: center;
+		color: #CCD4DC;
+		margin-bottom: 7px;
+		margin-top: 0;
+	}
+	p{
+		text-align: center;
+		font-size: 12px;
+		color: #D4DCE4;
+	}
 }
 
 @import "signup";
