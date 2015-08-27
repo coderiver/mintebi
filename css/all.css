@@ -7010,6 +7010,14 @@ input:-moz-submit-invalid, input:required, input:invalid {
     -webkit-background-size: contain;
     -o-background-size: contain;
     background-size: contain; }
+  .wanttowork .wanttowork__icon1 {
+    width: 96px;
+    height: 99px;
+    background-image: url(../images/loading.png); }
+  .wanttowork .wanttowork__icon2 {
+    width: 115px;
+    height: 94px;
+    background-image: url(../images/check.png); }
   .wanttowork h3 {
     font-size: 24px;
     text-align: center;
@@ -7020,6 +7028,45 @@ input:-moz-submit-invalid, input:required, input:invalid {
     text-align: center;
     font-size: 12px;
     color: #D4DCE4; }
+
+.pitching h3 {
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 25px; }
+.pitching .pitching__right {
+  float: right;
+  width: 40%; }
+  .pitching .pitching__right .banner-rattings {
+    padding-top: 0;
+    color: #031A34; }
+    .pitching .pitching__right .banner-rattings p, .pitching .pitching__right .banner-rattings span, .pitching .pitching__right .banner-rattings .rattings {
+      color: #031A34; }
+    .pitching .pitching__right .banner-rattings p {
+      font-size: 10px; }
+  .pitching .pitching__right h2 {
+    font-size: 24px; }
+.pitching .pitching__user {
+  background: #E5E8EE;
+  border-radius: 8px;
+  padding: 26px;
+  margin-bottom: 10px; }
+  .pitching .pitching__user:after {
+    content: " ";
+    display: block;
+    clear: both; }
+.pitching .button-reset {
+  background: #A0A3AA; }
+.pitching textarea {
+  height: 100px;
+  padding: 15px;
+  background: #E7EAF0;
+  border-radius: 8px;
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+  font-size: 12px;
+  color: #979BA3; }
 
 #wrapper.is-bg #main {
   background: url(../images/bg-man3.jpg) no-repeat bottom center;
