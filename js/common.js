@@ -160,8 +160,7 @@ $(document).ready(function() {
 	$(window).load(function(){
 		visibility();
 	});
-
-	$(window).load(function() {
+	function teambg(){
 		if ($('.js-team-bg').length) {
 			if ($(window).width() > 991) {
 				if ($('.team__text').height() > $('.js-team-slider').outerHeight()) {
@@ -170,9 +169,23 @@ $(document).ready(function() {
 				else {
 					$('.js-team-bg').css('min-height', $('.js-team-slider').outerHeight());
 				};
-				$('.js-team-bg').css('height', $(window).height() - $('#header').outerHeight() - $('.footer-block').outerHeight());
+				$('.js-team-bg').css('height', $(window).height() - $('#header').outerHeight());
 			};		
 		};
+	}
+	$(window).load(function() {
+		// if ($('.js-team-bg').length) {
+		// 	if ($(window).width() > 991) {
+		// 		if ($('.team__text').height() > $('.js-team-slider').outerHeight()) {
+		// 			$('.js-team-bg').css('min-height', $('.team__text').outerHeight());
+		// 		}
+		// 		else {
+		// 			$('.js-team-bg').css('min-height', $('.js-team-slider').outerHeight());
+		// 		};
+		// 		$('.js-team-bg').css('height', $(window).height() - $('#header').outerHeight() - $('.footer-block').outerHeight());
+		// 	};		
+		// };
+		teambg()
 		if ($('.js-team-slider').length) {
 			if ($(window).width() < 975) {
 				if ($('.js-team-slider').width() > $('.team__user').width()*5) {
@@ -193,18 +206,9 @@ $(document).ready(function() {
 			};
 		};
 	});
+
 	$(window).resize(function() {
-		if ($('.js-team-bg').length) {
-			if ($(window).width() > 991) {
-				if ($('.team__text').height() > $('.js-team-slider').outerHeight()) {
-					$('.js-team-bg').css('min-height', $('.team__text').outerHeight());
-				}
-				else {
-					$('.js-team-bg').css('min-height', $('.js-team-slider').outerHeight());
-				};
-				$('.js-team-bg').css('height', $(window).height() - $('#header').outerHeight() - $('.footer-block').outerHeight());
-			};		
-		};
+		teambg()
 		if ($('.js-team-slider').length) {
 			if ($(window).width() < 975) {
 				if ($('.js-team-slider').width() > $('.team__user').width()*5) {
