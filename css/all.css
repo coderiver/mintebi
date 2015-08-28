@@ -7068,6 +7068,59 @@ input:-moz-submit-invalid, input:required, input:invalid {
   font-size: 12px;
   color: #979BA3; }
 
+.membershipbody {
+  margin-top: 20px; }
+  .membershipbody .membershipbody__link {
+    display: block;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    background: #9EA5AC;
+    font-size: 24px;
+    color: #fff;
+    font-family: "HelveticaNeueW01-Thin",sans-serif;
+    text-decoration: none;
+    padding: 16px 0 16px 20px;
+    position: relative; }
+    .membershipbody .membershipbody__link:hover {
+      background: #838b94; }
+    .membershipbody .membershipbody__link:before {
+      content: ' ';
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      margin-top: -15px;
+      width: 30px;
+      height: 30px;
+      background: url(../images/svg/next.svg) no-repeat 0 0;
+      background-size: contain; }
+  .membershipbody .membershipbody__info {
+    background: #05273F;
+    border-radius: 8px;
+    padding: 40px 0 50px 20px;
+    color: #C4CDCE;
+    overflow: hidden;
+    position: relative; }
+    .membershipbody .membershipbody__info dt {
+      font-size: 20px;
+      font-family: "HelveticaNeueW01-Thin",sans-serif;
+      font-weight: normal; }
+    .membershipbody .membershipbody__info dd {
+      font-size: 14px; }
+    .membershipbody .membershipbody__info dl {
+      margin-bottom: 18px;
+      position: relative;
+      z-index: 2; }
+    .membershipbody .membershipbody__info:before {
+      z-index: 1;
+      content: ' ';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: url(../images/logo2-green.svg) no-repeat 50% 50%;
+      background-size: contain;
+      right: -50%;
+      top: 0; }
+
 #wrapper.is-bg #main {
   background: url(../images/bg-man3.jpg) no-repeat bottom center;
   -webkit-background-size: cover;
