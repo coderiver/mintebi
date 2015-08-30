@@ -7121,6 +7121,172 @@ input:-moz-submit-invalid, input:required, input:invalid {
       right: -50%;
       top: 0; }
 
+.pj {
+  max-width: 768px;
+  margin: 30px auto;
+  background: #F5F6F8;
+  padding: 30px 25px;
+  border-radius: 10px; }
+  .pj .tile {
+    margin-bottom: 20px; }
+
+.tile__request {
+  color: #FFF;
+  font-size: 11px;
+  background-color: #FFFFFF;
+  border: none;
+  width: 26%;
+  box-sizing: border-box;
+  padding: 0 15px;
+  line-height: 42px;
+  text-align: center;
+  float: left;
+  outline: none;
+  border-bottom-left-radius: 6px;
+  color: #001935;
+  cursor: pointer; }
+  .tile__request:hover {
+    background: #0D273E;
+    color: #fff; }
+
+.tile__rate {
+  color: #FFF;
+  font-size: 11px;
+  background-color: #FFFFFF;
+  border: none;
+  width: 24%;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 42px;
+  float: left;
+  cursor: pointer;
+  outline: none;
+  color: #001935;
+  border-left: 1px solid #D9DFE6; }
+
+.tile__down, .tile__workinprogress {
+  width: 50%; }
+
+.tile__workinprogress {
+  color: #FFF;
+  font-size: 11px;
+  background-color: #A0A3AA;
+  border: none;
+  width: 50%;
+  box-sizing: border-box;
+  padding: 0 15px;
+  line-height: 42px;
+  text-align: center;
+  float: left;
+  outline: none;
+  border-bottom-right-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  cursor: default; }
+
+.pjtop {
+  padding: 30px 0 30px 0;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto; }
+  .pjtop:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  .pjtop .pjtop__block {
+    width: 50%;
+    box-sizing: border-box;
+    position: relative;
+    padding-left: 43px;
+    text-decoration: none;
+    font-size: 10px;
+    color: #fff;
+    float: left; }
+    @media screen and (max-width: 700px) {
+      .pjtop .pjtop__block {
+        width: auto !important;
+        float: none;
+        margin-bottom: 10px; } }
+    .pjtop .pjtop__block strong {
+      font-weight: normal;
+      display: block;
+      line-height: 1.2;
+      font-family: "HelveticaNeueW01-UltLt", Arial, sans-serif;
+      font-size: 20px;
+      color: #C6C9CC; }
+    .pjtop .pjtop__block .icon {
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-size: 25px; }
+  .pjtop .pjtop__left {
+    width: 50%;
+    padding-right: 5%; }
+    .pjtop .pjtop__left:hover {
+      color: #24E0BF;
+      cursor: pointer; }
+      .pjtop .pjtop__left:hover strong {
+        color: #24E0BF; }
+  .pjtop .pjtop__deadline {
+    width: 25%; }
+  .pjtop .pjtop__budget {
+    width: 25%; }
+
+.report__header .report__list_center {
+  float: none !important;
+  width: auto;
+  text-align: left;
+  position: relative;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto; }
+  .report__header .report__list_center span {
+    background: #DC183D;
+    color: #fff;
+    border-radius: 10px;
+    display: inline-block;
+    font-size: 10px;
+    width: 23px;
+    text-align: center;
+    height: 14px;
+    line-height: 14px;
+    vertical-align: middle; }
+  .report__header .report__list_center .endpitching {
+    color: #fff;
+    background: #193E4B;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 0 16px;
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    bottom: 2px;
+    border-radius: 6px; }
+    @media screen and (max-width: 700px) {
+      .report__header .report__list_center .endpitching {
+        position: static;
+        vertical-align: middle;
+        font-size: 11px;
+        margin-top: 20px; } }
+
+.report__header.report__header_padding {
+  padding-bottom: 10px; }
+
+.delete-projects.delete-pitching {
+  width: 427px; }
+  .delete-projects.delete-pitching .modal-header .modal-title {
+    font-size: 24px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+    text-align: center; }
+  .delete-projects.delete-pitching .modal-header .modal-body p {
+    font-size: 18px;
+    text-align: center; }
+  .delete-projects.delete-pitching .modal-footer .btn.btn-default.cancel {
+    margin-right: 0 !important; }
+
 #wrapper.is-bg #main {
   background: url(../images/bg-man3.jpg) no-repeat bottom center;
   -webkit-background-size: cover;
