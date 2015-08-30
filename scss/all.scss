@@ -6509,6 +6509,20 @@ input:-moz-submit-invalid, input:required, input:invalid {
 		}
 	}
 }
+.defaultcard{
+	margin-bottom: 15px;
+	font-family: $font-family-base;
+	input{
+		vertical-align: middle;
+	}
+	span{
+		vertical-align: middle;
+		margin-left: 8px;
+		font-size: 12px;
+		position: relative;
+		top: 2px;
+	}
+}
 @import "signup";
 @import "vadim";
 // @import "create-project";

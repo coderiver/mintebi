@@ -7287,6 +7287,18 @@ input:-moz-submit-invalid, input:required, input:invalid {
   .delete-projects.delete-pitching .modal-footer .btn.btn-default.cancel {
     margin-right: 0 !important; }
 
+.defaultcard {
+  margin-bottom: 15px;
+  font-family: "HelveticaNeueW82-Regula", Arial, Helvetica, sans-serif; }
+  .defaultcard input {
+    vertical-align: middle; }
+  .defaultcard span {
+    vertical-align: middle;
+    margin-left: 8px;
+    font-size: 12px;
+    position: relative;
+    top: 2px; }
+
 #wrapper.is-bg #main {
   background: url(../images/bg-man3.jpg) no-repeat bottom center;
   -webkit-background-size: cover;
