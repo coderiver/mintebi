@@ -6530,6 +6530,10 @@ input:-moz-submit-invalid, input:required, input:invalid {
 	margin: 30px auto;
 	border-radius: 10px;
 	box-sizing: border-box;
+	.shopping__container{
+		padding-left: 0;
+		padding-right: 0;
+	}
 }
 .shoptop{
 	padding: 0 30px 30px 30px;
@@ -6544,6 +6548,28 @@ input:-moz-submit-invalid, input:required, input:invalid {
 			background: #E9ECF2;
 			padding: 10px 15px;
 			text-decoration: none;
+			font-family: 'HelveticaNeueW01-Lt';
+		}
+	}
+	.shoptop__left{
+		font-size: 24px;
+		float: left;
+		font-family: 'HelveticaNeueW01-UltLt';
+	}
+	.shoptop__right{
+		float: right;
+		font-size: 18px;
+		padding-top: 6px;
+		font-family: 'HelveticaNeueW01-UltLt';
+		a{
+			display: inline-block;
+			border-radius: 6px;
+			background: #E9ECF2;
+			padding: 3px 25px;
+			text-decoration: none;
+			vertical-align: middle;
+			margin-left: 28px;
+			font-size: 14px;
 			font-family: 'HelveticaNeueW01-Lt';
 		}
 	}
@@ -6565,6 +6591,19 @@ input:-moz-submit-invalid, input:required, input:invalid {
 				// margin-right: 0;
 			}
 		}
+	}
+}
+.addedtocart{
+	text-align: center;
+	font-family: 'HelveticaNeueW01-UltLt';
+	font-size: 34px;
+	padding-top: 60px;
+	color: #011335;
+	i{
+		font-size: 66px;
+	}
+	span{
+		display: block;
 	}
 }
 @import "signup";
