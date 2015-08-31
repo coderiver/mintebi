@@ -6523,6 +6523,50 @@ input:-moz-submit-invalid, input:required, input:invalid {
 		top: 2px;
 	}
 }
+.wrapshopping{
+	background: #F5F6F8;
+	max-width: 1014px;
+	padding: 33px;
+	margin: 30px auto;
+	border-radius: 10px;
+	box-sizing: border-box;
+}
+.shoptop{
+	padding: 0 30px 30px 30px;
+	margin: 0 -30px;
+	border-bottom: 1px solid #E9ECF2;
+	@include clearfix;
+	.shoptop__back{
+		float: left;
+		a{
+			display: inline-block;
+			border-radius: 6px;
+			background: #E9ECF2;
+			padding: 10px 15px;
+			text-decoration: none;
+			font-family: 'HelveticaNeueW01-Lt';
+		}
+	}
+	nav{
+		float: right;
+		white-space: nowrap;
+		font-size: 18px;
+		font-family: 'HelveticaNeueW01-UltLt';
+		@include breakpoint($mobile) {
+			white-space: normal;
+		}
+		a{
+			text-decoration: none;
+			margin-right: 30px;
+			&.big{
+				font-size: 25px;
+			}
+			&:last-child{
+				// margin-right: 0;
+			}
+		}
+	}
+}
 @import "signup";
 @import "vadim";
 // @import "create-project";

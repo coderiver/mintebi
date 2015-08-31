@@ -7299,6 +7299,45 @@ input:-moz-submit-invalid, input:required, input:invalid {
     position: relative;
     top: 2px; }
 
+.wrapshopping {
+  background: #F5F6F8;
+  max-width: 1014px;
+  padding: 33px;
+  margin: 30px auto;
+  border-radius: 10px;
+  box-sizing: border-box; }
+
+.shoptop {
+  padding: 0 30px 30px 30px;
+  margin: 0 -30px;
+  border-bottom: 1px solid #E9ECF2; }
+  .shoptop:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  .shoptop .shoptop__back {
+    float: left; }
+    .shoptop .shoptop__back a {
+      display: inline-block;
+      border-radius: 6px;
+      background: #E9ECF2;
+      padding: 10px 15px;
+      text-decoration: none;
+      font-family: 'HelveticaNeueW01-Lt'; }
+  .shoptop nav {
+    float: right;
+    white-space: nowrap;
+    font-size: 18px;
+    font-family: 'HelveticaNeueW01-UltLt'; }
+    @media only screen and (max-width: 767px) {
+      .shoptop nav {
+        white-space: normal; } }
+    .shoptop nav a {
+      text-decoration: none;
+      margin-right: 30px; }
+      .shoptop nav a.big {
+        font-size: 25px; }
+
 #wrapper.is-bg #main {
   background: url(../images/bg-man3.jpg) no-repeat bottom center;
   -webkit-background-size: cover;
