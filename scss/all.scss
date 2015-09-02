@@ -6595,7 +6595,7 @@ input:-moz-submit-invalid, input:required, input:invalid {
 }
 .addedtocart{
 	text-align: center;
-	font-family: 'HelveticaNeueW01-UltLt';
+	font-family: 'HelveticaNeueW01-UltLt',sans-serif;
 	font-size: 34px;
 	padding-top: 60px;
 	color: #011335;
@@ -6604,6 +6604,37 @@ input:-moz-submit-invalid, input:required, input:invalid {
 	}
 	span{
 		display: block;
+	}
+}
+.recen{
+	background: #fff;
+	border-radius: 20px;
+	margin-bottom: 30px;
+	padding: 25px 40px;
+	p{
+		font-size: 13px;
+		line-height: 1.4;
+		margin-bottom: 1em;
+	}
+	.recen__h1{
+		font-family: 'HelveticaNeueW01-UltLt',sans-serif;
+		font-size: 50px;
+	}
+	.recen__h2{
+		font-family: 'HelveticaNeueW01-UltLt',sans-serif;
+		font-size: 25px;
+		margin-bottom: 15px;
+		margin-top: 0;
+	}
+	.recen__stars{
+		font-size: 40px;
+		margin-bottom: 14px;
+		i{
+			margin-right: -10px;
+		}
+		.active{
+			color: #24E0BF;
+		}
 	}
 }
 @import "signup";
