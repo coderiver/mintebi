@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html ng-app="mintebiApp">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mintebi</title>
+	<link rel="stylesheet" href="../css/teleconference.css">
+	<link rel="stylesheet" href="https://stage.mintebi.com/assets/bootstrap.css">
+	<link rel="stylesheet" href="https://stage.mintebi.com/assets/mintebi-1.0.0.css">
+	<!-- <link rel="stylesheet" href="../css/bootstrap.css">
+	<link rel="stylesheet" href="../css/all.css">
+	<link rel="stylesheet" href="../css/ngDialog.css">
+	<link rel="stylesheet" href="../css/inner.css"> -->
+	<script type="text/javascript" src="http://fast.fonts.net/jsapi/48f89ee6-4f00-484c-ad3c-df5a74d4c60d.js"></script>
+
+	<script type="text/javascript" src="https://stage.mintebi.com/assets/mintebi-1.0.0.js?ver=1442238106688"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<div class="w1">
+			<header id="header">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="non-logedin" style="display:block;">
+								<div class="logo-holder">
+									<strong class="logo"><a href="#"><img src="../images/logo.png" alt="Mintebi"></a></strong>
+								</div>
+								<nav class="navbar navbar-default">
+									<!-- Brand and toggle get grouped for better mobile display -->
+									<div class="navbar-header">
+										<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+											<span class="sr-only">Toggle navigation</span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+										</button>
+									</div>
+									<!-- Collect the nav links, forms, and other content for toggling -->
+									<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+										<ul class="nav navbar-nav">
+											<li><a href="#">Client</a></li>
+											<li><a href="#">Expert</a></li>
+										</ul>
+										<ul class="nav navbar-nav navbar-right">
+											<li><a href="#">Sign up</a></li>
+											<li><a href="#">Login</a></li>
+										</ul>
+									</div>
+								</nav>
+							</div>
+							<div class="expert-logedin" style="display:none;">
+								<div class="logo-holder">
+									<strong class="logo"><a href="#"><img src="../images/logo.png" alt="Mintebi"></a></strong>
+									<div class="notifications-block">
+										<a class="btn btn-primary active" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+											<i class="fa fa-bell-o"></i><span class="count">10</span>
+										</a>
+										<div class="collapse notification-drop" id="collapseExample">
+											<div class="well">
+												<div class="title"><a href="#" class="activity active">recent activity</a> <a href="#" class="marked">marked all as read</a></div>
+												<div class="scroll-area jcf-scrollable" jcf>
+													<ul class="list-unstyled">
+														<li>
+															<a href="#">
+																<span class="icon icon-add-user"></span>YOU HAVE 5 NEW EXPERTS PITCHED
+																<time datetime="2015-01-01">34 minutes ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-flag"></span>YOUR PROJECT IS NOW IN PITCH
+																<time datetime="2015-01-01">2 days ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-trophy"></span>WELCOME TO MINTEbI
+																<time datetime="2015-01-01">1 week ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-crosshair"></span>lorem upsum sit amet
+																<time datetime="2015-01-01">2 weeks ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-add-user"></span>YOU HAVE 5 NEW EXPERTS PITCHED
+																<time datetime="2015-01-01">34 minutes ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-flag"></span>YOUR PROJECT IS NOW IN PITCH
+																<time datetime="2015-01-01">2 days ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-trophy"></span>WELCOME TO MINTEbI
+																<time datetime="2015-01-01">1 week ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-crosshair"></span>lorem upsum sit amet
+																<time datetime="2015-01-01">2 weeks ago</time>
+															</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<nav class="navbar navbar-default">
+									<!-- Brand and toggle get grouped for better mobile display -->
+									<div class="navbar-header">
+										<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+											<span class="sr-only">Toggle navigation</span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+										</button>
+									</div>
+									<!-- Collect the nav links, forms, and other content for toggling -->
+									<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+										<ul class="nav navbar-nav">
+											<li><a href="#">Market place <span class="sr-only">(current)</span></a></li>
+											<li><a href="#">Library</a></li>
+											<li><a href="#">My Mintebi</a></li>
+											<li class="dropdown">
+												<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Help</a>
+												<div class="dropdown-menu" role="menu">
+													<strong class="title">Help &amp; Resources</strong>
+													<ul class="list-unstyled">
+														<li><a href="#">FAQ</a></li>
+														<li><a href="#">Our Rules</a></li>
+														<li><a href="#">Expert handbook</a></li>
+														<li><a href="#">trust &amp; Safty</a></li>
+														<li><a href="#">Trems of use  &amp; Privacy</a></li>
+													</ul>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</nav>
+								<div class="client-login">
+									<a class="btn btn-primary">
+										<span data-picture data-alt="image description">
+											<span data-src="../images/img10-large.png" data-width="33" data-height="33"></span>
+											<span data-src="../images/img10-large2x.png" data-width="33" data-height="33" data-media="(-webkit-min-device-pixel-ratio:1.5), (min-resolution:1.5dppx)" ></span> <!-- retina 2x desktop -->
+											<span data-src="../images/img10-medium2x.png" data-width="33" data-height="33" data-media="(max-width:1023px) and (-webkit-min-device-pixel-ratio:1.5), (max-width:1023px) and (min-resolution:144dpi)" ></span> <!-- retina 2x tablet -->
+											<span data-src="../images/img10-small.png" data-width="33" data-height="33" data-media="(max-width:767px)" ></span> <!-- retina 1x mobile -->
+											<span data-src="../images/img10-small2x.png" data-width="33" data-height="33" data-media="(max-width:767px) and (-webkit-min-device-pixel-ratio:1.5), (max-width:767px) and (min-resolution:144dpi)" ></span> <!-- retina 2x mobile -->
+											<!--[if (lt IE 9) & (!IEMobile)]>
+												<span data-src="images/img10-large.png"></span>
+											<![endif]-->
+											<!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+											<noscript><img src="../images/img10-large.png" width="33" height="33" alt="image description" ></noscript>
+										</span>
+									</a>
+									<div class="client-drop">
+										<div class="drop-box">
+											<strong class="title">Andreas buchwalD</strong>
+											<ul class="list-unstyled">
+												<li><a href="#"><span class="icon icon-user"></span>my profile</a></li>
+												<li><a href="#"><span class="icon icon-gear"></span>account settings</a></li>
+												<li><a href="#"><span class="icon icon-power"></span>logout</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="client-logedin" style="display:none;">
+								<div class="logo-holder">
+									<strong class="logo"><a href="#"><img src="../images/logo.png" alt="Mintebi"></a></strong>
+									<div class="notifications-block">
+										<a class="btn btn-primary active" data-toggle="collapse" href="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
+											<i class="fa fa-bell-o"></i><span class="count">10</span>
+										</a>
+										<div class="collapse notification-drop" id="collapseExample3">
+											<div class="well">
+												<div class="title"><a href="#" class="activity active">recent activity</a> <a href="#" class="marked">marked all as read</a></div>
+												<div class="scroll-area jcf-scrollable" jcf>
+													<ul class="list-unstyled">
+														<li>
+															<a href="#">
+																<span class="icon icon-add-user"></span>YOU HAVE 5 NEW EXPERTS PITCHED
+																<time datetime="2015-01-01">34 minutes ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-flag"></span>YOUR PROJECT IS NOW IN PITCH
+																<time datetime="2015-01-01">2 days ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-trophy"></span>WELCOME TO MINTEbI
+																<time datetime="2015-01-01">1 week ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-crosshair"></span>lorem upsum sit amet
+																<time datetime="2015-01-01">2 weeks ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-add-user"></span>YOU HAVE 5 NEW EXPERTS PITCHED
+																<time datetime="2015-01-01">34 minutes ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-flag"></span>YOUR PROJECT IS NOW IN PITCH
+																<time datetime="2015-01-01">2 days ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-trophy"></span>WELCOME TO MINTEbI
+																<time datetime="2015-01-01">1 week ago</time>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="icon icon-crosshair"></span>lorem upsum sit amet
+																<time datetime="2015-01-01">2 weeks ago</time>
+															</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<nav class="navbar navbar-default">
+									<!-- Brand and toggle get grouped for better mobile display -->
+									<div class="navbar-header">
+										<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-3">
+											<span class="sr-only">Toggle navigation</span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+										</button>
+									</div>
+									<!-- Collect the nav links, forms, and other content for toggling -->
+									<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-3">
+										<ul class="nav navbar-nav">
+											<li><a href="#">Create a project <span class="sr-only">(current)</span></a></li>
+											<li><a href="#">Market place</a></li>
+											<li><a href="#">Library</a></li>
+											<li><a href="#">My Mintebi</a></li>
+											<li class="dropdown">
+												<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Help</a>
+												<div class="dropdown-menu" role="menu">
+													<strong class="title">Help &amp; Resources</strong>
+													<ul class="list-unstyled">
+														<li><a href="#">FAQ</a></li>
+														<li><a href="#">Our Rules</a></li>
+														<li><a href="#">Expert handbook</a></li>
+														<li><a href="#">trust &amp; Safty</a></li>
+														<li><a href="#">Trems of use  &amp; Privacy</a></li>
+													</ul>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</nav>
+								<div class="client-login">
+									<a class="btn btn-primary">
+										<span data-picture data-alt="image description">
+											<span data-src="../images/img10-large.png" data-width="33" data-height="33"></span>
+											<span data-src="../images/img10-large2x.png" data-width="33" data-height="33" data-media="(-webkit-min-device-pixel-ratio:1.5), (min-resolution:1.5dppx)" ></span> <!-- retina 2x desktop -->
+											<span data-src="../images/img10-medium2x.png" data-width="33" data-height="33" data-media="(max-width:1023px) and (-webkit-min-device-pixel-ratio:1.5), (max-width:1023px) and (min-resolution:144dpi)" ></span> <!-- retina 2x tablet -->
+											<span data-src="../images/img10-small.png" data-width="33" data-height="33" data-media="(max-width:767px)" ></span> <!-- retina 1x mobile -->
+											<span data-src="../images/img10-small2x.png" data-width="33" data-height="33" data-media="(max-width:767px) and (-webkit-min-device-pixel-ratio:1.5), (max-width:767px) and (min-resolution:144dpi)" ></span> <!-- retina 2x mobile -->
+											<!--[if (lt IE 9) & (!IEMobile)]>
+												<span data-src="images/img10-large.png"></span>
+											<![endif]-->
+											<!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+											<noscript><img src="../images/img10-large.png" width="33" height="33" alt="image description" ></noscript>
+										</span>
+									</a>
+									<div class="client-drop">
+										<div class="drop-box">
+											<strong class="title">Andreas buchwalD</strong>
+											<ul class="list-unstyled">
+												<li><a href="#"><span class="icon icon-user"></span>my profile</a></li>
+												<li><a href="#"><span class="icon icon-gear"></span>account settings</a></li>
+												<li><a href="#"><span class="icon icon-power"></span>logout</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<main id="main" role="main">
+				<div class="teleconference">
+					<div class="teleconference__section">
+						<div class="project">
+							<a href="#" class="icon icon-close-2"></a>
+							<div class="project__main">
+								<div class="project__content">
+									<article>
+										<h3>Will today’s make students inferior <br>doctors. Google medical information instead of memorizing it?</h3>
+										<div class="project__text">
+											<h6>Short Description</h6>
+											<p>consectetur et. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Aenean lacinia bibendum nulla sed consectetur.</p>
+											<p>Nulla vitae elit libero, a pharetra augue. Cras mattis consectetur purus sit amet fermentum. Cras mattis consectetur purus sit amet fermentum. Etiam porta sem malesuada magna mollis euismod.</p>
+										</div>
+										<div class="project__text">
+											<h6>Long Description</h6>
+											<p>porta felis euismod semper. Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Vestibulum id ligula porta felis euismod semper.</p>
+											<p>Donec id elit non mi porta gravida at eget metus. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Aenean lacinia bibendum nulla sed consectetur.</p>
+											<p>Nulla vitae elit libero, a pharetra augue. Cras mattis consectetur purus sit amet fermentum. Cras mattis consectetur purus sit amet fermentum. Etiam porta sem malesuada magna mollis euismod.</p>
+											<p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur blandit tempus porttitor.</p>
+											<p>Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi portasgssfg</p>
+										</div>									
+									</article>								
+								</div>							
+							</div>
+							<div class="project__aside">
+								<a href="#" class="project__help">?</a>
+								<ul class="chars">
+									<li class="chars__item">
+										<div class="chars__topper">
+											<div class="chars__title">
+												<span class="icon icon-flag"></span>
+												<h5>Performance Assesments</h5>
+											</div>
+											<div class="chars__subtitle">Research product</div>
+										</div>
+										<div class="chars__content">
+											<div class="chars__name">Company</div>
+											<div class="chars__btns">
+												<a href="#" class="btn btn-chars">Novozymes Denmark</a>
+											</div>
+											<div class="chars__name">Parameters</div>
+											<div class="chars__btns">
+												<a href="#" class="btn btn-chars">Service</a>
+												<a href="#" class="btn btn-chars">Quality</a>
+												<a href="#" class="btn btn-chars">Brand</a>
+												<a href="#" class="btn btn-chars">Innovation</a>
+												<a href="#" class="btn btn-chars">Durability</a>
+											</div>
+											<div class="chars__graph">
+												<img src="../images/teleconference-side.png" alt="">
+											</div>
+										</div>
+									</li>
+									<li class="chars__item">
+										<div class="chars__topper">
+											<div class="chars__title">
+												<span class="icon icon-tag"></span>
+												<h5>Mechanical or Industrial Engineering</h5>
+											</div>
+											<div class="chars__subtitle">Industry</div>
+										</div>
+									</li>
+									<li class="chars__item">
+										<div class="chars__topper">
+											<div class="chars__title">
+												<span class="icon icon-map-marker"></span>
+												<h5>Saint Vincent and the Grenadines</h5>
+											</div>
+											<div class="chars__subtitle">Geography</div>
+										</div>
+									</li>
+									<li class="chars__item">
+										<div class="chars__topper">
+											<div class="chars__title">
+												<span class="icon icon-trophy"></span>
+												<h5>€ 900,00</h5>
+											</div>
+											<div class="chars__subtitle">Budget per expert</div>
+										</div>
+									</li>
+									<li class="chars__item">
+										<div class="chars__topper">
+											<div class="chars__title">
+												<span class="icon icon-clock"></span>
+												<h5>5 Days 21 Hours</h5>
+											</div>
+											<div class="chars__subtitle">Deadline</div>
+										</div>
+									</li>
+									<li class="chars__item">
+										<div class="chars__topper">
+											<div class="chars__title">
+												<span class="icon icon-lock"></span>
+												<h5>This project Is Exclusive</h5>
+											</div>
+											<div class="chars__subtitle">Exclusivity</div>
+										</div>
+									</li>
+									<li class="chars__item">
+										<div class="chars__topper">
+											<div class="chars__title">
+												<span class="icon icon-user"></span>
+												<h5>32</h5>
+											</div>
+											<div class="chars__subtitle">Experts works on this project</div>
+										</div>
+									</li>
+									<li class="chars__item">
+										<div class="chars__topper">
+											<div class="chars__title">
+												<span class="icon icon-clock"></span>
+												<h5>22 April 2015</h5>
+											</div>
+											<div class="chars__subtitle">This project was posted</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="teleconference__section">
+						<div class="tel-submenu">
+							<ul>
+								<li><a href="#"><span>Comments</span></a></li>
+								<li><a href="#" class="is-active"><span>Experts Pitching</span><i>10</i></a></li>
+								<li><a href="#"><span>Reports</span></a></li>
+							</ul>
+							<a href="#" class="tel-btn">End pitching period</a>
+						</div>
+					</div>
+					<div class="teleconference__section">
+						<div class="teleconference__block">
+							<div class="teleconference__row">
+								<div class="teleconference__col">
+									<div class="tile">
+										<div class="tile__img">
+											<div class="tile__sticker">
+												<span class="tile__rating">4,2/5</span>
+												<div>
+													<p>Avarage Rating</p>
+													<small>162 client reviews</small>
+												</div>
+											</div>
+											<div class="tile__text">
+												<h4>Caroline Osterwald-Lenum</h4>
+												<small>Communication Manager at mintebi</small>
+												<small>Copenhagen Area, Capital Region, Denmark</small>
+												<small>Entertainment</small>
+												<small>10 Years experience</small>
+											</div>
+										</div>							
+										<div class="tile__info">
+											<div>
+												<i class="i i-id"></i>
+												<span>ID #871589</span>
+											</div>
+											<div>
+												<i class="icon icon-star"></i>
+												<span>- / - Rating</span>
+											</div>
+											<div>
+												<i class="i i-tag"></i>
+												<span>300,00 €</span>
+											</div>
+											<div>
+												<i class="i i-landscape"></i>
+												<span>Competitive Landscape Report</span>
+											</div>
+										</div>
+										<div class="tile__btns">
+											<div class="tile__request">Request a teleconference</div>
+											<div class="tile__rate">Rate the Project</div>
+											<div class="tile__submit">Download report</div>
+											<!-- <div class="tile__workinprogress">Work in progress</div> -->
+											<!-- <button class="tile__cancel">Cancel</button>
+											<button class="tile__submit">Submit</button> -->
+										</div>
+									</div>
+								</div>
+								<div class="teleconference__col">
+									<div class="tile">
+										<div class="tile__img">
+											<div class="tile__sticker">
+												<span class="tile__rating">4,2/5</span>
+												<div>
+													<p>Avarage Rating</p>
+													<small>162 client reviews</small>
+												</div>
+											</div>
+											<div class="tile__text">
+												<h4>Caroline Osterwald-Lenum</h4>
+												<small>Communication Manager at mintebi</small>
+												<small>Copenhagen Area, Capital Region, Denmark</small>
+												<small>Entertainment</small>
+												<small>10 Years experience</small>
+											</div>
+										</div>							
+										<div class="tile__info">
+											<div>
+												<i class="i i-id"></i>
+												<span>ID #871589</span>
+											</div>
+											<div>
+												<i class="icon icon-star"></i>
+												<span>- / - Rating</span>
+											</div>
+											<div>
+												<i class="i i-tag"></i>
+												<span>300,00 €</span>
+											</div>
+											<div>
+												<i class="i i-landscape"></i>
+												<span>Competitive Landscape Report</span>
+											</div>
+										</div>
+										<div class="tile__btns">
+											<div class="tile__request">Request a teleconference</div>
+											<div class="tile__rate">Rate the Project</div>
+											<div class="tile__workinprogress">Work in progress</div>
+										</div>
+									</div>
+								</div>						
+							</div>	
+							<div class="teleconference__field">
+								<a href="#" class="icon icon-close-2"></a>
+								<img src="../images/tel-field.png" alt="" class="is-bg">
+								<div class="tel-info">									
+									<h2>Completed</h2>
+									<div class="con-meeting__info">
+										<div class="con-meeting__red is-green">
+											<ul>
+												<li><i class="icon icon-calendar"></i><span>Friday 08.11.2015</span></li>
+												<li><i class="icon icon-clock"></i><span>08:00 - 08:45</span></li>
+												<li><i class="icon icon-map-marker"></i><span>CPH. DK time zone</span></li>
+												<li><i class="i i-tag"></i><span>€ 300,00</span></li>
+											</ul>
+										</div>
+									</div>
+									<div class="tel-info__bottom">
+										<div class="tel-info__left">
+											<h4>The Topic for the teleconference</h4>
+											<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio."</p>
+											<button class="con-btn con-btn_big">Schdual a new meeting</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="teleconference__field">
+								<a href="#" class="icon icon-close-2"></a>
+								<img src="../images/tel-field.png" alt="" class="is-bg">
+								<div class="tel-info">									
+									<h2>You have missed the meeting</h2>
+									<h6>€ 150,00 has been given as compensation for its trouples. The expert entered the call 14:07 and disconnected 15:21.</h6>
+									<div class="con-meeting__info">
+										<div class="con-meeting__red">
+											<ul>
+												<li><i class="icon icon-calendar"></i><span>Friday 08.11.2015</span></li>
+												<li><i class="icon icon-clock"></i><span>08:00 - 08:45</span></li>
+												<li><i class="icon icon-map-marker"></i><span>CPH. DK time zone</span></li>
+												<li><i class="i i-tag"></i><span>€ 300,00</span></li>
+											</ul>
+										</div>
+										<div class="con-meeting__red">
+											<ul>
+												<li><span><b>Dial in</b> + 45 109464513</span></li>
+												<li><span><b>Pin code</b> 3366</span></li>
+											</ul>
+										</div>
+									</div>
+									<div class="tel-info__bottom">
+										<div class="tel-info__left">
+											<h4>The Topic for the teleconference</h4>
+											<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio."</p>
+											<button class="con-btn con-btn_big">Reschedual meeting</button>
+										</div>
+										<div class="tel-info__right">
+											<div class="tel-info__field">
+												<div class="con-meeting__textarea">
+													<textarea name="" id="" cols="30" rows="6" class="form-textarea" placeholder="Write a message to the client"></textarea>
+													<span>0/500</span>
+												</div>
+												<div class="con-meeting__send">
+													<button class="con-btn">Send</button>
+												</div>
+											</div>
+
+										</div>
+									</div>
+									
+								</div>
+							</div>
+							<div class="teleconference__field">
+								<a href="#" class="icon icon-close-2"></a>
+								<img src="../images/tel-field.png" alt="" class="is-bg">
+								<div class="tel-info">									
+									<h2>You have missed the meeting</h2>
+									<h6>€ 150,00 has been given as compensation for its trouples. The expert entered the call 14:07 and disconnected 15:21.</h6>
+									<div class="con-meeting__info">
+										<div class="con-meeting__red">
+											<ul>
+												<li><i class="icon icon-calendar"></i><span>Friday 08.11.2015</span></li>
+												<li><i class="icon icon-clock"></i><span>08:00 - 08:45</span></li>
+												<li><i class="icon icon-map-marker"></i><span>CPH. DK time zone</span></li>
+												<li><i class="i i-tag"></i><span>€ 300,00</span></li>
+											</ul>
+										</div>
+										<div class="con-meeting__red">
+											<ul>
+												<li><span><b>Dial in</b> + 45 109464513</span></li>
+												<li><span><b>Pin code</b> 3366</span></li>
+											</ul>
+										</div>
+									</div>
+									<div class="tel-info__bottom">
+										<div class="tel-info__left">
+											<h4>The Topic for the teleconference</h4>
+											<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio."</p>
+											<button class="con-btn con-btn_big">Reschedual meeting</button>
+										</div>
+										<div class="tel-info__right">
+											<h4>Comment from Expert</h4>
+											<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. </p>
+										</div>
+									</div>
+									
+								</div>
+							</div>
+							<div class="teleconference__field">
+								<a href="#" class="icon icon-close-2"></a>
+								<img src="../images/tel-field.png" alt="" class="is-bg">
+								<div class="tel-info">									
+									<h2>Completed</h2>
+									<div class="con-meeting__info">
+										<div class="con-meeting__red is-white">
+											<ul>
+												<li><i class="icon icon-calendar"></i><span>Friday 08.11.2015</span></li>
+												<li><i class="icon icon-clock"></i><span>08:00 - 08:45</span></li>
+												<li><i class="icon icon-map-marker"></i><span>CPH. DK time zone</span></li>
+												<li><i class="i i-tag"></i><span>€ 300,00</span></li>
+											</ul>
+										</div>
+										<div class="con-meeting__red is-white">
+											<ul>
+												<li><span><b>Dial in</b> + 45 109464513</span></li>
+												<li><span><b>Pin code</b> 3366</span></li>
+											</ul>
+										</div>
+									</div>
+									<div class="tel-info__bottom">
+										<div class="tel-info__left">
+											<h4>The Topic for the teleconference</h4>
+											<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio."</p>
+											<button class="con-btn con-btn_big is-red">Cancel Phone consultation</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="teleconference__field">
+								<a href="#" class="icon icon-close-2"></a>
+								<img src="../images/tel-field.png" alt="" class="is-bg">
+								<div class="s-start">
+									<div class="s-start__top"></div>
+									<div class="s-start__inner">
+										<div class="s-start__list">
+											<div class="s-start__check">
+												<div class="s-start__box">
+													<h3>Payment confirmed</h3>
+													<p>Your order of Expert, has been confirmed the transfer of money starts once the expert has completed and delivered it's work. A confirmation has been sent to you at cst@mintebi.com</p>
+												</div>											
+												<div class="s-start__box">
+													<h3>Order # 00096664</h3>
+													<table>
+														<tbody><tr>
+															<td>ID #871589</td>
+															<td class="is-right">€ 235,00</td>
+														</tr>
+													</tbody></table>
+												</div>
+												<div class="s-start__box">
+													<table>
+														<tbody><tr>
+															<td>Subtotal</td>
+															<td class="is-right">€ 681,00</td>
+														</tr>
+														<tr>
+															<td>VAT</td>
+															<td class="is-right">€ 20,00</td>
+														</tr>
+													</tbody></table>
+												</div>
+												<div class="s-start__box">
+													<table>
+														<tbody><tr>
+															<td><h3>To pay</h3></td>
+															<td class="is-right"><h3>€ 701,00</h3></td>
+														</tr>
+													</tbody></table>
+													<img src="../images/logo-small.png" alt="">
+													<div class="s-start__btns">
+														<button class="is-save">Save as PDF</button>
+														<button class="is-continue">Continue</button>
+													</div>
+												</div>	
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="teleconference__info">
+									<div class="tel-info">									
+										<h2>Order summery</h2>
+										<p>We will only make a resevation - <span>the transfer of money starts once the phone conference has been taken place. A confirmation will be sent to you email at cst@mintebi.com</span></p>
+										<div class="con-meeting__info">
+											<div class="con-meeting__red is-white">
+												<ul>
+													<li><i class="icon icon-calendar"></i><span>Friday 08.11.2015</span></li>
+													<li><i class="icon icon-clock"></i><span>08:00 - 08:45</span></li>
+													<li><i class="icon icon-map-marker"></i><span>CPH. DK time zone</span></li>
+													<li><i class="i i-tag"></i><span>€ 300,00</span></li>
+												</ul>
+											</div>
+										</div>
+										<div class="tel-info__bottom">
+											<div class="tel-info__left">
+												<ul>
+													<li><a href="#">Terms of service</a></li>
+													<li><a href="#">Return Policy</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>								
+							</div>
+							<div class="teleconference__field">
+								<a href="#" class="icon icon-close-2"></a>
+								<div class="tel-avatar">
+									<div class="tel-avatar__inner">
+										<img src="../images/tel-avatar.png" alt="">
+									</div>
+								</div>
+								<div class="teleconference__info is-right">
+									<div class="tel-info">									
+										<h2 class="is-bigger">Phone Consultation Request Accepted</h2>
+										<p>The Expert has accepted the time slot for a teleconference meeting (you need to accpet within 24hs)</p>
+										<div class="con-meeting__info">
+											<div class="con-meeting__red is-white">
+												<ul>
+													<li><i class="icon icon-calendar"></i><span>Friday 08.11.2015</span></li>
+													<li><i class="icon icon-clock"></i><span>08:00 - 08:45</span></li>
+													<li><i class="icon icon-map-marker"></i><span>CPH. DK time zone</span></li>
+													<li><i class="i i-tag"></i><span>€ 300,00</span></li>
+												</ul>
+											</div>
+										</div>
+										<div class="tel-info__bottom">
+											<h4>The Topic for the teleconference</h4>
+											<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio."</p>
+										</div>
+										<div class="form-buttons">
+											<a href="#" class="button">Accept</a>
+											<a href="#" class="button button_gray">Decline</a>
+										</div>
+									</div>
+								</div>								
+							</div>
+							<div class="teleconference__field">
+								<a href="#" class="icon icon-close-2"></a>
+								<div class="tel-avatar is-center">
+									<div class="tel-avatar__inner">
+										<img src="../images/tel-avatar.png" alt="">
+									</div>
+								</div>
+								<div class="teleconference__info is-small">
+									<div class="tel-info">									
+										<h2 class="is-bigger">Request Sended</h2>
+										<p>The Expert has accepted the time slot for a teleconference meeting (you need to accpet within 24hs)</p>
+										<div class="con-meeting__info">
+											<div class="con-meeting__red is-white">
+												<ul>
+													<li><i class="icon icon-calendar"></i><span>Friday 08.11.2015</span></li>
+													<li><i class="icon icon-clock"></i><span>08:00 - 08:45</span></li>
+												</ul>
+											</div>
+											<div class="con-meeting__red is-white">
+												<ul>
+													<li><i class="icon icon-calendar"></i><span>Friday 08.11.2015</span></li>
+													<li><i class="icon icon-clock"></i><span>08:00 - 08:45</span></li>
+												</ul>
+											</div>
+											<div class="con-meeting__red is-white">
+												<ul>
+													<li><i class="icon icon-calendar"></i><span>Friday 08.11.2015</span></li>
+													<li><i class="icon icon-clock"></i><span>08:00 - 08:45</span></li>
+												</ul>
+											</div>
+										</div>
+										<div class="form-buttons">
+											<a href="#" class="button">Minimize</a>
+											<a href="#" class="button button_gray">Cancel request</a>
+										</div>
+									</div>
+								</div>								
+							</div>
+							<div class="teleconference__field">
+								<a href="#" class="icon icon-close-2"></a>
+								<div class="tel-info">
+									<h2 class="tel-info__title">Request Sended</h2>
+									<div class="tel-info__row">
+										<div class="tel-info__calendar">
+											<h4>1. Choose Date</h4>
+											<div class="tel-calendar">
+												<img src="../images/tel-calendar.png" alt="">
+											</div>
+										</div>
+										<div class="tel-info__time">
+											<h4>2. Choose Time.</h4>		
+											<div class="tel-time">
+												<div class="tel-time__btns">
+													<button class="tel-time__submit"><i class="icon icon-check-mark"></i></button>
+													<button class="tel-time__cancel"><i class="icon icon-close-1"></i></button>
+												</div>
+												<div class="tel-time__info">
+													<div class="tel-time__col">
+														<span class="tel-time__title is-sun">Fr 08.11.2015</span>
+														<small>Your time</small>
+														<div class="fieldset__select">
+															<select id="country" jcf='{"maxVisibleItems": 4}'>
+																<option>08:00</option>
+																<option>08:00</option>
+															</select>
+														</div>
+														<span class="tel-time__text">CPH, DK</span>
+													</div>
+													<div class="tel-time__col">
+														<span class="tel-time__title is-moon">Th 07.11.2015</span>
+														<small>Expert time</small>
+														<time>03:00</time>
+														<span class="tel-time__text">NY, USA</span>
+													</div>
+												</div>
+											</div>										
+											<div class="con-meeting__red is-white">
+												<ul>
+													<li><i class="icon icon-calendar"></i><span>Friday 08.11.2015</span></li>
+													<li><i class="icon icon-clock"></i><span>08:00 - 08:45</span></li>
+												</ul>
+											</div>
+											<div class="con-meeting__red is-white">
+												<ul>
+													<li><i class="icon icon-calendar"></i><span>Friday 08.11.2015</span></li>
+													<li><i class="icon icon-clock"></i><span>08:00 - 08:45</span></li>
+												</ul>
+											</div>
+										</div>
+										<div class="tel-info__area">
+											<h4>3. Please state the topics you want to discuss.</h4>
+											<div class="tel-area">
+												<div class="tel-area__textarea">
+													<textarea name="" id="" cols="30" rows="13" class="form-textarea" placeholder="Max (1000) Characters"></textarea>
+													<span>0/1000 left</span>
+												</div>
+												<div class="tel-area__btns">
+													<a href="#" class="button">Request</a>
+													<a href="#" class="button button_gray">Cancel</a>
+												</div>
+											</div>
+										</div>
+									</div>										
+								</div>
+							</div>
+							<div class="teleconference__row">
+								<div class="teleconference__col">
+									<div class="tile">
+										<div class="tile__img">
+											<div class="tile__sticker">
+												<span class="tile__rating">4,2/5</span>
+												<div>
+													<p>Avarage Rating</p>
+													<small>162 client reviews</small>
+												</div>
+											</div>
+											<div class="tile__text">
+												<h4>Caroline Osterwald-Lenum</h4>
+												<small>Communication Manager at mintebi</small>
+												<small>Copenhagen Area, Capital Region, Denmark</small>
+												<small>Entertainment</small>
+												<small>10 Years experience</small>
+											</div>
+										</div>							
+										<div class="tile__info">
+											<div>
+												<i class="i i-id"></i>
+												<span>ID #871589</span>
+											</div>
+											<div>
+												<i class="icon icon-star"></i>
+												<span>- / - Rating</span>
+											</div>
+											<div>
+												<i class="i i-tag"></i>
+												<span>300,00 €</span>
+											</div>
+											<div>
+												<i class="i i-landscape"></i>
+												<span>Competitive Landscape Report</span>
+											</div>
+										</div>
+										<div class="tile__btns">
+											<div class="tile__request">Request a teleconference</div>
+											<div class="tile__rate">Rate the Project</div>
+											<div class="tile__report">Report not delivered</div>
+										</div>
+									</div>
+								</div>
+								<div class="teleconference__col">
+									<div class="tile">
+										<div class="tile__img">
+											<div class="tile__sticker">
+												<span class="tile__rating">4,2/5</span>
+												<div>
+													<p>Avarage Rating</p>
+													<small>162 client reviews</small>
+												</div>
+											</div>
+											<div class="tile__text">
+												<h4>Caroline Osterwald-Lenum</h4>
+												<small>Communication Manager at mintebi</small>
+												<small>Copenhagen Area, Capital Region, Denmark</small>
+												<small>Entertainment</small>
+												<small>10 Years experience</small>
+											</div>
+										</div>							
+										<div class="tile__info">
+											<div>
+												<i class="i i-id"></i>
+												<span>ID #871589</span>
+											</div>
+											<div>
+												<i class="icon icon-star"></i>
+												<span>- / - Rating</span>
+											</div>
+											<div>
+												<i class="i i-tag"></i>
+												<span>300,00 €</span>
+											</div>
+											<div>
+												<i class="i i-landscape"></i>
+												<span>Competitive Landscape Report</span>
+											</div>
+										</div>
+										<div class="tile__btns">
+											<div class="tile__request">Request a teleconference</div>
+											<div class="tile__rate">Rate the Project</div>
+											<div class="tile__workinprogress">Work in progress</div>
+										</div>
+									</div>
+								</div>						
+							</div>	
+						</div>						
+					</div>									
+				</div>
+			</main>
+		</div>
+		<div class="footer-block">
+			<div class="footer-holder">
+				<div class="container-fluid">
+					<aside class="row footer-aside">
+						<div class="col-xs-12">
+							<div class="box">
+								<div class="block">
+									<nav class="column">
+										<h2>About us</h2>
+										<ul class="list-unstyled">
+											<li><a href="#">What is mintebi?</a></li>
+											<li><a href="#">Our Team</a></li>
+											<li><a href="#">Careers</a></li>
+											<li><a href="#">Contact</a></li>
+										</ul>
+									</nav>
+									<nav class="column">
+										<h2>Help</h2>
+										<ul class="list-unstyled">
+											<li><a href="#">FAQ</a></li>
+											<li><a href="#">Our Rules</a></li>
+											<li><a href="#">Expert Handbook</a></li>
+											<li><a href="#">Trust &amp; Safety</a></li>
+										</ul>
+									</nav>
+								</div>
+								<div class="footer-logo">
+									<strong class="logo"><a href="#"><img src="../images/logo2.svg" width="179" height="131" alt="Mintebi"></a></strong>
+								</div>
+							</div>
+						</div>
+					</aside>
+					<footer id="footer" class="row">
+						<div class="col-xs-12">
+							<div class="box2">
+								<div class="block1">
+									<span class="copyrights">Copyright © 2015 Mintebi APS. All rights reserved.</span>
+									<ul class="privacy-nav list-inline">
+										<li><a href="#">Terms of Use</a></li>
+										<li><a href="#">Privacy Policy</a></li>
+									</ul>
+									<address class="footer-address">Mintebi APS, Sankt Annae Plads 11, 1250 Copenhagen, Denmark</address>
+								</div>
+								<ul class="social-networks list-inline">
+									<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</footer>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade delete">
+			<div class="modal-dialog delete-projects">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><span class="icon icon-close-2"></span></span></button>
+						<h2 class="modal-title">Are you sure you want to clear your projcet</h2>
+					</div>
+					<div class="modal-body">
+						<p>This action cannot be undone and will<br> immediately cleared from the system.</p>
+					</div>
+					<div class="modal-footer">
+						<a href="#" class="btn btn-default" data-dismiss="modal">Clear</a>
+						<a href="#" class="btn btn-default cancel">Cancel</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade delete" style="opacity: 1;display:none;">
+		<div class="modal-dialog delete-projects modal-tel">
+			<div class="modal-content" style="top: 300px">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><span class="icon icon-close-2"></span></span></button>
+					<h2 class="modal-subtitle">Are you sure you want to cancel the Phone consultation?</h2>
+				</div>
+				<div class="modal-body">
+					<div class="modal-text">
+						<p>You can set up a new meeting, but you if you missed the call for more then 6 hours we will charge 50% of the reservated ammount.</p>
+					</div>					
+					<div class="con-meeting__textarea">
+						<textarea name="" id="" cols="30" rows="6" class="form-textarea" placeholder="Leave a short message, of why you want to cancel the meeting? New time? New date?"></textarea>
+						<span>0/500</span>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<a href="#" class="btn btn-default" data-dismiss="modal">Cancel meeting</a>
+					<a href="#" class="btn btn-default cancel">Cancel</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="../js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/angular.min.js"></script>
+	<script type="text/javascript" src="../js/ngDialog.min.js"></script>
+	<script type="text/javascript" src="../js/angular.validate.js"></script>
+	<script type="text/javascript" src="../js/angular.openClose.js"></script>
+	<script type="text/javascript" src="../js/application.js"></script>
+	<script type="text/javascript" src="../js/common.js"></script>
+	<script type="text/javascript" src="../js/main.js"></script>
+	<script type="text/javascript" src="../js/jcf.angular.js"></script>
+	<script>
+		jQuery('[data-toggle="dropdown"]').each(function() {
+			var item = jQuery(this),
+				parent = item.parent();
+			 
+			parent.one('mousemove', function() {
+				parent.hover(function() {
+					parent.addClass('open');
+				}, function() {
+					parent.removeClass('open');
+				}).trigger('mouseover');
+			});
+		});
+		if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+		   var msViewportStyle = document.createElement("style")
+		   msViewportStyle.appendChild(
+		  document.createTextNode(
+			"@-ms-viewport{width:auto!important}"
+		  )
+		   )
+		   document.getElementsByTagName("head")[0].appendChild(msViewportStyle)
+		 }
+	</script>
+</body>
+</html>
