@@ -147,3 +147,15 @@
 .modal-dialog.delete-projects.modal-tel .modal-header { padding-right: 10px; }
 .modal-dialog.delete-projects.modal-tel .modal-subtitle { font-size: 35px; line-height: 1.2; color: #001936; margin: 0 0 10px; }
 .modal-dialog.delete-projects.modal-tel .modal-text p { font-size: 14px; color: #001936; margin-bottom: 12px; }
+
+.modal-header b { font-weight: normal; font-family: 'HelveticaNeueW01-65Medi'; }
+
+.modal-row b, .modal-row span { display: block; }
+
+.modal-col { width: 50%; float: left; padding: 10px 0; }
+
+.modal-field { margin-bottom: 10px; }
+.modal-field-row { margin: 0 -5px; }
+.modal-field_col { width: 50%; padding: 0 5px; float: left; }
+.modal-field__label { font-size: 14px; font-weight: normal; color: #858F97; font-family: "HelveticaNeueW82-Regula", Arial, Helvetica, sans-serif; margin-bottom: 15px; }
+.modal-field small { font-size: 10px; font-weight: normal; color: #858F97; font-family: "HelveticaNeueW82-Regula", Arial, Helvetica, sans-serif; margin-bottom: 15px; }

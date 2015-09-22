@@ -833,3 +833,51 @@ $font-thin-italic: 'HelveticaNeueThin-Italic', Arial, sans-serif;
 	}
 }
 
+.modal-header {
+	b {
+		font-weight: normal;
+		font-family: 'HelveticaNeueW01-65Medi';
+	}
+}
+
+.modal-row {
+	b, span {
+		display: block;
+	}
+}
+
+.modal-col {
+	width: 50%;
+	float: left;
+	padding: 10px 0;
+}
+
+.modal-field {
+	margin-bottom: 10px;
+	
+	&-row {
+		margin: 0 -5px;
+	}
+
+	&_col {
+		width: 50%;
+		padding: 0 5px;
+		float: left;
+	}
+
+	&__label {
+		font-size: 14px;
+		font-weight: normal;
+		color: #858F97;
+		font-family: "HelveticaNeueW82-Regula", Arial, Helvetica, sans-serif;
+		margin-bottom: 15px;
+	}
+
+	small {		
+		font-size: 10px;
+		font-weight: normal;
+		color: #858F97;
+		font-family: "HelveticaNeueW82-Regula", Arial, Helvetica, sans-serif;
+		margin-bottom: 15px;
+	}
+}
