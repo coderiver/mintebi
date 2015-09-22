@@ -785,18 +785,21 @@
 												<ul>
 													<li><i class="icon icon-calendar"></i><span>Friday 08.11.2015</span></li>
 													<li><i class="icon icon-clock"></i><span>08:00 - 08:45</span></li>
+													<li><i class="is-dollar">$</i><span>300</span></li>
 												</ul>
 											</div>
 											<div class="con-meeting__red is-white">
 												<ul>
 													<li><i class="icon icon-calendar"></i><span>Friday 08.11.2015</span></li>
 													<li><i class="icon icon-clock"></i><span>08:00 - 08:45</span></li>
+													<li><i class="is-dollar">$</i><span>300</span></li>
 												</ul>
 											</div>
 											<div class="con-meeting__red is-white">
 												<ul>
 													<li><i class="icon icon-calendar"></i><span>Friday 08.11.2015</span></li>
 													<li><i class="icon icon-clock"></i><span>08:00 - 08:45</span></li>
+													<li><i class="is-dollar">$</i><span>300</span></li>
 												</ul>
 											</div>
 										</div>
@@ -812,15 +815,23 @@
 								<div class="tel-info">
 									<h2 class="tel-info__title">Request Sended</h2>
 									<div class="tel-info__row">
-										<div class="tel-info__calendar">
-											<h4>1. Choose Date</h4>
-											<div class="tel-calendar">
-												<img src="../images/tel-calendar.png" alt="">
+										<div class="tel-info__area">
+											<h4>1. Please state the topics you want to discuss.</h4>
+											<div class="tel-area">
+												<div class="tel-area__textarea">
+													<textarea name="" id="" cols="30" rows="13" class="form-textarea" placeholder="Max (1000) Characters"></textarea>
+													<span>0/1000 left</span>
+												</div>
+												<div class="tel-area__btns">
+													<a href="#" class="button">Request</a>
+													<a href="#" class="button button_gray">Cancel</a>
+												</div>
 											</div>
 										</div>
 										<div class="tel-info__time">
 											<h4>2. Choose Time.</h4>		
-											<div class="tel-time">
+											<div class="tel-time is-close">
+												<a href="#" class="icon icon-close-2"></a>
 												<div class="tel-time__btns">
 													<button class="tel-time__submit"><i class="icon icon-check-mark"></i></button>
 													<button class="tel-time__cancel"><i class="icon icon-close-1"></i></button>
@@ -836,9 +847,16 @@
 															</select>
 														</div>
 														<span class="tel-time__text">CPH, DK</span>
+														<small>Price</small>
+														<div class="fieldset__select">
+															<select id="country" jcf='{"maxVisibleItems": 4}'>
+																<option>300</option>
+																<option>300</option>
+															</select>
+														</div>
 													</div>
 													<div class="tel-time__col">
-														<span class="tel-time__title is-moon">Th 07.11.2015</span>
+														<span class="tel-time__title is-moon">Th 07.11.2015<i class="icon icon-calendar"></i></span>
 														<small>Expert time</small>
 														<time>03:00</time>
 														<span class="tel-time__text">NY, USA</span>
@@ -856,19 +874,6 @@
 													<li><i class="icon icon-calendar"></i><span>Friday 08.11.2015</span></li>
 													<li><i class="icon icon-clock"></i><span>08:00 - 08:45</span></li>
 												</ul>
-											</div>
-										</div>
-										<div class="tel-info__area">
-											<h4>3. Please state the topics you want to discuss.</h4>
-											<div class="tel-area">
-												<div class="tel-area__textarea">
-													<textarea name="" id="" cols="30" rows="13" class="form-textarea" placeholder="Max (1000) Characters"></textarea>
-													<span>0/1000 left</span>
-												</div>
-												<div class="tel-area__btns">
-													<a href="#" class="button">Request</a>
-													<a href="#" class="button button_gray">Cancel</a>
-												</div>
 											</div>
 										</div>
 									</div>										
@@ -1061,7 +1066,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="modal fade delete" style="opacity: 1;display:block;">
+	<div class="modal fade delete" style="opacity: 1;display:none;">
 		<div class="modal-dialog delete-projects delete-pitching">
 			<div class="modal-content" style="top: 300px">
 				<div class="modal-header">

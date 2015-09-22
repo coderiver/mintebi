@@ -49,7 +49,7 @@
 @media only screen and (max-width: 980px) { .teleconference__info { clear: both; } }
 .teleconference__info.is-right { float: right; width: 60%; padding: 0; }
 @media only screen and (max-width: 980px) { .teleconference__info.is-right { clear: both; width: 100%; } }
-.teleconference__info.is-small { float: right; width: 35%; padding: 0; }
+.teleconference__info.is-small { float: right; width: 40%; padding: 0; }
 @media only screen and (max-width: 980px) { .teleconference__info.is-small { clear: both; width: 100%; } }
 
 .tel-submenu { background-color: #f5f6f8; border-radius: 7px; padding: 18px 50px 18px 45px; }
@@ -87,6 +87,7 @@
 @media only screen and (max-width: 980px) { .tel-info__left, .tel-info__right { width: 100%; padding: 10px 0; } }
 .tel-info .con-meeting__info { font-size: 0; max-width: 670px; }
 .tel-info .con-meeting__red li i { float: left; }
+.tel-info .con-meeting__red li i.is-dollar { font-size: 16px; font-style: normal; font-family: 'HelveticaNeueW01-65Medi'; }
 .tel-info .con-meeting__red li span { display: block; overflow: hidden; }
 .tel-info .con-meeting__red.is-green { background-color: #00e1bf; }
 .tel-info .con-meeting__red.is-white { background-color: white; }
@@ -109,13 +110,16 @@
 
 .tel-avatar { width: 40%; float: left; text-align: center; position: relative; padding: 105px 0 100px; }
 @media only screen and (max-width: 640px) { .tel-avatar { width: 100%; } }
-.tel-avatar.is-center { width: 65%; }
+.tel-avatar.is-center { width: 60%; }
 @media only screen and (max-width: 640px) { .tel-avatar.is-center { width: 100%; } }
 .tel-avatar__inner { display: inline-block; width: 115px; height: 115px; position: relative; margin: 0 0 0 -50px; box-shadow: 0 0 15px 0px #fff, 0 0 0 25px #c5ced6, 0 0 40px 25px rgba(255, 255, 255, 0.4), 0 0 0 50px #cfd5dc, 0 0 0 80px #d9dee5, 0 0 0 110px #dde2e8, 0 0 0 160px #e3e7ed; -webkit-border-radius: 50%; border-radius: 50%; }
 @media only screen and (max-width: 980px) { .tel-avatar__inner { margin: 0; } }
 .tel-avatar__inner img { width: 100%; height: 100%; position: relative; z-index: 1; -webkit-border-radius: 50%; border-radius: 50%; }
 
 .tel-time { position: relative; padding: 0 0 0 66px; background-color: white; border-radius: 7px; margin-bottom: 5px; }
+.tel-time.is-close { padding: 0 40px 0 20px; }
+.tel-time.is-close .tel-time__btns { display: none; }
+.tel-time .icon-close-2 { font-size: 20px; }
 .tel-time__btns { position: absolute; top: 0; left: 0; bottom: 0; width: 49px; border-radius: 7px 0 0 7px; overflow: hidden; }
 .tel-time__submit, .tel-time__cancel { position: absolute; left: 0; right: 0; border: none; outline: none; width: 100%; color: #fff; font-size: 30px; }
 .tel-time__submit i, .tel-time__cancel i { position: absolute; top: 50%; left: 50%; margin: -15px 0 0 -15px; }
@@ -123,15 +127,16 @@
 .tel-time__cancel { top: 50%; bottom: 0; background-color: #df1338; }
 .tel-time__info:after { display: block; clear: both; content: ""; }
 .tel-time__col { width: 50%; float: left; padding: 14px 0 14px 25px; }
+.tel-time__col .icon-calendar { font-size: 18px; position: absolute; top: 0; right: 0; }
 .tel-time__title, .tel-time__text, .tel-time small { display: block; font-family: 'HelveticaNeueW01-UltLt'; color: #495769; }
-.tel-time__title { font-size: 14px; line-height: 1.4; position: relative; }
+.tel-time__title { font-size: 14px; display: inline-block; line-height: 1.4; position: relative; padding: 0 20px 0 0; }
 .tel-time__title:before { content: ""; position: absolute; top: 1px; left: -22px; }
 .tel-time__title.is-sun:before { width: 14px; height: 14px; background: url(../images/sun.png) no-repeat center center; }
 .tel-time__title.is-moon:before { width: 11px; height: 14px; background: url(../images/moon.png) no-repeat center center; }
 .tel-time small { font-size: 12px; line-height: 22px; }
 .tel-time__text { font-size: 12px; line-height: 22px; }
 .tel-time time { font-size: 21px; line-height: 24px; color: #495769; display: block; font-family: 'HelveticaNeueW01-Lt'; }
-.tel-time .jcf-select { height: 24px; width: auto; }
+.tel-time .jcf-select { height: 24px; width: 75px; }
 .tel-time .jcf-select .jcf-select-opener:before { margin: 10px 0 0 4px; }
 .tel-time .jcf-select .jcf-select-text { font-size: 14px; color: #495769; font-family: 'HelveticaNeueW01-UltLt'; margin: 3px 28px 3px 8px; }
 

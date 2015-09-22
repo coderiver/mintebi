@@ -323,7 +323,7 @@ $font-thin-italic: 'HelveticaNeueThin-Italic', Arial, sans-serif;
 		}
 		&.is-small {
 			float: right;
-			width: 35%;
+			width: 40%;
 			padding: 0;
 			@media only screen and (max-width: 980px) {
 				clear: both;
@@ -519,6 +519,12 @@ $font-thin-italic: 'HelveticaNeueThin-Italic', Arial, sans-serif;
 		li {
 			i {
 				float: left;
+				
+				&.is-dollar {
+					font-size: 16px;
+					font-style: normal;
+					font-family: 'HelveticaNeueW01-65Medi';
+				}
 			}
 			span {
 				display: block;
@@ -604,7 +610,7 @@ $font-thin-italic: 'HelveticaNeueThin-Italic', Arial, sans-serif;
 		width: 100%;
 	}
 	&.is-center {
-		width: 65%;
+		width: 60%;
 		@media only screen and (max-width: 640px) {
 			width: 100%;
 		}
@@ -645,6 +651,17 @@ $font-thin-italic: 'HelveticaNeueThin-Italic', Arial, sans-serif;
 	background-color: white;
 	border-radius: 7px;
 	margin-bottom: 5px;
+	&.is-close {
+		padding: 0 40px 0 20px;
+		
+		.tel-time__btns {
+			display: none;
+		}
+	}
+
+	.icon-close-2 {
+		font-size: 20px;
+	}
 	
 	&__btns {
 		position: absolute;
@@ -699,6 +716,13 @@ $font-thin-italic: 'HelveticaNeueThin-Italic', Arial, sans-serif;
 		width: 50%;
 		float: left;
 		padding: 14px 0 14px 25px;
+		
+		.icon-calendar {
+			font-size: 18px;
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
 	}
 
 	&__title, &__text, small {
@@ -709,8 +733,10 @@ $font-thin-italic: 'HelveticaNeueThin-Italic', Arial, sans-serif;
 
 	&__title {
 		font-size: 14px;
+		display: inline-block;
 		line-height: 1.4;
 		position: relative;
+		padding: 0 20px 0 0;
 		
 		&:before {
 			content: "";
@@ -755,7 +781,7 @@ $font-thin-italic: 'HelveticaNeueThin-Italic', Arial, sans-serif;
 
 	.jcf-select {
 		height: 24px;
-		width: auto;
+		width: 75px;
 	}
 
 	.jcf-select .jcf-select-opener:before {
