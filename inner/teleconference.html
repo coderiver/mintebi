@@ -4,9 +4,9 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Mintebi</title>
-	<link rel="stylesheet" href="../css/teleconference.css">
 	<link rel="stylesheet" href="https://stage.mintebi.com/assets/bootstrap.css">
 	<link rel="stylesheet" href="https://stage.mintebi.com/assets/mintebi-1.0.0.css">
+	<link rel="stylesheet" href="../css/teleconference.css">
 	<!-- <link rel="stylesheet" href="../css/bootstrap.css">
 	<link rel="stylesheet" href="../css/all.css">
 	<link rel="stylesheet" href="../css/ngDialog.css">
@@ -812,11 +812,120 @@
 							</div>
 							<div class="teleconference__field">
 								<a href="#" class="icon icon-close-2"></a>
+								<div class="tel-avatar is-small">
+									<div class="tel-avatar__inner">
+										<img src="../images/tel-avatar.png" alt="">
+									</div>
+								</div>
+								<div class="tel-text">		
+									<h2 class="is-bigger">Comment</h2>
+									<p><b>Expert has left you a comment.</b></p>
+									<p>Written. 22.08.2015 - 08:00 AM</p>
+									<div class="tel-text__info">
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Maecenas faucibus mollis interdum.</p>
+										<p>Curabitur blandit tempus porttitor. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+										<p>Lorem ipsum dolor sit amet.consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+									</div>
+								</div>
+								<div class="teleconference__info is-mod">
+									<div class="tel-info">									
+										<h2 class="is-bigger">Request Sended</h2>
+										<p>The Expert has accepted the time slot for a teleconference meeting (you need to accpet within 24hs)</p>
+										<div class="con-meeting__info">
+											<div class="con-meeting__red">
+												<ul>
+													<li><i class="icon icon-calendar"></i><span>Friday 08.11.2015</span></li>
+													<li><i class="icon icon-clock"></i><span>08:00 - 08:45</span></li>
+													<li><i class="icon icon-trophy"></i><span>€2500 </span></li>
+												</ul>
+											</div>
+											<div class="con-meeting__red">
+												<ul>
+													<li><i class="icon icon-calendar"></i><span>Friday 08.11.2015</span></li>
+													<li><i class="icon icon-clock"></i><span>08:00 - 08:45</span></li>
+													<li><i class="icon icon-trophy"></i><span>€2500 </span></li>
+												</ul>
+											</div>
+											<div class="con-meeting__red">
+												<ul>
+													<li><i class="icon icon-calendar"></i><span>Friday 08.11.2015</span></li>
+													<li><i class="icon icon-clock"></i><span>08:00 - 08:45</span></li>
+													<li><i class="icon icon-trophy"></i><span>€2500 </span></li>
+												</ul>
+											</div>
+										</div>
+										<div class="form-buttons">
+											<a href="#" class="button">Minimize</a>
+											<a href="#" class="button button_gray">Cancel request</a>
+										</div>
+									</div>
+								</div>								
+							</div>
+							<div class="teleconference__field">
+								<a href="#" class="icon icon-close-2"></a>
 								<div class="tel-info">
 									<h2 class="tel-info__title">Request Sended</h2>
 									<div class="tel-info__row">
+										<div class="tel-info__range">
+											<h4>1. Duration & Hourly rate</h4>
+											<div class="tel-ranges">
+												<div class="tel-range">
+													<div class="progress-frame">
+														<span class="progress-bar" style="width:90%">
+															<span class="num">45 min</span>
+														</span>
+													</div>
+													<span class="tel-range__label">Time range</span>
+												</div>
+												<div class="tel-range">
+													<div class="progress-frame">
+														<span class="progress-bar" style="width:90%">
+															<span class="num">300€</span>
+														</span>
+													</div>
+													<span class="tel-range__label">Price range for 45 min</span>
+												</div>
+											</div>											
+										</div>
+										<div class="tel-info__time">
+											<h4>2. Choose Time.</h4>		
+											<div class="tel-time is-close">
+												<a href="#" class="icon icon-minus"></a>
+												<div class="tel-time__btns">
+													<button class="tel-time__submit"><i class="icon icon-check-mark"></i></button>
+													<button class="tel-time__cancel"><i class="icon icon-close-1"></i></button>
+												</div>
+												<div class="tel-time__info">
+													<div class="tel-time__col">
+														<span class="tel-time__title is-sun">Fr 08.11.2015<i class="icon icon-calendar"></i></span>
+														<small>Your time</small>
+														<div class="fieldset__select">
+															<select id="country" jcf='{"maxVisibleItems": 4}'>
+																<option>08:00 - CPH, DK</option>
+																<option>08:00 - CPH, DK</option>
+															</select>
+														</div>
+													</div>
+													<div class="tel-time__col">
+														<span class="tel-time__title is-moon">Th 07.11.2015</span>
+														<small>Expert time</small>
+														<time>03:00 <span class="tel-time__text">NY, USA</span></time>			
+													</div>
+												</div>
+											</div>										
+											<div class="con-meeting__red con-meeting__red-mod is-white">
+												<a href="#" class="icon icon-minus"></a>
+												<ul>
+													<li><i class="icon icon-calendar"></i><span>Friday 08.11.2015</span></li>
+													<li><i class="icon icon-clock"></i><span>08:00 - 08:45</span></li>
+												</ul>
+											</div>
+											<div class="tel-add">
+												<i class="icon icon-plus"></i>
+											</div>
+										</div>
 										<div class="tel-info__area">
-											<h4>1. Please state the topics you want to discuss.</h4>
+											<h4>3. Please state the topics you want to discuss.</h4>
 											<div class="tel-area">
 												<div class="tel-area__textarea">
 													<textarea name="" id="" cols="30" rows="13" class="form-textarea" placeholder="Max (1000) Characters"></textarea>
@@ -826,54 +935,6 @@
 													<a href="#" class="button">Request</a>
 													<a href="#" class="button button_gray">Cancel</a>
 												</div>
-											</div>
-										</div>
-										<div class="tel-info__time">
-											<h4>2. Choose Time.</h4>		
-											<div class="tel-time is-close">
-												<a href="#" class="icon icon-close-2"></a>
-												<div class="tel-time__btns">
-													<button class="tel-time__submit"><i class="icon icon-check-mark"></i></button>
-													<button class="tel-time__cancel"><i class="icon icon-close-1"></i></button>
-												</div>
-												<div class="tel-time__info">
-													<div class="tel-time__col">
-														<span class="tel-time__title is-sun">Fr 08.11.2015</span>
-														<small>Your time</small>
-														<div class="fieldset__select">
-															<select id="country" jcf='{"maxVisibleItems": 4}'>
-																<option>08:00</option>
-																<option>08:00</option>
-															</select>
-														</div>
-														<span class="tel-time__text">CPH, DK</span>
-														<small>Price</small>
-														<div class="fieldset__select">
-															<select id="country" jcf='{"maxVisibleItems": 4}'>
-																<option>300</option>
-																<option>300</option>
-															</select>
-														</div>
-													</div>
-													<div class="tel-time__col">
-														<span class="tel-time__title is-moon">Th 07.11.2015<i class="icon icon-calendar"></i></span>
-														<small>Expert time</small>
-														<time>03:00</time>
-														<span class="tel-time__text">NY, USA</span>
-													</div>
-												</div>
-											</div>										
-											<div class="con-meeting__red is-white">
-												<ul>
-													<li><i class="icon icon-calendar"></i><span>Friday 08.11.2015</span></li>
-													<li><i class="icon icon-clock"></i><span>08:00 - 08:45</span></li>
-												</ul>
-											</div>
-											<div class="con-meeting__red is-white">
-												<ul>
-													<li><i class="icon icon-calendar"></i><span>Friday 08.11.2015</span></li>
-													<li><i class="icon icon-clock"></i><span>08:00 - 08:45</span></li>
-												</ul>
 											</div>
 										</div>
 									</div>										

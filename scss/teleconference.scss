@@ -109,7 +109,7 @@ $font-thin-italic: 'HelveticaNeueThin-Italic', Arial, sans-serif;
 	background-color: rgba(#001936, .8);
 	padding: 30px;
 	
-	@media only screen and (max-width: 640px) {
+	@media only screen and (max-width: 768px) {
 		padding: 30px 10px;
 	}
 	
@@ -128,12 +128,27 @@ $font-thin-italic: 'HelveticaNeueThin-Italic', Arial, sans-serif;
 		
 		.project__main {
 			min-width: 200px;
+			
+			@media only screen and (max-width: 768px) {
+				width: 100%;
+				min-width: 200px;
+				display: block;
+			    border-radius: 7px 7px 0 0;
+			}
+
+			.project__content {
+				@media only screen and (max-width: 768px) {
+			   		border-radius: 7px 7px 0 0;
+				}
+			}
 		}
 		.project__aside {
 
-			@media only screen and (max-width: 640px) {
+			@media only screen and (max-width: 768px) {
 				width: 100%;
 				min-width: 200px;
+				display: block;
+			    border-radius: 0 0 7px 7px;
 			}
 		}
 		
@@ -169,6 +184,9 @@ $font-thin-italic: 'HelveticaNeueThin-Italic', Arial, sans-serif;
 	&__section {
 		max-width: 1150px;
 		margin: 0 auto 15px;
+		@media only screen and (max-width: 1170px) {
+			max-width: 720px;
+		}
 	}
 
 	&__row {
@@ -189,7 +207,7 @@ $font-thin-italic: 'HelveticaNeueThin-Italic', Arial, sans-serif;
 			float: none;
 			margin: 0 auto;
 			width: 100%;
-			max-width: 540px;
+			max-width: 100%;
 		}
 	}
 	
@@ -222,12 +240,12 @@ $font-thin-italic: 'HelveticaNeueThin-Italic', Arial, sans-serif;
 		font-size: 12px;
 		cursor: pointer;
 
-		@media only screen and (max-width: 640px) {
+		@media only screen and (max-width: 768px) {
 			width: 100%;
 		}
 	}
 	.tile__request {
-		@media only screen and (max-width: 640px) {
+		@media only screen and (max-width: 768px) {
 			border-bottom: 1px solid #d9dfe6;
 			-webkit-border-radius: 0;
 				border-radius: 0;
@@ -236,7 +254,7 @@ $font-thin-italic: 'HelveticaNeueThin-Italic', Arial, sans-serif;
 
 	.tile__info {
 		div {
-			@media only screen and (max-width: 640px) {
+			@media only screen and (max-width: 768px) {
 				margin: 0 10px 0 0;
 			}
 		}
@@ -246,7 +264,7 @@ $font-thin-italic: 'HelveticaNeueThin-Italic', Arial, sans-serif;
 		background-color: #f5f6f8;
 		border-radius: 7px;
 		padding: 24px 30px 10px;
-		@media only screen and (max-width: 640px) {		
+		@media only screen and (max-width: 768px) {		
 			padding: 9px 15px 1px;
 		}
 	}
@@ -259,7 +277,11 @@ $font-thin-italic: 'HelveticaNeueThin-Italic', Arial, sans-serif;
 		position: relative;
 		margin-bottom: 14px;
 		
-		@media only screen and (max-width: 640px) {
+		@media only screen and (max-width: 1170px) {
+			padding: 20px;
+		}
+		
+		@media only screen and (max-width: 768px) {
 			padding: 15px;
 		}
 		
@@ -297,7 +319,7 @@ $font-thin-italic: 'HelveticaNeueThin-Italic', Arial, sans-serif;
 			float: left;
 			margin: 0 40px 0 0;
 			
-			@media only screen and (max-width: 980px) {
+			@media only screen and (max-width: 1170px) {
 				margin: 30px -10px 0;
 			}
 			
@@ -309,14 +331,14 @@ $font-thin-italic: 'HelveticaNeueThin-Italic', Arial, sans-serif;
 
 	&__info {
 		padding: 40px 0 0;
-		@media only screen and (max-width: 980px) {
+		@media only screen and (max-width: 1170px) {
 			clear: both;
 		}
 		&.is-right {
 			float: right;
 			width: 60%;
 			padding: 0;
-			@media only screen and (max-width: 980px) {
+			@media only screen and (max-width: 1170px) {
 				clear: both;
 				width: 100%;
 			}
@@ -325,9 +347,26 @@ $font-thin-italic: 'HelveticaNeueThin-Italic', Arial, sans-serif;
 			float: right;
 			width: 40%;
 			padding: 0;
-			@media only screen and (max-width: 980px) {
+			@media only screen and (max-width: 1170px) {
 				clear: both;
 				width: 100%;
+			}
+		}
+		&.is-mod {
+			float: right;
+			width: 41%;
+			padding: 0;
+
+			@media only screen and (max-width: 1170px) {
+				clear: none;
+				width: 60%;
+				padding: 20px 0 20px 20px;
+			}
+
+			@media only screen and (max-width: 768px) {
+				clear: both;
+				width: 100%;
+				padding: 20px 0 0;
 			}
 		}
 	}
@@ -486,7 +525,7 @@ $font-thin-italic: 'HelveticaNeueThin-Italic', Arial, sans-serif;
 		width: 60%;
 		padding-right: 20px;
 
-		@media only screen and (max-width: 640px) {
+		@media only screen and (max-width: 768px) {
 			width: 100%;
 			padding: 10px 0;
 		}
@@ -495,7 +534,7 @@ $font-thin-italic: 'HelveticaNeueThin-Italic', Arial, sans-serif;
 		width: 40%;
 		padding: 0 0 0 8px;
 
-		@media only screen and (max-width: 640px) {
+		@media only screen and (max-width: 768px) {
 			width: 100%;
 			padding: 10px 0;
 		}
@@ -503,7 +542,7 @@ $font-thin-italic: 'HelveticaNeueThin-Italic', Arial, sans-serif;
 	&__left, &__right {
 		float: left;
 		
-		@media only screen and (max-width: 980px) {
+		@media only screen and (max-width: 1170px) {
 			width: 100%;
 			padding: 10px 0;
 		}
@@ -515,6 +554,7 @@ $font-thin-italic: 'HelveticaNeueThin-Italic', Arial, sans-serif;
 	}
 
 	.con-meeting__red {
+		margin-bottom: 12px;
 		
 		li {
 			i {
@@ -565,16 +605,22 @@ $font-thin-italic: 'HelveticaNeueThin-Italic', Arial, sans-serif;
 
 	&__row {
 		margin: 0 -13px;
-		@media only screen and (max-width: 980px) {
+		@media only screen and (max-width: 768px) {
 			margin: 0;
+		}
+
+		&:after {
+			content: "";
+			display: block;
+			clear: both;
 		}
 	}
 
-	&__calendar {
-		width: 27%;
+	&__range {
+		width: 25%;
 	}
 	&__time {
-		width: 34%;
+		width: 36%;
 		font-size: 0;
 		.con-meeting__red {
 			width: 100%;
@@ -584,10 +630,31 @@ $font-thin-italic: 'HelveticaNeueThin-Italic', Arial, sans-serif;
 		width: 39%;
 	}
 
-	&__calendar, &__time, &__area {
+	&__range, &__time, &__area {
 		float: left;
 		padding: 0 13px;
-		@media only screen and (max-width: 980px) {
+	}
+
+	&__range {
+		@media only screen and (max-width: 1170px) {
+			width: 40%;
+		}
+	}
+
+	&__time {
+		@media only screen and (max-width: 1170px) {
+			width: 60%;
+		}
+	}
+
+	&__area {
+		@media only screen and (max-width: 1170px) {
+			width: 100%;
+			padding: 30px 13px 0;
+		}
+	}
+	&__range, &__time, &__area {
+		@media only screen and (max-width: 768px) {
 			width: 100%;
 			padding: 10px 0;
 		}
@@ -600,18 +667,67 @@ $font-thin-italic: 'HelveticaNeueThin-Italic', Arial, sans-serif;
 
 }
 
+.tel-text {
+	position: relative;
+	z-index: 2;
+	width: 40%;
+	float: left;
+	padding: 0 40px 0 0;
+	
+	@media only screen and (max-width: 1170px) {
+		padding: 20px 19px 10px 14px;
+		background-color: #dee1e7;
+		border-radius: 7px;
+	}
+	@media only screen and (max-width: 768px) {
+		clear: both;
+		width: 100%;
+	}
+	
+	h2 {
+		margin: 0 20px 5px 0;
+	}
+	
+	p {
+		font-size: 12px;
+		color: #495769;
+		font-family: 'HelveticaNeueW82-Regula';
+		margin: 0;
+		
+		b {
+			font-weight: normal;
+			font-family: 'HelveticaNeueW01-65Medi';
+		}
+	}
+
+	&__info {
+		padding: 25px 0 0;
+		
+		p {
+			text-align: justify;
+			margin: 0 0 10px;
+		}
+	}
+}
+
 .tel-avatar {
 	width: 40%;
 	float: left;
 	text-align: center;
 	position: relative;
 	padding: 105px 0 100px;
-	@media only screen and (max-width: 640px) {
-		width: 100%;
+	@media only screen and (max-width: 1170px) {
+		display: none;
 	}
 	&.is-center {
 		width: 60%;
-		@media only screen and (max-width: 640px) {
+		@media only screen and (max-width: 768px) {
+			width: 100%;
+		}
+	}
+	&.is-small {
+		width: 19%;
+		@media only screen and (max-width: 768px) {
 			width: 100%;
 		}
 	}
@@ -631,7 +747,7 @@ $font-thin-italic: 'HelveticaNeueThin-Italic', Arial, sans-serif;
 			0 0 0 160px rgba(#e3e7ed, 1);
 		-webkit-border-radius: 50%;
 		border-radius: 50%;
-		@media only screen and (max-width: 980px) {
+		@media only screen and (max-width: 1170px) {
 			margin: 0;
 		}
 		img {
@@ -645,22 +761,101 @@ $font-thin-italic: 'HelveticaNeueThin-Italic', Arial, sans-serif;
 	}
 }
 
+.con-meeting__red {
+	position: relative;
+	&-mod {
+		padding: 0 25px 0 0;
+	}
+	
+	.icon-close-2, .icon-minus {
+		font-size: 24px;
+		position: absolute;
+		top: 16px;
+		right: 10px;
+		color: #c4c7cd;
+		text-decoration: none;
+		-moz-transition: color 300ms;
+		-o-transition: color 300ms;
+		-webkit-transition: color 300ms;
+		-ms-transition: color 300ms;
+		transition: color 300ms;
+		z-index: 10;
+		
+		&:hover {
+			color: #0c283f;
+		}
+		&:active {
+			color: #606e80;
+		}
+	}
+
+	.icon-trophy {
+		font-size: 20px;
+	}
+}
+
+.tel-add {
+	height: 55px;
+	background-color: #dee1e8;
+	border-radius: 7px;
+	position: relative;
+	cursor: pointer;
+	
+	&:hover {
+		.icon {			
+			color: #0c283f;
+		}
+	}
+	&:active {
+		.icon {			
+			color: #606e80;
+		}
+	}
+	
+	.icon {
+		font-size: 40px;
+		color: #caced7;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin: -20px 0 0 -20px;
+	}
+}
+
 .tel-time {
 	position: relative;
 	padding: 0 0 0 66px;
 	background-color: white;
 	border-radius: 7px;
-	margin-bottom: 5px;
+	margin-bottom: 12px;
 	&.is-close {
-		padding: 0 40px 0 20px;
+		padding: 0 20px 0 20px;
 		
 		.tel-time__btns {
 			display: none;
 		}
 	}
 
-	.icon-close-2 {
-		font-size: 20px;
+	.icon-close-2, .icon-minus {
+		font-size: 24px;
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		color: #c4c7cd;
+		text-decoration: none;
+		-moz-transition: color 300ms;
+		-o-transition: color 300ms;
+		-webkit-transition: color 300ms;
+		-ms-transition: color 300ms;
+		transition: color 300ms;
+		z-index: 10;
+		
+		&:hover {
+			color: #0c283f;
+		}
+		&:active {
+			color: #606e80;
+		}
 	}
 	
 	&__btns {
@@ -715,25 +910,28 @@ $font-thin-italic: 'HelveticaNeueThin-Italic', Arial, sans-serif;
 	&__col {
 		width: 50%;
 		float: left;
-		padding: 14px 0 14px 25px;
+		padding: 14px 15px 14px 25px;
 		
 		.icon-calendar {
-			font-size: 18px;
+			font-size: 20px;
 			position: absolute;
-			top: 0;
+			top: -2px;
 			right: 0;
 		}
 	}
 
 	&__title, &__text, small {
-		display: block;
 		font-family: 'HelveticaNeueW01-UltLt';
 		color: #495769;
 	}
 
+	&__text {
+		display: inline-block;		
+	}
+
 	&__title {
+		display: block;	
 		font-size: 14px;
-		display: inline-block;
 		line-height: 1.4;
 		position: relative;
 		padding: 0 20px 0 0;
@@ -764,6 +962,7 @@ $font-thin-italic: 'HelveticaNeueThin-Italic', Arial, sans-serif;
 	small {
 		font-size: 12px;
 		line-height: 22px;
+		display: block;
 	}
 
 	&__text {
@@ -781,18 +980,21 @@ $font-thin-italic: 'HelveticaNeueThin-Italic', Arial, sans-serif;
 
 	.jcf-select {
 		height: 24px;
-		width: 75px;
+		width: auto;
 	}
 
 	.jcf-select .jcf-select-opener:before {
-		margin: 10px 0 0 4px;
+		margin: 10px 0 0 8px;
+		border-left: 3px solid transparent;
+	    border-right: 3px solid transparent;
+	    border-top: 3px solid #979ba3;
 	}
 
 	.jcf-select .jcf-select-text {
-		font-size: 14px;
+		font-size: 12px;
 		color: #495769;
 		font-family: 'HelveticaNeueW01-UltLt';
-		margin: 3px 28px 3px 8px;
+		margin: 3px 25px 3px 5px;
 	}
 
 }
@@ -834,6 +1036,57 @@ $font-thin-italic: 'HelveticaNeueThin-Italic', Arial, sans-serif;
 .tel-calendar {
 	img {
 		max-width: 100%;
+	}
+}
+
+.tel-ranges {
+	padding: 60px 30px 0 0;
+}
+
+.tel-range {
+	padding: 0 0 45px;
+	
+	&__label {
+		font-size: 12px;
+		color: #001936;
+		font-family: 'HelveticaNeueW82-Regula';		
+		display: block;
+		padding: 10px 10px 0;
+	}
+
+	.progress-frame {
+		height: 8px;
+		border-radius: 4px;
+		
+		.progress-bar {
+			&:before {
+				width: 14px;
+				height: 14px;
+				background-color: #001936;
+				margin: -3px 0 0 -7px;
+			}
+
+			.num {
+				width: auto;
+				white-space: nowrap;
+				font-family: 'HelveticaNeueW01-UltLt';
+				color: #fff;
+				font-size: 15px;
+				background-color: #495769;
+				border: none;
+				border-radius: 3px;
+				padding: 7px 7px 6px;
+				margin: 0;
+				-webkit-transform: translateX(-50%);
+				   -moz-transform: translateX(-50%);
+				    -ms-transform: translateX(-50%);
+				     -o-transform: translateX(-50%);
+				        transform: translateX(-50%);
+				&:before {					
+					border-top: 8px solid #495769;
+				}
+			}
+		}
 	}
 }
 
