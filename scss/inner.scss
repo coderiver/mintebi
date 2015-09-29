@@ -445,6 +445,7 @@ $retina-hd: 2.5; // hd retina > 2.5x
 		visibility: hidden;
 		opacity: 0;
 		transition: visibility 1s, opacity 1s, left 1s;
+		max-width: 1300px;
 		@include breakpoint($desktop2) {
 			margin: 5px 5px 0;
 		}		
@@ -564,6 +565,9 @@ $retina-hd: 2.5; // hd retina > 2.5x
 	vertical-align: top;
 	width: 100%;
 	padding: 30px 40px;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
 	@include breakpoint($desktop2) {
 		width: 25%;
 		padding: 30px 10px;
@@ -677,6 +681,9 @@ $retina-hd: 2.5; // hd retina > 2.5x
 .i-section {
 	position: relative;
 	padding: 0 15px;
+	max-width: 1300px;
+	margin: 0 auto;
+	background: #f0ebe7;
 	&.is-visible {
 		.i-section__inner {
 			top: 0;
@@ -697,7 +704,7 @@ $retina-hd: 2.5; // hd retina > 2.5x
 
 		&.is-visible {
 			img {				
-				bottom: 0;
+				bottom: -20%;
 				opacity: 1;
 				visibility: visible;
 			}
@@ -705,10 +712,10 @@ $retina-hd: 2.5; // hd retina > 2.5x
 		
 		img {
 			position: absolute;
-			bottom: -20%;
-			right: 0;
+			bottom: -40%;
+			right: -20%;
 			// width: 70%;	
-			height: 115%;
+			height: 140%;
 			opacity: 0;
 			visibility: hidden;
 			transition: visibility 1s, opacity 1s, bottom 1s;
@@ -718,7 +725,14 @@ $retina-hd: 2.5; // hd retina > 2.5x
 			@include breakpoint($tablet) {
 				// max-width: 600px;
 				// width: 100%;
-				height: 60%;
+				height: 80%;
+				left: 50%;
+				right: auto;
+				-webkit-transform: translateX(-50%);
+				   -moz-transform: translateX(-50%);
+				    -ms-transform: translateX(-50%);
+				     -o-transform: translateX(-50%);
+				        transform: translateX(-50%);
 			}
 			@include breakpoint($mobile) {
 				// width: 547px;

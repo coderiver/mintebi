@@ -1160,3 +1160,70 @@ $font-thin-italic: 'HelveticaNeueThin-Italic', Arial, sans-serif;
 		margin-bottom: 15px;
 	}
 }
+
+.tel-step {
+	padding: 20px 0;
+	.con-meeting__right {
+		padding: 20px 20px 20px 20px;
+	}
+	.con-meeting__red {
+		margin: 0 0 11px;
+		width: 100%;
+		ul {
+			text-align: justify;
+			
+			@media only screen and (max-width: 767px) {
+				text-align: left;
+			}
+
+			&:after {
+				display: inline-block;
+				width: 100%;
+				content: "";
+			}
+		}
+	}
+	.con-meeting__info{
+		padding: 0;
+	}
+	.con-btn {
+		min-width: 147px;
+		margin: 0 11px 11px 0;
+	}
+	.con-meeting__textarea {
+		margin: 0 0 11px;
+		
+		.form-textarea {
+			color: #001936;
+			height: auto;
+		}
+	}
+}
+
+.con-meeting__red.con-meeting__red-blue {
+	background-color: #001936;
+}
+.con-meeting__red.con-meeting__red-light {
+	background-color: #f5f6f8;
+	ul {
+		li {
+			color: #495769;
+		}
+	}
+}
+.con-meeting__info {
+	h4 {
+		color: #001936;
+	}
+}
+
+.con-meeting__theme {
+	h3 {
+		font-size: 24px;
+		color: #495769;
+	}
+}
+
+.con-btn.con-btn_green {
+	background-color: #00e1bf;
+}
